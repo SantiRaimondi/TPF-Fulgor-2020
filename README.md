@@ -9,9 +9,10 @@ Se podrán encontrar código Verilog, C y Python que mostrarán los avances actu
 
 ### Organización del repositorio
 
-Hay cuatro ramas:
+Hay cinco ramas:
 
   1) La principal (main).
   2) La de archivos Verilog (Verilog).
   3) La de archivos referentes al código del protocolo de comunicación Gigabit Ethernet (Ethernet).
   4) La de archivos C referente a la instanciación del microprocesador MicroBlaze en la placa Kintex (microProcesador).
+  5) La de archivos de simulación que se hagan en alto nivel (simulacion Python).
