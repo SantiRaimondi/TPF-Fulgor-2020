@@ -16,23 +16,48 @@ def CounterGenSysMult(A,B): # A Y B MATRICES
     for ptr in range(2*n-1):
         counter_finish_list.append(False)
     
-    A_w = np.zeros((n,n), dtype=int)  ## Variables de conexion horizontal entre celdas
-    B_w = np.zeros((n,n), dtype=int)  ## Variables de conexion vertical entre celdas
-    C_w = np.zeros((n,n), dtype=int)  ## Variable de sobreescritura de valores, luego de N_clocks es salida del sistema
+    A_w = np.zeros((n,n), dtype=float)  ## Variables de conexion horizontal entre celdas
+    B_w = np.zeros((n,n), dtype=float)  ## Variables de conexion vertical entre celdas
+    C_w = np.zeros((n,n), dtype=float)  ## Variable de sobreescritura de valores, luego de N_clocks es salida del sistema
     
     [A_w_in,B_w_in,C_w_in] = [0,0,0]       ## Variables auxiliares para sobreescribir
     [A_w_out,B_w_out,C_w_out] = [0,0,0]
+    
+################### PARA GUARDAR RESULTADOS:    #############################################
+    N_Matrix_Mult = (len(A[0]) - (2*n-1)) // n
+    
+    result_list = []
+    result_logged = 0
+    current_mat = 0
+    print('N_Matrix_Mult = ',N_Matrix_Mult)
+    
+    for x in range(N_Matrix_Mult):
+        result_list.append(np.zeros((n,n), dtype=float))
+        
+    print('result_list : \n',result_list)
+        
+###########################################################################        
+        
     
     for i in range(N_clocks):     # [0 , 1 , ... , n-1]
         
         print('\n i = ',i, '\n')    
         if (i >= n-1):                # Comienza a contar ciclos de clock luego de un delay
             
+########### POR DIAGONALES, REINICIO CELDAS Y GUARDO RESULTADOS ############################
             for a in range(len(counter_finish_list)):   # Recorre cada diagonal verificando que celda reiniciar
                 for row in range(n):
-                    for col in range(n):
-                        if (row + col == a and counter_finish_list[a] == True): # Se reinicia antes de desplazar el                                                                                   vector counter_finish_list
+                    for col in range(n):  # Se reinicia antes de desplazar el  vector counter_finish_list
+                        if (row + col == a and counter_finish_list[a] == True): 
+                            if(current_mat < N_Matrix_Mult):
+                                result_list[current_mat-result_logged][row][col] = C_w[row][col]
+                            result_logged = 1
+                            
                             C_w[row][col] = 0
+            print('\n result_logged = ',result_logged,'\n')
+            result_logged = 0  # En cada clock se reinicia esta variable en 0
+            
+############################################################################################
             
             if(count == (n)):     #Reinicia el contador de clocks para la siguiente matriz
                 count = 0
@@ -45,7 +70,16 @@ def CounterGenSysMult(A,B): # A Y B MATRICES
             count += 1
             if(count == (n)):     #Reinicia el contador de clocks para la siguiente matriz
                 count = 0
-                
+
+######################### Verifica el comienzo de la siguiente matriz ############################
+
+            if (counter_finish_list[0] == True and i >= n ):
+                current_mat += 1   ## Se aumenta el indice que afecta al logueo de resultados en result_list
+            
+            print('\n CURRENT MAT = ',current_mat,'\n')
+            
+#################################################################################################
+            
         print(counter_finish_list)
         
         for j in range(n):  # Se trasladan variables de conexion con: [j=0,1 valor]   [j=1,3 valores] 
@@ -97,4 +131,9 @@ def CounterGenSysMult(A,B): # A Y B MATRICES
                 
 #            print('A_w :\n',A_w)
 #            print('B_w :\n',B_w)
-        print('C_w :\n',C_w)
+
+        print('C_w : \n',C_w)
+    
+    for p in range(N_Matrix_Mult):
+        
+        print('\n Resultado matriz numero : ',(p+1),'\n',result_list[p])
