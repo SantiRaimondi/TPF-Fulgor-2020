@@ -48,13 +48,23 @@ def CounterGenSysMult(A,B): # A Y B MATRICES
             for a in range(len(counter_finish_list)):   # Recorre cada diagonal verificando que celda reiniciar
                 for row in range(n):
                     for col in range(n):  # Se reinicia antes de desplazar el  vector counter_finish_list
-                        if (row + col == a and counter_finish_list[a] == True): 
-                            if(current_mat < N_Matrix_Mult):
-                                result_list[current_mat-result_logged][row][col] = C_w[row][col]
-                            result_logged = 1
+                        
+                        if ((row + col) == a and counter_finish_list[a] == True): 
+                                
+                            result_list[current_mat-result_logged][row][col] = C_w[row][col]
                             
                             C_w[row][col] = 0
+                            if(i > N_clocks-2*n):
+                                print('current_mat-result_logged = ',current_mat-result_logged)
+                                print('\n result_list[current_mat-result_logged] : \n',result_list[current_mat-result_logged])
+        
+                            
+                        if (a > (n-1) and i < (N_clocks-n)):
+                            result_logged = 1
+                            
+                            
             print('\n result_logged = ',result_logged,'\n')
+            
             result_logged = 0  # En cada clock se reinicia esta variable en 0
             
 ############################################################################################
@@ -62,7 +72,9 @@ def CounterGenSysMult(A,B): # A Y B MATRICES
             if(count == (n)):     #Reinicia el contador de clocks para la siguiente matriz
                 count = 0
             counter_finish_list = np.roll(counter_finish_list,1)
-            if(count == 0):
+            
+            if(count == 0 and i < (N_clocks-n)):
+                
                 counter_finish_list[0] = True
             else:
                 counter_finish_list[0] = False
@@ -73,7 +85,9 @@ def CounterGenSysMult(A,B): # A Y B MATRICES
 
 ######################### Verifica el comienzo de la siguiente matriz ############################
 
-            if (counter_finish_list[0] == True and i >= n ):
+            if (counter_finish_list[0] == True and (N_clocks-n) > i >= n ):
+        
+#            if (type((i-n)//(2*n-1)) == int):
                 current_mat += 1   ## Se aumenta el indice que afecta al logueo de resultados en result_list
             
             print('\n CURRENT MAT = ',current_mat,'\n')

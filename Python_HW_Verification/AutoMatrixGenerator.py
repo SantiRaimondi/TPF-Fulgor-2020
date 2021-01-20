@@ -22,11 +22,11 @@ def AutoMatrixGenerator(N,N_matrix_mult):
         A_aux = np.zeros((N,N), dtype=float)
         B_aux = np.zeros((N,N), dtype=float)
 
-        if (j%2 == 0 and  1 < j < 5):  # Genera matrices no cuadradas de resultado no cuadrado
+        if (j%2 == 0 and  1 < j < 20):  # Genera matrices no cuadradas de resultado no cuadrado
             A = np.ones((N-2,N), dtype = float)
             B = np.ones((N,N-1), dtype = float)
 
-        elif (j%2 == 1 and 3 < j < 6):   # Genera matrices cuadradas de dimension menor que la total
+        elif (j%2 == 1 and 3 < j < 20):   # Genera matrices cuadradas de dimension menor que la total
             A = np.ones((N-2,N-2), dtype = float)
             B = np.ones((N-2,N-2), dtype = float)
         
