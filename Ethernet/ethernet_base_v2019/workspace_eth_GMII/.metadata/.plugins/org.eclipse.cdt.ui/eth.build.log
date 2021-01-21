@@ -1,0 +1,21 @@
+14:22:23 **** Incremental Build of configuration Debug for project eth ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth1_wrapper/export/eth1_wrapper/sw/eth1_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: eth.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth1_wrapper/export/eth1_wrapper/sw/eth1_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "eth.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: eth.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size eth.elf  |tee "eth.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 141393	   1956	3960747	4104096	 3e9fa0	eth.elf
+'Finished building: eth.elf.size'
+' '
+
+14:22:27 Build Finished (took 3s.420ms)
+

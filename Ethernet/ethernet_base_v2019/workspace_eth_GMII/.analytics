@@ -1,0 +1,9 @@
+timestamp=[2021-01-20 11:38:31], mode=WORKBENCH_START, duration=0:00:20.769, duration_ms=20769, data={}
+timestamp=[2021-01-20 11:38:33], mode=WORKBENCH_UI_INIT, duration=0:00:02.151, duration_ms=2151, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2021-01-20 11:40:48], mode=APP_CREATION, duration=0:00:29.306, duration_ms=29306, data={name=eth, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=eth1_wrapper, application_type=application}
+timestamp=[2021-01-20 11:42:48], mode=PLATFORM_GENERATION, duration=0:00:44.548, duration_ms=44548, data={name=eth1_wrapper}
+timestamp=[2021-01-20 14:22:22], mode=PLATFORM_GENERATION, duration=0:00:05.813, duration_ms=5813, data={name=eth1_wrapper}
+timestamp=[2021-01-20 20:10:14], mode=WORKBENCH_START, duration=0:00:24.615, duration_ms=24615, data={}
+timestamp=[2021-01-20 20:10:16], mode=WORKBENCH_UI_INIT, duration=0:00:02.347, duration_ms=2347, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}
+timestamp=[2021-01-21 18:10:24], mode=WORKBENCH_START, duration=0:00:30.024, duration_ms=30024, data={}
+timestamp=[2021-01-21 18:10:26], mode=WORKBENCH_UI_INIT, duration=0:00:02.364, duration_ms=2364, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}

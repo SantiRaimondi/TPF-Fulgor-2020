@@ -1,0 +1,6 @@
+2021-01-20T14:22:16.634561600255-14:22:16 **** Incremental Build of project eth1_wrapper ****
+000-buildplatform.bat 50133 eth1_wrapper no_domain_build 
+000-xsct% XSDB Server Channel: tcfchan#10
+00255-
+14:22:22 Build Finished (took 5s.614ms)
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1611155559">
+  <File Type="PA-TCL" Name="eth1_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="eth1_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="eth1_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="eth1_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="eth1_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="eth1_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="eth1_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="eth1_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="eth1_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/eth1/eth1.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/eth1/hdl/eth1_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/eth1/ip/eth1_mig_7series_0_0/mig_b.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="eth1_mig_7series_0_0"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/eth1/ip/eth1_mig_7series_0_0/mig_a.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="eth1_mig_7series_0_0"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="eth1_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/clock100.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="eth1_axi_ethernet_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="eth1_lmb_bram_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="eth1_mig_7series_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="eth1_microblaze_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="eth1_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="eth1_ilmb_bram_if_cntlr_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="eth1_microblaze_0_axi_intc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="eth1_axi_ethernet_0_gtxclk_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_d93c_mac_0"/>
+</GenRun>
