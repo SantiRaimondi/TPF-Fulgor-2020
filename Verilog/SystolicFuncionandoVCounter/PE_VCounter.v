@@ -32,9 +32,15 @@ reg [I_BITS-1:0] reg_b;
 reg [O_BITS-1:0] reg_c;
 reg reg_finish;
 reg [COUNTER_BITS-1 : 0] counter; //El tamano del contador depende del indice pasado como parametro, es decir la diagonal inversa en la cual esta ubicado el PE
+wire [(I_BITS*2)-1:0] prod;
+wire [O_BITS-1:0] final_prod;
 
 //Funcionamiento
 
+assign prod = i_a*i_b;
+//Los comentarios explican funcionamiento entre "," y ","
+assign final_prod = {{{$clog2(DIMENSION){prod[(I_BITS*2)-1]}},prod[((I_BITS - 2) * 2):0]},{(O_BITS - $clog2(DIMENSION) - 1)-(((I_BITS - 2) * 2)){1'b0}}};
+//                      / Replica el signo  /    / Toma el valor del bit entero y todos los decimales de la mult/       /Agrega los 0 necesarios para completar/
 always@(posedge i_clock)
 begin
     if(i_reset)
@@ -51,7 +57,8 @@ begin
             begin
                 reg_a <= i_a;
                 reg_b <= i_b;
-                reg_c <= (i_a*i_b) + reg_c; 
+                //reg_c <= (i_a*i_b) + reg_c;
+                reg_c <= final_prod + reg_c; //Armo el producto del mismo tamano que el acumulador alineando la coma.
                 /*
                 Siempre el producto de a * b va a dar como resultado un numero menor o igual que 1, entonces se desaprovechan si hay mas de 2 bits para la parte entera.
                 Ej: X00X,XXXX  por lo tanto siempre deberiamos tomar los bits extremos de la parte entera quedandonos con el signo y con el valor de 1 o 0, omitiendo los
