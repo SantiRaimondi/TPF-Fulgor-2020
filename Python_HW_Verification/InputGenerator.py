@@ -33,17 +33,11 @@ def InputGenerator(premult_A,postmult_B):
     premult_A_stream = np.insert(premult_A_stream, 0, np.zeros((N,M)), axis=1)
     postmult_B_stream = np.insert(postmult_B_stream, 0, np.zeros((N,M)), axis=0)
     
-    print("\nmatriz A1 dada vuelta en columnas:\n")
-    print(np.flip(premult_A_stream, axis=1))
-    print()
+#    print("\nmatriz A1 dada vuelta en columnas:\n")
+#    print(np.flip(premult_A_stream, axis=1))
 
-    #print("\nmatriz B1 transpuesta:\n")
-    #print(B1.T)
-    #print()
-
-    print("\nmatriz B1 transpuesta dada vuelta en columnas:\n")
-    print(np.flip(postmult_B_stream.T, axis=1))
-    print()
+#    print("\nmatriz B1 transpuesta dada vuelta en columnas:\n")
+#    print(np.flip(postmult_B_stream.T, axis=1))
 
     premult_A_stream = np.flip(premult_A_stream, axis=1)
     postmult_B_stream = np.flip(postmult_B_stream.T, axis=1)
