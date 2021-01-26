@@ -96,6 +96,7 @@ def CounterGenSysMult2(A,B): # A Y B MATRICES
 
         print('C_w : \n',C_w)
     
+    
     for p in range(N_Matrix_Mult):
         
         print('\n Resultado matriz en la ubicacion : ',p,'\n',result_list[p])

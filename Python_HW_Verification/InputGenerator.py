@@ -14,8 +14,8 @@ def InputGenerator(premult_A,postmult_B):
     N_matrix_mult = len(postmult_B)//len(premult_A)
     print('N_matrix_mult: ',N_matrix_mult)
     
-    premult_A_stream   = np.zeros((N, (N_matrix_mult*M + M -1)), dtype=int)
-    postmult_B_stream  = np.zeros(((N_matrix_mult*N + N -1, M)), dtype=int)
+    premult_A_stream   = np.zeros((N, (N_matrix_mult*M + M -1)), dtype=float)
+    postmult_B_stream  = np.zeros(((N_matrix_mult*N + N -1, M)), dtype=float)
     
     for i in range(N):
         a = premult_A[i,:]                                  # Obtengo la primer fila
