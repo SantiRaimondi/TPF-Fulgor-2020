@@ -1,4 +1,4 @@
-module PE_VCounter
+module PE_VCounter_FP
 #(
     parameter COUNTER_LIMIT = 0, // Limite de contador para  bloquear ejecucion una vez finalizada la operacion. El limite real es COUNTER_LIMIT + DIMENSION
     parameter DIMENSION = 4,
@@ -41,7 +41,7 @@ assign prod = i_a*i_b;
 //Los comentarios explican funcionamiento entre "," y ","
 assign final_prod = {{{$clog2(DIMENSION){prod[(I_BITS*2)-1]}},prod[((I_BITS - 2) * 2):0]},{(O_BITS - $clog2(DIMENSION) - 1)-(((I_BITS - 2) * 2)){1'b0}}};
 //                      / Replica el signo  /    / Toma el valor del bit entero y todos los decimales de la mult/       /Agrega los 0 necesarios para completar/
-always@(posedge i_clock)
+always@(posedge i_clock )
 begin
     if(i_reset)
     begin
@@ -65,6 +65,13 @@ begin
                 ceros intermedios.   BUSCAR FORMA DE ORDENARLO ASI
                 */
                 counter <= counter + 1;
+            end
+        else
+            begin //para que funcione con mas matrices y no se autobloquee la celda
+                reg_a <= i_a;
+                reg_b <= i_b;
+                reg_c <= final_prod; //se sobreescribe reg_c
+                counter <= {COUNTER_BITS{1'b0}}; // reseteo counter
             end
     end
 end
