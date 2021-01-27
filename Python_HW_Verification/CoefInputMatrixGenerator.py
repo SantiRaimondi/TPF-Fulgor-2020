@@ -22,44 +22,38 @@ def CoefInputMatrixGenerator(N,N_matrix_mult):
         A_aux = np.zeros((N,N), dtype=float)
         B_aux = np.zeros((N,N), dtype=float)
         
-        if (2 < j < 8) : 
-            A = np.ones((N-2,N-2), dtype = float)
+        if (2 < j < 7) :                  # Se reemplaza por matrices de diferentes dimensiones
+            A = np.ones((N-2,N-2), dtype = float) 
             B = np.ones((N-2,N-1), dtype = float)
 
-        elif (8 < j < 14):
+        elif (9 < j < 13):
             A = np.ones((N-1,N-2), dtype = float)
             B = np.ones((N-2,N-2), dtype = float)
             
-        elif (14 < j < 20) :  
+        elif (15 < j < 19) :  
             A = np.ones((N,N-2), dtype = float)
             B = np.ones((N-2,N-2), dtype = float)
             
-        elif (20 < j < 26) :  
+        elif (21 < j < 25) :  
             A = np.ones((N-2,N-2), dtype = float)
             B = np.ones((N-2,N), dtype = float)
             
 ###########################################################################################
 ################ DESCOMENTAR PARA MATRIZ CON UBICACIONES DE COEFICIENTES ###############
 
-        for q in range(len(A)):
+        for q in range(len(A)):       # SUMA A CADA UBICACION DE FORMA QUE EL VALOR SEA SU MISMO INDICE (i,j)
             A[q] = A[q]*(10*(q+1))
             for w in range(len(A[0])):
                 A[q][w] = A[q][w] + (w+1)
                 
-        for q in range(len(B)):
+        for q in range(len(B)):       # SUMA A CADA UBICACION DE FORMA QUE EL VALOR SEA SU MISMO INDICE (i,j)
             B[q] = B[q]*(10*(q+1))
             for w in range(len(B[0])):
                 B[q][w] = B[q][w] + (w+1)
         
         for s in range(j):
-            A = A * 10
-            B = B * 10
-            
-            
-# COMENTAR PARA GENERAR TODAS MATRICES COMPLETAS CON UNOS
-
-#        A = A*(1+1*j)
-#        B = B*(1+1*j)
+            A = A * (-1)
+            B = B * (-1)
         
 ###########################################################################################3
                 

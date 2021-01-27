@@ -86,7 +86,8 @@ def CounterGenSysMult2(A,B): # A Y B MATRICES
         
         for row in range(n):
             for col in range(n):
-                C_w[row][col] = C_w[row][col] + (A_w[row][col] * B_w[row][col])
+                prod_aux_fixed = (A_w[row][col] * B_w[row][col])
+                C_w[row][col] = C_w[row][col] + prod_aux_fixed
                 
         print('\n i = ',i, '\n') 
 #        print('A_w :\n',A_w)
