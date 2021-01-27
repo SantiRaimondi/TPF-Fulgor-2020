@@ -48,8 +48,14 @@ def InputGenerator(rango, premult_A, postmult_B, NB, roundMode, saturateMode):
     
 ####### CUANTIZACION Y LOGUEO DE ENTRADAS EN ARCHIVOS DE TEXTO ######################
     for ptr in range(3):          # SE LOGUEAN CEROS Y UNOS AL COMIENZO DE LOS .txt DE LAS ENTRADAS
-        file0.write('%d\t%d\t%d\t%d\n'%(0,0,0,0))
-        file1.write('%d\t%d\t%d\t%d\n'%(0,0,0,0))
+        for x in range(N):
+            if(x < N-1):
+                file0.write('%d\t'%(0))
+                file1.write('%d\t'%(0))
+            else:
+                file0.write('%d\n'%(0))
+                file1.write('%d\n'%(0))
+                
         file2.write('%d\n'%(1))
     
     for col in range(len(premult_A_stream[0])):    #  SE RECORRE EL ARREGLO CASTEANDO A ENTERO PARA VERILOG Y
@@ -97,8 +103,13 @@ def InputGenerator(rango, premult_A, postmult_B, NB, roundMode, saturateMode):
 
             
     for ptr in range(30):        # FINALMENTE SE COMPLETAN CON CEROS LOS ARCHIVOS .txt
-        file0.write('%d\t%d\t%d\t%d\n'%(0,0,0,0))
-        file1.write('%d\t%d\t%d\t%d\n'%(0,0,0,0))
+        for x in range(N):
+            if(x < N-1):
+                file0.write('%d\t'%(0))
+                file1.write('%d\t'%(0))
+            else:
+                file0.write('%d\n'%(0))
+                file1.write('%d\n'%(0))
         file2.write('%d\n'%(0))
     
     file0.close()
