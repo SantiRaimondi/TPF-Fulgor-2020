@@ -85,9 +85,14 @@ def CounterGenSysMult2(A,B): # A Y B MATRICES
         B_w[0,:] = B[:,i]
         
         for row in range(n):
-            for col in range(n):
-                prod_aux_fixed = (A_w[row][col] * B_w[row][col])
-                C_w[row][col] = C_w[row][col] + prod_aux_fixed
+            for col in range(n):   
+#                prod_aux_fixed = fInt.DeFixedInt(2*NB-1,(2*NB-2), (A_w[row][col] * B_w[row][col]),'S',roundMode,saturateMode)  #S(16,14) ---> S(15,14)
+#                C_w_prev_fixed = fInt.DeFixedInt(,, C_w_fixed[row][col],'S',roundMode,saturateMode)
+#                C_w_next_fixed = fInt.DeFixedInt(,, (C_w_prev_fixed.fValue + prod_aux_fixed.fValue),'S',roundMode,saturateMode)
+                
+#                C_w_fixed[row][col] = C_w_next_fixed.fValue
+                
+                C_w[row][col] = C_w[row][col] + A_w[row][col] * B_w[row][col]
                 
         print('\n i = ',i, '\n') 
 #        print('A_w :\n',A_w)
@@ -96,6 +101,7 @@ def CounterGenSysMult2(A,B): # A Y B MATRICES
         print(counter_finish_list)
 
         print('C_w : \n',C_w)
+        print('C_w_fixed : \n',C_w_fixed)
     
     
     for p in range(N_Matrix_Mult):
