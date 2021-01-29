@@ -3,8 +3,10 @@ def InputGenerator(rango, premult_A, postmult_B, NB, roundMode, saturateMode):
     import numpy as np
     import _fixedInt as fInt
     
-    file0 = open("premult_A_stream.out","w")
-    file1 = open("postmult_B_stream.out","w")
+    file0_fixed = open("premult_A_stream_fixed.out","w")
+    file0_float = open("premult_A_stream_float.out","w")
+    file1_fixed = open("postmult_B_stream_fixed.out","w")
+    file1_float = open("postmult_B_stream_float.out","w")
     file2 = open("reset_stream.out","w")
 
     N = len(premult_A)
@@ -18,8 +20,8 @@ def InputGenerator(rango, premult_A, postmult_B, NB, roundMode, saturateMode):
     
 ########### NORMALIZACION #####################################################
     
-    premult_A = premult_A/rango
-    postmult_B = postmult_B/rango
+#    premult_A = premult_A/rango
+#    postmult_B = postmult_B/rango
     
 ########### DESPLAZAMIENTOS Y LATENCIA ##############################################
     
@@ -47,14 +49,19 @@ def InputGenerator(rango, premult_A, postmult_B, NB, roundMode, saturateMode):
     
     
 ####### CUANTIZACION Y LOGUEO DE ENTRADAS EN ARCHIVOS DE TEXTO ######################
+
     for ptr in range(3):          # SE LOGUEAN CEROS Y UNOS AL COMIENZO DE LOS .txt DE LAS ENTRADAS
         for x in range(N):
             if(x < N-1):
-                file0.write('%d\t'%(0))
-                file1.write('%d\t'%(0))
+                file0_fixed.write('%d\t'%(0))
+                file0_float.write('%d\t'%(0))
+                file1_fixed.write('%d\t'%(0))
+                file1_float.write('%d\t'%(0))
             else:
-                file0.write('%d\n'%(0))
-                file1.write('%d\n'%(0))
+                file0_fixed.write('%d\n'%(0))
+                file0_float.write('%d\n'%(0))
+                file1_fixed.write('%d\n'%(0))
+                file1_float.write('%d\n'%(0))
                 
         file2.write('%d\n'%(1))
     
@@ -66,21 +73,15 @@ def InputGenerator(rango, premult_A, postmult_B, NB, roundMode, saturateMode):
         for element in range(len(premult_A_stream)):
             
             if(element < len(premult_A_stream)-1):
-                file0.write('%d\t'%(a_fix[element].intvalue))                # PARA PUNTO FIJO
-                print('(premult_A_stream[:,col][element]) : ',a_fix[element].fValue)
-                print('type(premult_A_stream[:,col][element]) : ',type(a_fix[element].fValue))
-#                file0.write('%d\t'%(a_fix[element].fValue))    # PARA PUNTO FLOTANTE
+                file0_fixed.write('%d\t'%(a_fix[element].intvalue))                # PARA PUNTO FIJO
+                file0_float.write('%d\t'%(premult_A_stream[:,col][element]))    # PARA PUNTO FLOTANTE
             else:
-                file0.write('%d\n'%(a_fix[element].intvalue))                # PARA PUNTO FIJO
-#                file0.write('%d\n'%(a_fix[element].fValue))   # PARA PUNTO FLOTANTE
-                
-#            print('type(a_fix[element].intvalue) : \n',type(a_fix[element].intvalue))
-#            print('a_fix[element].intvalue :         ',a_fix[element].intvalue)
+                file0_fixed.write('%d\n'%(a_fix[element].intvalue))                # PARA PUNTO FIJO
+                file0_float.write('%d\n'%(premult_A_stream[:,col][element]))   # PARA PUNTO FLOTANTE
             
             premult_A_stream[:,col][element] = a_fix[element].fValue
             
         
-    
     for row in range(len(postmult_B_stream[0])):    #  SE RECORRE EL ARREGLO CASTEANDO A ENTERO PARA VERILOG Y
                                                     #  CASTEANDO A FLOAT PARA RETURN.
         b_fix = fInt.arrayFixedInt(NB,NB-1,postmult_B_stream[:,row],'S',roundMode,saturateMode) 
@@ -88,32 +89,35 @@ def InputGenerator(rango, premult_A, postmult_B, NB, roundMode, saturateMode):
         for element in range(len(postmult_B_stream)):
             
             if(element < len(postmult_B_stream)-1):
-                file1.write('%d\t'%(b_fix[element].intvalue))                # PARA PUNTO FIJO
-#                file1.write('%d\t'%(b_fix[element].fValue))  # PARA PUNTO FLOTANTE
+                file1_fixed.write('%d\t'%(b_fix[element].intvalue))                # PARA PUNTO FIJO
+                file1_float.write('%d\t'%(postmult_B_stream[:,row][element]))  # PARA PUNTO FLOTANTE
             else:
-                file1.write('%d\n'%(b_fix[element].intvalue))                # PARA PUNTO FIJO
-#                file1.write('%d\n'%(b_fix[element].fValue))  # PARA PUNTO FLOTANTE
+                file1_fixed.write('%d\n'%(b_fix[element].intvalue))                # PARA PUNTO FIJO
+                file1_float.write('%d\n'%(postmult_B_stream[:,row][element]))  # PARA PUNTO FLOTANTE
                 
             file2.write('%d\n'%(0))
             
-#            print('type(b_fix[element].intvalue) : \n',type(b_fix[element].intvalue))
-#            print('b_fix[element].intvalue :         ',b_fix[element].intvalue)
-
             postmult_B_stream[:,row][element] = b_fix[element].fValue
 
             
     for ptr in range(30):        # FINALMENTE SE COMPLETAN CON CEROS LOS ARCHIVOS .txt
         for x in range(N):
             if(x < N-1):
-                file0.write('%d\t'%(0))
-                file1.write('%d\t'%(0))
+                file0_fixed.write('%d\t'%(0))
+                file0_float.write('%d\t'%(0))
+                file1_fixed.write('%d\t'%(0))
+                file1_float.write('%d\t'%(0))
             else:
-                file0.write('%d\n'%(0))
-                file1.write('%d\n'%(0))
+                file0_fixed.write('%d\n'%(0))
+                file0_float.write('%d\n'%(0))
+                file1_fixed.write('%d\n'%(0))
+                file1_float.write('%d\n'%(0))
         file2.write('%d\n'%(0))
     
-    file0.close()
-    file1.close()
+    file0_fixed.close()
+    file0_float.close()
+    file1_fixed.close()
+    file1_float.close()
     file2.close()
             
 #####################################################################################
