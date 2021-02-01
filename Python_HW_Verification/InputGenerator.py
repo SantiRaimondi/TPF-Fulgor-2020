@@ -1,4 +1,4 @@
-def InputGenerator(rango, premult_A, postmult_B, NB, roundMode, saturateMode):
+def InputGenerator(rango, premult_A, postmult_B, NB, NB_F, roundMode, saturateMode):
     
     import numpy as np
     import _fixedInt as fInt
@@ -17,11 +17,6 @@ def InputGenerator(rango, premult_A, postmult_B, NB, roundMode, saturateMode):
     
     premult_A_stream   = np.zeros((N, (N_matrix_mult*M + M -1)), dtype = float)
     postmult_B_stream  = np.zeros(((N_matrix_mult*N + N -1, M)), dtype = float)
-    
-########### NORMALIZACION #####################################################
-    
-#    premult_A = premult_A/rango
-#    postmult_B = postmult_B/rango
     
 ########### DESPLAZAMIENTOS Y LATENCIA ##############################################
     
@@ -47,8 +42,7 @@ def InputGenerator(rango, premult_A, postmult_B, NB, roundMode, saturateMode):
     print('premult_A_stream:\n',premult_A_stream)
     print('postmult_B_stream:\n',postmult_B_stream)    
     
-    
-####### CUANTIZACION Y LOGUEO DE ENTRADAS EN ARCHIVOS DE TEXTO ######################
+####### CUANTIZACION, NORMALIZACION Y LOGUEO DE ENTRADAS EN ARCHIVOS DE TEXTO ######################
 
     for ptr in range(3):          # SE LOGUEAN CEROS Y UNOS AL COMIENZO DE LOS .txt DE LAS ENTRADAS
         for x in range(N):
@@ -67,9 +61,10 @@ def InputGenerator(rango, premult_A, postmult_B, NB, roundMode, saturateMode):
     
     for col in range(len(premult_A_stream[0])):    #  SE RECORRE EL ARREGLO CASTEANDO A ENTERO PARA VERILOG Y
                                                    #  CASTEANDO A FLOAT PARA RETURN.
-        a_fix = fInt.arrayFixedInt(NB,NB-1,premult_A_stream[:,col],'S',roundMode,saturateMode)
-#        print('row: \n', row)
-        #print('a_fix: \n', a_fix)
+        a_float_norm = premult_A_stream[:,col] / rango                         # SE NORMALIZA ENTRE -1 Y +0.99...
+        a_fix = fInt.arrayFixedInt(NB,NB_F,a_float_norm,'S',roundMode,saturateMode)
+        print('row: \n', col)
+        print('premult_A_stream[:,col]: \n', premult_A_stream[:,col])
         for element in range(len(premult_A_stream)):
             
             if(element < len(premult_A_stream)-1):
@@ -78,13 +73,17 @@ def InputGenerator(rango, premult_A, postmult_B, NB, roundMode, saturateMode):
             else:
                 file0_fixed.write('%d\n'%(a_fix[element].intvalue))                # PARA PUNTO FIJO
                 file0_float.write('%d\n'%(premult_A_stream[:,col][element]))   # PARA PUNTO FLOTANTE
+                
+            print('element: \n', element)
+            print('premult_A_stream[:,col][element]: \n', premult_A_stream[:,col][element])
             
             premult_A_stream[:,col][element] = a_fix[element].fValue
             
         
     for row in range(len(postmult_B_stream[0])):    #  SE RECORRE EL ARREGLO CASTEANDO A ENTERO PARA VERILOG Y
                                                     #  CASTEANDO A FLOAT PARA RETURN.
-        b_fix = fInt.arrayFixedInt(NB,NB-1,postmult_B_stream[:,row],'S',roundMode,saturateMode) 
+        b_float_norm = postmult_B_stream[:,row] / rango                         # SE NORMALIZA ENTRE -1 Y +0.99...
+        b_fix = fInt.arrayFixedInt(NB,NB_F,b_float_norm,'S',roundMode,saturateMode) 
         
         for element in range(len(postmult_B_stream)):
             

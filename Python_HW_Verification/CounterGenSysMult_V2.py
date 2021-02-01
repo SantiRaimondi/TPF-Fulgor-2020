@@ -1,9 +1,14 @@
 def CounterGenSysMult2(A,B,NB_OUT): # A Y B MATRICES
 
     import numpy as np
+    import math
+    import _fixedInt as fInt
     
     n = len(A)  ## Numero de filas en matriz A o de columnas en matriz B.
     print('LONGITUD DE A : ',n)
+    
+    NB_OUT_F = int(NB_OUT - 2 - math.ceil(math.log2(n)))
+    print('NB_OUT_F :',NB_OUT_F)
     
     N_clocks = (len(A[0]))  ## Ciclos necesarios para obtener el valor final de la celda P44
     count = 0
@@ -15,6 +20,7 @@ def CounterGenSysMult2(A,B,NB_OUT): # A Y B MATRICES
     A_w = np.zeros((n,n), dtype=float)  ## Variables de conexion horizontal entre celdas
     B_w = np.zeros((n,n), dtype=float)  ## Variables de conexion vertical entre celdas
     C_w = np.zeros((n,n), dtype=float)  ## Variable de sobreescritura de valores, luego de N_clocks es salida del sistema
+    C_w_fixed = np.zeros((n,n), dtype=float)
     
 ################### PARA GUARDAR RESULTADOS:    #############################################
     N_Matrix_Mult = (len(A[0]) - (2*n-1)) // n
@@ -41,7 +47,7 @@ def CounterGenSysMult2(A,B,NB_OUT): # A Y B MATRICES
                                 
                             result_list[current_mat-result_logged][row][col] = C_w[row][col]
                             
-                            # C_w_fixed[row][col] = fInt.DeFixedInt(NB_OUT,f(n), C_w[row][col],'S',roundMode,saturateMode)
+#                            C_w_fixed[row][col] = fInt.DeFixedInt(NB_OUT,NB_OUT_F, C_w[row][col],'S','trunc','wrap')
                             
                             C_w[row][col] = 0
         
@@ -98,7 +104,7 @@ def CounterGenSysMult2(A,B,NB_OUT): # A Y B MATRICES
         print(counter_finish_list)
 
         print('C_w : \n',C_w)
-#        print('C_w_fixed : \n',C_w_fixed)
+        print('C_w_fixed : \n',C_w_fixed)
     
     
     for p in range(N_Matrix_Mult):
