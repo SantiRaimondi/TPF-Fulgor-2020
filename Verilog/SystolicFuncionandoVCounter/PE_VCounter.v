@@ -3,7 +3,7 @@ module PE_VCounter
     parameter COUNTER_LIMIT = 0, // Limite de contador para  bloquear ejecucion una vez finalizada la operacion. El limite real es COUNTER_LIMIT + DIMENSION
     parameter DIMENSION = 4,
     parameter I_BITS = 8,
-    parameter O_BITS = (I_BITS*2) + $clog2(DIMENSION)
+    parameter O_BITS = (I_BITS*2) + $clog2(DIMENSION) //REVISAR CANTIDAD DE BITS DE SALIDA
 )
 
 //Bits de entrada se los considera que llegan normalizados. Para cuantificacion se considera bit de signo y un bit para 1 o 0, el resto decimales. 
