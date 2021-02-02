@@ -1,4 +1,4 @@
-module PE_VCounter_FP
+module PE_VCounter
 #(
     parameter COUNTER_LIMIT = 0, // Limite de contador para  bloquear ejecucion una vez finalizada la operacion. El limite real es COUNTER_LIMIT + DIMENSION
     parameter DIMENSION = 4,
@@ -7,12 +7,12 @@ module PE_VCounter_FP
 )
 
 //Bits de entrada se los considera que llegan normalizados. Para cuantificacion se considera bit de signo y un bit para 1 o 0, el resto decimales. 
-//Siempre quedaria S(I_BITS , I_BITS-2). Siendo I_BITS cualquier cant de bits de entrada.
+//Siempre quedaria S(I_BITS , I_BITS-1). Siendo I_BITS cualquier cant de bits de entrada.
 
 //Bits de salida. Para cuantificacion se considera un bit para el signo y $clog2(DIMENSION) bits para la parte entera, el resto decimales.
-//Quedaria S(O_BITS, O_BITS - $clog2(DIMENSION) - 1)
+//Quedaria S(O_BITS, O_BITS - $clog2(DIMENSION) - 1)   ##### REVISARRRRR ######
 
-//En los fraccionales para sumar al acumulador quedarian ((I_BITS - 2) * 2) debido a que primero se multiplican las entradas aumentando asi su cantidad de bits fraccionales.
+//En los fraccionales para sumar al acumulador quedarian ((I_BITS - 1) * 2) debido a que primero se multiplican las entradas aumentando asi su cantidad de bits fraccionales.
 (
     input i_clock,
     input i_reset,
@@ -33,14 +33,16 @@ reg [O_BITS-1:0] reg_c;
 reg reg_finish;
 reg [COUNTER_BITS-1 : 0] counter; //El tamano del contador depende del indice pasado como parametro, es decir la diagonal inversa en la cual esta ubicado el PE
 wire [(I_BITS*2)-1:0] prod;
-wire [O_BITS-1:0] final_prod;
+wire [(I_BITS-1)*2:0] final_prod;
 
 //Funcionamiento
 
 assign prod = i_a*i_b;
 //Los comentarios explican funcionamiento entre "," y ","
-assign final_prod = {{{$clog2(DIMENSION){prod[(I_BITS*2)-1]}},prod[((I_BITS - 2) * 2):0]},{(O_BITS - $clog2(DIMENSION) - 1)-(((I_BITS - 2) * 2)){1'b0}}};
-//                      / Replica el signo  /    / Toma el valor del bit entero y todos los decimales de la mult/       /Agrega los 0 necesarios para completar/
+                                                                                    //*************************************************************************
+assign final_prod = {prod[(I_BITS*2)-1] , prod[((I_BITS - 1) * 2)-1 :0]};  //               CAMBIO PARA ALINEAR LA COMA  1 BIT PARA SIGNO, RESTO FRACCIONALES
+//                 / Replica el signo  // Toma todos los decimales de la mult/
+                                                                                    //*************************************************************************
 always@(posedge i_clock )
 begin
     if(i_reset)
@@ -57,16 +59,10 @@ begin
             begin
                 reg_a <= i_a;
                 reg_b <= i_b;
-                //reg_c <= (i_a*i_b) + reg_c;
                 reg_c <= final_prod + reg_c; //Armo el producto del mismo tamano que el acumulador alineando la coma.
-                /*
-                Siempre el producto de a * b va a dar como resultado un numero menor o igual que 1, entonces se desaprovechan si hay mas de 2 bits para la parte entera.
-                Ej: X00X,XXXX  por lo tanto siempre deberiamos tomar los bits extremos de la parte entera quedandonos con el signo y con el valor de 1 o 0, omitiendo los
-                ceros intermedios.   BUSCAR FORMA DE ORDENARLO ASI
-                */
                 counter <= counter + 1;
             end
-        else
+        else //ACA DEBERIAMOS BLOQUEAR POR UN DETERMINADO TIEMPO PARA PODER EXTRAER EL DATO HACIA LA FIFO
             begin //para que funcione con mas matrices y no se autobloquee la celda
                 reg_a <= i_a;
                 reg_b <= i_b;
