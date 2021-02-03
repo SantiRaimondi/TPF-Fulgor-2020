@@ -1,4 +1,4 @@
-def CounterGenSysMult2(A,B,NB_OUT): # A Y B MATRICES
+def CounterGenSysMult2(A,B,rango,NB_OUT,NB_F): # A Y B MATRICES
 
     import numpy as np
     import math
@@ -7,8 +7,19 @@ def CounterGenSysMult2(A,B,NB_OUT): # A Y B MATRICES
     n = len(A)  ## Numero de filas en matriz A o de columnas en matriz B.
     print('LONGITUD DE A : ',n)
     
-    NB_OUT_F = int(NB_OUT - 2 - math.ceil(math.log2(n)))
+###############################################################################
+    
+    # PARAMETRIZACION AUTOMATICA DE LAS SALIDAS
+    
+#    NB_OUT_F = int(NB_OUT - 2 - math.ceil(math.log2(n))) 
+    
+    # CASO FULL RESOLUTION
+    
+    NB_OUT_F = NB_F * 2  # int(NB_OUT - 2 - math.ceil(math.log2(n)))
+    
     print('NB_OUT_F :',NB_OUT_F)
+    
+###############################################################################
     
     N_clocks = (len(A[0]))  ## Ciclos necesarios para obtener el valor final de la celda P44
     count = 0
@@ -109,4 +120,5 @@ def CounterGenSysMult2(A,B,NB_OUT): # A Y B MATRICES
     
     for p in range(N_Matrix_Mult):
         
-        print('\n Resultado matriz en la ubicacion : ',p,'\n',result_list[p])
+        print('\n Resultado NORMALIZADO matriz en la ubicacion : ',p,'\n \n',result_list[p])
+        print('\n Resultado DESNORMALIZADO matriz en la ubicacion : ',p,'\n \n',result_list[p] * rango)

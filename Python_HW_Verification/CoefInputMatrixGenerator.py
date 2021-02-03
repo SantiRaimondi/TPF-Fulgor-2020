@@ -68,16 +68,16 @@ def CoefInputMatrixGenerator(N,N_matrix_mult):
                 print('\n',A_aux[len(A)+r])
             
         for m in range(len(B)):
-            B_aux[m][:len(B[0])] = np.flip(B[m]) 
+            B_aux[m][len(B_aux[m])-len(B[m]):] = np.flip(B[m]) 
             B_aux[m] = np.flip(B_aux[m])
             print('B_aux[m] en m = : ',m)
             print('\n',B_aux[m])
-            
-        if(len(B) < len(B_aux)):
-            for t in range(len(B_aux)-len(B)):
-                B_aux[len(B)+t][:len(B_aux[0])] =  np.zeros((1,N), dtype=float)
-                print('B_aux[len(B)+t] en t = : ',t)
-                print('\n',B_aux[len(B)+t])
+
+#        if(len(B) < len(B_aux)):
+#            for t in range(len(B_aux)-len(B)):
+#                B_aux[len(B)+t][:len(B_aux[0])] =  np.zeros((1,N), dtype=float)
+#                print('B_aux[len(B)+t] en t = : ',t)
+#                print('\n',B_aux[len(B)+t])
                 
 #        A_aux = np.flip(A_aux)
         B_aux = np.flip(B_aux)
