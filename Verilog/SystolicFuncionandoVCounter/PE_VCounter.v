@@ -3,7 +3,7 @@ module PE_VCounter
     parameter COUNTER_LIMIT = 0, // Limite de contador para  bloquear ejecucion una vez finalizada la operacion. El limite real es COUNTER_LIMIT + DIMENSION
     parameter DIMENSION = 4,
     parameter I_BITS = 8,
-    parameter O_BITS = (I_BITS*2) + $clog2(DIMENSION) //REVISAR CANTIDAD DE BITS DE SALIDA
+    parameter O_BITS = (I_BITS*2) + $clog2(DIMENSION)
 )
 
 //Bits de entrada se los considera que llegan normalizados. Para cuantificacion se considera bit de signo y un bit para 1 o 0, el resto decimales. 
@@ -27,13 +27,15 @@ module PE_VCounter
 localparam COUNTER_BITS = $clog2(DIMENSION + COUNTER_LIMIT + 1);
 //Variables
 
-reg [I_BITS-1:0] reg_a;
-reg [I_BITS-1:0] reg_b;
-reg [O_BITS-1:0] reg_c;
+reg signed [I_BITS-1:0] reg_a;                   //*************************************************************************
+                                                //CONSULTAR QUE REGISTROS Y QUE ENTRADAS LLEVAN SIGNED
+                                                //*************************************************************************
+reg signed [I_BITS-1:0] reg_b;
+reg signed [O_BITS-1:0] reg_c;
 reg reg_finish;
 reg [COUNTER_BITS-1 : 0] counter; //El tamano del contador depende del indice pasado como parametro, es decir la diagonal inversa en la cual esta ubicado el PE
-wire [(I_BITS*2)-1:0] prod;
-wire [(I_BITS-1)*2:0] final_prod;
+wire signed [(I_BITS*2)-1:0] prod;
+wire signed [(I_BITS-1)*2:0] final_prod;
 
 //Funcionamiento
 
@@ -59,7 +61,7 @@ begin
             begin
                 reg_a <= i_a;
                 reg_b <= i_b;
-                reg_c <= final_prod + reg_c; //Armo el producto del mismo tamano que el acumulador alineando la coma.
+                reg_c <= prod + reg_c; //SI QUIERO USAR FULL RESOLUTION DEJO prod, SI QUIERO OPTIMIZAR USO final_prod
                 counter <= counter + 1;
             end
         else //ACA DEBERIAMOS BLOQUEAR POR UN DETERMINADO TIEMPO PARA PODER EXTRAER EL DATO HACIA LA FIFO
