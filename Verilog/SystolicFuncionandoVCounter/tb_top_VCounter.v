@@ -94,8 +94,8 @@ module tb_top_VCounter();
       //i_a <= {a_tmp[3],a_tmp[2],a_tmp[1],a_tmp[0]};
       //i_b <= {b_tmp[3],b_tmp[2],b_tmp[1],b_tmp[0]};
       for ( q=0 ;q<DIMENSION ; q=q+1 ) begin
-         i_a[((I_BITS-1)+(I_BITS*q))-:I_BITS] <= {a_tmp[DIMENSION-1-q]};
-         i_b[((I_BITS-1)+(I_BITS*q))-:I_BITS] <= {b_tmp[DIMENSION-1-q]};
+         i_a[((I_BITS-1)+(I_BITS*q))-:I_BITS] <= {a_tmp[DIMENSION-(DIMENSION-q)]};
+         i_b[((I_BITS-1)+(I_BITS*q))-:I_BITS] <= {b_tmp[DIMENSION-(DIMENSION-q)]};
          //*VM* no chequeado/no necesario
          //i_c[((I_BITS-1)+(I_BITS*q))-:I_BITS] <= {b_tmp[DIMENSION-1-q]}; 
       end 
