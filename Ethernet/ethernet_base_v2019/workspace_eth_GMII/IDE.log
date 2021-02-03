@@ -372,3 +372,2151 @@ con
 18:10:38 INFO  : Successfully done setting XSCT server connection channel  
 18:10:38 INFO  : Successfully done query RDI_DATADIR 
 18:10:38 INFO  : Successfully done setting workspace for the tool. 
+19:25:11 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\temp_xsdb_launch_script.tcl
+19:25:21 INFO  : XSCT server has started successfully.
+19:25:21 INFO  : Registering command handlers for Vitis TCF services
+19:25:22 INFO  : plnx-install-location is set to ''
+19:25:22 INFO  : Successfully done setting XSCT server connection channel  
+19:25:22 INFO  : Successfully done query RDI_DATADIR 
+19:25:22 INFO  : Successfully done setting workspace for the tool. 
+19:26:33 INFO  : Successfully done sdx_reload_mss "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth1_wrapper/microblaze_0/standalone_domain/bsp/system.mss"
+19:29:37 INFO  : Example project xaxidma_example_simple_intr_1 has been created successfully.
+19:46:12 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\temp_xsdb_launch_script.tcl
+19:46:20 INFO  : Registering command handlers for Vitis TCF services
+19:46:21 INFO  : XSCT server has started successfully.
+19:46:28 INFO  : Successfully done setting XSCT server connection channel  
+19:46:28 INFO  : plnx-install-location is set to ''
+19:46:28 INFO  : Successfully done setting workspace for the tool. 
+19:46:28 INFO  : Successfully done query RDI_DATADIR 
+19:46:29 INFO  : Successfully done sdx_reload_mss "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth1_wrapper/microblaze_0/standalone_domain/bsp/system.mss"
+19:48:18 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+19:49:16 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+19:49:35 INFO  : Device 'Digilent JTAG-SMT1 210203367268A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+19:50:25 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+19:50:43 INFO  : Device 'Digilent JTAG-SMT1 210203367268A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+19:51:36 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+19:51:54 INFO  : Device 'Digilent JTAG-SMT1 210203367268A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+18:30:33 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\temp_xsdb_launch_script.tcl
+18:30:41 INFO  : Registering command handlers for Vitis TCF services
+18:30:43 INFO  : XSCT server has started successfully.
+18:30:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth1_wrapper/hw/eth1_wrapper.xsa is already opened
+
+18:30:52 INFO  : plnx-install-location is set to ''
+18:30:52 INFO  : Successfully done setting XSCT server connection channel  
+18:30:52 INFO  : Successfully done query RDI_DATADIR 
+18:30:52 INFO  : Successfully done setting workspace for the tool. 
+18:30:53 INFO  : Successfully done sdx_reload_mss "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth1_wrapper/microblaze_0/standalone_domain/bsp/system.mss"
+18:31:12 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+18:32:32 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+18:38:34 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+18:40:32 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+18:42:38 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+18:43:34 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+19:04:44 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+19:05:06 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+19:06:44 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+19:07:02 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+19:10:56 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+19:11:44 INFO  : Bit file 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit' is generated.
+19:11:44 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+19:11:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+19:12:11 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+19:12:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:13:00 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+19:14:54 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+19:14:54 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+19:14:54 INFO  : 'jtag frequency' command is executed.
+19:14:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+19:15:21 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+19:15:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:15:22 INFO  : Context for processor 'microblaze_0' is selected.
+19:15:22 INFO  : System reset is completed.
+19:15:25 INFO  : 'after 3000' command is executed.
+19:15:25 INFO  : Context for processor 'microblaze_0' is selected.
+19:15:26 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+19:15:26 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+19:15:28 INFO  : Memory regions updated for context PA
+19:15:28 INFO  : Memory regions updated for context PA
+19:15:28 INFO  : Context for processor 'microblaze_0' is selected.
+19:15:29 INFO  : 'con' command is executed.
+19:15:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+19:15:29 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+19:16:55 INFO  : Disconnected from the channel tcfchan#4.
+19:17:34 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+19:17:34 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+19:17:35 INFO  : 'jtag frequency' command is executed.
+19:17:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+19:18:01 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+19:18:02 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:18:02 INFO  : Context for processor 'microblaze_0' is selected.
+19:18:02 INFO  : System reset is completed.
+19:18:05 INFO  : 'after 3000' command is executed.
+19:18:05 INFO  : Context for processor 'microblaze_0' is selected.
+19:18:06 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+19:18:06 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+19:18:08 INFO  : Memory regions updated for context PA
+19:18:08 INFO  : Memory regions updated for context PA
+19:18:08 INFO  : Context for processor 'microblaze_0' is selected.
+19:18:08 INFO  : 'con' command is executed.
+19:18:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+19:18:08 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+19:30:40 INFO  : Disconnected from the channel tcfchan#5.
+19:30:46 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+19:31:01 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+19:31:01 INFO  : 'jtag frequency' command is executed.
+19:31:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+19:31:27 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+19:31:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:31:28 INFO  : Context for processor 'microblaze_0' is selected.
+19:31:28 INFO  : System reset is completed.
+19:31:31 INFO  : 'after 3000' command is executed.
+19:31:31 INFO  : Context for processor 'microblaze_0' is selected.
+19:31:32 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+19:31:32 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+19:31:33 INFO  : Memory regions updated for context PA
+19:31:33 INFO  : Memory regions updated for context PA
+19:31:34 INFO  : Context for processor 'microblaze_0' is selected.
+19:31:34 INFO  : 'con' command is executed.
+19:31:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+19:31:34 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+19:49:19 INFO  : Disconnected from the channel tcfchan#6.
+19:49:22 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+19:49:22 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+19:49:22 INFO  : 'jtag frequency' command is executed.
+19:49:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+19:49:49 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+19:49:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:49:50 INFO  : Context for processor 'microblaze_0' is selected.
+19:49:50 INFO  : System reset is completed.
+19:49:53 INFO  : 'after 3000' command is executed.
+19:49:53 INFO  : Context for processor 'microblaze_0' is selected.
+19:49:54 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+19:49:54 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+19:49:56 INFO  : Memory regions updated for context PA
+19:49:56 INFO  : Memory regions updated for context PA
+19:49:57 INFO  : Context for processor 'microblaze_0' is selected.
+19:49:57 INFO  : 'con' command is executed.
+19:49:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+19:49:57 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+19:51:42 INFO  : Disconnected from the channel tcfchan#7.
+19:51:42 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+19:51:42 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+19:51:42 INFO  : 'jtag frequency' command is executed.
+19:51:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+19:52:10 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+19:52:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:52:10 INFO  : Context for processor 'microblaze_0' is selected.
+19:52:10 INFO  : System reset is completed.
+19:52:13 INFO  : 'after 3000' command is executed.
+19:52:13 INFO  : Context for processor 'microblaze_0' is selected.
+19:52:15 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+19:52:15 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+19:52:16 INFO  : Memory regions updated for context PA
+19:52:16 INFO  : Memory regions updated for context PA
+19:52:18 INFO  : Context for processor 'microblaze_0' is selected.
+19:52:19 INFO  : 'con' command is executed.
+19:52:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+19:52:19 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+19:57:19 INFO  : Disconnected from the channel tcfchan#8.
+19:57:19 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+19:57:20 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+19:57:20 INFO  : 'jtag frequency' command is executed.
+19:57:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+19:57:47 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+19:57:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:57:47 INFO  : Context for processor 'microblaze_0' is selected.
+19:57:47 INFO  : System reset is completed.
+19:57:50 INFO  : 'after 3000' command is executed.
+19:57:51 INFO  : Context for processor 'microblaze_0' is selected.
+19:57:52 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+19:57:52 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+19:57:53 INFO  : Memory regions updated for context PA
+19:57:53 INFO  : Memory regions updated for context PA
+19:57:54 INFO  : Context for processor 'microblaze_0' is selected.
+19:57:55 INFO  : 'con' command is executed.
+19:57:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+19:57:55 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+20:01:25 INFO  : Disconnected from the channel tcfchan#9.
+20:01:36 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+20:01:36 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+20:01:36 INFO  : 'jtag frequency' command is executed.
+20:01:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+20:02:03 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+20:02:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:02:04 INFO  : Context for processor 'microblaze_0' is selected.
+20:02:04 INFO  : System reset is completed.
+20:02:07 INFO  : 'after 3000' command is executed.
+20:02:07 INFO  : Context for processor 'microblaze_0' is selected.
+20:02:08 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+20:02:08 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+20:02:10 INFO  : Memory regions updated for context PA
+20:02:10 INFO  : Memory regions updated for context PA
+20:02:11 INFO  : Context for processor 'microblaze_0' is selected.
+20:02:11 INFO  : 'con' command is executed.
+20:02:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+20:02:11 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+20:05:15 INFO  : Disconnected from the channel tcfchan#10.
+20:05:15 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+20:05:16 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+20:05:16 INFO  : 'jtag frequency' command is executed.
+20:05:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+20:05:43 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+20:05:43 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:05:43 INFO  : Context for processor 'microblaze_0' is selected.
+20:05:43 INFO  : System reset is completed.
+20:05:46 INFO  : 'after 3000' command is executed.
+20:05:47 INFO  : Context for processor 'microblaze_0' is selected.
+20:05:48 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+20:05:48 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+20:05:49 INFO  : Memory regions updated for context PA
+20:05:49 INFO  : Memory regions updated for context PA
+20:05:51 INFO  : Context for processor 'microblaze_0' is selected.
+20:05:51 INFO  : 'con' command is executed.
+20:05:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+20:05:51 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+20:18:35 INFO  : Disconnected from the channel tcfchan#11.
+20:18:35 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+20:18:35 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+20:18:35 INFO  : 'jtag frequency' command is executed.
+20:18:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+20:19:02 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+20:19:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:19:03 INFO  : Context for processor 'microblaze_0' is selected.
+20:19:03 INFO  : System reset is completed.
+20:19:06 INFO  : 'after 3000' command is executed.
+20:19:06 INFO  : Context for processor 'microblaze_0' is selected.
+20:19:08 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+20:19:08 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+20:19:09 INFO  : Memory regions updated for context PA
+20:19:09 INFO  : Memory regions updated for context PA
+20:19:10 INFO  : Context for processor 'microblaze_0' is selected.
+20:19:10 INFO  : 'con' command is executed.
+20:19:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+20:19:10 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+20:29:01 INFO  : Disconnected from the channel tcfchan#12.
+20:29:04 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+20:29:05 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+20:29:05 INFO  : 'jtag frequency' command is executed.
+20:29:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+20:29:32 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+20:29:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:29:32 INFO  : Context for processor 'microblaze_0' is selected.
+20:29:32 INFO  : System reset is completed.
+20:29:35 INFO  : 'after 3000' command is executed.
+20:29:36 INFO  : Context for processor 'microblaze_0' is selected.
+20:35:35 ERROR : 'dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is cancelled.
+20:35:35 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+20:35:35 ERROR : 'dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is cancelled.
+20:39:26 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:39:48 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+20:39:48 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+20:39:48 INFO  : 'jtag frequency' command is executed.
+20:39:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+20:40:15 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+20:40:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:40:15 INFO  : Context for processor 'microblaze_0' is selected.
+20:40:15 INFO  : System reset is completed.
+20:40:18 INFO  : 'after 3000' command is executed.
+20:40:19 INFO  : Context for processor 'microblaze_0' is selected.
+20:40:20 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+20:40:20 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+20:40:21 INFO  : Memory regions updated for context PA
+20:40:21 INFO  : Memory regions updated for context PA
+20:40:21 INFO  : Context for processor 'microblaze_0' is selected.
+20:40:22 INFO  : 'con' command is executed.
+20:40:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+20:40:22 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+20:43:09 INFO  : Disconnected from the channel tcfchan#13.
+20:43:48 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+20:49:00 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+20:49:00 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+20:49:00 INFO  : 'jtag frequency' command is executed.
+20:49:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+20:49:27 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+20:49:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:49:27 INFO  : Context for processor 'microblaze_0' is selected.
+20:49:27 INFO  : System reset is completed.
+20:49:30 INFO  : 'after 3000' command is executed.
+20:49:31 INFO  : Context for processor 'microblaze_0' is selected.
+20:49:32 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+20:49:32 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+20:49:33 INFO  : Memory regions updated for context PA
+20:49:33 INFO  : Memory regions updated for context PA
+20:49:33 INFO  : Context for processor 'microblaze_0' is selected.
+20:49:34 INFO  : 'con' command is executed.
+20:49:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+20:49:34 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+20:55:11 INFO  : Disconnected from the channel tcfchan#15.
+12:49:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\temp_xsdb_launch_script.tcl
+12:49:44 INFO  : XSCT server has started successfully.
+12:49:44 INFO  : Registering command handlers for Vitis TCF services
+12:49:48 INFO  : plnx-install-location is set to ''
+12:49:48 INFO  : Successfully done setting XSCT server connection channel  
+12:49:48 INFO  : Successfully done query RDI_DATADIR 
+12:49:48 INFO  : Successfully done setting workspace for the tool. 
+13:01:38 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+13:02:45 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+13:03:36 INFO  : Bit file 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit' is generated.
+13:03:36 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+13:03:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+13:04:03 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+13:05:15 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+13:05:16 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+13:05:16 INFO  : 'jtag frequency' command is executed.
+13:05:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+13:05:18 ERROR : 'fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit' is cancelled.
+13:05:18 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: 'fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit' is cancelled.
+13:05:18 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+----------------End of Script----------------
+
+13:05:18 ERROR : 'fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit' is cancelled.
+13:05:54 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+13:06:03 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+13:06:03 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+13:06:03 INFO  : 'jtag frequency' command is executed.
+13:06:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+13:06:30 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+13:06:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:06:30 INFO  : Context for processor 'microblaze_0' is selected.
+13:06:30 INFO  : System reset is completed.
+13:06:33 INFO  : 'after 3000' command is executed.
+13:06:34 INFO  : Context for processor 'microblaze_0' is selected.
+13:06:35 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+13:06:35 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+13:06:36 INFO  : Memory regions updated for context PA
+13:06:36 INFO  : Memory regions updated for context PA
+13:06:36 INFO  : Context for processor 'microblaze_0' is selected.
+13:06:36 INFO  : 'con' command is executed.
+13:06:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+13:06:36 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+14:42:32 INFO  : Disconnected from the channel tcfchan#2.
+14:42:37 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+14:42:37 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+14:42:37 INFO  : 'jtag frequency' command is executed.
+14:42:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+14:43:05 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+14:43:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:43:05 INFO  : Context for processor 'microblaze_0' is selected.
+14:43:06 INFO  : System reset is completed.
+14:43:09 INFO  : 'after 3000' command is executed.
+14:43:09 INFO  : Context for processor 'microblaze_0' is selected.
+14:43:10 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+14:43:10 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+14:43:11 INFO  : Memory regions updated for context PA
+14:43:11 INFO  : Memory regions updated for context PA
+14:43:11 INFO  : Context for processor 'microblaze_0' is selected.
+14:43:12 INFO  : 'con' command is executed.
+14:43:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+14:43:12 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+15:05:11 INFO  : Disconnected from the channel tcfchan#3.
+16:56:33 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+16:58:13 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+16:58:32 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+16:58:38 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+16:58:56 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+17:01:16 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:04:18 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:04:18 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:04:18 INFO  : 'jtag frequency' command is executed.
+17:04:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:04:46 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:04:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:04:46 INFO  : Context for processor 'microblaze_0' is selected.
+17:04:46 INFO  : System reset is completed.
+17:04:49 INFO  : 'after 3000' command is executed.
+17:04:49 INFO  : Context for processor 'microblaze_0' is selected.
+17:04:50 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+17:04:50 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+17:04:52 INFO  : Memory regions updated for context PA
+17:04:52 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:04:52 INFO  : Context for processor 'microblaze_0' is selected.
+17:04:52 INFO  : 'con' command is executed.
+17:04:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+17:04:52 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+17:07:01 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:08:29 INFO  : Disconnected from the channel tcfchan#6.
+17:08:41 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:08:41 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:08:41 INFO  : 'jtag frequency' command is executed.
+17:08:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:09:09 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:09:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:09:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:09:10 INFO  : System reset is completed.
+17:09:13 INFO  : 'after 3000' command is executed.
+17:09:13 INFO  : Context for processor 'microblaze_0' is selected.
+17:09:14 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+17:09:14 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+17:09:15 INFO  : Memory regions updated for context PA
+17:09:15 INFO  : Memory regions updated for context PA
+17:09:15 INFO  : Context for processor 'microblaze_0' is selected.
+17:09:15 INFO  : 'con' command is executed.
+17:09:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+17:09:15 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+17:10:09 INFO  : Disconnected from the channel tcfchan#7.
+17:10:19 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:10:19 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:10:19 INFO  : 'jtag frequency' command is executed.
+17:10:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:10:46 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:10:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:10:47 INFO  : Context for processor 'microblaze_0' is selected.
+17:10:47 INFO  : System reset is completed.
+17:10:50 INFO  : 'after 3000' command is executed.
+17:10:50 INFO  : Context for processor 'microblaze_0' is selected.
+17:10:51 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+17:10:51 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+17:10:52 INFO  : Memory regions updated for context PA
+17:10:52 INFO  : Memory regions updated for context PA
+17:10:53 INFO  : Context for processor 'microblaze_0' is selected.
+17:10:53 INFO  : 'con' command is executed.
+17:10:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+17:10:53 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+17:11:35 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:12:27 INFO  : Bit file 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit' is generated.
+17:12:27 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:12:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:12:54 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:13:11 INFO  : Disconnected from the channel tcfchan#8.
+17:13:11 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:13:11 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:13:11 INFO  : 'jtag frequency' command is executed.
+17:13:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:13:39 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:13:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:13:39 INFO  : Context for processor 'microblaze_0' is selected.
+17:13:39 INFO  : System reset is completed.
+17:13:43 INFO  : 'after 3000' command is executed.
+17:13:43 INFO  : Context for processor 'microblaze_0' is selected.
+17:13:44 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+17:13:44 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+17:13:45 INFO  : Memory regions updated for context PA
+17:13:45 INFO  : Memory regions updated for context PA
+17:13:45 INFO  : Context for processor 'microblaze_0' is selected.
+17:13:45 INFO  : 'con' command is executed.
+17:13:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+17:13:45 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+17:14:32 WARN  : channel "tcfchan#9" closed
+17:17:45 ERROR : Failed to redirect connection to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+17:17:45 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+----------------End of Script----------------
+
+17:17:45 ERROR : Failed to redirect connection to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+17:18:23 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+17:19:43 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+17:20:33 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+17:20:33 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:20:52 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:21:07 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:21:08 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:21:08 INFO  : 'jtag frequency' command is executed.
+17:21:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:21:36 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:21:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:21:37 INFO  : Context for processor 'microblaze_0' is selected.
+17:21:37 INFO  : System reset is completed.
+17:21:40 INFO  : 'after 3000' command is executed.
+17:21:40 INFO  : Context for processor 'microblaze_0' is selected.
+17:21:41 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+17:21:41 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+17:21:42 INFO  : Memory regions updated for context PA
+17:21:42 INFO  : Memory regions updated for context PA
+17:21:43 INFO  : Context for processor 'microblaze_0' is selected.
+17:21:44 INFO  : 'con' command is executed.
+17:21:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+17:21:44 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+17:22:11 INFO  : Disconnected from the channel tcfchan#13.
+17:23:21 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\temp_xsdb_launch_script.tcl
+17:23:30 INFO  : XSCT server has started successfully.
+17:23:30 INFO  : plnx-install-location is set to ''
+17:23:30 INFO  : Successfully done setting XSCT server connection channel  
+17:23:31 INFO  : Successfully done setting workspace for the tool. 
+17:23:32 INFO  : Registering command handlers for Vitis TCF services
+17:23:34 INFO  : Successfully done query RDI_DATADIR 
+17:23:46 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:23:55 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:23:55 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:23:55 INFO  : 'jtag frequency' command is executed.
+17:23:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:24:23 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:24:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:24:23 INFO  : Context for processor 'microblaze_0' is selected.
+17:24:23 INFO  : System reset is completed.
+17:24:26 INFO  : 'after 3000' command is executed.
+17:24:27 INFO  : Context for processor 'microblaze_0' is selected.
+17:24:28 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+17:24:28 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+17:24:29 INFO  : Memory regions updated for context PA
+17:24:29 INFO  : Memory regions updated for context PA
+17:24:29 INFO  : Context for processor 'microblaze_0' is selected.
+17:24:30 INFO  : 'con' command is executed.
+17:24:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+17:24:30 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+17:25:57 INFO  : Bit file 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit' is generated.
+17:25:57 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:25:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:26:25 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:27:03 INFO  : Disconnected from the channel tcfchan#2.
+17:27:03 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:27:03 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:27:03 INFO  : 'jtag frequency' command is executed.
+17:27:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:27:31 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:27:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:27:32 INFO  : Context for processor 'microblaze_0' is selected.
+17:27:32 INFO  : System reset is completed.
+17:27:35 INFO  : 'after 3000' command is executed.
+17:27:35 INFO  : Context for processor 'microblaze_0' is selected.
+17:27:36 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+17:27:36 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+17:27:37 INFO  : Memory regions updated for context PA
+17:27:37 INFO  : Memory regions updated for context PA
+17:27:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:27:38 INFO  : 'con' command is executed.
+17:27:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+17:27:38 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+17:27:58 WARN  : channel "tcfchan#3" closed
+17:30:16 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:30:24 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:30:25 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:30:25 INFO  : 'jtag frequency' command is executed.
+17:30:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:30:52 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:30:53 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:30:53 INFO  : Context for processor 'microblaze_0' is selected.
+17:30:53 INFO  : System reset is completed.
+17:30:56 INFO  : 'after 3000' command is executed.
+17:30:56 INFO  : Context for processor 'microblaze_0' is selected.
+17:30:57 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+17:30:57 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+17:30:58 INFO  : Memory regions updated for context PA
+17:30:58 INFO  : Memory regions updated for context PA
+17:30:59 INFO  : Context for processor 'microblaze_0' is selected.
+17:30:59 INFO  : 'con' command is executed.
+17:30:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+17:30:59 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+17:32:48 INFO  : Disconnected from the channel tcfchan#5.
+17:34:22 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:34:46 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:34:47 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:34:47 INFO  : 'jtag frequency' command is executed.
+17:34:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:35:15 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:35:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:35:16 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:16 INFO  : System reset is completed.
+17:35:19 INFO  : 'after 3000' command is executed.
+17:35:19 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:20 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+17:35:20 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+17:35:21 INFO  : Memory regions updated for context PA
+17:35:21 INFO  : Memory regions updated for context PA
+17:35:22 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:22 INFO  : 'con' command is executed.
+17:35:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+17:35:22 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+17:36:33 INFO  : Disconnected from the channel tcfchan#7.
+17:37:29 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+17:37:55 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:38:44 INFO  : Bit file 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit' is generated.
+17:38:44 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:38:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:39:12 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:39:42 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:39:42 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:39:43 INFO  : 'jtag frequency' command is executed.
+17:39:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:40:12 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:40:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:40:12 INFO  : Context for processor 'microblaze_0' is selected.
+17:40:12 INFO  : System reset is completed.
+17:40:15 INFO  : 'after 3000' command is executed.
+17:40:15 INFO  : Context for processor 'microblaze_0' is selected.
+17:40:17 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+17:40:17 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+17:40:18 INFO  : Memory regions updated for context PA
+17:40:18 INFO  : Memory regions updated for context PA
+17:40:19 INFO  : Context for processor 'microblaze_0' is selected.
+17:40:20 INFO  : 'con' command is executed.
+17:40:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+17:40:20 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+17:41:46 INFO  : Disconnected from the channel tcfchan#9.
+17:41:52 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:41:52 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:41:52 INFO  : 'jtag frequency' command is executed.
+17:41:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:42:21 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:42:21 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:42:22 INFO  : Context for processor 'microblaze_0' is selected.
+17:42:22 INFO  : System reset is completed.
+17:42:25 INFO  : 'after 3000' command is executed.
+17:42:25 INFO  : Context for processor 'microblaze_0' is selected.
+17:42:26 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+17:42:26 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+17:42:27 INFO  : Memory regions updated for context PA
+17:42:27 INFO  : Memory regions updated for context PA
+17:42:28 INFO  : Context for processor 'microblaze_0' is selected.
+17:42:29 INFO  : 'con' command is executed.
+17:42:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+17:42:29 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+17:53:35 INFO  : Disconnected from the channel tcfchan#10.
+17:53:35 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:53:35 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:53:35 INFO  : 'jtag frequency' command is executed.
+17:53:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:54:04 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+17:54:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:54:04 INFO  : Context for processor 'microblaze_0' is selected.
+17:54:05 INFO  : System reset is completed.
+17:54:08 INFO  : 'after 3000' command is executed.
+17:54:08 INFO  : Context for processor 'microblaze_0' is selected.
+17:54:09 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+17:54:09 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+17:54:10 INFO  : Memory regions updated for context PA
+17:54:10 INFO  : Memory regions updated for context PA
+17:54:11 INFO  : Context for processor 'microblaze_0' is selected.
+17:54:11 INFO  : 'con' command is executed.
+17:54:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+17:54:11 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+18:03:36 INFO  : Disconnected from the channel tcfchan#11.
+18:03:36 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+18:03:36 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+18:03:36 INFO  : 'jtag frequency' command is executed.
+18:03:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+18:04:04 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+18:04:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:04:05 INFO  : Context for processor 'microblaze_0' is selected.
+18:04:05 INFO  : System reset is completed.
+18:04:08 INFO  : 'after 3000' command is executed.
+18:04:08 INFO  : Context for processor 'microblaze_0' is selected.
+18:04:09 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+18:04:09 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+18:04:11 INFO  : Memory regions updated for context PA
+18:04:11 INFO  : Memory regions updated for context PA
+18:04:11 INFO  : Context for processor 'microblaze_0' is selected.
+18:04:12 INFO  : 'con' command is executed.
+18:04:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+18:04:12 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+18:17:41 INFO  : Disconnected from the channel tcfchan#12.
+18:17:41 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+18:17:42 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+18:17:42 INFO  : 'jtag frequency' command is executed.
+18:17:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+18:18:10 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+18:18:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:18:10 INFO  : Context for processor 'microblaze_0' is selected.
+18:18:10 INFO  : System reset is completed.
+18:18:13 INFO  : 'after 3000' command is executed.
+18:18:14 INFO  : Context for processor 'microblaze_0' is selected.
+18:18:15 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+18:18:15 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+18:18:16 INFO  : Memory regions updated for context PA
+18:18:16 INFO  : Memory regions updated for context PA
+18:18:16 INFO  : Context for processor 'microblaze_0' is selected.
+18:18:17 INFO  : 'con' command is executed.
+18:18:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+18:18:17 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+19:19:38 INFO  : Successfully done sdx_reload_mss "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth1_wrapper/microblaze_0/standalone_domain/bsp/system.mss"
+19:20:08 INFO  : (SwPlaform) Successfully done setParamInSpec 
+19:20:08 INFO  : Successfully done sdx_reload_mss "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth1_wrapper/microblaze_0/standalone_domain/bsp/system.mss"
+19:20:08 INFO  : No changes in MSS file content so sources will not be generated.
+19:44:33 INFO  : Disconnected from the channel tcfchan#13.
+19:44:34 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+19:44:35 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+19:44:35 INFO  : 'jtag frequency' command is executed.
+19:44:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+19:45:03 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+19:45:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:45:03 INFO  : Context for processor 'microblaze_0' is selected.
+19:45:03 INFO  : System reset is completed.
+19:45:06 INFO  : 'after 3000' command is executed.
+19:45:06 INFO  : Context for processor 'microblaze_0' is selected.
+19:45:08 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+19:45:08 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+19:45:09 INFO  : Memory regions updated for context PA
+19:45:09 INFO  : Memory regions updated for context PA
+19:45:10 INFO  : Context for processor 'microblaze_0' is selected.
+19:45:10 INFO  : 'con' command is executed.
+19:45:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+19:45:10 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+20:02:14 INFO  : Disconnected from the channel tcfchan#14.
+20:02:18 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+20:02:18 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+20:02:19 INFO  : 'jtag frequency' command is executed.
+20:02:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+20:02:46 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+20:02:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:02:47 INFO  : Context for processor 'microblaze_0' is selected.
+20:02:47 INFO  : System reset is completed.
+20:02:50 INFO  : 'after 3000' command is executed.
+20:02:50 INFO  : Context for processor 'microblaze_0' is selected.
+20:02:51 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+20:02:51 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+20:02:53 INFO  : Memory regions updated for context PA
+20:02:53 INFO  : Memory regions updated for context PA
+20:02:53 INFO  : Context for processor 'microblaze_0' is selected.
+20:02:54 INFO  : 'con' command is executed.
+20:02:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+20:02:54 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+20:22:26 INFO  : Disconnected from the channel tcfchan#15.
+20:42:34 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:42:52 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+20:43:19 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:43:37 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+20:44:27 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:44:45 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+20:45:23 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:45:41 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+20:47:32 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\temp_xsdb_launch_script.tcl
+20:47:46 INFO  : XSCT server has started successfully.
+20:47:46 INFO  : Successfully done setting XSCT server connection channel  
+20:47:46 INFO  : plnx-install-location is set to ''
+20:47:46 INFO  : Successfully done setting workspace for the tool. 
+20:47:46 INFO  : Registering command handlers for Vitis TCF services
+20:47:48 INFO  : Successfully done query RDI_DATADIR 
+20:48:00 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:48:19 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+20:48:35 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:48:50 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:49:08 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+20:49:22 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+20:49:34 ERROR : target list is empty
+20:49:34 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+----------------End of Script----------------
+
+20:49:34 ERROR : target list is empty
+20:49:54 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+20:52:31 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+20:52:50 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+20:53:08 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+20:53:18 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+20:53:41 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+20:54:15 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:54:33 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+20:55:04 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:55:22 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+20:55:27 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:56:05 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:56:23 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+20:57:20 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+20:58:06 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:58:25 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+20:58:30 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:58:48 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+20:58:55 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+20:59:13 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+21:03:27 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:04:35 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:04:53 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+21:05:02 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:05:20 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+21:05:52 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:06:14 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:07:00 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:08:04 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:08:35 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:09:18 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:09:32 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:10:29 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:10:54 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:11:45 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\temp_xsdb_launch_script.tcl
+21:11:57 INFO  : XSCT server has started successfully.
+21:11:58 INFO  : plnx-install-location is set to ''
+21:11:58 INFO  : Successfully done setting XSCT server connection channel  
+21:11:58 INFO  : Registering command handlers for Vitis TCF services
+21:12:00 INFO  : Successfully done setting workspace for the tool. 
+21:12:00 INFO  : Successfully done query RDI_DATADIR 
+21:12:21 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:12:39 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+21:14:39 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:14:57 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+21:15:14 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:15:27 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:15:45 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+21:15:58 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:16:16 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+21:16:27 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:16:46 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+21:17:04 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:17:22 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+21:17:47 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:18:05 INFO  : Device 'Digilent JTAG-SMT1 210203339927A/1-xc7k325t' not found in the selected target configuration 'RemoteVPN'
+21:22:28 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:22:43 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:22:57 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+21:22:57 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+21:22:57 INFO  : 'jtag frequency' command is executed.
+21:22:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+21:23:25 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+21:23:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:23:26 INFO  : Context for processor 'microblaze_0' is selected.
+21:23:26 INFO  : System reset is completed.
+21:23:29 INFO  : 'after 3000' command is executed.
+21:23:29 INFO  : Context for processor 'microblaze_0' is selected.
+21:23:30 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+21:23:30 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+21:23:32 INFO  : Memory regions updated for context PA
+21:23:32 INFO  : Memory regions updated for context PA
+21:23:32 INFO  : Context for processor 'microblaze_0' is selected.
+21:23:33 INFO  : 'con' command is executed.
+21:23:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+21:23:33 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+21:38:28 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+21:38:39 INFO  : Disconnected from the channel tcfchan#4.
+21:38:39 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+21:38:39 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+21:38:39 INFO  : 'jtag frequency' command is executed.
+21:38:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+21:39:08 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+21:39:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:39:08 INFO  : Context for processor 'microblaze_0' is selected.
+21:39:08 INFO  : System reset is completed.
+21:39:11 INFO  : 'after 3000' command is executed.
+21:39:11 INFO  : Context for processor 'microblaze_0' is selected.
+21:39:12 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+21:39:12 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+21:39:14 INFO  : Memory regions updated for context PA
+21:39:14 INFO  : Memory regions updated for context PA
+21:39:14 INFO  : Context for processor 'microblaze_0' is selected.
+21:39:15 INFO  : 'con' command is executed.
+21:39:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+21:39:15 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+21:59:33 INFO  : Disconnected from the channel tcfchan#5.
+14:05:05 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\temp_xsdb_launch_script.tcl
+14:05:15 INFO  : XSCT server has started successfully.
+14:05:15 INFO  : plnx-install-location is set to ''
+14:05:15 INFO  : Successfully done setting XSCT server connection channel  
+14:05:15 INFO  : Successfully done setting workspace for the tool. 
+14:05:16 INFO  : Registering command handlers for Vitis TCF services
+14:05:17 INFO  : Successfully done query RDI_DATADIR 
+14:25:58 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+14:29:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\temp_xsdb_launch_script.tcl
+14:29:44 INFO  : XSCT server has started successfully.
+14:29:44 INFO  : plnx-install-location is set to ''
+14:29:44 INFO  : Successfully done setting XSCT server connection channel  
+14:29:44 INFO  : Successfully done setting workspace for the tool. 
+14:29:45 INFO  : Registering command handlers for Vitis TCF services
+14:29:48 INFO  : Successfully done query RDI_DATADIR 
+14:42:28 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+14:44:18 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+14:45:53 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\temp_xsdb_launch_script.tcl
+14:46:04 INFO  : Registering command handlers for Vitis TCF services
+14:46:06 INFO  : XSCT server has started successfully.
+14:46:07 INFO  : plnx-install-location is set to ''
+14:46:07 INFO  : Successfully done setting XSCT server connection channel  
+14:46:07 INFO  : Successfully done query RDI_DATADIR 
+14:46:07 INFO  : Successfully done setting workspace for the tool. 
+14:46:10 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+15:06:57 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+15:07:41 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+15:10:54 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+15:11:50 INFO  : Bit file 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit' is generated.
+15:11:50 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+15:11:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+15:12:17 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+15:13:08 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+15:13:25 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+15:13:25 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+15:13:25 INFO  : 'jtag frequency' command is executed.
+15:13:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+15:13:52 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+15:13:52 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:13:52 INFO  : Context for processor 'microblaze_0' is selected.
+15:13:52 INFO  : System reset is completed.
+15:13:56 INFO  : 'after 3000' command is executed.
+15:13:56 INFO  : Context for processor 'microblaze_0' is selected.
+15:13:57 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+15:13:57 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+15:13:58 INFO  : Memory regions updated for context PA
+15:13:58 INFO  : Memory regions updated for context PA
+15:13:58 INFO  : Context for processor 'microblaze_0' is selected.
+15:13:59 INFO  : 'con' command is executed.
+15:13:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+15:13:59 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+15:19:05 INFO  : Disconnected from the channel tcfchan#3.
+15:19:06 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+15:19:06 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+15:19:06 INFO  : 'jtag frequency' command is executed.
+15:19:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+15:19:33 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+15:19:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:19:33 INFO  : Context for processor 'microblaze_0' is selected.
+15:19:33 INFO  : System reset is completed.
+15:19:36 INFO  : 'after 3000' command is executed.
+15:19:37 INFO  : Context for processor 'microblaze_0' is selected.
+15:19:38 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+15:19:38 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+15:19:39 INFO  : Memory regions updated for context PA
+15:19:39 INFO  : Memory regions updated for context PA
+15:19:39 INFO  : Context for processor 'microblaze_0' is selected.
+15:19:40 INFO  : 'con' command is executed.
+15:19:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+15:19:40 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+15:32:58 INFO  : Disconnected from the channel tcfchan#4.
+15:32:58 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+15:32:58 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+15:32:58 INFO  : 'jtag frequency' command is executed.
+15:32:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+15:33:26 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+15:33:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:33:26 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:26 INFO  : System reset is completed.
+15:33:29 INFO  : 'after 3000' command is executed.
+15:33:29 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:31 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+15:33:31 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+15:33:32 INFO  : Memory regions updated for context PA
+15:33:32 INFO  : Memory regions updated for context PA
+15:33:32 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:33 INFO  : 'con' command is executed.
+15:33:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+15:33:33 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+15:37:45 INFO  : Disconnected from the channel tcfchan#5.
+15:37:45 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+15:37:45 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+15:37:45 INFO  : 'jtag frequency' command is executed.
+15:37:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+15:38:12 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+15:38:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:38:13 INFO  : Context for processor 'microblaze_0' is selected.
+15:38:13 INFO  : System reset is completed.
+15:38:16 INFO  : 'after 3000' command is executed.
+15:38:16 INFO  : Context for processor 'microblaze_0' is selected.
+15:38:17 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+15:38:17 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+15:38:18 INFO  : Memory regions updated for context PA
+15:38:18 INFO  : Memory regions updated for context PA
+15:38:18 INFO  : Context for processor 'microblaze_0' is selected.
+15:38:19 INFO  : 'con' command is executed.
+15:38:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+15:38:19 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+15:41:53 INFO  : Disconnected from the channel tcfchan#6.
+15:41:53 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+15:41:54 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+15:41:54 INFO  : 'jtag frequency' command is executed.
+15:41:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+15:42:21 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+15:42:21 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:42:21 INFO  : Context for processor 'microblaze_0' is selected.
+15:42:21 INFO  : System reset is completed.
+15:42:24 INFO  : 'after 3000' command is executed.
+15:42:24 INFO  : Context for processor 'microblaze_0' is selected.
+15:42:26 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+15:42:26 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+15:42:27 INFO  : Memory regions updated for context PA
+15:42:27 INFO  : Memory regions updated for context PA
+15:42:27 INFO  : Context for processor 'microblaze_0' is selected.
+15:42:27 INFO  : 'con' command is executed.
+15:42:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+15:42:27 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+16:20:37 WARN  : channel "tcfchan#7" closed
+19:37:45 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+19:38:41 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+19:39:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\temp_xsdb_launch_script.tcl
+19:39:58 INFO  : XSCT server has started successfully.
+19:39:58 INFO  : plnx-install-location is set to ''
+19:39:58 INFO  : Successfully done setting XSCT server connection channel  
+19:39:58 INFO  : Successfully done setting workspace for the tool. 
+19:39:59 INFO  : Registering command handlers for Vitis TCF services
+19:40:02 INFO  : Successfully done query RDI_DATADIR 
+19:42:13 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+19:43:08 INFO  : Bit file 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit' is generated.
+19:43:08 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+19:43:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+19:43:34 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+19:46:17 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+19:46:23 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+19:46:23 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+19:46:23 INFO  : 'jtag frequency' command is executed.
+19:46:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+19:46:51 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+19:46:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:46:51 INFO  : Context for processor 'microblaze_0' is selected.
+19:46:51 INFO  : System reset is completed.
+19:46:54 INFO  : 'after 3000' command is executed.
+19:46:54 INFO  : Context for processor 'microblaze_0' is selected.
+19:46:55 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+19:46:55 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+19:46:57 INFO  : Memory regions updated for context PA
+19:46:57 INFO  : Memory regions updated for context PA
+19:46:57 INFO  : Context for processor 'microblaze_0' is selected.
+19:46:57 INFO  : 'con' command is executed.
+19:46:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+19:46:57 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+19:56:15 INFO  : Disconnected from the channel tcfchan#2.
+19:56:15 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+19:56:15 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+19:56:15 INFO  : 'jtag frequency' command is executed.
+19:56:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+19:56:43 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+19:56:43 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:56:43 INFO  : Context for processor 'microblaze_0' is selected.
+19:56:43 INFO  : System reset is completed.
+19:56:46 INFO  : 'after 3000' command is executed.
+19:56:46 INFO  : Context for processor 'microblaze_0' is selected.
+19:56:47 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+19:56:47 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+19:56:49 INFO  : Memory regions updated for context PA
+19:56:49 INFO  : Memory regions updated for context PA
+19:56:49 INFO  : Context for processor 'microblaze_0' is selected.
+19:56:50 INFO  : 'con' command is executed.
+19:56:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+19:56:50 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+19:58:51 INFO  : Disconnected from the channel tcfchan#3.
+19:58:51 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+19:58:51 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+19:58:51 INFO  : 'jtag frequency' command is executed.
+19:58:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+19:59:19 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+19:59:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:59:20 INFO  : Context for processor 'microblaze_0' is selected.
+19:59:20 INFO  : System reset is completed.
+19:59:23 INFO  : 'after 3000' command is executed.
+19:59:23 INFO  : Context for processor 'microblaze_0' is selected.
+19:59:24 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+19:59:24 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+19:59:25 INFO  : Memory regions updated for context PA
+19:59:25 INFO  : Memory regions updated for context PA
+19:59:25 INFO  : Context for processor 'microblaze_0' is selected.
+19:59:26 INFO  : 'con' command is executed.
+19:59:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+19:59:26 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+20:12:38 INFO  : Disconnected from the channel tcfchan#4.
+20:12:38 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+20:12:38 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+20:12:38 INFO  : 'jtag frequency' command is executed.
+20:12:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+20:13:05 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+20:13:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:13:06 INFO  : Context for processor 'microblaze_0' is selected.
+20:13:06 INFO  : System reset is completed.
+20:13:09 INFO  : 'after 3000' command is executed.
+20:13:09 INFO  : Context for processor 'microblaze_0' is selected.
+20:13:10 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+20:13:10 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+20:13:11 INFO  : Memory regions updated for context PA
+20:13:11 INFO  : Memory regions updated for context PA
+20:13:12 INFO  : Context for processor 'microblaze_0' is selected.
+20:13:12 INFO  : 'con' command is executed.
+20:13:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+20:13:12 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+20:15:31 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+20:15:44 INFO  : Disconnected from the channel tcfchan#5.
+20:15:44 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+20:15:45 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+20:15:45 INFO  : 'jtag frequency' command is executed.
+20:15:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+20:16:12 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+20:16:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:16:12 INFO  : Context for processor 'microblaze_0' is selected.
+20:16:13 INFO  : System reset is completed.
+20:16:16 INFO  : 'after 3000' command is executed.
+20:16:16 INFO  : Context for processor 'microblaze_0' is selected.
+20:16:17 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+20:16:17 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+20:16:18 INFO  : Memory regions updated for context PA
+20:16:18 INFO  : Memory regions updated for context PA
+20:16:18 INFO  : Context for processor 'microblaze_0' is selected.
+20:16:19 INFO  : 'con' command is executed.
+20:16:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+20:16:19 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+20:21:01 INFO  : Disconnected from the channel tcfchan#6.
+20:21:01 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+20:21:01 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+20:21:01 INFO  : 'jtag frequency' command is executed.
+20:21:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+20:21:28 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+20:21:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:21:29 INFO  : Context for processor 'microblaze_0' is selected.
+20:21:29 INFO  : System reset is completed.
+20:21:32 INFO  : 'after 3000' command is executed.
+20:21:32 INFO  : Context for processor 'microblaze_0' is selected.
+20:21:33 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+20:21:33 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+20:21:34 INFO  : Memory regions updated for context PA
+20:21:34 INFO  : Memory regions updated for context PA
+20:21:35 INFO  : Context for processor 'microblaze_0' is selected.
+20:21:35 INFO  : 'con' command is executed.
+20:21:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+20:21:35 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+20:23:42 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+20:23:57 INFO  : Disconnected from the channel tcfchan#7.
+20:23:58 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+20:23:58 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+20:23:58 INFO  : 'jtag frequency' command is executed.
+20:23:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+20:24:25 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+20:24:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:24:25 INFO  : Context for processor 'microblaze_0' is selected.
+20:24:25 INFO  : System reset is completed.
+20:24:28 INFO  : 'after 3000' command is executed.
+20:24:29 INFO  : Context for processor 'microblaze_0' is selected.
+20:24:30 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+20:24:30 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+20:24:31 INFO  : Memory regions updated for context PA
+20:24:31 INFO  : Memory regions updated for context PA
+20:24:31 INFO  : Context for processor 'microblaze_0' is selected.
+20:24:32 INFO  : 'con' command is executed.
+20:24:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+20:24:32 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+20:54:08 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+20:56:14 INFO  : Disconnected from the channel tcfchan#8.
+20:56:14 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+20:56:14 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+20:56:14 INFO  : 'jtag frequency' command is executed.
+20:56:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+20:56:41 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+20:56:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:56:42 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:42 INFO  : System reset is completed.
+20:56:45 INFO  : 'after 3000' command is executed.
+20:56:45 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:46 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+20:56:46 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+20:56:47 INFO  : Memory regions updated for context PA
+20:56:47 INFO  : Memory regions updated for context PA
+20:56:48 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:48 INFO  : 'con' command is executed.
+20:56:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+20:56:48 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+21:01:49 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+21:02:50 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+21:05:35 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+21:05:52 INFO  : Disconnected from the channel tcfchan#9.
+21:05:53 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+21:05:53 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+21:05:53 INFO  : 'jtag frequency' command is executed.
+21:05:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+21:06:20 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+21:06:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:06:20 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:20 INFO  : System reset is completed.
+21:06:23 INFO  : 'after 3000' command is executed.
+21:06:24 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:25 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+21:06:25 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+21:06:26 INFO  : Memory regions updated for context PA
+21:06:26 INFO  : Memory regions updated for context PA
+21:06:26 INFO  : Context for processor 'microblaze_0' is selected.
+21:06:27 INFO  : 'con' command is executed.
+21:06:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+21:06:27 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+21:38:12 WARN  : channel "tcfchan#10" closed
+21:49:29 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+21:53:31 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+21:54:11 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+21:54:11 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+21:54:11 INFO  : 'jtag frequency' command is executed.
+21:54:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+21:54:38 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+21:54:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:54:39 INFO  : Context for processor 'microblaze_0' is selected.
+21:54:39 INFO  : System reset is completed.
+21:54:42 INFO  : 'after 3000' command is executed.
+21:54:42 INFO  : Context for processor 'microblaze_0' is selected.
+21:54:59 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+21:54:59 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+21:55:01 INFO  : Memory regions updated for context PA
+21:55:01 INFO  : Memory regions updated for context PA
+21:55:03 INFO  : Context for processor 'microblaze_0' is selected.
+21:55:03 INFO  : 'con' command is executed.
+21:55:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+21:55:03 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+22:00:41 INFO  : Disconnected from the channel tcfchan#12.
+22:00:42 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+22:00:42 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+22:00:42 INFO  : 'jtag frequency' command is executed.
+22:00:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+22:01:09 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+22:01:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:01:09 INFO  : Context for processor 'microblaze_0' is selected.
+22:01:10 INFO  : System reset is completed.
+22:01:13 INFO  : 'after 3000' command is executed.
+22:01:13 INFO  : Context for processor 'microblaze_0' is selected.
+22:01:14 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+22:01:14 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+22:01:15 INFO  : Memory regions updated for context PA
+22:01:15 INFO  : Memory regions updated for context PA
+22:01:16 INFO  : Context for processor 'microblaze_0' is selected.
+22:01:16 INFO  : 'con' command is executed.
+22:01:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+22:01:16 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+22:06:02 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+22:17:35 INFO  : Disconnected from the channel tcfchan#13.
+22:17:36 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+22:17:36 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+22:17:36 INFO  : 'jtag frequency' command is executed.
+22:17:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+22:18:03 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+22:18:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:18:03 INFO  : Context for processor 'microblaze_0' is selected.
+22:18:03 INFO  : System reset is completed.
+22:18:06 INFO  : 'after 3000' command is executed.
+22:18:07 INFO  : Context for processor 'microblaze_0' is selected.
+22:18:08 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+22:18:08 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+22:18:09 INFO  : Memory regions updated for context PA
+22:18:09 INFO  : Memory regions updated for context PA
+22:18:09 INFO  : Context for processor 'microblaze_0' is selected.
+22:18:10 INFO  : 'con' command is executed.
+22:18:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+22:18:10 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+22:28:01 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+22:28:50 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+22:29:52 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+22:30:03 INFO  : Disconnected from the channel tcfchan#14.
+22:30:03 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+22:30:04 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+22:30:04 INFO  : 'jtag frequency' command is executed.
+22:30:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+22:30:31 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+22:30:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:30:31 INFO  : Context for processor 'microblaze_0' is selected.
+22:30:31 INFO  : System reset is completed.
+22:30:34 INFO  : 'after 3000' command is executed.
+22:30:34 INFO  : Context for processor 'microblaze_0' is selected.
+22:30:35 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+22:30:35 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+22:30:37 INFO  : Memory regions updated for context PA
+22:30:37 INFO  : Memory regions updated for context PA
+22:30:37 INFO  : Context for processor 'microblaze_0' is selected.
+22:30:37 INFO  : 'con' command is executed.
+22:30:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+22:30:37 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+22:38:57 INFO  : Checking for BSP changes to sync application flags for project 'eth'...
+22:39:12 INFO  : Disconnected from the channel tcfchan#15.
+22:39:13 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+22:39:13 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+22:39:13 INFO  : 'jtag frequency' command is executed.
+22:39:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+22:39:41 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+22:39:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:39:41 INFO  : Context for processor 'microblaze_0' is selected.
+22:39:41 INFO  : System reset is completed.
+22:39:44 INFO  : 'after 3000' command is executed.
+22:39:44 INFO  : Context for processor 'microblaze_0' is selected.
+22:39:45 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+22:39:45 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+22:39:47 INFO  : Memory regions updated for context PA
+22:39:47 INFO  : Memory regions updated for context PA
+22:39:47 INFO  : Context for processor 'microblaze_0' is selected.
+22:39:48 INFO  : 'con' command is executed.
+22:39:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+22:39:48 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+22:49:19 WARN  : channel "tcfchan#16" closed
+23:37:20 INFO  : Successfully done sdx_reload_mss "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth1_wrapper/microblaze_0/standalone_domain/bsp/system.mss"
+23:41:04 INFO  : (SwPlaform) Successfully done setParamInSpec 
+23:43:31 INFO  : Successfully done sdx_reload_mss "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth1_wrapper/microblaze_0/standalone_domain/bsp/system.mss"
+23:43:31 INFO  : No changes in MSS file content so sources will not be generated.
+23:44:05 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+23:44:06 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+23:44:06 INFO  : 'jtag frequency' command is executed.
+23:44:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+23:44:33 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+23:44:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:44:34 INFO  : Context for processor 'microblaze_0' is selected.
+23:44:34 INFO  : System reset is completed.
+23:44:37 INFO  : 'after 3000' command is executed.
+23:44:37 INFO  : Context for processor 'microblaze_0' is selected.
+23:44:38 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+23:44:38 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+23:44:39 INFO  : Memory regions updated for context PA
+23:44:39 INFO  : Memory regions updated for context PA
+23:44:40 INFO  : Context for processor 'microblaze_0' is selected.
+23:44:40 INFO  : 'con' command is executed.
+23:44:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+23:44:40 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+00:20:00 INFO  : (SwPlaform) Successfully done setParamInSpec 
+00:20:05 INFO  : (SwPlaform) Successfully done setParamInSpec 
+00:20:07 INFO  : (SwPlaform) Successfully done setParamInSpec 
+00:20:11 INFO  : (SwPlaform) Successfully done setParamInSpec 
+00:20:24 INFO  : (SwPlaform) Successfully done setParamInSpec 
+00:20:27 INFO  : (SwPlaform) Successfully done setParamInSpec 
+00:20:29 INFO  : (SwPlatform) Successfully done update_mss 
+00:20:29 INFO  : Successfully done sdx_reload_mss "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth1_wrapper/microblaze_0/standalone_domain/bsp/system.mss"
+00:23:46 INFO  : Disconnected from the channel tcfchan#17.
+00:23:46 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+00:23:47 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+00:23:47 INFO  : 'jtag frequency' command is executed.
+00:23:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+00:24:14 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+00:24:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:24:15 INFO  : Context for processor 'microblaze_0' is selected.
+00:24:15 INFO  : System reset is completed.
+00:24:18 INFO  : 'after 3000' command is executed.
+00:24:18 INFO  : Context for processor 'microblaze_0' is selected.
+00:24:19 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+00:24:19 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+00:24:20 INFO  : Memory regions updated for context PA
+00:24:20 INFO  : Memory regions updated for context PA
+00:24:21 INFO  : Context for processor 'microblaze_0' is selected.
+00:24:21 INFO  : 'con' command is executed.
+00:24:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+00:24:21 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'
+01:02:29 INFO  : Disconnected from the channel tcfchan#19.
+18:37:52 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\temp_xsdb_launch_script.tcl
+18:38:08 INFO  : Registering command handlers for Vitis TCF services
+18:38:11 INFO  : XSCT server has started successfully.
+18:38:11 INFO  : plnx-install-location is set to ''
+18:38:13 INFO  : Successfully done setting XSCT server connection channel  
+18:38:13 INFO  : Successfully done query RDI_DATADIR 
+18:38:13 INFO  : Successfully done setting workspace for the tool. 
+18:40:34 INFO  : Bit file 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit' is generated.
+18:40:42 ERROR : Failed to connect to hardware server on host '172.16.0.163' and port '3122'.
+Reason: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+18:41:27 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+18:42:17 INFO  : Bit file 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit' is generated.
+18:42:17 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+18:42:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+18:42:46 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+18:43:14 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+18:43:15 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203367268A' is selected.
+18:43:15 INFO  : 'jtag frequency' command is executed.
+18:43:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0' command is executed.
+18:43:44 INFO  : FPGA configured successfully with bitstream "D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit"
+18:43:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:43:44 INFO  : Context for processor 'microblaze_0' is selected.
+18:43:44 INFO  : System reset is completed.
+18:43:47 INFO  : 'after 3000' command is executed.
+18:43:48 INFO  : Context for processor 'microblaze_0' is selected.
+18:43:49 INFO  : The application 'D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf' is downloaded to processor 'microblaze_0'.
+18:43:49 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A" && level==0} -index 0
+fpga -file D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+dow D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth/Debug/eth.elf
+----------------End of Script----------------
+
+18:43:50 INFO  : Memory regions updated for context PA
+18:43:50 INFO  : Memory regions updated for context PA
+18:43:50 INFO  : Context for processor 'microblaze_0' is selected.
+18:43:51 INFO  : 'con' command is executed.
+18:43:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203367268A"} -index 0
+con
+----------------End of Script----------------
+
+18:43:51 INFO  : Launch script is exported to file 'D:\dario\fulgor\trabajo_final\workspace_ethernet\workspace_eth_GMII\.sdk\launch_scripts\single_application_debug\systemdebugger_eth_system_standalone.tcl'

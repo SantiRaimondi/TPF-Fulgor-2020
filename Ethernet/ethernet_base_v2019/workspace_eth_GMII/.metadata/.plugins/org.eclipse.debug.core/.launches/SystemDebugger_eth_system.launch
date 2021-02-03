@@ -12,7 +12,7 @@
     <stringAttribute key="com.xilinx.sdk.tcf.debug.uicrosstrigger.bpcontainer" value="{&quot;arch&quot;:&quot;non_zynq&quot;,&quot;isSelected&quot;:false,&quot;breakPoints&quot;:[]}"/>
     <stringAttribute key="com.xilinx.sdk.tcf.debug.uidebug.type" value="STANDALONE_DEBUG"/>
     <booleanAttribute key="com.xilinx.sdk.tcf.debug.uienable.crosstrigger" value="false"/>
-    <stringAttribute key="com.xilinx.sdk.tcf.debug.uifpga.device" value="Auto Detect"/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.uifpga.device" value="Digilent JTAG-SMT1 210203367268A/1-xc7k325t"/>
     <stringAttribute key="com.xilinx.sdk.tcf.debug.uihw.bit.file" value="${project_loc:eth}/_ide/bitstream/download.bit"/>
     <stringAttribute key="com.xilinx.sdk.tcf.debug.uihw.init.tcl" value=""/>
     <booleanAttribute key="com.xilinx.sdk.tcf.debug.uipl.powerup" value="false"/>
@@ -27,7 +27,7 @@
     <booleanAttribute key="com.xilinx.sdk.tcf.debug.uireset.lock.step" value="false"/>
     <booleanAttribute key="com.xilinx.sdk.tcf.debug.uireset.rpu" value="false"/>
     <booleanAttribute key="com.xilinx.sdk.tcf.debug.uireset.system" value="true"/>
-    <stringAttribute key="com.xilinx.sdk.tcf.debug.uitarget.peer" value="Local"/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.uitarget.peer" value="RemoteVPN"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.active.build.config" value="Debug"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.build.disabled" value="true"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.custom.launch.storage" value=""/>

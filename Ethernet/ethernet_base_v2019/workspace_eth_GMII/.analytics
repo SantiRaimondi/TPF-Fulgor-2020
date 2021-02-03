@@ -7,3 +7,33 @@ timestamp=[2021-01-20 20:10:14], mode=WORKBENCH_START, duration=0:00:24.615, dur
 timestamp=[2021-01-20 20:10:16], mode=WORKBENCH_UI_INIT, duration=0:00:02.347, duration_ms=2347, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}
 timestamp=[2021-01-21 18:10:24], mode=WORKBENCH_START, duration=0:00:30.024, duration_ms=30024, data={}
 timestamp=[2021-01-21 18:10:26], mode=WORKBENCH_UI_INIT, duration=0:00:02.364, duration_ms=2364, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}
+timestamp=[2021-01-27 19:25:14], mode=WORKBENCH_START, duration=0:00:17.254, duration_ms=17254, data={}
+timestamp=[2021-01-27 19:25:17], mode=WORKBENCH_UI_INIT, duration=0:00:02.582, duration_ms=2582, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}
+timestamp=[2021-01-27 19:29:37], mode=APP_CREATION, duration=0:00:06.655, duration_ms=6655, data={name=xaxidma_example_simple_intr_1, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=eth1_wrapper, application_type=application}
+timestamp=[2021-01-27 19:46:15], mode=WORKBENCH_START, duration=0:00:17.365, duration_ms=17365, data={}
+timestamp=[2021-01-27 19:46:16], mode=WORKBENCH_UI_INIT, duration=0:00:01.510, duration_ms=1510, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}
+timestamp=[2021-01-28 18:30:35], mode=WORKBENCH_START, duration=0:00:24.049, duration_ms=24049, data={}
+timestamp=[2021-01-28 18:30:37], mode=WORKBENCH_UI_INIT, duration=0:00:01.549, duration_ms=1549, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}
+timestamp=[2021-01-28 20:43:48], mode=PLATFORM_GENERATION, duration=0:00:30.657, duration_ms=30657, data={name=eth1_wrapper}
+timestamp=[2021-01-29 12:49:38], mode=WORKBENCH_START, duration=0:00:26.132, duration_ms=26132, data={}
+timestamp=[2021-01-29 12:49:40], mode=WORKBENCH_UI_INIT, duration=0:00:01.995, duration_ms=1995, data={editors_count=11, platform_editors_count=7, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}
+timestamp=[2021-01-29 17:23:26], mode=WORKBENCH_START, duration=0:00:24.972, duration_ms=24972, data={}
+timestamp=[2021-01-29 17:23:28], mode=WORKBENCH_UI_INIT, duration=0:00:02.421, duration_ms=2421, data={editors_count=6, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}
+timestamp=[2021-01-29 17:37:29], mode=PLATFORM_GENERATION, duration=0:00:38.245, duration_ms=38245, data={name=eth1_wrapper}
+timestamp=[2021-01-29 20:47:39], mode=WORKBENCH_START, duration=0:00:27.311, duration_ms=27311, data={}
+timestamp=[2021-01-29 20:47:41], mode=WORKBENCH_UI_INIT, duration=0:00:02.331, duration_ms=2331, data={editors_count=8, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}
+timestamp=[2021-01-29 20:49:53], mode=PLATFORM_GENERATION, duration=0:00:11.869, duration_ms=11869, data={name=eth1_wrapper}
+timestamp=[2021-01-29 21:11:51], mode=WORKBENCH_START, duration=0:00:23.372, duration_ms=23372, data={}
+timestamp=[2021-01-29 21:11:54], mode=WORKBENCH_UI_INIT, duration=0:00:02.956, duration_ms=2956, data={editors_count=8, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}
+timestamp=[2021-02-01 14:05:08], mode=WORKBENCH_START, duration=0:00:24.282, duration_ms=24282, data={}
+timestamp=[2021-02-01 14:05:12], mode=WORKBENCH_UI_INIT, duration=0:00:03.125, duration_ms=3125, data={editors_count=11, platform_editors_count=6, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}
+timestamp=[2021-02-01 14:29:38], mode=WORKBENCH_START, duration=0:00:26.112, duration_ms=26112, data={}
+timestamp=[2021-02-01 14:29:41], mode=WORKBENCH_UI_INIT, duration=0:00:02.781, duration_ms=2781, data={editors_count=6, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}
+timestamp=[2021-02-01 14:45:57], mode=WORKBENCH_START, duration=0:00:20.730, duration_ms=20730, data={}
+timestamp=[2021-02-01 14:45:59], mode=WORKBENCH_UI_INIT, duration=0:00:02.390, duration_ms=2390, data={editors_count=8, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}
+timestamp=[2021-02-01 19:37:45], mode=PLATFORM_GENERATION, duration=0:00:38.247, duration_ms=38247, data={name=eth1_wrapper}
+timestamp=[2021-02-01 19:39:53], mode=WORKBENCH_START, duration=0:00:23.624, duration_ms=23624, data={}
+timestamp=[2021-02-01 19:39:55], mode=WORKBENCH_UI_INIT, duration=0:00:01.906, duration_ms=1906, data={editors_count=7, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}
+timestamp=[2021-02-02 00:22:00], mode=PLATFORM_GENERATION, duration=0:00:46.011, duration_ms=46011, data={name=eth1_wrapper}
+timestamp=[2021-02-03 18:37:59], mode=WORKBENCH_START, duration=0:00:31.468, duration_ms=31468, data={}
+timestamp=[2021-02-03 18:38:03], mode=WORKBENCH_UI_INIT, duration=0:00:03.791, duration_ms=3791, data={editors_count=7, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,eth,eth1_wrapper,eth_system}

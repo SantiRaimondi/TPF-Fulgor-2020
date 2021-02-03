@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="eth" location="D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth" platform="D:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth1_wrapper/export/eth1_wrapper/eth1_wrapper.xpfm" platformUID="xilinx:kc705::0.0(custom)" systemProject="eth_system" sysConfig="eth1_wrapper" runtime="cpp" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="f8b3ffb17ea0a35f74b86086762ad885">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1307272846" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.796109753" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="lwip_echo_server" hasBspSettings="true"/>
+</sdkproject:SdkProject>
