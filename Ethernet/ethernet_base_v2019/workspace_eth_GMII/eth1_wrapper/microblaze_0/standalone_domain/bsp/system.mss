@@ -71,8 +71,6 @@ BEGIN LIBRARY
  PARAMETER LIBRARY_NAME = lwip211
  PARAMETER LIBRARY_VER = 1.1
  PARAMETER PROC_INSTANCE = microblaze_0
- PARAMETER dhcp_does_arp_check = true
- PARAMETER lwip_dhcp = true
  PARAMETER pbuf_pool_size = 2048
 END
 

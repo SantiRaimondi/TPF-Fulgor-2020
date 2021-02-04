@@ -1,6 +1,208 @@
-2021-01-20T14:22:16.634561600255-14:22:16 **** Incremental Build of project eth1_wrapper ****
-000-buildplatform.bat 50133 eth1_wrapper no_domain_build 
-000-xsct% XSDB Server Channel: tcfchan#10
+2021-02-02T00:21:14.608936400255-00:21:14 **** Incremental Build of project eth1_wrapper ****
+000-buildplatform.bat 60837 eth1_wrapper standalone_domain 
+000-XSDB Server Channel: tcfchan#18
+000-Building the BSP Library for domain  - standalone_domain on processor microblaze_0
+000-"Running Make include in microblaze_0/libsrc/axidma_v9_10/src"
+000-
+000-make -C microblaze_0/libsrc/axidma_v9_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+000-ll -Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/axiethernet_v5_9/src"
+000-
+000-make -C microblaze_0/libsrc/axiethernet_v5_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+000-COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
+000- -Wall -Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+000-
+000-make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+000--Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/cpu_v2_10/src"
+000-
+000-make -C microblaze_0/libsrc/cpu_v2_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+000--Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/intc_v3_10/src"
+000-
+000-make -C microblaze_0/libsrc/intc_v3_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+000-ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+000- -Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/lwip211_v1_1/src"
+000-
+000-make -C microblaze_0/libsrc/lwip211_v1_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+000-ll -Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/standalone_v7_1/src"
+000-
+000-make -C microblaze_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+000-OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+000--Wall -Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src"
+000-
+000-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+000-LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+000-l -Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/uartlite_v3_3/src"
+000-
+000-make -C microblaze_0/libsrc/uartlite_v3_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+000-PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+000-all -Wextra"
+000-
+000-"Running Make libs in microblaze_0/libsrc/axidma_v9_10/src"
+000-
+000-make -C microblaze_0/libsrc/axidma_v9_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+000--Wextra"
+000-
+000-"Compiling axidma"
+000-
+000-mb-ar: creating ../../../lib/libxil.a
+000-"Running Make libs in microblaze_0/libsrc/axiethernet_v5_9/src"
+000-
+000-make -C microblaze_0/libsrc/axiethernet_v5_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+000-PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+000-all -Wextra"
+000-
+000-"Compiling axiethernet"
+000-
+000-"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+000-
+000-make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+000-xtra"
+000-
+000-"Compiling bram"
+000-
+000-"Running Make libs in microblaze_0/libsrc/cpu_v2_10/src"
+000-
+000-make -C microblaze_0/libsrc/cpu_v2_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+000-xtra"
+000-
+000-"Compiling cpu"
+000-
+000-"Running Make libs in microblaze_0/libsrc/intc_v3_10/src"
+000-
+000-make -C microblaze_0/libsrc/intc_v3_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+000-FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+000-extra"
+000-
+000-"Compiling intc"
+000-
+000-"Running Make libs in microblaze_0/libsrc/lwip211_v1_1/src"
+000-
+000-make -C microblaze_0/libsrc/lwip211_v1_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+000--Wextra"
+000-
+000-"Compiling lwip src and adapter files"
+000-
+000-contrib/ports/xilinx/netif/xaxiemacif_hw.c: In function 'init_axiemac':
+000/eth1_wrapper/microblaze_0/standalone_domain/bsp/microblaze_0/libsrc/lwip211_v1_1/src/contrib/ports/xilinx/netif/xaxiemacif_hw.c54-1-1unused variable 'mac_address' [-Wunused-variable]1-contrib/ports/xilinx/netif/xaxiemacif_hw.c:54:11: warning: unused variable 'mac_address' [-Wunused-variable]
+000-  unsigned mac_address = (unsigned)(UINTPTR)(netif->state);
+000-           ^~~~~~~~~~~
+000-contrib/ports/xilinx/netif/xaxiemacif_physpeed.c: In function 'get_phy_negotiated_speed':
+000/eth1_wrapper/microblaze_0/standalone_domain/bsp/microblaze_0/libsrc/lwip211_v1_1/src/contrib/ports/xilinx/netif/xaxiemacif_physpeed.c199-1-1unused variable 'temp' [-Wunused-variable]1-contrib/ports/xilinx/netif/xaxiemacif_physpeed.c:199:6: warning: unused variable 'temp' [-Wunused-variable]
+000-  u16 temp;
+000-      ^~~~
+000-contrib/ports/xilinx/netif/xaxiemacif_physpeed.c: In function 'get_IEEE_phy_speed':
+000/eth1_wrapper/microblaze_0/standalone_domain/bsp/microblaze_0/libsrc/lwip211_v1_1/src/contrib/ports/xilinx/netif/xaxiemacif_physpeed.c600-1-1control reaches end of non-void function [-Wreturn-type]1-contrib/ports/xilinx/netif/xaxiemacif_physpeed.c:600:1: warning: control reaches end of non-void function [-Wreturn-type]
+000- }
+000- ^
+000-contrib/ports/xilinx/netif/xaxiemacif.c: In function 'xaxiemacif_init':
+000/eth1_wrapper/microblaze_0/standalone_domain/bsp/microblaze_0/libsrc/lwip211_v1_1/src/contrib/ports/xilinx/netif/xaxiemacif.c681-1-1assignment to 'netif_output_fn' {aka 'signed char (*)(struct netif *, struct pbuf *, const struct ip4_addr *)'} from incompatible pointer type 'err_t (*)(struct netif *, struct pbuf *, ip_addr_t *)' {aka 'signed char (*)(struct netif *, struct pbuf *, struct ip4_addr *)'} [-Wincompatible-pointer-types]1-contrib/ports/xilinx/netif/xaxiemacif.c:681:16: warning: assignment to 'netif_output_fn' {aka 'signed char (*)(struct netif *, struct pbuf *, const struct ip4_addr *)'} from incompatible pointer type 'err_t (*)(struct netif *, struct pbuf *, ip_addr_t *)' {aka 'signed char (*)(struct netif *, struct pbuf *, struct ip4_addr *)'} [-Wincompatible-pointer-types]
+000-  netif->output = xaxiemacif_output;
+000-                ^
+000-In file included from ../../../include/lwip/ip_addr.h:41,
+000-                 from ../../../include/lwip/inet_chksum.h:43,
+000-                 from contrib/ports/xilinx/netif/xaxiemacif_dma.c:47:
+000-contrib/ports/xilinx/netif/xaxiemacif_dma.c: In function 'is_checksum_valid':
+000/eth1_wrapper/microblaze_0/standalone_domain/bsp/microblaze_0/libsrc/lwip211_v1_1/src/contrib/ports/xilinx/netif/xaxiemacif_dma.c195-1-1passing argument 2 of 'inet_chksum_pseudo' makes integer from pointer without a cast [-Wint-conversion]1-contrib/ports/xilinx/netif/xaxiemacif_dma.c:195:6: warning: passing argument 2 of 'inet_chksum_pseudo' makes integer from pointer without a cast [-Wint-conversion]
+000-      (ip_addr_t *)&ehdr->ip.src, (ip_addr_t *)&ehdr->ip.dest,
+000-      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+000/eth1_wrapper119-1-1in definition of macro 'htons'0-../../../include/lwip/def.h:119:29: note: in definition of macro 'htons'
+000- #define htons(x) lwip_htons(x)
+000-                             ^
+000-In file included from contrib/ports/xilinx/netif/xaxiemacif_dma.c:47:
+000/eth1_wrapper81-1-1expected 'u8_t' {aka 'unsigned char'} but argument is of type 'ip_addr_t *' {aka 'struct ip4_addr *'}0-../../../include/lwip/inet_chksum.h:81:47: note: expected 'u8_t' {aka 'unsigned char'} but argument is of type 'ip_addr_t *' {aka 'struct ip4_addr *'}
+000- u16_t inet_chksum_pseudo(struct pbuf *p, u8_t proto, u16_t proto_len,
+000-                                          ~~~~~^~~~~
+000-In file included from ../../../include/lwip/ip_addr.h:41,
+000-                 from ../../../include/lwip/inet_chksum.h:43,
+000-                 from contrib/ports/xilinx/netif/xaxiemacif_dma.c:47:
+000/eth1_wrapper/microblaze_0/standalone_domain/bsp/microblaze_0/libsrc/lwip211_v1_1/src/contrib/ports/xilinx/netif/xaxiemacif_dma.c195-1-1passing argument 3 of 'inet_chksum_pseudo' makes integer from pointer without a cast [-Wint-conversion]1-contrib/ports/xilinx/netif/xaxiemacif_dma.c:195:34: warning: passing argument 3 of 'inet_chksum_pseudo' makes integer from pointer without a cast [-Wint-conversion]
+000-      (ip_addr_t *)&ehdr->ip.src, (ip_addr_t *)&ehdr->ip.dest,
+000-                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+000/eth1_wrapper119-1-1in definition of macro 'htons'0-../../../include/lwip/def.h:119:29: note: in definition of macro 'htons'
+000- #define htons(x) lwip_htons(x)
+000-                             ^
+000-In file included from contrib/ports/xilinx/netif/xaxiemacif_dma.c:47:
+000/eth1_wrapper81-1-1expected 'u16_t' {aka 'short unsigned int'} but argument is of type 'ip_addr_t *' {aka 'struct ip4_addr *'}0-../../../include/lwip/inet_chksum.h:81:60: note: expected 'u16_t' {aka 'short unsigned int'} but argument is of type 'ip_addr_t *' {aka 'struct ip4_addr *'}
+000- u16_t inet_chksum_pseudo(struct pbuf *p, u8_t proto, u16_t proto_len,
+000-                                                      ~~~~~~^~~~~~~~~
+000-In file included from ../../../include/lwip/ip_addr.h:41,
+000-                 from ../../../include/lwip/inet_chksum.h:43,
+000-                 from contrib/ports/xilinx/netif/xaxiemacif_dma.c:47:
+000/eth1_wrapper/microblaze_0/standalone_domain/bsp/microblaze_0/libsrc/lwip211_v1_1/src/contrib/ports/xilinx/netif/xaxiemacif_dma.c196-1-1passing argument 4 of 'inet_chksum_pseudo' makes pointer from integer without a cast [-Wint-conversion]1-contrib/ports/xilinx/netif/xaxiemacif_dma.c:196:6: warning: passing argument 4 of 'inet_chksum_pseudo' makes pointer from integer without a cast [-Wint-conversion]
+000-      proto, tcp_payload_len));
+000-      ^~~~~
+000/eth1_wrapper119-1-1in definition of macro 'htons'0-../../../include/lwip/def.h:119:29: note: in definition of macro 'htons'
+000- #define htons(x) lwip_htons(x)
+000-                             ^
+000-In file included from contrib/ports/xilinx/netif/xaxiemacif_dma.c:47:
+000/eth1_wrapper82-1-1expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'u8_t' {aka 'unsigned char'}0-../../../include/lwip/inet_chksum.h:82:26: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'u8_t' {aka 'unsigned char'}
+000-        const ip4_addr_t *src, const ip4_addr_t *dest);
+000-        ~~~~~~~~~~~~~~~~~~^~~
+000-In file included from ../../../include/lwip/ip_addr.h:41,
+000-                 from ../../../include/lwip/inet_chksum.h:43,
+000-                 from contrib/ports/xilinx/netif/xaxiemacif_dma.c:47:
+000/eth1_wrapper/microblaze_0/standalone_domain/bsp/microblaze_0/libsrc/lwip211_v1_1/src/contrib/ports/xilinx/netif/xaxiemacif_dma.c196-1-1passing argument 5 of 'inet_chksum_pseudo' makes pointer from integer without a cast [-Wint-conversion]1-contrib/ports/xilinx/netif/xaxiemacif_dma.c:196:13: warning: passing argument 5 of 'inet_chksum_pseudo' makes pointer from integer without a cast [-Wint-conversion]
+000-      proto, tcp_payload_len));
+000-             ^~~~~~~~~~~~~~~
+000/eth1_wrapper119-1-1in definition of macro 'htons'0-../../../include/lwip/def.h:119:29: note: in definition of macro 'htons'
+000- #define htons(x) lwip_htons(x)
+000-                             ^
+000-In file included from contrib/ports/xilinx/netif/xaxiemacif_dma.c:47:
+000/eth1_wrapper82-1-1expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'u16_t' {aka 'short unsigned int'}0-../../../include/lwip/inet_chksum.h:82:49: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'u16_t' {aka 'short unsigned int'}
+000-        const ip4_addr_t *src, const ip4_addr_t *dest);
+000-                               ~~~~~~~~~~~~~~~~~~^~~~
+000-"Running Make libs in microblaze_0/libsrc/standalone_v7_1/src"
+000-
+000-make -C microblaze_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+000-ll -Wextra"
+000-
+000-"Compiling standalone";
+000-
+000/eth1_wrapper/microblaze_0/standalone_domain/bsp/microblaze_0/libsrc/standalone_v7_1/src/microblaze_sleep.c75-1-1#pragma message: For the sleep routines, assembly instructions are used0-microblaze_sleep.c:75:9: note: #pragma message: For the sleep routines, assembly instructions are used
+000- #pragma message ("For the sleep routines, assembly instructions are used")
+000-         ^~~~~~~
+000-"Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src"
+000-
+000-make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+000-Wextra"
+000-
+000-"Compiling tmrctr"
+000-
+000-"Running Make libs in microblaze_0/libsrc/uartlite_v3_3/src"
+000-
+000-make -C microblaze_0/libsrc/uartlite_v3_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+000-ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+000- -Wextra"
+000-
+000-"Compiling uartlite"
+000-
+000-'Finished building libraries'
+000-
 00255-
-14:22:22 Build Finished (took 5s.614ms)
+00:22:00 Build Finished (took 45s.650ms)
 

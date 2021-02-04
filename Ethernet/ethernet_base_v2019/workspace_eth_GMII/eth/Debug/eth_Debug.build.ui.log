@@ -1,9 +1,9 @@
-2021-01-20T14:22:23.58510400255-14:22:23 **** Incremental Build of configuration Debug for project eth ****
+2021-02-01T22:38:57.921546800255-22:38:57 **** Incremental Build of configuration Debug for project eth ****
 000-make all 
-000-'Building file: ../src/main.c'
+000-'Building file: ../src/echo.c'
 000-'Invoking: MicroBlaze gcc compiler'
-000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth1_wrapper/export/eth1_wrapper/sw/eth1_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-000-'Finished building: ../src/main.c'
+000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -ID:/dario/fulgor/trabajo_final/workspace_ethernet/workspace_eth_GMII/eth1_wrapper/export/eth1_wrapper/sw/eth1_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+000-'Finished building: ../src/echo.c'
 000-' '
 000-'Building target: eth.elf'
 000-'Invoking: MicroBlaze gcc linker'
@@ -13,9 +13,9 @@
 000-'Invoking: MicroBlaze Print Size'
 000-mb-size eth.elf  |tee "eth.elf.size"
 000-   text	   data	    bss	    dec	    hex	filename
-000- 141393	   1956	3960747	4104096	 3e9fa0	eth.elf
+000- 141557	   1956	3960743	4104256	 3ea040	eth.elf
 000-'Finished building: eth.elf.size'
 000-' '
 00255-
-14:22:27 Build Finished (took 3s.420ms)
+22:38:59 Build Finished (took 2s.65ms)
 

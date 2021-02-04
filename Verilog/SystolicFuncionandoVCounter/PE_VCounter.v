@@ -69,7 +69,7 @@ begin
                 reg_a <= i_a;
                 reg_b <= i_b;
                 reg_c <= final_prod; //se sobreescribe reg_c
-                counter <= {COUNTER_BITS{1'b0}}; // reseteo counter
+                counter <= 1'b1; // reseteo counter *se pone en 1 porque me comi el cero en el ciclo pasado
             end
     end
 end
