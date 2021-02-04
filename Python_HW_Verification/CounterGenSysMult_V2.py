@@ -36,14 +36,16 @@ def CounterGenSysMult2(A,B,rango,NB_OUT,NB_F): # A Y B MATRICES
 ################### PARA GUARDAR RESULTADOS:    #############################################
     N_Matrix_Mult = (len(A[0]) - (2*n-1)) // n
     
-    result_list = []
+    result_list_float = []
+    result_list_fixed = []
     result_logged = 0
     current_mat = 0
     
     print('N_Matrix_Mult = ',N_Matrix_Mult)
     
     for x in range(N_Matrix_Mult):
-        result_list.append(np.zeros((n,n), dtype=float))
+        result_list_float.append(np.zeros((n,n), dtype=float))
+        result_list_fixed.append(np.zeros((n,n), dtype=float))
         
     for i in range(N_clocks):     # [0 , 1 , ... , n-1]      
            
@@ -55,10 +57,10 @@ def CounterGenSysMult2(A,B,rango,NB_OUT,NB_F): # A Y B MATRICES
                     for col in range(n):  # Se reinicia antes de desplazar el  vector counter_finish_list
                         
                         if ((row + col) == a and counter_finish_list[a] == True): 
-                                
-                            result_list[current_mat-result_logged][row][col] = C_w[row][col]
                             
-#                            C_w_fixed[row][col] = fInt.DeFixedInt(NB_OUT,NB_OUT_F, C_w[row][col],'S','trunc','wrap')
+                            result_list_float[current_mat-result_logged][row][col] = C_w[row][col]
+                            
+                            result_list_fixed[current_mat-result_logged][row][col] = C_w_fixed[row][col]
                             
                             C_w[row][col] = 0
         
@@ -71,7 +73,6 @@ def CounterGenSysMult2(A,B,rango,NB_OUT,NB_F): # A Y B MATRICES
             result_logged = 0  # En cada clock se reinicia esta variable en 0
             
 ############## CONTADOR PARA SEGUIMIENTO DE DIAGONALES CON RESULTADOS A GUARDAR ###########################
-            
                 
             counter_finish_list = np.roll(counter_finish_list,1)
             
@@ -106,6 +107,13 @@ def CounterGenSysMult2(A,B,rango,NB_OUT,NB_F): # A Y B MATRICES
         for row in range(n):
             for col in range(n):   
                 C_w[row][col] = C_w[row][col] + (A_w[row][col] * B_w[row][col])
+                
+                C_w_fixed_aux = fInt.DeFixedInt(NB_OUT,NB_OUT_F,'S','trunc','wrap')
+
+                C_w_fixed_aux.value = C_w[row][col]
+
+                C_w_fixed[row][col] = C_w_fixed_aux.fValue
+                
                        
                 
         print('\n i = ',i, '\n') 
@@ -114,11 +122,13 @@ def CounterGenSysMult2(A,B,rango,NB_OUT,NB_F): # A Y B MATRICES
             
         print(counter_finish_list)
 
-        print('C_w : \n',C_w)
-        print('C_w_fixed : \n',C_w_fixed)
+        print('\n C_w : \n',C_w)
+        print('\n C_w_fixed : \n',C_w_fixed)
     
     
     for p in range(N_Matrix_Mult):
         
-        print('\n Resultado NORMALIZADO matriz en la ubicacion : ',p,'\n \n',result_list[p])
-        print('\n Resultado DESNORMALIZADO matriz en la ubicacion : ',p,'\n \n',result_list[p] * rango)
+        print('\n RESULTADO PUNTO FLOTANTE NORMALIZADO EN UBICACION :     ',p,'\n \n',result_list_float[p])
+        print('\n RESULTADO PUNTO FIJO NORMALIZADO EN UBICACION :         ',p,'\n \n',result_list_fixed[p])
+        print('\n RESULTADO PUNTO FLOTANTE DESNORMALIZADO EN UBICACION :  ',p,'\n \n',result_list_float[p] * rango * rango)
+        print('\n RESULTADO PUNTO FIJO DESNORMALIZADO EN UBICACION :      ',p,'\n \n',result_list_fixed[p] * rango * rango)

@@ -63,8 +63,8 @@ def InputGenerator(rango, premult_A, postmult_B, NB, NB_F, roundMode, saturateMo
                                                    #  CASTEANDO A FLOAT PARA RETURN.
         a_float_norm = premult_A_stream[:,col] / rango                         # SE NORMALIZA ENTRE -1 Y +0.99...
         a_fix = fInt.arrayFixedInt(NB,NB_F,a_float_norm,'S',roundMode,saturateMode)
-        print('row: \n', col)
-        print('premult_A_stream[:,col]: \n', premult_A_stream[:,col])
+#        print('row: \n', col)
+#        print('premult_A_stream[:,col]: \n', premult_A_stream[:,col])
         for element in range(len(premult_A_stream)):
             
             if(element < len(premult_A_stream)-1):
@@ -74,8 +74,8 @@ def InputGenerator(rango, premult_A, postmult_B, NB, NB_F, roundMode, saturateMo
                 file0_fixed.write('%d\n'%(a_fix[element].intvalue))                # PARA PUNTO FIJO
                 file0_float.write('%d\n'%(premult_A_stream[:,col][element]))   # PARA PUNTO FLOTANTE
                 
-            print('element: \n', element)
-            print('premult_A_stream[:,col][element]: \n', premult_A_stream[:,col][element])
+#            print('element: \n', element)
+#            print('premult_A_stream[:,col][element]: \n', premult_A_stream[:,col][element])
             
             premult_A_stream[:,col][element] = a_fix[element].fValue
             
