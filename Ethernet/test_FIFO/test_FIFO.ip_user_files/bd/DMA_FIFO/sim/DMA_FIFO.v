@@ -1,15 +1,15 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Wed Feb  3 02:39:09 2021
-//Host        : DESKTOP-9VJG89D running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+//Date        : Thu Feb  4 21:57:30 2021
+//Host        : huaira running 64-bit Linux Mint 20
 //Command     : generate_target DMA_FIFO.bd
 //Design      : DMA_FIFO
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "DMA_FIFO,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=DMA_FIFO,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=23,numReposBlks=17,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_board_cnt=2,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "DMA_FIFO.hwdef" *) 
+(* CORE_GENERATION_INFO = "DMA_FIFO,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=DMA_FIFO,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=23,numReposBlks=17,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_board_cnt=2,da_clkrst_cnt=2,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "DMA_FIFO.hwdef" *) 
 module DMA_FIFO
    (ddr3_sdram_addr,
     ddr3_sdram_ba,
@@ -152,11 +152,11 @@ module DMA_FIFO
   wire axi_smc_M00_AXI_WVALID;
   wire axi_uartlite_0_UART_RxD;
   wire axi_uartlite_0_UART_TxD;
-  wire [31:0]axis_data_fifo_0_M_AXIS_TDATA;
-  wire [3:0]axis_data_fifo_0_M_AXIS_TKEEP;
-  wire axis_data_fifo_0_M_AXIS_TLAST;
-  wire axis_data_fifo_0_M_AXIS_TREADY;
-  wire axis_data_fifo_0_M_AXIS_TVALID;
+  wire [31:0]axis_data_fifo_1_M_AXIS_TDATA;
+  wire [3:0]axis_data_fifo_1_M_AXIS_TKEEP;
+  wire axis_data_fifo_1_M_AXIS_TLAST;
+  wire axis_data_fifo_1_M_AXIS_TREADY;
+  wire axis_data_fifo_1_M_AXIS_TVALID;
   wire mdm_1_debug_sys_rst;
   wire microblaze_0_Clk;
   wire [31:0]microblaze_0_M_AXI_DC_ARADDR;
@@ -438,11 +438,11 @@ module DMA_FIFO
         .s_axi_lite_wdata(microblaze_0_axi_periph_M02_AXI_WDATA),
         .s_axi_lite_wready(microblaze_0_axi_periph_M02_AXI_WREADY),
         .s_axi_lite_wvalid(microblaze_0_axi_periph_M02_AXI_WVALID),
-        .s_axis_s2mm_tdata(axis_data_fifo_0_M_AXIS_TDATA),
-        .s_axis_s2mm_tkeep(axis_data_fifo_0_M_AXIS_TKEEP),
-        .s_axis_s2mm_tlast(axis_data_fifo_0_M_AXIS_TLAST),
-        .s_axis_s2mm_tready(axis_data_fifo_0_M_AXIS_TREADY),
-        .s_axis_s2mm_tvalid(axis_data_fifo_0_M_AXIS_TVALID));
+        .s_axis_s2mm_tdata(axis_data_fifo_1_M_AXIS_TDATA),
+        .s_axis_s2mm_tkeep(axis_data_fifo_1_M_AXIS_TKEEP),
+        .s_axis_s2mm_tlast(axis_data_fifo_1_M_AXIS_TLAST),
+        .s_axis_s2mm_tready(axis_data_fifo_1_M_AXIS_TREADY),
+        .s_axis_s2mm_tvalid(axis_data_fifo_1_M_AXIS_TVALID));
   DMA_FIFO_axi_smc_0 axi_smc
        (.M00_AXI_araddr(axi_smc_M00_AXI_ARADDR),
         .M00_AXI_arburst(axi_smc_M00_AXI_ARBURST),
@@ -616,12 +616,12 @@ module DMA_FIFO
         .s_axi_wstrb(microblaze_0_axi_periph_M01_AXI_WSTRB),
         .s_axi_wvalid(microblaze_0_axi_periph_M01_AXI_WVALID),
         .tx(axi_uartlite_0_UART_TxD));
-  DMA_FIFO_axis_data_fifo_0_0 axis_data_fifo_0
-       (.m_axis_tdata(axis_data_fifo_0_M_AXIS_TDATA),
-        .m_axis_tkeep(axis_data_fifo_0_M_AXIS_TKEEP),
-        .m_axis_tlast(axis_data_fifo_0_M_AXIS_TLAST),
-        .m_axis_tready(axis_data_fifo_0_M_AXIS_TREADY),
-        .m_axis_tvalid(axis_data_fifo_0_M_AXIS_TVALID),
+  DMA_FIFO_axis_data_fifo_1_0 axis_data_fifo_1
+       (.m_axis_tdata(axis_data_fifo_1_M_AXIS_TDATA),
+        .m_axis_tkeep(axis_data_fifo_1_M_AXIS_TKEEP),
+        .m_axis_tlast(axis_data_fifo_1_M_AXIS_TLAST),
+        .m_axis_tready(axis_data_fifo_1_M_AXIS_TREADY),
+        .m_axis_tvalid(axis_data_fifo_1_M_AXIS_TVALID),
         .s_axis_aclk(microblaze_0_Clk),
         .s_axis_aresetn(rst_mig_7series_0_100M_peripheral_aresetn),
         .s_axis_tdata(axi_dma_0_M_AXIS_MM2S_TDATA),
