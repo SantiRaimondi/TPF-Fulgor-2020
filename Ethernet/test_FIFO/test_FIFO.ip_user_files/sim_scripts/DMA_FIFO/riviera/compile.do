@@ -32,6 +32,9 @@ vlib riviera/axi_sg_v4_1_13
 vlib riviera/axi_dma_v7_1_21
 vlib riviera/axis_infrastructure_v1_1_0
 vlib riviera/axis_data_fifo_v2_0_2
+vlib riviera/axis_register_slice_v1_1_20
+vlib riviera/axis_switch_v1_1_20
+vlib riviera/axis_subset_converter_v1_1_20
 
 vmap xilinx_vip riviera/xilinx_vip
 vmap xpm riviera/xpm
@@ -64,126 +67,129 @@ vmap axi_sg_v4_1_13 riviera/axi_sg_v4_1_13
 vmap axi_dma_v7_1_21 riviera/axi_dma_v7_1_21
 vmap axis_infrastructure_v1_1_0 riviera/axis_infrastructure_v1_1_0
 vmap axis_data_fifo_v2_0_2 riviera/axis_data_fifo_v2_0_2
+vmap axis_register_slice_v1_1_20 riviera/axis_register_slice_v1_1_20
+vmap axis_switch_v1_1_20 riviera/axis_switch_v1_1_20
+vmap axis_subset_converter_v1_1_20 riviera/axis_subset_converter_v1_1_20
 
-vlog -work xilinx_vip  -sv2k12 "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
-"D:/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
-"D:/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" \
-"D:/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/xil_common_vip_pkg.sv" \
-"D:/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/axi4stream_vip_pkg.sv" \
-"D:/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/axi_vip_pkg.sv" \
-"D:/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/axi4stream_vip_if.sv" \
-"D:/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/axi_vip_if.sv" \
-"D:/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/clk_vip_if.sv" \
-"D:/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/rst_vip_if.sv" \
+vlog -work xilinx_vip  -sv2k12 "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
+"/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" \
+"/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/xil_common_vip_pkg.sv" \
+"/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/axi4stream_vip_pkg.sv" \
+"/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/axi_vip_pkg.sv" \
+"/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/axi4stream_vip_if.sv" \
+"/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/axi_vip_if.sv" \
+"/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/clk_vip_if.sv" \
+"/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/rst_vip_if.sv" \
 
-vlog -work xpm  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
-"D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-"D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
-"D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+vlog -work xpm  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
+"/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -93 \
-"D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
+"/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_addr_decode.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_read.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg_bank.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_top.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_write.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_ar_channel.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_aw_channel.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_b_channel.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_arbiter.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_fsm.v" \
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_skip_calib_tap.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_top.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_axi.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_translator.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_fifo.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_incr_cmd.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_r_channel.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_simple_fifo.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wrap_cmd.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wr_cmd_fsm.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_w_channel.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axic_register_slice.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_register_slice.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_upsizer.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_a_upsizer.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_and.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_and.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_or.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_or.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_command_fifo.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_fsm.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_fifo.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel_static.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_r_upsizer.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_upsizer.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg_bank.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wr_cmd_fsm.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_read.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_aw_channel.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_r_channel.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_b_channel.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_incr_cmd.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_ar_channel.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wrap_cmd.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_top.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axic_register_slice.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_simple_fifo.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_command_fifo.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_w_upsizer.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel_static.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_and.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_register_slice.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_arbiter.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_and.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_or.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_a_upsizer.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_addr_decode.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_r_upsizer.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_write.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_w_channel.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_mc.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_buf.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_dec_fix.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_gen.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_fi_xor.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_axi.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_ddr_skip_calib_tap.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/phy/mig_7series_v4_2_poc_top.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_mc.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/DMA_FIFO_mig_7series_0_0_mig_sim.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0/user_design/rtl/DMA_FIFO_mig_7series_0_0.v" \
 
@@ -207,37 +213,37 @@ vcom -work xil_defaultlib -93 \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_dlmb_bram_if_cntlr_0/sim/DMA_FIFO_dlmb_bram_if_cntlr_0.vhd" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_ilmb_bram_if_cntlr_0/sim/DMA_FIFO_ilmb_bram_if_cntlr_0.vhd" \
 
-vlog -work blk_mem_gen_v8_4_4  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work blk_mem_gen_v8_4_4  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/2985/simulation/blk_mem_gen_v8_4.v" \
 
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_lmb_bram_0/sim/DMA_FIFO_lmb_bram_0.v" \
 
-vlog -work generic_baseblocks_v2_1_0  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work generic_baseblocks_v2_1_0  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
 
-vlog -work axi_infrastructure_v1_1_0  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work axi_infrastructure_v1_1_0  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
 
-vlog -work axi_register_slice_v2_1_20  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work axi_register_slice_v2_1_20  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v" \
 
-vlog -work fifo_generator_v13_2_5  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work fifo_generator_v13_2_5  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/276e/simulation/fifo_generator_vlog_beh.v" \
 
 vcom -work fifo_generator_v13_2_5 -93 \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/276e/hdl/fifo_generator_v13_2_rfs.vhd" \
 
-vlog -work fifo_generator_v13_2_5  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work fifo_generator_v13_2_5  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/276e/hdl/fifo_generator_v13_2_rfs.v" \
 
-vlog -work axi_data_fifo_v2_1_19  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work axi_data_fifo_v2_1_19  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/60de/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
 
-vlog -work axi_crossbar_v2_1_21  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work axi_crossbar_v2_1_21  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v" \
 
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_xbar_0/sim/DMA_FIFO_xbar_0.v" \
 
 vcom -work axi_lite_ipif_v3_0_4 -93 \
@@ -249,10 +255,10 @@ vcom -work axi_intc_v4_1_14 -93 \
 vcom -work xil_defaultlib -93 \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_microblaze_0_axi_intc_0/sim/DMA_FIFO_microblaze_0_axi_intc_0.vhd" \
 
-vlog -work xlconcat_v2_1_3  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xlconcat_v2_1_3  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v" \
 
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_microblaze_0_xlconcat_0/sim/DMA_FIFO_microblaze_0_xlconcat_0.v" \
 
 vcom -work mdm_v3_2_17 -93 \
@@ -270,13 +276,13 @@ vcom -work proc_sys_reset_v5_0_13 -93 \
 vcom -work xil_defaultlib -93 \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_rst_mig_7series_0_100M_0/sim/DMA_FIFO_rst_mig_7series_0_100M_0.vhd" \
 
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/sim/bd_c263.v" \
 
-vlog -work xlconstant_v1_1_6  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xlconstant_v1_1_6  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v" \
 
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_0/sim/bd_c263_one_0.v" \
 
 vcom -work xil_defaultlib -93 \
@@ -284,45 +290,45 @@ vcom -work xil_defaultlib -93 \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_2/sim/bd_c263_psr_aclk_0.vhd" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_3/sim/bd_c263_psr_aclk1_0.vhd" \
 
-vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/sc_util_v1_0_vl_rfs.sv" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/c012/hdl/sc_switchboard_v1_0_vl_rfs.sv" \
 
-vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_4/sim/bd_c263_arsw_0.sv" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_5/sim/bd_c263_rsw_0.sv" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_6/sim/bd_c263_awsw_0.sv" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_7/sim/bd_c263_wsw_0.sv" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_8/sim/bd_c263_bsw_0.sv" \
 
-vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/2508/hdl/sc_mmu_v1_0_vl_rfs.sv" \
 
-vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_9/sim/bd_c263_s00mmu_0.sv" \
 
-vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ca72/hdl/sc_transaction_regulator_v1_0_vl_rfs.sv" \
 
-vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_10/sim/bd_c263_s00tr_0.sv" \
 
-vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/9d43/hdl/sc_si_converter_v1_0_vl_rfs.sv" \
 
-vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_11/sim/bd_c263_s00sic_0.sv" \
 
-vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b89e/hdl/sc_axi2sc_v1_0_vl_rfs.sv" \
 
-vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_12/sim/bd_c263_s00a2s_0.sv" \
 
-vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/sc_node_v1_0_vl_rfs.sv" \
 
-vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_13/sim/bd_c263_sarn_0.sv" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_14/sim/bd_c263_srn_0.sv" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_15/sim/bd_c263_sawn_0.sv" \
@@ -357,10 +363,10 @@ vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_44/sim/bd_c263_swn_2.sv" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_45/sim/bd_c263_sbn_2.sv" \
 
-vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/7005/hdl/sc_sc2axi_v1_0_vl_rfs.sv" \
 
-vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_46/sim/bd_c263_m00s2a_0.sv" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_47/sim/bd_c263_m00arn_0.sv" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_48/sim/bd_c263_m00rn_0.sv" \
@@ -368,16 +374,16 @@ vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_50/sim/bd_c263_m00wn_0.sv" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_51/sim/bd_c263_m00bn_0.sv" \
 
-vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/901a/hdl/sc_exit_v1_0_vl_rfs.sv" \
 
-vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_52/sim/bd_c263_m00e_0.sv" \
 
-vlog -work axi_vip_v1_1_6  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work axi_vip_v1_1_6  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/dc12/hdl/axi_vip_v1_1_vl_rfs.sv" \
 
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/sim/DMA_FIFO_axi_smc_0.v" \
 
 vcom -work xil_defaultlib -93 \
@@ -410,15 +416,50 @@ vcom -work axi_dma_v7_1_21 -93 \
 vcom -work xil_defaultlib -93 \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_dma_0_0/sim/DMA_FIFO_axi_dma_0_0.vhd" \
 
-vlog -work axis_infrastructure_v1_1_0  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../bd/DMA_FIFO/sim/DMA_FIFO.v" \
+
+vlog -work axis_infrastructure_v1_1_0  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v" \
 
-vlog -work axis_data_fifo_v2_0_2  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work axis_data_fifo_v2_0_2  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/3341/hdl/axis_data_fifo_v2_0_vl_rfs.v" \
 
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+D:/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_axis_data_fifo_1_0/sim/DMA_FIFO_axis_data_fifo_1_0.v" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axis_data_fifo_0_0/sim/DMA_FIFO_axis_data_fifo_0_0.v" \
-"../../../bd/DMA_FIFO/sim/DMA_FIFO.v" \
+
+vlog -work axis_register_slice_v1_1_20  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/00d6/hdl/axis_register_slice_v1_1_vl_rfs.v" \
+
+vlog -work axis_switch_v1_1_20  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/067c/hdl/axis_switch_v1_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_xbar_1/sim/DMA_FIFO_xbar_1.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tdata_DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tuser_DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tstrb_DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tkeep_DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tid_DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tdest_DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tlast_DMA_FIFO_auto_ss_slid_0.v" \
+
+vlog -work axis_subset_converter_v1_1_20  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/949e/hdl/axis_subset_converter_v1_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/top_DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/sim/DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tdata_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tuser_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tstrb_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tkeep_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tid_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tdest_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tlast_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/top_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/sim/DMA_FIFO_auto_ss_slidr_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

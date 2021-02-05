@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Feb  3 01:38:43 2021
-| Host         : DESKTOP-9VJG89D running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Fri Feb  5 00:12:33 2021
+| Host         : huaira running 64-bit Linux Mint 20
 | Command      : report_utilization -file DMA_FIFO_wrapper_utilization_synth.rpt -pb DMA_FIFO_wrapper_utilization_synth.pb
 | Design       : DMA_FIFO_wrapper
 | Device       : 7k325tffg900-2
@@ -162,6 +162,7 @@ Table of Contents
 +-----------------------------------+------+
 |              Ref Name             | Used |
 +-----------------------------------+------+
+| DMA_FIFO_xbar_1                   |    1 |
 | DMA_FIFO_xbar_0                   |    1 |
 | DMA_FIFO_rst_mig_7series_0_200M_0 |    1 |
 | DMA_FIFO_rst_mig_7series_0_100M_0 |    1 |
@@ -174,10 +175,13 @@ Table of Contents
 | DMA_FIFO_ilmb_bram_if_cntlr_0     |    1 |
 | DMA_FIFO_dlmb_v10_0               |    1 |
 | DMA_FIFO_dlmb_bram_if_cntlr_0     |    1 |
+| DMA_FIFO_axis_data_fifo_1_0       |    1 |
 | DMA_FIFO_axis_data_fifo_0_0       |    1 |
 | DMA_FIFO_axi_uartlite_0_0         |    1 |
 | DMA_FIFO_axi_smc_0                |    1 |
 | DMA_FIFO_axi_dma_0_0              |    1 |
+| DMA_FIFO_auto_ss_slidr_0          |    1 |
+| DMA_FIFO_auto_ss_slid_0           |    1 |
 +-----------------------------------+------+
 
 

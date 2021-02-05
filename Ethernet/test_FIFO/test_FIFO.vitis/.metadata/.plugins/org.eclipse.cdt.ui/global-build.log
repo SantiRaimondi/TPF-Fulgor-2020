@@ -1,0 +1,211 @@
+23:14:34 **** Build of project DMA_FIFO_wrapper ****
+buildplatform.sh 34483 DMA_FIFO_wrapper  
+XSDB Server Channel: tcfchan#1
+Building the BSP Library for domain  - standalone_domain on processor microblaze_0
+Running Make include in microblaze_0/libsrc/axidma_v9_10/src
+
+make -C microblaze_0/libsrc/axidma_v9_10/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
+ -Wall -Wextra"
+
+Running Make include in microblaze_0/libsrc/uartlite_v3_3/src
+
+make -C microblaze_0/libsrc/uartlite_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" 
+"COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-section
+s -Wall -Wextra"
+
+Running Make include in microblaze_0/libsrc/bram_v4_3/src
+
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+all -Wextra"
+
+Running Make include in microblaze_0/libsrc/standalone_v7_1/src
+
+make -C microblaze_0/libsrc/standalone_v7_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar
+" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-secti
+ons -Wall -Wextra"
+
+Running Make include in microblaze_0/libsrc/cpu_v2_10/src
+
+make -C microblaze_0/libsrc/cpu_v2_10/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+all -Wextra"
+
+Running Make include in microblaze_0/libsrc/intc_v3_10/src
+
+make -C microblaze_0/libsrc/intc_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+Wall -Wextra"
+
+Running Make libs in microblaze_0/libsrc/axidma_v9_10/src
+
+make -C microblaze_0/libsrc/axidma_v9_10/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+all -Wextra"
+
+Compiling axidma
+
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/uartlite_v3_3/src
+
+make -C microblaze_0/libsrc/uartlite_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+Wall -Wextra"
+
+Compiling uartlite
+
+Running Make libs in microblaze_0/libsrc/bram_v4_3/src
+
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+ -Wextra"
+
+Compiling bram
+
+Running Make libs in microblaze_0/libsrc/standalone_v7_1/src
+
+make -C microblaze_0/libsrc/standalone_v7_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
+ -Wall -Wextra"
+
+Compiling standalone
+
+microblaze_sleep.c:75:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+Running Make libs in microblaze_0/libsrc/cpu_v2_10/src
+
+make -C microblaze_0/libsrc/cpu_v2_10/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+ -Wextra"
+
+Compiling cpu
+
+Running Make libs in microblaze_0/libsrc/intc_v3_10/src
+
+make -C microblaze_0/libsrc/intc_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+l -Wextra"
+
+Compiling intc
+
+Finished building libraries
+
+23:16:33 **** Build of configuration Debug for project test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/export/DMA_FIFO_wrapper/sw/DMA_FIFO_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:57:12: error: unknown type name 'XAxiDma'
+     static XAxiDma dma0;
+            ^~~~~~~
+../src/helloworld.c:58:9: error: unknown type name 'XAxiDma_Config'
+  static XAxiDma_Config *cfgDma0=XAxiDma_LookupConfig(XPAR_AXIDMA_0_DEVICE_ID);
+         ^~~~~~~~~~~~~~
+../src/helloworld.c:58:33: warning: implicit declaration of function 'XAxiDma_LookupConfig' [-Wimplicit-function-declaration]
+  static XAxiDma_Config *cfgDma0=XAxiDma_LookupConfig(XPAR_AXIDMA_0_DEVICE_ID);
+                                 ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:58:33: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+../src/helloworld.c:58:33: error: initializer element is not constant
+../src/helloworld.c:60:2: warning: implicit declaration of function 'XAxiDma_CfgInitialize' [-Wimplicit-function-declaration]
+  XAxiDma_CfgInitialize(&dma0, cfgDma0);
+  ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:62:5: warning: implicit declaration of function 'XAxiDma_Selftest' [-Wimplicit-function-declaration]
+  if(XAxiDma_Selftest(&dma0)==XST_SUCCESS) print("DMA PASS\r\t");
+     ^~~~~~~~~~~~~~~~
+../src/helloworld.c:62:30: error: 'XST_SUCCESS' undeclared (first use in this function)
+  if(XAxiDma_Selftest(&dma0)==XST_SUCCESS) print("DMA PASS\r\t");
+                              ^~~~~~~~~~~
+../src/helloworld.c:62:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+23:17:35 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/export/DMA_FIFO_wrapper/sw/DMA_FIFO_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:33: error: initializer element is not constant
+  static XAxiDma_Config *cfgDma0=XAxiDma_LookupConfig(XPAR_AXIDMA_0_DEVICE_ID);
+                                 ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+23:19:00 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/export/DMA_FIFO_wrapper/sw/DMA_FIFO_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:33: error: initializer element is not constant
+  static XAxiDma_Config *cfgDma0=XAxiDma_LookupConfig(XPAR_AXIDMA_0_DEVICE_ID);
+                                 ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+23:20:21 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/export/DMA_FIFO_wrapper/sw/DMA_FIFO_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:13: error: incompatible types when assigning to type 'XAxiDma_Config' {aka 'struct <anonymous>'} from type 'XAxiDma_Config *' {aka 'struct <anonymous> *'}
+     *cfgDma0=XAxiDma_LookupConfig(XPAR_AXIDMA_0_DEVICE_ID);
+             ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+23:21:06 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/export/DMA_FIFO_wrapper/sw/DMA_FIFO_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/export/DMA_FIFO_wrapper/sw/DMA_FIFO_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/export/DMA_FIFO_wrapper/sw/DMA_FIFO_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13036	   1432	   5052	  19520	   4c40	test.elf
+Finished building: test.elf.size
+ 
+23:31:16 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/export/DMA_FIFO_wrapper/sw/DMA_FIFO_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/export/DMA_FIFO_wrapper/sw/DMA_FIFO_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  14868	   1432	   5052	  21352	   5368	test.elf
+Finished building: test.elf.size
+ 
+23:36:52 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/export/DMA_FIFO_wrapper/sw/DMA_FIFO_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/export/DMA_FIFO_wrapper/sw/DMA_FIFO_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  14868	   1432	   5052	  21352	   5368	test.elf
+Finished building: test.elf.size
+ 

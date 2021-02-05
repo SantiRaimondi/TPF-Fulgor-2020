@@ -1,8 +1,8 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Wed Feb  3 02:39:09 2021
-//Host        : DESKTOP-9VJG89D running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+//Date        : Fri Feb  5 00:10:02 2021
+//Host        : huaira running 64-bit Linux Mint 20
 //Command     : generate_target DMA_FIFO_wrapper.bd
 //Design      : DMA_FIFO_wrapper
 //Purpose     : IP block netlist

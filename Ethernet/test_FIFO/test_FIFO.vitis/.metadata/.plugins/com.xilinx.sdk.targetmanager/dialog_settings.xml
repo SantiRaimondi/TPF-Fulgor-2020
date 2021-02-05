@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="_ide/bitstream/DMA_FIFO_wrapper.mmi" key="test-bmmFile"/>
+	<item value="Digilent JTAG-SMT1 210203339927A/1-xc7k325t" key="test-device"/>
+	<item value="test" key="programfpga.sdxproject"/>
+	<item value="vpn" key="test-target"/>
+	<item value="false" key="test-skip_rev_check"/>
+	<item value="_ide/bitstream/DMA_FIFO_wrapper.bit" key="test-bitFile"/>
+	<item value="bootloop" key="test-microblaze_0-initElf"/>
+	<item value="false" key="test-partial_bit"/>
+</section>

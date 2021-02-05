@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Feb  3 01:57:06 2021
-| Host         : DESKTOP-9VJG89D running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Fri Feb  5 00:18:47 2021
+| Host         : huaira running 64-bit Linux Mint 20
 | Command      : report_drc -file DMA_FIFO_wrapper_drc_routed.rpt -pb DMA_FIFO_wrapper_drc_routed.pb -rpx DMA_FIFO_wrapper_drc_routed.rpx
 | Design       : DMA_FIFO_wrapper
 | Device       : xc7k325tffg900-2
@@ -68,7 +68,7 @@ Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-17 net(s) have no routable loads. The problem bus(es) and/or net(s) are DMA_FIFO_i/axi_smc/inst/s04_nodes/s04_b_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s00_nodes/s00_b_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s00_nodes/s00_r_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s04_nodes/s04_aw_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s00_nodes/s00_w_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s01_nodes/s01_r_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s02_nodes/s02_ar_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s02_nodes/s02_r_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s03_nodes/s03_aw_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s03_nodes/s03_b_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s03_nodes/s03_w_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s04_nodes/s04_ar_node/inst/s_sc_areset (the first 15 of 17 listed).
+17 net(s) have no routable loads. The problem bus(es) and/or net(s) are DMA_FIFO_i/axi_smc/inst/s02_nodes/s02_r_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s04_nodes/s04_w_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s04_nodes/s04_r_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s04_nodes/s04_b_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s04_nodes/s04_aw_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s04_nodes/s04_ar_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s03_nodes/s03_w_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s03_nodes/s03_b_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s03_nodes/s03_aw_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s02_nodes/s02_ar_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s01_nodes/s01_r_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s00_nodes/s00_w_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s00_nodes/s00_r_node/inst/s_sc_areset (the first 15 of 17 listed).
 Related violations: <none>
 
 REQP-181#1 Advisory

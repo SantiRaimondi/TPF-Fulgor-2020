@@ -16,8 +16,8 @@ module PE_VCounter
 (
     input i_clock,
     input i_reset,
-    input [I_BITS-1:0] i_a,
-    input [I_BITS-1:0] i_b,
+    input signed [I_BITS-1:0] i_a,
+    input signed [I_BITS-1:0] i_b,
     output [I_BITS-1:0] o_a,
     output [I_BITS-1:0] o_b,
     output [O_BITS-1:0] o_c,
@@ -27,10 +27,8 @@ module PE_VCounter
 localparam COUNTER_BITS = $clog2(DIMENSION + COUNTER_LIMIT + 1);
 //Variables
 
-reg signed [I_BITS-1:0] reg_a;                   //*************************************************************************
-                                                //CONSULTAR QUE REGISTROS Y QUE ENTRADAS LLEVAN SIGNED
-                                                //*************************************************************************
-reg signed [I_BITS-1:0] reg_b;
+reg [I_BITS-1:0] reg_a;                                                       
+reg [I_BITS-1:0] reg_b;
 reg signed [O_BITS-1:0] reg_c;
 reg reg_finish;
 reg [COUNTER_BITS-1 : 0] counter; //El tamano del contador depende del indice pasado como parametro, es decir la diagonal inversa en la cual esta ubicado el PE
@@ -69,7 +67,7 @@ begin
                 reg_a <= i_a;
                 reg_b <= i_b;
                 reg_c <= final_prod; //se sobreescribe reg_c
-                counter <= 1'b1; // reseteo counter *se pone en 1 porque me comi el cero en el ciclo pasado
+                counter <= 1'b1; // reseteo counter a 1 ya que la primer suma de la matriz entrante se hace cuando (counter = DIMENSION)
             end
     end
 end

@@ -1,0 +1,21 @@
+23:36:52 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/export/DMA_FIFO_wrapper/sw/DMA_FIFO_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/export/DMA_FIFO_wrapper/sw/DMA_FIFO_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  14868	   1432	   5052	  21352	   5368	test.elf
+Finished building: test.elf.size
+ 
+
+23:36:52 Build Finished (took 492ms)
+
