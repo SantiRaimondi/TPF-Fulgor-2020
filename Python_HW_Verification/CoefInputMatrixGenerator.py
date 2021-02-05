@@ -53,7 +53,7 @@ def CoefInputMatrixGenerator(N,N_matrix_mult):
         
         for s in range(j):
             A = A * (-1)
-            B = B * (-1)
+            B = B 
         
 ###########################################################################################3
                 

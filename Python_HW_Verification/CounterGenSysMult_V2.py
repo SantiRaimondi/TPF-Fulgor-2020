@@ -1,23 +1,15 @@
-def CounterGenSysMult2(A,B,rango,NB_OUT,NB_F): # A Y B MATRICES
+def CounterGenSysMult2(A,B,rango,NB_OUT,NB_OUT_F): # A Y B MATRICES
 
     import numpy as np
     import math
     import _fixedInt as fInt
     
+    vector_matching_fixed = open("vector_matching_fixed.out","w")
+    vector_matching_float = open("vector_matching_float.out","w")
+    
     n = len(A)  ## Numero de filas en matriz A o de columnas en matriz B.
     print('LONGITUD DE A : ',n)
     
-###############################################################################
-    
-    # PARAMETRIZACION AUTOMATICA DE LAS SALIDAS
-    
-#    NB_OUT_F = int(NB_OUT - 2 - math.ceil(math.log2(n))) 
-    
-    # CASO FULL RESOLUTION
-    
-    NB_OUT_F = NB_F * 2  # int(NB_OUT - 2 - math.ceil(math.log2(n)))
-    
-    print('NB_OUT_F :',NB_OUT_F)
     
 ###############################################################################
     
@@ -36,10 +28,10 @@ def CounterGenSysMult2(A,B,rango,NB_OUT,NB_F): # A Y B MATRICES
 ################### PARA GUARDAR RESULTADOS:    #############################################
     N_Matrix_Mult = (len(A[0]) - (2*n-1)) // n
     
-    result_list_float = []
+    result_list_float = [] # Se crean listas para logueo de resultados
     result_list_fixed = []
-    result_logged = 0
-    current_mat = 0
+    result_logged = 0         # Estas dos variables asisten al logueo de dos diagonales de resultados
+    current_mat = 0           # independientes de dos matrices distintas, pero que ocurren en el mismo clock
     
     print('N_Matrix_Mult = ',N_Matrix_Mult)
     
@@ -76,7 +68,7 @@ def CounterGenSysMult2(A,B,rango,NB_OUT,NB_F): # A Y B MATRICES
                 
             counter_finish_list = np.roll(counter_finish_list,1)
             
-            if(count == 0 and i < (N_clocks-n)):
+            if(count == 0 and i < (N_clocks-n)): # Esta condicion implica que se ha terminado de calcular el coeficiente c11
                 
                 counter_finish_list[0] = True
             else:
@@ -101,20 +93,33 @@ def CounterGenSysMult2(A,B,rango,NB_OUT,NB_F): # A Y B MATRICES
             A_w[q,:] = np.roll(A_w[q,:],1)
             B_w[:,q] = np.roll(B_w[:,q],1)
         
-        A_w[:,0] = A[:,i]
-        B_w[0,:] = B[:,i]
+        A_w[:,0] = A[:,i]       # Nuevas entradas en primera coluna de A_w
+        B_w[0,:] = B[:,i]       # Nuevas entradas en primera fila de B_w
         
         for row in range(n):
             for col in range(n):   
-                C_w[row][col] = C_w[row][col] + (A_w[row][col] * B_w[row][col])
                 
-                C_w_fixed_aux = fInt.DeFixedInt(NB_OUT,NB_OUT_F,'S','trunc','wrap')
-
-                C_w_fixed_aux.value = C_w[row][col]
-
-                C_w_fixed[row][col] = C_w_fixed_aux.fValue
+                C_w[row][col] = C_w[row][col] + (A_w[row][col] * B_w[row][col])  # Se calcula resultado en punto flotante
                 
-                       
+                C_w_fixed_aux = fInt.DeFixedInt(NB_OUT,NB_OUT_F,'S','trunc','wrap') # Se crea objeto DeFixedInt()
+
+                C_w_fixed_aux.value = C_w[row][col]      # Se sobreescribe el atributo .value con el resultado en punto flotante
+
+                C_w_fixed[row][col] = C_w_fixed_aux.fValue # Finalmente se pasa el resultdo fixeado a la nueva matriz
+                
+#                print('\n i = ',i, '\n') 
+
+#                print('\n C_w[row][col] : \n',C_w[row][col])
+                
+                if(col < n-1):
+                    vector_matching_fixed.write('%d\t'%(C_w_fixed_aux.intvalue))
+                    vector_matching_float.write('%d\t'%(C_w[row][col]* rango * rango))
+
+                else:
+                    vector_matching_fixed.write('%d\n'%(C_w_fixed_aux.intvalue))
+                    vector_matching_float.write('%d\n'%(C_w[row][col]* rango * rango))
+                    
+                        
                 
         print('\n i = ',i, '\n') 
 #        print('A_w :\n',A_w)
@@ -125,6 +130,8 @@ def CounterGenSysMult2(A,B,rango,NB_OUT,NB_F): # A Y B MATRICES
         print('\n C_w : \n',C_w)
         print('\n C_w_fixed : \n',C_w_fixed)
     
+    vector_matching_fixed.close()
+    vector_matching_float.close()
     
     for p in range(N_Matrix_Mult):
         
