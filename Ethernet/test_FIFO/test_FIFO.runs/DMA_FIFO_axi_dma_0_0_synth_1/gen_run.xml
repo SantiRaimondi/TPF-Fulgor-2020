@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="DMA_FIFO_axi_dma_0_0_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1612320647">
-  <File Type="PA-TCL" Name="DMA_FIFO_axi_dma_0_0.tcl"/>
+<GenRun Id="DMA_FIFO_axi_dma_0_0_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1612556939">
+  <File Type="VDS-TIMING-PB" Name="DMA_FIFO_axi_dma_0_0_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="DMA_FIFO_axi_dma_0_0_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="DMA_FIFO_axi_dma_0_0.dcp"/>
-  <File Type="REPORTS-TCL" Name="DMA_FIFO_axi_dma_0_0_reports.tcl"/>
-  <File Type="RDS-RDS" Name="DMA_FIFO_axi_dma_0_0.vds"/>
-  <File Type="RDS-UTIL" Name="DMA_FIFO_axi_dma_0_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="DMA_FIFO_axi_dma_0_0_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="DMA_FIFO_axi_dma_0_0_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="DMA_FIFO_axi_dma_0_0_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="DMA_FIFO_axi_dma_0_0.vds"/>
+  <File Type="REPORTS-TCL" Name="DMA_FIFO_axi_dma_0_0_reports.tcl"/>
+  <File Type="PA-TCL" Name="DMA_FIFO_axi_dma_0_0.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DMA_FIFO_axi_dma_0_0">
     <File Path="$PSRCDIR/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_dma_0_0/DMA_FIFO_axi_dma_0_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>
@@ -22,9 +27,11 @@
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DMA_FIFO_axi_dma_0_0">
     <File Path="$PSRCDIR/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_dma_0_0/DMA_FIFO_axi_dma_0_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>

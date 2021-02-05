@@ -140,8 +140,8 @@ module DMA_FIFO_axi_smc_0 (
   input bit [3 : 0] S03_AXI_awqos,
   input bit_as_bool S03_AXI_awvalid,
   output bit_as_bool S03_AXI_awready,
-  input bit [31 : 0] S03_AXI_wdata,
-  input bit [3 : 0] S03_AXI_wstrb,
+  input bit [63 : 0] S03_AXI_wdata,
+  input bit [7 : 0] S03_AXI_wstrb,
   input bit_as_bool S03_AXI_wlast,
   input bit_as_bool S03_AXI_wvalid,
   output bit_as_bool S03_AXI_wready,
@@ -299,8 +299,8 @@ module DMA_FIFO_axi_smc_0 (aclk,aclk1,aresetn,S00_AXI_awaddr,S00_AXI_awlen,S00_A
   input bit [3 : 0] S03_AXI_awqos;
   input bit S03_AXI_awvalid;
   output wire S03_AXI_awready;
-  input bit [31 : 0] S03_AXI_wdata;
-  input bit [3 : 0] S03_AXI_wstrb;
+  input bit [63 : 0] S03_AXI_wdata;
+  input bit [7 : 0] S03_AXI_wstrb;
   input bit S03_AXI_wlast;
   input bit S03_AXI_wvalid;
   output wire S03_AXI_wready;
@@ -455,8 +455,8 @@ module DMA_FIFO_axi_smc_0 (aclk,aclk1,aresetn,S00_AXI_awaddr,S00_AXI_awlen,S00_A
   input bit [3 : 0] S03_AXI_awqos;
   input bit S03_AXI_awvalid;
   output wire S03_AXI_awready;
-  input bit [31 : 0] S03_AXI_wdata;
-  input bit [3 : 0] S03_AXI_wstrb;
+  input bit [63 : 0] S03_AXI_wdata;
+  input bit [7 : 0] S03_AXI_wstrb;
   input bit S03_AXI_wlast;
   input bit S03_AXI_wvalid;
   output wire S03_AXI_wready;
