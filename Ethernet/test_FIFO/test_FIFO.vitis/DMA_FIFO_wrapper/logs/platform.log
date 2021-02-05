@@ -1,0 +1,992 @@
+TRACE::2021-02-04.23:13:33::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:33::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:33::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:38::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:38::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:38::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:38::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-02-04.23:13:39::SCWPlatform::Opened new HwDB with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWWriter::formatted JSON is {
+	"platformName":	"DMA_FIFO_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA_FIFO_wrapper",
+	"platHandOff":	"/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/DMA_FIFO_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/DMA_FIFO_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2021-02-04.23:13:39::SCWWriter::formatted JSON is {
+	"platformName":	"DMA_FIFO_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA_FIFO_wrapper",
+	"platHandOff":	"/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/DMA_FIFO_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/DMA_FIFO_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA_FIFO_wrapper",
+	"systems":	[{
+			"systemName":	"DMA_FIFO_wrapper",
+			"systemDesc":	"DMA_FIFO_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA_FIFO_wrapper"
+		}]
+}
+TRACE::2021-02-04.23:13:39::SCWPlatform::Boot application domains not present, creating them
+TRACE::2021-02-04.23:13:39::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2021-02-04.23:13:39::SCWWriter::formatted JSON is {
+	"platformName":	"DMA_FIFO_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA_FIFO_wrapper",
+	"platHandOff":	"/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/DMA_FIFO_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/DMA_FIFO_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA_FIFO_wrapper",
+	"systems":	[{
+			"systemName":	"DMA_FIFO_wrapper",
+			"systemDesc":	"DMA_FIFO_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA_FIFO_wrapper"
+		}]
+}
+TRACE::2021-02-04.23:13:39::SCWWriter::formatted JSON is {
+	"platformName":	"DMA_FIFO_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA_FIFO_wrapper",
+	"platHandOff":	"/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/DMA_FIFO_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/DMA_FIFO_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA_FIFO_wrapper",
+	"systems":	[{
+			"systemName":	"DMA_FIFO_wrapper",
+			"systemDesc":	"DMA_FIFO_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA_FIFO_wrapper"
+		}]
+}
+TRACE::2021-02-04.23:13:39::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:39::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:39::SCWDomain::checking for install qemu data   : 
+TRACE::2021-02-04.23:13:39::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:39::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:39::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:39::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:39::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-02-04.23:13:39::SCWMssOS::No sw design opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWMssOS::mss does not exists at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWMssOS::Creating sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWMssOS::Adding the swdes entry, created swdb /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss with des name /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWMssOS::updating the scw layer changes to swdes at   /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWMssOS::Writing mss at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWMssOS::Completed writing the mss file at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp
+TRACE::2021-02-04.23:13:39::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2021-02-04.23:13:39::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2021-02-04.23:13:39::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:39::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:39::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2021-02-04.23:13:39::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:39::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:39::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2021-02-04.23:13:39::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:39::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:39::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2021-02-04.23:13:39::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWWriter::formatted JSON is {
+	"platformName":	"DMA_FIFO_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA_FIFO_wrapper",
+	"platHandOff":	"/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/DMA_FIFO_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/DMA_FIFO_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA_FIFO_wrapper",
+	"systems":	[{
+			"systemName":	"DMA_FIFO_wrapper",
+			"systemDesc":	"DMA_FIFO_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA_FIFO_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-02-04.23:13:39::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:39::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:39::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:39::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2021-02-04.23:13:39::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:39::SCWMssOS::Completed writing the mss file at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp
+TRACE::2021-02-04.23:13:39::SCWMssOS::Forcing BSP Sources regeneration.
+LOG::2021-02-04.23:13:44::SCWPlatform::Started generating the artifacts platform DMA_FIFO_wrapper
+TRACE::2021-02-04.23:13:44::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-02-04.23:13:44::SCWPlatform::Started generating the artifacts for system configuration DMA_FIFO_wrapper
+LOG::2021-02-04.23:13:44::SCWSystem::Checking the domain standalone_domain
+LOG::2021-02-04.23:13:44::SCWSystem::Not a boot domain 
+LOG::2021-02-04.23:13:44::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-02-04.23:13:44::SCWDomain::Generating domain artifcats
+TRACE::2021-02-04.23:13:44::SCWMssOS::Generating standalone artifcats
+TRACE::2021-02-04.23:13:44::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-02-04.23:13:44::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:44::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:44::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:44::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:44::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:44::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:44::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:44::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:44::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:44::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss||
+
+KEYINFO::2021-02-04.23:13:44::SCWMssOS::Could not open the swdb for /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+KEYINFO::2021-02-04.23:13:44::SCWMssOS::Could not open the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2021-02-04.23:13:44::SCWMssOS::Cleared the swdb table entry
+TRACE::2021-02-04.23:13:44::SCWMssOS::No sw design opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:44::SCWMssOS::mss exists loading the mss file  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:44::SCWMssOS::Opened the sw design from mss  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:44::SCWMssOS::Adding the swdes entry /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2021-02-04.23:13:44::SCWMssOS::updating the scw layer about changes
+TRACE::2021-02-04.23:13:44::SCWMssOS::Opened the sw design.  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:44::SCWMssOS::Completed writing the mss file at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp
+TRACE::2021-02-04.23:13:44::SCWMssOS::Mss edits present, copying mssfile into export location /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:44::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-02-04.23:13:44::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-02-04.23:13:44::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2021-02-04.23:13:44::SCWMssOS::skipping the bsp build ... 
+TRACE::2021-02-04.23:13:44::SCWMssOS::Copying to export directory.
+TRACE::2021-02-04.23:13:44::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-02-04.23:13:44::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-02-04.23:13:44::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-02-04.23:13:44::SCWSystem::Completed Processing the sysconfig DMA_FIFO_wrapper
+LOG::2021-02-04.23:13:44::SCWPlatform::Completed generating the artifacts for system configuration DMA_FIFO_wrapper
+TRACE::2021-02-04.23:13:44::SCWPlatform::Started preparing the platform 
+TRACE::2021-02-04.23:13:44::SCWSystem::Writing the bif file for system config DMA_FIFO_wrapper
+TRACE::2021-02-04.23:13:44::SCWSystem::dir created 
+TRACE::2021-02-04.23:13:44::SCWSystem::Writing the bif 
+TRACE::2021-02-04.23:13:44::SCWPlatform::Started writing the spfm file 
+TRACE::2021-02-04.23:13:45::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-02-04.23:13:45::SCWPlatform::Completed generating the platform
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWWriter::formatted JSON is {
+	"platformName":	"DMA_FIFO_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA_FIFO_wrapper",
+	"platHandOff":	"/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/DMA_FIFO_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/DMA_FIFO_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA_FIFO_wrapper",
+	"systems":	[{
+			"systemName":	"DMA_FIFO_wrapper",
+			"systemDesc":	"DMA_FIFO_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA_FIFO_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"e1e1ba57ca2c58633d57849e2edaf610",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-02-04.23:13:45::SCWPlatform::updated the xpfm file.
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWWriter::formatted JSON is {
+	"platformName":	"DMA_FIFO_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA_FIFO_wrapper",
+	"platHandOff":	"/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/DMA_FIFO_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/DMA_FIFO_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA_FIFO_wrapper",
+	"systems":	[{
+			"systemName":	"DMA_FIFO_wrapper",
+			"systemDesc":	"DMA_FIFO_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA_FIFO_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"e1e1ba57ca2c58633d57849e2edaf610",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWWriter::formatted JSON is {
+	"platformName":	"DMA_FIFO_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA_FIFO_wrapper",
+	"platHandOff":	"/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/DMA_FIFO_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/DMA_FIFO_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA_FIFO_wrapper",
+	"systems":	[{
+			"systemName":	"DMA_FIFO_wrapper",
+			"systemDesc":	"DMA_FIFO_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA_FIFO_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"e1e1ba57ca2c58633d57849e2edaf610",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2021-02-04.23:13:45::SCWPlatform::Started generating the artifacts platform DMA_FIFO_wrapper
+TRACE::2021-02-04.23:13:45::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-02-04.23:13:45::SCWPlatform::Started generating the artifacts for system configuration DMA_FIFO_wrapper
+LOG::2021-02-04.23:13:45::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-02-04.23:13:45::SCWDomain::Generating domain artifcats
+TRACE::2021-02-04.23:13:45::SCWMssOS::Generating standalone artifcats
+TRACE::2021-02-04.23:13:45::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::Completed writing the mss file at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp
+TRACE::2021-02-04.23:13:45::SCWMssOS::Mss edits present, copying mssfile into export location /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-02-04.23:13:45::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-02-04.23:13:45::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2021-02-04.23:13:45::SCWMssOS::skipping the bsp build ... 
+TRACE::2021-02-04.23:13:45::SCWMssOS::Copying to export directory.
+TRACE::2021-02-04.23:13:45::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-02-04.23:13:45::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-02-04.23:13:45::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-02-04.23:13:45::SCWSystem::Completed Processing the sysconfig DMA_FIFO_wrapper
+LOG::2021-02-04.23:13:45::SCWPlatform::Completed generating the artifacts for system configuration DMA_FIFO_wrapper
+TRACE::2021-02-04.23:13:45::SCWPlatform::Started preparing the platform 
+TRACE::2021-02-04.23:13:45::SCWSystem::Writing the bif file for system config DMA_FIFO_wrapper
+TRACE::2021-02-04.23:13:45::SCWSystem::dir created 
+TRACE::2021-02-04.23:13:45::SCWSystem::Writing the bif 
+TRACE::2021-02-04.23:13:45::SCWPlatform::Started writing the spfm file 
+TRACE::2021-02-04.23:13:45::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-02-04.23:13:45::SCWPlatform::Completed generating the platform
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:13:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:13:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:13:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:13:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:13:45::SCWWriter::formatted JSON is {
+	"platformName":	"DMA_FIFO_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA_FIFO_wrapper",
+	"platHandOff":	"/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/DMA_FIFO_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/DMA_FIFO_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA_FIFO_wrapper",
+	"systems":	[{
+			"systemName":	"DMA_FIFO_wrapper",
+			"systemDesc":	"DMA_FIFO_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA_FIFO_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"e1e1ba57ca2c58633d57849e2edaf610",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-02-04.23:13:45::SCWPlatform::updated the xpfm file.
+LOG::2021-02-04.23:14:39::SCWPlatform::Started generating the artifacts platform DMA_FIFO_wrapper
+TRACE::2021-02-04.23:14:39::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-02-04.23:14:39::SCWPlatform::Started generating the artifacts for system configuration DMA_FIFO_wrapper
+LOG::2021-02-04.23:14:39::SCWSystem::Checking the domain standalone_domain
+LOG::2021-02-04.23:14:39::SCWSystem::Not a boot domain 
+LOG::2021-02-04.23:14:39::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-02-04.23:14:39::SCWDomain::Generating domain artifcats
+TRACE::2021-02-04.23:14:39::SCWMssOS::Generating standalone artifcats
+TRACE::2021-02-04.23:14:39::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-02-04.23:14:39::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:39::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:39::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:39::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:14:39::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:39::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:14:39::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:14:39::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:14:39::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:14:39::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:14:39::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:14:39::SCWMssOS::Completed writing the mss file at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp
+TRACE::2021-02-04.23:14:39::SCWMssOS::Mss edits present, copying mssfile into export location /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:14:39::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-02-04.23:14:39::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-02-04.23:14:39::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2021-02-04.23:14:39::SCWMssOS::doing bsp build ... 
+TRACE::2021-02-04.23:14:39::SCWMssOS::System Command Ran  cd  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp ; bash -c "make  " 
+TRACE::2021-02-04.23:14:39::SCWMssOS::Running Make include in microblaze_0/libsrc/axidma_v9_10/src
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::make -C microblaze_0/libsrc/axidma_v9_10/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+TRACE::2021-02-04.23:14:39::SCWMssOS::COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
+TRACE::2021-02-04.23:14:39::SCWMssOS:: -Wall -Wextra"
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::Running Make include in microblaze_0/libsrc/uartlite_v3_3/src
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" 
+TRACE::2021-02-04.23:14:39::SCWMssOS::"COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-section
+TRACE::2021-02-04.23:14:39::SCWMssOS::s -Wall -Wextra"
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::Running Make include in microblaze_0/libsrc/bram_v4_3/src
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2021-02-04.23:14:39::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2021-02-04.23:14:39::SCWMssOS::all -Wextra"
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::Running Make include in microblaze_0/libsrc/standalone_v7_1/src
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar
+TRACE::2021-02-04.23:14:39::SCWMssOS::" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-secti
+TRACE::2021-02-04.23:14:39::SCWMssOS::ons -Wall -Wextra"
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::Running Make include in microblaze_0/libsrc/cpu_v2_10/src
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2021-02-04.23:14:39::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2021-02-04.23:14:39::SCWMssOS::all -Wextra"
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::Running Make include in microblaze_0/libsrc/intc_v3_10/src
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+TRACE::2021-02-04.23:14:39::SCWMssOS::MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+TRACE::2021-02-04.23:14:39::SCWMssOS::Wall -Wextra"
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::Running Make libs in microblaze_0/libsrc/axidma_v9_10/src
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::make -C microblaze_0/libsrc/axidma_v9_10/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2021-02-04.23:14:39::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2021-02-04.23:14:39::SCWMssOS::all -Wextra"
+
+TRACE::2021-02-04.23:14:39::SCWMssOS::Compiling axidma
+
+TRACE::2021-02-04.23:14:40::SCWMssOS::Running Make libs in microblaze_0/libsrc/uartlite_v3_3/src
+
+TRACE::2021-02-04.23:14:40::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+TRACE::2021-02-04.23:14:40::SCWMssOS::MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+TRACE::2021-02-04.23:14:40::SCWMssOS::Wall -Wextra"
+
+TRACE::2021-02-04.23:14:40::SCWMssOS::Compiling uartlite
+
+TRACE::2021-02-04.23:14:41::SCWMssOS::Running Make libs in microblaze_0/libsrc/bram_v4_3/src
+
+TRACE::2021-02-04.23:14:41::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2021-02-04.23:14:41::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2021-02-04.23:14:41::SCWMssOS:: -Wextra"
+
+TRACE::2021-02-04.23:14:41::SCWMssOS::Compiling bram
+
+TRACE::2021-02-04.23:14:41::SCWMssOS::Running Make libs in microblaze_0/libsrc/standalone_v7_1/src
+
+TRACE::2021-02-04.23:14:41::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+TRACE::2021-02-04.23:14:41::SCWMssOS::COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
+TRACE::2021-02-04.23:14:41::SCWMssOS:: -Wall -Wextra"
+
+TRACE::2021-02-04.23:14:41::SCWMssOS::Compiling standalone
+
+TRACE::2021-02-04.23:14:44::SCWMssOS::Running Make libs in microblaze_0/libsrc/cpu_v2_10/src
+
+TRACE::2021-02-04.23:14:44::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2021-02-04.23:14:44::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2021-02-04.23:14:44::SCWMssOS:: -Wextra"
+
+TRACE::2021-02-04.23:14:44::SCWMssOS::Compiling cpu
+
+TRACE::2021-02-04.23:14:44::SCWMssOS::Running Make libs in microblaze_0/libsrc/intc_v3_10/src
+
+TRACE::2021-02-04.23:14:44::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2021-02-04.23:14:44::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2021-02-04.23:14:44::SCWMssOS::l -Wextra"
+
+TRACE::2021-02-04.23:14:44::SCWMssOS::Compiling intc
+
+TRACE::2021-02-04.23:14:45::SCWMssOS::Finished building libraries
+
+TRACE::2021-02-04.23:14:45::SCWMssOS::Copying to export directory.
+TRACE::2021-02-04.23:14:45::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-02-04.23:14:45::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-02-04.23:14:45::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-02-04.23:14:45::SCWSystem::Completed Processing the sysconfig DMA_FIFO_wrapper
+LOG::2021-02-04.23:14:45::SCWPlatform::Completed generating the artifacts for system configuration DMA_FIFO_wrapper
+TRACE::2021-02-04.23:14:45::SCWPlatform::Started preparing the platform 
+TRACE::2021-02-04.23:14:45::SCWSystem::Writing the bif file for system config DMA_FIFO_wrapper
+TRACE::2021-02-04.23:14:45::SCWSystem::dir created 
+TRACE::2021-02-04.23:14:45::SCWSystem::Writing the bif 
+TRACE::2021-02-04.23:14:45::SCWPlatform::Started writing the spfm file 
+TRACE::2021-02-04.23:14:45::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-02-04.23:14:45::SCWPlatform::Completed generating the platform
+TRACE::2021-02-04.23:14:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:14:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:14:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:14:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:14:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:14:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:14:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:14:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:14:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:14:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:14:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:14:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:14:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:14:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:14:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:14:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:14:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:14:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:14:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:14:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:14:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:14:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:14:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:14:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:14:45::SCWWriter::formatted JSON is {
+	"platformName":	"DMA_FIFO_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA_FIFO_wrapper",
+	"platHandOff":	"/media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/DMA_FIFO_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/DMA_FIFO_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA_FIFO_wrapper",
+	"systems":	[{
+			"systemName":	"DMA_FIFO_wrapper",
+			"systemDesc":	"DMA_FIFO_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA_FIFO_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"e1e1ba57ca2c58633d57849e2edaf610",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-02-04.23:14:45::SCWPlatform::updated the xpfm file.
+TRACE::2021-02-04.23:14:45::SCWPlatform::Trying to open the hw design at /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform::DSA given /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform::DSA absoulate path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform::DSA directory /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw
+TRACE::2021-02-04.23:14:45::SCWPlatform:: Platform Path /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/hw/DMA_FIFO_wrapper.xsa
+TRACE::2021-02-04.23:14:45::SCWPlatform:: Unique name xilinx:kc705::0.0
+TRACE::2021-02-04.23:14:45::SCWPlatform::Trying to set the existing hwdb with name DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:14:45::SCWPlatform::Opened existing hwdb DMA_FIFO_wrapper_0
+TRACE::2021-02-04.23:14:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-02-04.23:14:45::SCWMssOS::Checking the sw design at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2021-02-04.23:14:45::SCWMssOS::DEBUG:  swdes dump  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-02-04.23:14:45::SCWMssOS::Sw design exists and opened at  /media/cliff/procom/elEther/repoTpf/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.vitis/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/system.mss
