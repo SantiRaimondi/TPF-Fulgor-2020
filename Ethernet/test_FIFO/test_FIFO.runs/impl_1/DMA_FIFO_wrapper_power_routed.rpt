@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date             : Thu Feb  4 22:07:11 2021
+| Date             : Fri Feb  5 00:19:16 2021
 | Host             : huaira running 64-bit Linux Mint 20
 | Command          : report_power -file DMA_FIFO_wrapper_power_routed.rpt -pb DMA_FIFO_wrapper_power_summary_routed.pb -rpx DMA_FIFO_wrapper_power_routed.rpx
 | Design           : DMA_FIFO_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.736        |
+| Total On-Chip Power (W)  | 2.742        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.558        |
+| Dynamic (W)              | 2.564        |
 | Device Static (W)        | 0.178        |
 | Effective TJA (C/W)      | 1.8          |
 | Max Ambient (C)          | 80.1         |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.232 |       53 |       --- |             --- |
-| Slice Logic              |     0.096 |    69254 |       --- |             --- |
-|   LUT as Logic           |     0.071 |    18568 |    203800 |            9.11 |
+| Clocks                   |     0.234 |       53 |       --- |             --- |
+| Slice Logic              |     0.097 |    70175 |       --- |             --- |
+|   LUT as Logic           |     0.072 |    18938 |    203800 |            9.29 |
 |   LUT as Distributed RAM |     0.018 |     5582 |     64000 |            8.72 |
-|   Register               |     0.004 |    29500 |    407600 |            7.24 |
-|   CARRY4                 |     0.002 |      416 |     50950 |            0.82 |
+|   Register               |     0.004 |    29887 |    407600 |            7.33 |
+|   CARRY4                 |     0.002 |      425 |     50950 |            0.83 |
 |   LUT as Shift Register  |    <0.001 |      937 |     64000 |            1.46 |
 |   F7/F8 Muxes            |    <0.001 |      805 |    203800 |            0.39 |
-|   Others                 |    <0.001 |     1638 |       --- |             --- |
-| Signals                  |     0.145 |    52059 |       --- |             --- |
-| Block RAM                |     0.029 |     17.5 |       445 |            3.93 |
+|   Others                 |    <0.001 |     1682 |       --- |             --- |
+| Signals                  |     0.146 |    52807 |       --- |             --- |
+| Block RAM                |     0.031 |       19 |       445 |            4.27 |
 | MMCM                     |     0.215 |        2 |        10 |           20.00 |
 | PLL                      |     0.133 |        1 |        10 |           10.00 |
 | I/O                      |     1.044 |      119 |       500 |           23.80 |
 | PHASER                   |     0.661 |       44 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
 | Static Power             |     0.178 |          |           |                 |
-| Total                    |     2.736 |          |           |                 |
+| Total                    |     2.742 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.808 |       0.725 |      0.083 |
+| Vccint    |       1.000 |     0.814 |       0.730 |      0.083 |
 | Vccaux    |       1.800 |     0.697 |       0.668 |      0.029 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
@@ -199,20 +199,28 @@ Table of Contents
 +--------------------------------------+-----------+
 | Name                                 | Power (W) |
 +--------------------------------------+-----------+
-| DMA_FIFO_wrapper                     |     2.558 |
-|   DMA_FIFO_i                         |     2.558 |
+| DMA_FIFO_wrapper                     |     2.564 |
+|   DMA_FIFO_i                         |     2.564 |
 |     axi_dma_0                        |     0.014 |
 |       U0                             |     0.014 |
-|     axi_smc                          |     0.204 |
-|       inst                           |     0.204 |
+|     axi_smc                          |     0.205 |
+|       inst                           |     0.205 |
+|     axis_data_fifo_0                 |     0.002 |
+|       inst                           |     0.002 |
+|     axis_data_fifo_1                 |     0.002 |
+|       inst                           |     0.002 |
+|     axis_interconnect_0              |     0.003 |
+|       xbar                           |     0.003 |
+|     mdm_1                            |     0.001 |
+|       U0                             |     0.001 |
 |     microblaze_0                     |     0.042 |
 |       U0                             |     0.042 |
 |     microblaze_0_axi_intc            |     0.001 |
 |       U0                             |     0.001 |
 |     microblaze_0_local_memory        |     0.004 |
 |       lmb_bram                       |     0.004 |
-|     mig_7series_0                    |     2.290 |
-|       u_DMA_FIFO_mig_7series_0_0_mig |     2.290 |
+|     mig_7series_0                    |     2.289 |
+|       u_DMA_FIFO_mig_7series_0_0_mig |     2.289 |
 +--------------------------------------+-----------+
 
 

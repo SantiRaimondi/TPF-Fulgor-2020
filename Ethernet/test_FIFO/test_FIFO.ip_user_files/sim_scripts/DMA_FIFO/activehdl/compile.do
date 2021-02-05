@@ -32,6 +32,9 @@ vlib activehdl/axi_sg_v4_1_13
 vlib activehdl/axi_dma_v7_1_21
 vlib activehdl/axis_infrastructure_v1_1_0
 vlib activehdl/axis_data_fifo_v2_0_2
+vlib activehdl/axis_register_slice_v1_1_20
+vlib activehdl/axis_switch_v1_1_20
+vlib activehdl/axis_subset_converter_v1_1_20
 
 vmap xilinx_vip activehdl/xilinx_vip
 vmap xpm activehdl/xpm
@@ -64,6 +67,9 @@ vmap axi_sg_v4_1_13 activehdl/axi_sg_v4_1_13
 vmap axi_dma_v7_1_21 activehdl/axi_dma_v7_1_21
 vmap axis_infrastructure_v1_1_0 activehdl/axis_infrastructure_v1_1_0
 vmap axis_data_fifo_v2_0_2 activehdl/axis_data_fifo_v2_0_2
+vmap axis_register_slice_v1_1_20 activehdl/axis_register_slice_v1_1_20
+vmap axis_switch_v1_1_20 activehdl/axis_switch_v1_1_20
+vmap axis_subset_converter_v1_1_20 activehdl/axis_subset_converter_v1_1_20
 
 vlog -work xilinx_vip  -sv2k12 "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
@@ -270,6 +276,9 @@ vcom -work proc_sys_reset_v5_0_13 -93 \
 vcom -work xil_defaultlib -93 \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_rst_mig_7series_0_100M_0/sim/DMA_FIFO_rst_mig_7series_0_100M_0.vhd" \
 
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/sim/bd_c263.v" \
+
 vlog -work xlconstant_v1_1_6  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v" \
 
@@ -371,9 +380,6 @@ vlog -work smartconnect_v1_0  -sv2k12 "+incdir+../../../../test_FIFO.srcs/source
 vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_52/sim/bd_c263_m00e_0.sv" \
 
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
-"../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/sim/bd_c263.v" \
-
 vlog -work axi_vip_v1_1_6  -sv2k12 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/dc12/hdl/axi_vip_v1_1_vl_rfs.sv" \
 
@@ -421,6 +427,39 @@ vlog -work axis_data_fifo_v2_0_2  -v2k5 "+incdir+../../../../test_FIFO.srcs/sour
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
 "../../../bd/DMA_FIFO/ip/DMA_FIFO_axis_data_fifo_1_0/sim/DMA_FIFO_axis_data_fifo_1_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_axis_data_fifo_0_0/sim/DMA_FIFO_axis_data_fifo_0_0.v" \
+
+vlog -work axis_register_slice_v1_1_20  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/00d6/hdl/axis_register_slice_v1_1_vl_rfs.v" \
+
+vlog -work axis_switch_v1_1_20  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/067c/hdl/axis_switch_v1_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_xbar_1/sim/DMA_FIFO_xbar_1.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tdata_DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tuser_DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tstrb_DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tkeep_DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tid_DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tdest_DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tlast_DMA_FIFO_auto_ss_slid_0.v" \
+
+vlog -work axis_subset_converter_v1_1_20  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/949e/hdl/axis_subset_converter_v1_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec67/hdl" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1ddd/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/b2d0/hdl/verilog" "+incdir+../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/8713/hdl" "+incdir+/tools/Xilinx/Vivado/2019.2/data/xilinx_vip/include" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/top_DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/sim/DMA_FIFO_auto_ss_slid_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tdata_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tuser_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tstrb_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tkeep_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tid_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tdest_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tlast_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/top_DMA_FIFO_auto_ss_slidr_0.v" \
+"../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/sim/DMA_FIFO_auto_ss_slidr_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date                      : Thu Feb  4 22:04:34 2021
+| Date                      : Fri Feb  5 00:16:28 2021
 | Host                      : huaira running 64-bit Linux Mint 20
 | Command                   : report_io -file DMA_FIFO_wrapper_io_placed.rpt
 | Design                    : DMA_FIFO_wrapper

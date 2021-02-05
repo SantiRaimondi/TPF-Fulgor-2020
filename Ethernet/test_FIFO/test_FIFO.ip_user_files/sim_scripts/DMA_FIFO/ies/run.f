@@ -203,6 +203,9 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/DMA_FIFO/ip/DMA_FIFO_rst_mig_7series_0_100M_0/sim/DMA_FIFO_rst_mig_7series_0_100M_0.vhd" \
 -endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/sim/bd_c263.v" \
+-endlib
 -makelib ies_lib/xlconstant_v1_1_6 \
   "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v" \
 -endlib
@@ -304,9 +307,6 @@
 -makelib ies_lib/xil_defaultlib -sv \
   "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_52/sim/bd_c263_m00e_0.sv" \
 -endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/sim/bd_c263.v" \
--endlib
 -makelib ies_lib/axi_vip_v1_1_6 -sv \
   "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/dc12/hdl/axi_vip_v1_1_vl_rfs.sv" \
 -endlib
@@ -354,6 +354,39 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/DMA_FIFO/ip/DMA_FIFO_axis_data_fifo_1_0/sim/DMA_FIFO_axis_data_fifo_1_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_axis_data_fifo_0_0/sim/DMA_FIFO_axis_data_fifo_0_0.v" \
+-endlib
+-makelib ies_lib/axis_register_slice_v1_1_20 \
+  "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/00d6/hdl/axis_register_slice_v1_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/axis_switch_v1_1_20 \
+  "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/067c/hdl/axis_switch_v1_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_xbar_1/sim/DMA_FIFO_xbar_1.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tdata_DMA_FIFO_auto_ss_slid_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tuser_DMA_FIFO_auto_ss_slid_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tstrb_DMA_FIFO_auto_ss_slid_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tkeep_DMA_FIFO_auto_ss_slid_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tid_DMA_FIFO_auto_ss_slid_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tdest_DMA_FIFO_auto_ss_slid_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/tlast_DMA_FIFO_auto_ss_slid_0.v" \
+-endlib
+-makelib ies_lib/axis_subset_converter_v1_1_20 \
+  "../../../../test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/949e/hdl/axis_subset_converter_v1_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/hdl/top_DMA_FIFO_auto_ss_slid_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slid_0/sim/DMA_FIFO_auto_ss_slid_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tdata_DMA_FIFO_auto_ss_slidr_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tuser_DMA_FIFO_auto_ss_slidr_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tstrb_DMA_FIFO_auto_ss_slidr_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tkeep_DMA_FIFO_auto_ss_slidr_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tid_DMA_FIFO_auto_ss_slidr_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tdest_DMA_FIFO_auto_ss_slidr_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/tlast_DMA_FIFO_auto_ss_slidr_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/hdl/top_DMA_FIFO_auto_ss_slidr_0.v" \
+  "../../../bd/DMA_FIFO/ip/DMA_FIFO_auto_ss_slidr_0/sim/DMA_FIFO_auto_ss_slidr_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v
