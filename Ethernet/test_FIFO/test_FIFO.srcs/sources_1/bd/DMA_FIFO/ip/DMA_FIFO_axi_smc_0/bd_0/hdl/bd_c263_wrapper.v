@@ -155,7 +155,6 @@ module bd_c263_wrapper
     S04_AXI_wstrb,
     S04_AXI_wvalid,
     aclk,
-    aclk1,
     aresetn);
   output [29:0]M00_AXI_araddr;
   output [1:0]M00_AXI_arburst;
@@ -305,7 +304,6 @@ module bd_c263_wrapper
   input [3:0]S04_AXI_wstrb;
   input S04_AXI_wvalid;
   input aclk;
-  input aclk1;
   input aresetn;
 
   wire [29:0]M00_AXI_araddr;
@@ -456,7 +454,6 @@ module bd_c263_wrapper
   wire [3:0]S04_AXI_wstrb;
   wire S04_AXI_wvalid;
   wire aclk;
-  wire aclk1;
   wire aresetn;
 
   bd_c263 bd_c263_i
@@ -608,6 +605,5 @@ module bd_c263_wrapper
         .S04_AXI_wstrb(S04_AXI_wstrb),
         .S04_AXI_wvalid(S04_AXI_wvalid),
         .aclk(aclk),
-        .aclk1(aclk1),
         .aresetn(aresetn));
 endmodule

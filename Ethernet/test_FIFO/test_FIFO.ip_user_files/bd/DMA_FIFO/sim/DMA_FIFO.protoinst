@@ -170,7 +170,7 @@
 				"/axi_smc/S00_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
-						"ACLK": { "actual": "aclk1"},
+						"ACLK": { "actual": "aclk"},
 						"ARADDR": { "actual": "S00_AXI_araddr"},
 						"ARBURST": { "actual": "S00_AXI_arburst"},
 						"ARCACHE": { "actual": "S00_AXI_arcache"},
@@ -209,7 +209,7 @@
 				"/axi_smc/S01_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
-						"ACLK": { "actual": "aclk1"},
+						"ACLK": { "actual": "aclk"},
 						"ARADDR": { "actual": "S01_AXI_araddr"},
 						"ARBURST": { "actual": "S01_AXI_arburst"},
 						"ARCACHE": { "actual": "S01_AXI_arcache"},
@@ -230,7 +230,7 @@
 				"/axi_smc/S02_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
-						"ACLK": { "actual": "aclk1"},
+						"ACLK": { "actual": "aclk"},
 						"ARADDR": { "actual": "S02_AXI_araddr"},
 						"ARBURST": { "actual": "S02_AXI_arburst"},
 						"ARCACHE": { "actual": "S02_AXI_arcache"},
@@ -251,7 +251,7 @@
 				"/axi_smc/S03_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
-						"ACLK": { "actual": "aclk1"},
+						"ACLK": { "actual": "aclk"},
 						"AWADDR": { "actual": "S03_AXI_awaddr"},
 						"AWBURST": { "actual": "S03_AXI_awburst"},
 						"AWCACHE": { "actual": "S03_AXI_awcache"},
@@ -275,7 +275,7 @@
 				"/axi_smc/S04_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
-						"ACLK": { "actual": "aclk1"},
+						"ACLK": { "actual": "aclk"},
 						"ARADDR": { "actual": "S04_AXI_araddr"},
 						"ARBURST": { "actual": "S04_AXI_arburst"},
 						"ARCACHE": { "actual": "S04_AXI_arcache"},

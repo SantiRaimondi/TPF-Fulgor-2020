@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Feb  3 00:06:15 2021
-| Host         : DESKTOP-9VJG89D running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Sun Feb  7 20:06:09 2021
+| Host         : huaira running 64-bit Linux Mint 20
 | Command      : report_utilization -file DMA_FIFO_rst_mig_7series_0_200M_0_utilization_synth.rpt -pb DMA_FIFO_rst_mig_7series_0_200M_0_utilization_synth.pb
 | Design       : DMA_FIFO_rst_mig_7series_0_200M_0
 | Device       : 7k325tffg900-2

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Fri Feb  5 17:41:25 2021
+| Date         : Sun Feb  7 20:18:53 2021
 | Host         : huaira running 64-bit Linux Mint 20
 | Command      : report_drc -file DMA_FIFO_wrapper_drc_routed.rpt -pb DMA_FIFO_wrapper_drc_routed.pb -rpx DMA_FIFO_wrapper_drc_routed.rpx
 | Design       : DMA_FIFO_wrapper
@@ -24,14 +24,13 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 7
+             Violations found: 6
 +-----------+----------+-----------------------------------------------------+------------+
 | Rule      | Severity | Description                                         | Violations |
 +-----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
 | PLCK-23   | Warning  | Clock Placer Checks                                 | 1          |
 | REQP-1709 | Warning  | Clock output buffering                              | 1          |
-| RTSTAT-10 | Warning  | No routable loads                                   | 1          |
 | REQP-165  | Advisory | writefirst                                          | 1          |
 | REQP-181  | Advisory | writefirst                                          | 2          |
 +-----------+----------+-----------------------------------------------------+------------+
@@ -65,11 +64,6 @@ Related violations: <none>
 REQP-1709#1 Warning
 Clock output buffering  
 PLLE2_ADV connectivity violation. The signal DMA_FIFO_i/mig_7series_0/u_DMA_FIFO_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clk3_out on the DMA_FIFO_i/mig_7series_0/u_DMA_FIFO_mig_7series_0_0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3 pin of DMA_FIFO_i/mig_7series_0/u_DMA_FIFO_mig_7series_0_0_mig/u_ddr3_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
-Related violations: <none>
-
-RTSTAT-10#1 Warning
-No routable loads  
-17 net(s) have no routable loads. The problem bus(es) and/or net(s) are DMA_FIFO_i/axi_smc/inst/s02_nodes/s02_r_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s04_nodes/s04_w_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s04_nodes/s04_r_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s04_nodes/s04_b_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s04_nodes/s04_aw_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s04_nodes/s04_ar_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s03_nodes/s03_w_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s03_nodes/s03_b_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s03_nodes/s03_aw_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s02_nodes/s02_ar_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s01_nodes/s01_r_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s00_nodes/s00_w_node/inst/s_sc_areset, DMA_FIFO_i/axi_smc/inst/s00_nodes/s00_r_node/inst/s_sc_areset (the first 15 of 17 listed).
 Related violations: <none>
 
 REQP-165#1 Advisory

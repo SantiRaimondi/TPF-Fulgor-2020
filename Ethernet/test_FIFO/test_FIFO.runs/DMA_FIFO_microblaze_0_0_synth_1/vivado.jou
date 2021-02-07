@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2019.2 (64-bit)
-# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue Feb  2 23:50:56 2021
-# Process ID: 4840
-# Current directory: D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_microblaze_0_0_synth_1
-# Command line: vivado.exe -log DMA_FIFO_microblaze_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DMA_FIFO_microblaze_0_0.tcl
-# Log file: D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_microblaze_0_0_synth_1/DMA_FIFO_microblaze_0_0.vds
-# Journal file: D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_microblaze_0_0_synth_1\vivado.jou
+# Start of session at: Sun Feb  7 20:03:23 2021
+# Process ID: 24445
+# Current directory: /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_microblaze_0_0_synth_1
+# Command line: vivado -log DMA_FIFO_microblaze_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DMA_FIFO_microblaze_0_0.tcl
+# Log file: /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_microblaze_0_0_synth_1/DMA_FIFO_microblaze_0_0.vds
+# Journal file: /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_microblaze_0_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source DMA_FIFO_microblaze_0_0.tcl -notrace

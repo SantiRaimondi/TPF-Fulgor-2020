@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date             : Fri Feb  5 17:41:55 2021
+| Date             : Sun Feb  7 20:19:22 2021
 | Host             : huaira running 64-bit Linux Mint 20
 | Command          : report_power -file DMA_FIFO_wrapper_power_routed.rpt -pb DMA_FIFO_wrapper_power_summary_routed.pb -rpx DMA_FIFO_wrapper_power_routed.rpx
 | Design           : DMA_FIFO_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.737        |
+| Total On-Chip Power (W)  | 2.782        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.559        |
+| Dynamic (W)              | 2.604        |
 | Device Static (W)        | 0.178        |
 | Effective TJA (C/W)      | 1.8          |
 | Max Ambient (C)          | 80.1         |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.234 |       53 |       --- |             --- |
-| Slice Logic              |     0.095 |    70029 |       --- |             --- |
-|   LUT as Logic           |     0.071 |    18828 |    203800 |            9.24 |
+| Clocks                   |     0.227 |       52 |       --- |             --- |
+| Slice Logic              |     0.107 |    69924 |       --- |             --- |
+|   LUT as Logic           |     0.081 |    18967 |    203800 |            9.31 |
 |   LUT as Distributed RAM |     0.018 |     5582 |     64000 |            8.72 |
-|   Register               |     0.004 |    29936 |    407600 |            7.34 |
+|   Register               |     0.005 |    29681 |    407600 |            7.28 |
 |   CARRY4                 |     0.002 |      427 |     50950 |            0.84 |
-|   LUT as Shift Register  |    <0.001 |      940 |     64000 |            1.47 |
-|   F7/F8 Muxes            |    <0.001 |      805 |    203800 |            0.39 |
-|   Others                 |    <0.001 |     1660 |       --- |             --- |
-| Signals                  |     0.145 |    52599 |       --- |             --- |
-| Block RAM                |     0.028 |       19 |       445 |            4.27 |
+|   F7/F8 Muxes            |    <0.001 |      806 |    203800 |            0.40 |
+|   LUT as Shift Register  |    <0.001 |      937 |     64000 |            1.46 |
+|   Others                 |    <0.001 |     1602 |       --- |             --- |
+| Signals                  |     0.156 |    48167 |       --- |             --- |
+| Block RAM                |     0.054 |       19 |       445 |            4.27 |
 | MMCM                     |     0.215 |        2 |        10 |           20.00 |
 | PLL                      |     0.133 |        1 |        10 |           10.00 |
-| I/O                      |     1.044 |      119 |       500 |           23.80 |
+| I/O                      |     1.047 |      119 |       500 |           23.80 |
 | PHASER                   |     0.661 |       44 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
 | Static Power             |     0.178 |          |           |                 |
-| Total                    |     2.737 |          |           |                 |
+| Total                    |     2.782 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,16 +79,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.809 |       0.726 |      0.083 |
+| Vccint    |       1.000 |     0.850 |       0.766 |      0.084 |
 | Vccaux    |       1.800 |     0.697 |       0.668 |      0.029 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vcco15    |       1.500 |     0.418 |       0.417 |      0.001 |
+| Vcco15    |       1.500 |     0.419 |       0.418 |      0.001 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.004 |       0.002 |      0.002 |
+| Vccbram   |       1.000 |     0.006 |       0.004 |      0.002 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -151,7 +151,6 @@ Table of Contents
 | iserdes_clkdiv_7                                                                                                                                          | DMA_FIFO_i/mig_7series_0/u_DMA_FIFO_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clkdiv       |             2.5 |
 | mem_refclk                                                                                                                                                | DMA_FIFO_i/mig_7series_0/u_DMA_FIFO_mig_7series_0_0_mig/u_ddr3_infrastructure/mem_refclk                                                                                                                                   |             1.2 |
 | mmcm_clkfbout                                                                                                                                             | DMA_FIFO_i/mig_7series_0/u_DMA_FIFO_mig_7series_0_0_mig/u_iodelay_ctrl/mmcm_clkfbout                                                                                                                                       |             5.0 |
-| mmcm_clkout0                                                                                                                                              | DMA_FIFO_i/mig_7series_0/u_DMA_FIFO_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_clkout0                                                                                                                                 |            10.0 |
 | mmcm_ps_clk_bufg_in                                                                                                                                       | DMA_FIFO_i/mig_7series_0/u_DMA_FIFO_mig_7series_0_0_mig/u_ddr3_infrastructure/mmcm_ps_clk_bufg_in                                                                                                                          |            10.0 |
 | oserdes_clk                                                                                                                                               | DMA_FIFO_i/mig_7series_0/u_DMA_FIFO_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk          |             1.2 |
 | oserdes_clk_1                                                                                                                                             | DMA_FIFO_i/mig_7series_0/u_DMA_FIFO_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk          |             1.2 |
@@ -199,20 +198,30 @@ Table of Contents
 +--------------------------------------+-----------+
 | Name                                 | Power (W) |
 +--------------------------------------+-----------+
-| DMA_FIFO_wrapper                     |     2.559 |
-|   DMA_FIFO_i                         |     2.559 |
-|     axi_dma_0                        |     0.014 |
-|       U0                             |     0.014 |
-|     axi_smc                          |     0.205 |
-|       inst                           |     0.205 |
-|     microblaze_0                     |     0.042 |
-|       U0                             |     0.042 |
-|     microblaze_0_axi_intc            |     0.001 |
+| DMA_FIFO_wrapper                     |     2.604 |
+|   DMA_FIFO_i                         |     2.604 |
+|     axi_dma_0                        |     0.022 |
+|       U0                             |     0.022 |
+|     axi_smc                          |     0.220 |
+|       inst                           |     0.220 |
+|     axi_uartlite_0                   |     0.001 |
 |       U0                             |     0.001 |
-|     microblaze_0_local_memory        |     0.004 |
-|       lmb_bram                       |     0.004 |
-|     mig_7series_0                    |     2.290 |
-|       u_DMA_FIFO_mig_7series_0_0_mig |     2.290 |
+|     axis_data_fifo_0                 |     0.001 |
+|       inst                           |     0.001 |
+|     axis_data_fifo_1                 |     0.001 |
+|       inst                           |     0.001 |
+|     mdm_1                            |     0.001 |
+|       U0                             |     0.001 |
+|     microblaze_0                     |     0.079 |
+|       U0                             |     0.079 |
+|     microblaze_0_axi_intc            |     0.002 |
+|       U0                             |     0.002 |
+|     microblaze_0_axi_periph          |     0.001 |
+|       xbar                           |     0.001 |
+|     microblaze_0_local_memory        |     0.010 |
+|       lmb_bram                       |     0.010 |
+|     mig_7series_0                    |     2.265 |
+|       u_DMA_FIFO_mig_7series_0_0_mig |     2.265 |
 +--------------------------------------+-----------+
 
 

@@ -407,7 +407,7 @@ proc create_hier_cell_s04_nodes { parentCell nameHier } {
   set s04_ar_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s04_ar_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {2} \
    CONFIG.ID_WIDTH {3} \
@@ -457,7 +457,7 @@ proc create_hier_cell_s04_nodes { parentCell nameHier } {
   set s04_aw_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s04_aw_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {3} \
    CONFIG.ID_WIDTH {3} \
@@ -507,7 +507,7 @@ proc create_hier_cell_s04_nodes { parentCell nameHier } {
   set s04_b_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s04_b_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {-2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {4} \
    CONFIG.ID_WIDTH {3} \
@@ -558,7 +558,7 @@ proc create_hier_cell_s04_nodes { parentCell nameHier } {
   set s04_r_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s04_r_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {-2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {0} \
    CONFIG.ID_WIDTH {3} \
@@ -609,7 +609,7 @@ proc create_hier_cell_s04_nodes { parentCell nameHier } {
   set s04_w_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s04_w_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {1} \
    CONFIG.ID_WIDTH {3} \
@@ -875,7 +875,7 @@ proc create_hier_cell_s03_nodes { parentCell nameHier } {
   set s03_aw_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s03_aw_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {3} \
    CONFIG.ID_WIDTH {3} \
@@ -925,7 +925,7 @@ proc create_hier_cell_s03_nodes { parentCell nameHier } {
   set s03_b_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s03_b_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {-2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {4} \
    CONFIG.ID_WIDTH {3} \
@@ -976,7 +976,7 @@ proc create_hier_cell_s03_nodes { parentCell nameHier } {
   set s03_w_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s03_w_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {1} \
    CONFIG.ID_WIDTH {3} \
@@ -1232,7 +1232,7 @@ proc create_hier_cell_s02_nodes { parentCell nameHier } {
   set s02_ar_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s02_ar_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {2} \
    CONFIG.ID_WIDTH {3} \
@@ -1282,7 +1282,7 @@ proc create_hier_cell_s02_nodes { parentCell nameHier } {
   set s02_r_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s02_r_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {-2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {0} \
    CONFIG.ID_WIDTH {3} \
@@ -1536,7 +1536,7 @@ proc create_hier_cell_s01_nodes { parentCell nameHier } {
   set s01_ar_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s01_ar_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {2} \
    CONFIG.ID_WIDTH {3} \
@@ -1586,7 +1586,7 @@ proc create_hier_cell_s01_nodes { parentCell nameHier } {
   set s01_r_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s01_r_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {-2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {0} \
    CONFIG.ID_WIDTH {3} \
@@ -1851,7 +1851,7 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
   set s00_ar_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s00_ar_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {2} \
    CONFIG.ID_WIDTH {3} \
@@ -1901,7 +1901,7 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
   set s00_aw_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s00_aw_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {3} \
    CONFIG.ID_WIDTH {3} \
@@ -1951,7 +1951,7 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
   set s00_b_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s00_b_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {-2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {4} \
    CONFIG.ID_WIDTH {3} \
@@ -2002,7 +2002,7 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
   set s00_r_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s00_r_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {-2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {0} \
    CONFIG.ID_WIDTH {3} \
@@ -2053,7 +2053,7 @@ proc create_hier_cell_s00_nodes { parentCell nameHier } {
   set s00_w_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 s00_w_node ]
   set_property -dict [ list \
    CONFIG.ACLKEN_CONVERSION {0} \
-   CONFIG.ACLK_RELATIONSHIP {2} \
+   CONFIG.ACLK_RELATIONSHIP {1} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {1} \
    CONFIG.ID_WIDTH {3} \
@@ -2738,7 +2738,6 @@ proc create_hier_cell_clk_map { parentCell nameHier } {
   create_bd_pin -dir O -type clk S04_ACLK
   create_bd_pin -dir O -from 0 -to 0 -type rst S04_ARESETN
   create_bd_pin -dir I -type clk aclk
-  create_bd_pin -dir I -type clk aclk1
   create_bd_pin -dir I -type rst aresetn
   create_bd_pin -dir O -type rst aresetn_out
   create_bd_pin -dir O -type clk swbd_aclk
@@ -2747,13 +2746,6 @@ proc create_hier_cell_clk_map { parentCell nameHier } {
   # Create instance: one, and set properties
   set one [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 one ]
 
-  # Create instance: psr0, and set properties
-  set psr0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 psr0 ]
-  set_property -dict [ list \
-   CONFIG.C_AUX_RESET_HIGH {0} \
-   CONFIG.C_AUX_RST_WIDTH {1} \
- ] $psr0
-
   # Create instance: psr_aclk, and set properties
   set psr_aclk [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 psr_aclk ]
   set_property -dict [ list \
@@ -2761,21 +2753,11 @@ proc create_hier_cell_clk_map { parentCell nameHier } {
    CONFIG.C_AUX_RST_WIDTH {1} \
  ] $psr_aclk
 
-  # Create instance: psr_aclk1, and set properties
-  set psr_aclk1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 psr_aclk1 ]
-  set_property -dict [ list \
-   CONFIG.C_AUX_RESET_HIGH {0} \
-   CONFIG.C_AUX_RST_WIDTH {1} \
- ] $psr_aclk1
-
   # Create port connections
-  connect_bd_net -net clk_map_aclk1_net [get_bd_pins S00_ACLK] [get_bd_pins S01_ACLK] [get_bd_pins S02_ACLK] [get_bd_pins S03_ACLK] [get_bd_pins S04_ACLK] [get_bd_pins aclk1] [get_bd_pins psr0/slowest_sync_clk] [get_bd_pins psr_aclk1/slowest_sync_clk]
-  connect_bd_net -net clk_map_aclk_net [get_bd_pins M00_ACLK] [get_bd_pins aclk] [get_bd_pins swbd_aclk] [get_bd_pins psr_aclk/slowest_sync_clk]
-  connect_bd_net -net clk_map_aresetn_net [get_bd_pins aresetn] [get_bd_pins psr0/aux_reset_in] [get_bd_pins psr_aclk/aux_reset_in] [get_bd_pins psr_aclk1/aux_reset_in]
-  connect_bd_net -net one_dout [get_bd_pins one/dout] [get_bd_pins psr0/ext_reset_in]
-  connect_bd_net -net psr0_interconnect_aresetn [get_bd_pins psr0/interconnect_aresetn] [get_bd_pins psr_aclk/ext_reset_in] [get_bd_pins psr_aclk1/ext_reset_in]
-  connect_bd_net -net psr_aclk1_interconnect_aresetn [get_bd_pins S00_ARESETN] [get_bd_pins S01_ARESETN] [get_bd_pins S02_ARESETN] [get_bd_pins S03_ARESETN] [get_bd_pins S04_ARESETN] [get_bd_pins psr_aclk1/interconnect_aresetn]
-  connect_bd_net -net psr_aclk_interconnect_aresetn [get_bd_pins M00_ARESETN] [get_bd_pins swbd_aresetn] [get_bd_pins psr_aclk/interconnect_aresetn]
+  connect_bd_net -net clk_map_aclk_net [get_bd_pins M00_ACLK] [get_bd_pins S00_ACLK] [get_bd_pins S01_ACLK] [get_bd_pins S02_ACLK] [get_bd_pins S03_ACLK] [get_bd_pins S04_ACLK] [get_bd_pins aclk] [get_bd_pins swbd_aclk] [get_bd_pins psr_aclk/slowest_sync_clk]
+  connect_bd_net -net clk_map_aresetn_net [get_bd_pins aresetn] [get_bd_pins psr_aclk/aux_reset_in]
+  connect_bd_net -net one_dout [get_bd_pins one/dout] [get_bd_pins psr_aclk/ext_reset_in]
+  connect_bd_net -net psr_aclk_interconnect_aresetn [get_bd_pins M00_ARESETN] [get_bd_pins S00_ARESETN] [get_bd_pins S01_ARESETN] [get_bd_pins S02_ARESETN] [get_bd_pins S03_ARESETN] [get_bd_pins S04_ARESETN] [get_bd_pins swbd_aresetn] [get_bd_pins psr_aclk/interconnect_aresetn]
 
   # Restore current instance
   current_bd_instance $oldCurInst
@@ -2859,12 +2841,8 @@ proc create_root_design { parentCell } {
   # Create ports
   set aclk [ create_bd_port -dir I -type clk aclk ]
   set_property -dict [ list \
-   CONFIG.ASSOCIATED_BUSIF {M00_AXI} \
+   CONFIG.ASSOCIATED_BUSIF {M00_AXI:S00_AXI:S01_AXI:S02_AXI:S03_AXI:S04_AXI} \
  ] $aclk
-  set aclk1 [ create_bd_port -dir I -type clk aclk1 ]
-  set_property -dict [ list \
-   CONFIG.ASSOCIATED_BUSIF {S00_AXI:S01_AXI:S02_AXI:S03_AXI:S04_AXI} \
- ] $aclk1
   set aresetn [ create_bd_port -dir I -type rst aresetn ]
   set_property -dict [ list \
    CONFIG.POLARITY {ACTIVE_LOW} \
@@ -3097,7 +3075,6 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net s04_nodes_M_SC_W [get_bd_intf_pins s04_nodes/M_SC_W] [get_bd_intf_pins switchboards/S04_SC_W]
 
   # Create port connections
-  connect_bd_net -net aclk1_1 [get_bd_ports aclk1] [get_bd_pins clk_map/aclk1]
   connect_bd_net -net aclk_1 [get_bd_pins clk_map/S00_ACLK] [get_bd_pins s00_axi2sc/aclk] [get_bd_pins s00_entry_pipeline/aclk] [get_bd_pins s00_nodes/s_sc_clk]
   connect_bd_net -net aclk_2 [get_bd_pins clk_map/S01_ACLK] [get_bd_pins s01_axi2sc/aclk] [get_bd_pins s01_entry_pipeline/aclk] [get_bd_pins s01_nodes/s_sc_clk]
   connect_bd_net -net aclk_3 [get_bd_pins clk_map/S02_ACLK] [get_bd_pins s02_axi2sc/aclk] [get_bd_pins s02_entry_pipeline/aclk] [get_bd_pins s02_nodes/s_sc_clk]

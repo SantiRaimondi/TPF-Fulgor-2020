@@ -18,64 +18,64 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 25289 
+INFO: Helper process launched with PID 27276 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1935.664 ; gain = 200.688 ; free physical = 8853 ; free virtual = 27845
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1934.754 ; gain = 200.719 ; free physical = 10589 ; free virtual = 27957
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_wrapper' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/hdl/DMA_FIFO_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:13]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_axi_dma_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_axi_dma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_axi_dma_0_0' (1#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_axi_dma_0_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'DMA_FIFO_axi_dma_0_0' has 94 connections declared, but only 91 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:374]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_axi_smc_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_axi_smc_0' (2#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_axi_uartlite_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_axi_uartlite_0_0' (3#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_axi_uartlite_0_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'DMA_FIFO_axi_uartlite_0_0' has 22 connections declared, but only 21 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:617]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_axis_broadcaster_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_axis_broadcaster_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_axis_broadcaster_0_0' (4#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_axis_broadcaster_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_axis_combiner_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_axis_combiner_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_axis_combiner_0_0' (5#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_axis_combiner_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_axis_data_fifo_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_axis_data_fifo_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_axis_data_fifo_0_0' (6#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_axis_data_fifo_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_axis_data_fifo_1_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_axis_data_fifo_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_axis_data_fifo_1_0' (7#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_axis_data_fifo_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_mdm_1_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_mdm_1_0' (8#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_microblaze_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_microblaze_0_0' (9#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_microblaze_0_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'DMA_FIFO_microblaze_0_0' has 126 connections declared, but only 108 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:704]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_microblaze_0_axi_intc_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_microblaze_0_axi_intc_0' (10#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_microblaze_0_axi_periph_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1022]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_WA6B8S' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1593]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_WA6B8S' (11#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1593]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_170PWUL' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1725]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_170PWUL' (12#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1725]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_VI8DF3' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1857]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_VI8DF3' (13#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1857]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_138GCOE' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:2216]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_138GCOE' (14#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:2216]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_xbar_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_xbar_0' (15#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_xbar_0_stub.v:6]
-WARNING: [Synth 8-689] width (8) of port connection 'm_axi_wstrb' does not match port width (12) of module 'DMA_FIFO_xbar_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1570]
-WARNING: [Synth 8-7023] instance 'xbar' of module 'DMA_FIFO_xbar_0' has 40 connections declared, but only 38 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1552]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_microblaze_0_axi_periph_0' (16#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1022]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_18ZXB1K' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1982]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_dlmb_bram_if_cntlr_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_dlmb_bram_if_cntlr_0' (17#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_dlmb_v10_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_dlmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_dlmb_v10_0' (18#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_dlmb_v10_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'DMA_FIFO_dlmb_v10_0' has 25 connections declared, but only 24 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:2128]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_ilmb_bram_if_cntlr_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_ilmb_bram_if_cntlr_0' (19#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_ilmb_v10_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_ilmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_ilmb_v10_0' (20#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_ilmb_v10_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'DMA_FIFO_ilmb_v10_0' has 25 connections declared, but only 24 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:2174]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_lmb_bram_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_lmb_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_lmb_bram_0' (21#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_lmb_bram_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'DMA_FIFO_lmb_bram_0' has 16 connections declared, but only 14 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:2199]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_18ZXB1K' (22#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1982]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_axi_dma_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_axi_dma_0_0' (1#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'DMA_FIFO_axi_dma_0_0' has 94 connections declared, but only 91 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:372]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_axi_smc_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_axi_smc_0' (2#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_axi_uartlite_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_axi_uartlite_0_0' (3#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'DMA_FIFO_axi_uartlite_0_0' has 22 connections declared, but only 21 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:614]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_axis_broadcaster_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_axis_broadcaster_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_axis_broadcaster_0_0' (4#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_axis_broadcaster_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_axis_combiner_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_axis_combiner_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_axis_combiner_0_0' (5#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_axis_combiner_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_axis_data_fifo_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_axis_data_fifo_0_0' (6#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_axis_data_fifo_1_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_axis_data_fifo_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_axis_data_fifo_1_0' (7#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_axis_data_fifo_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_mdm_1_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_mdm_1_0' (8#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_microblaze_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_microblaze_0_0' (9#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'DMA_FIFO_microblaze_0_0' has 126 connections declared, but only 108 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:701]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_microblaze_0_axi_intc_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_microblaze_0_axi_intc_0' (10#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_microblaze_0_axi_periph_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1011]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_WA6B8S' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1598]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_WA6B8S' (11#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1598]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_170PWUL' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1730]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_170PWUL' (12#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1730]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_VI8DF3' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1862]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_VI8DF3' (13#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1862]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_138GCOE' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:2221]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_138GCOE' (14#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:2221]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_xbar_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_xbar_0' (15#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (8) of port connection 'm_axi_wstrb' does not match port width (12) of module 'DMA_FIFO_xbar_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1575]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'DMA_FIFO_xbar_0' has 40 connections declared, but only 38 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1557]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_microblaze_0_axi_periph_0' (16#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1011]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_18ZXB1K' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1987]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_dlmb_bram_if_cntlr_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_dlmb_bram_if_cntlr_0' (17#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_dlmb_v10_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_dlmb_v10_0' (18#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'DMA_FIFO_dlmb_v10_0' has 25 connections declared, but only 24 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_ilmb_bram_if_cntlr_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_ilmb_bram_if_cntlr_0' (19#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_ilmb_v10_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_ilmb_v10_0' (20#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'DMA_FIFO_ilmb_v10_0' has 25 connections declared, but only 24 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:2179]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_lmb_bram_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_lmb_bram_0' (21#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'DMA_FIFO_lmb_bram_0' has 16 connections declared, but only 14 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:2204]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_18ZXB1K' (22#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1987]
 INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_microblaze_0_xlconcat_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_microblaze_0_xlconcat_0/synth/DMA_FIFO_microblaze_0_xlconcat_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
@@ -114,17 +114,14 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [/home/becar
 	Parameter NUM_PORTS bound to: 2 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (23#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_microblaze_0_xlconcat_0' (24#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_microblaze_0_xlconcat_0/synth/DMA_FIFO_microblaze_0_xlconcat_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_mig_7series_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_mig_7series_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_mig_7series_0_0' (25#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_mig_7series_0_0_stub.v:5]
-WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'DMA_FIFO_mig_7series_0_0' has 69 connections declared, but only 58 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:945]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_rst_mig_7series_0_100M_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_rst_mig_7series_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_rst_mig_7series_0_100M_0' (26#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_rst_mig_7series_0_100M_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'rst_mig_7series_0_100M' of module 'DMA_FIFO_rst_mig_7series_0_100M_0' has 10 connections declared, but only 8 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1004]
-INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_rst_mig_7series_0_200M_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_rst_mig_7series_0_200M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_rst_mig_7series_0_200M_0' (27#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-25259-huaira/realtime/DMA_FIFO_rst_mig_7series_0_200M_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'rst_mig_7series_0_200M' of module 'DMA_FIFO_rst_mig_7series_0_200M_0' has 10 connections declared, but only 6 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:1013]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO' (28#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_wrapper' (29#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/hdl/DMA_FIFO_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_mig_7series_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_mig_7series_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_mig_7series_0_0' (25#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_mig_7series_0_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'DMA_FIFO_mig_7series_0_0' has 69 connections declared, but only 56 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:942]
+INFO: [Synth 8-6157] synthesizing module 'DMA_FIFO_rst_mig_7series_0_200M_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_rst_mig_7series_0_200M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_rst_mig_7series_0_200M_0' (26#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/.Xil/Vivado-27248-huaira/realtime/DMA_FIFO_rst_mig_7series_0_200M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_mig_7series_0_200M' of module 'DMA_FIFO_rst_mig_7series_0_200M_0' has 10 connections declared, but only 9 given [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:999]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO' (27#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/synth/DMA_FIFO.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'DMA_FIFO_wrapper' (28#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/hdl/DMA_FIFO_wrapper.v:12]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In2[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In3[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
@@ -171,16 +168,8 @@ WARNING: [Synth 8-3331] design m00_couplers_imp_WA6B8S has unconnected port M_AC
 WARNING: [Synth 8-3331] design m00_couplers_imp_WA6B8S has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design m00_couplers_imp_WA6B8S has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_WA6B8S has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design DMA_FIFO_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
-WARNING: [Synth 8-3331] design DMA_FIFO_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
-WARNING: [Synth 8-3331] design DMA_FIFO_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
-WARNING: [Synth 8-3331] design DMA_FIFO_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
-WARNING: [Synth 8-3331] design DMA_FIFO_microblaze_0_axi_periph_0 has unconnected port M02_ACLK
-WARNING: [Synth 8-3331] design DMA_FIFO_microblaze_0_axi_periph_0 has unconnected port M02_ARESETN
-WARNING: [Synth 8-3331] design DMA_FIFO_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
-WARNING: [Synth 8-3331] design DMA_FIFO_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2003.383 ; gain = 268.406 ; free physical = 8886 ; free virtual = 27879
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2002.473 ; gain = 268.438 ; free physical = 10621 ; free virtual = 27990
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -193,12 +182,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2003.383 ; gain = 268.406 ; free physical = 8882 ; free virtual = 27875
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2002.473 ; gain = 268.438 ; free physical = 10617 ; free virtual = 27986
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2003.383 ; gain = 268.406 ; free physical = 8882 ; free virtual = 27875
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2002.473 ; gain = 268.438 ; free physical = 10617 ; free virtual = 27986
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2003.383 ; gain = 0.000 ; free physical = 8875 ; free virtual = 27868
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2002.473 ; gain = 0.000 ; free physical = 10610 ; free virtual = 27980
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -223,8 +212,6 @@ Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test
 Finished Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_microblaze_0_axi_intc_0/DMA_FIFO_microblaze_0_axi_intc_0/DMA_FIFO_microblaze_0_axi_intc_0_in_context.xdc] for cell 'DMA_FIFO_i/microblaze_0_axi_intc'
 Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/DMA_FIFO_mdm_1_0/DMA_FIFO_mdm_1_0_in_context.xdc] for cell 'DMA_FIFO_i/mdm_1'
 Finished Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/DMA_FIFO_mdm_1_0/DMA_FIFO_mdm_1_0_in_context.xdc] for cell 'DMA_FIFO_i/mdm_1'
-Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_rst_mig_7series_0_100M_0/DMA_FIFO_rst_mig_7series_0_100M_0/DMA_FIFO_rst_mig_7series_0_100M_0_in_context.xdc] for cell 'DMA_FIFO_i/rst_mig_7series_0_100M'
-Finished Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_rst_mig_7series_0_100M_0/DMA_FIFO_rst_mig_7series_0_100M_0/DMA_FIFO_rst_mig_7series_0_100M_0_in_context.xdc] for cell 'DMA_FIFO_i/rst_mig_7series_0_100M'
 Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_in_context.xdc] for cell 'DMA_FIFO_i/axi_smc'
 Finished Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_in_context.xdc] for cell 'DMA_FIFO_i/axi_smc'
 Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_rst_mig_7series_0_200M_0/DMA_FIFO_rst_mig_7series_0_200M_0/DMA_FIFO_rst_mig_7series_0_200M_0_in_context.xdc] for cell 'DMA_FIFO_i/rst_mig_7series_0_200M'
@@ -245,22 +232,22 @@ Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test
 Finished Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2131.133 ; gain = 0.000 ; free physical = 8781 ; free virtual = 27773
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2131.223 ; gain = 0.000 ; free physical = 10515 ; free virtual = 27884
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2131.133 ; gain = 0.000 ; free physical = 8781 ; free virtual = 27773
-WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'DMA_FIFO_i/axis_broadcaster_0' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
-WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'DMA_FIFO_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2131.223 ; gain = 0.000 ; free physical = 10515 ; free virtual = 27884
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'DMA_FIFO_i/axis_broadcaster_0' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'DMA_FIFO_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '5.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8861 ; free virtual = 27854
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10595 ; free virtual = 27964
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8861 ; free virtual = 27854
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10595 ; free virtual = 27964
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -510,7 +497,6 @@ Applied set_property DONT_TOUCH = true for DMA_FIFO_i/microblaze_0_axi_periph. (
 Applied set_property DONT_TOUCH = true for DMA_FIFO_i/microblaze_0_axi_intc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for DMA_FIFO_i/microblaze_0_xlconcat. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for DMA_FIFO_i/mdm_1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for DMA_FIFO_i/rst_mig_7series_0_100M. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for DMA_FIFO_i/axi_smc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for DMA_FIFO_i/rst_mig_7series_0_200M. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for DMA_FIFO_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
@@ -520,10 +506,10 @@ Applied set_property DONT_TOUCH = true for DMA_FIFO_i/axis_data_fifo_0. (constra
 Applied set_property DONT_TOUCH = true for DMA_FIFO_i/axis_broadcaster_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for DMA_FIFO_i/axis_combiner_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8861 ; free virtual = 27854
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10595 ; free virtual = 27964
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8862 ; free virtual = 27855
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10595 ; free virtual = 27966
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -567,7 +553,7 @@ WARNING: [Synth 8-3331] design DMA_FIFO_microblaze_0_axi_periph_0 has unconnecte
 WARNING: [Synth 8-3331] design DMA_FIFO_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design DMA_FIFO_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8846 ; free virtual = 27843
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10581 ; free virtual = 27954
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -579,13 +565,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8726 ; free virtual = 27724
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10462 ; free virtual = 27835
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8726 ; free virtual = 27724
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10461 ; free virtual = 27835
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -597,7 +583,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8726 ; free virtual = 27723
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10461 ; free virtual = 27835
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -621,13 +607,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8717 ; free virtual = 27715
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10462 ; free virtual = 27835
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8717 ; free virtual = 27715
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10462 ; free virtual = 27835
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -646,25 +632,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8717 ; free virtual = 27715
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10462 ; free virtual = 27835
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8717 ; free virtual = 27715
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10462 ; free virtual = 27835
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8717 ; free virtual = 27715
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10462 ; free virtual = 27835
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8717 ; free virtual = 27715
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10462 ; free virtual = 27835
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -686,13 +672,12 @@ Report BlackBoxes:
 |10    |DMA_FIFO_microblaze_0_0           |         1|
 |11    |DMA_FIFO_microblaze_0_axi_intc_0  |         1|
 |12    |DMA_FIFO_mig_7series_0_0          |         1|
-|13    |DMA_FIFO_rst_mig_7series_0_100M_0 |         1|
-|14    |DMA_FIFO_rst_mig_7series_0_200M_0 |         1|
-|15    |DMA_FIFO_dlmb_bram_if_cntlr_0     |         1|
-|16    |DMA_FIFO_dlmb_v10_0               |         1|
-|17    |DMA_FIFO_ilmb_bram_if_cntlr_0     |         1|
-|18    |DMA_FIFO_ilmb_v10_0               |         1|
-|19    |DMA_FIFO_lmb_bram_0               |         1|
+|13    |DMA_FIFO_rst_mig_7series_0_200M_0 |         1|
+|14    |DMA_FIFO_dlmb_bram_if_cntlr_0     |         1|
+|15    |DMA_FIFO_dlmb_v10_0               |         1|
+|16    |DMA_FIFO_ilmb_bram_if_cntlr_0     |         1|
+|17    |DMA_FIFO_ilmb_v10_0               |         1|
+|18    |DMA_FIFO_lmb_bram_0               |         1|
 +------+----------------------------------+----------+
 
 Report Cell Usage: 
@@ -715,44 +700,43 @@ Report Cell Usage:
 |14    |DMA_FIFO_microblaze_0_0           |     1|
 |15    |DMA_FIFO_microblaze_0_axi_intc_0  |     1|
 |16    |DMA_FIFO_mig_7series_0_0          |     1|
-|17    |DMA_FIFO_rst_mig_7series_0_100M_0 |     1|
-|18    |DMA_FIFO_rst_mig_7series_0_200M_0 |     1|
-|19    |DMA_FIFO_xbar_0                   |     1|
-|20    |IBUF                              |     2|
-|21    |OBUF                              |     1|
+|17    |DMA_FIFO_rst_mig_7series_0_200M_0 |     1|
+|18    |DMA_FIFO_xbar_0                   |     1|
+|19    |IBUF                              |     2|
+|20    |OBUF                              |     1|
 +------+----------------------------------+------+
 
 Report Instance Areas: 
 +------+------------------------------+--------------------------------------+------+
 |      |Instance                      |Module                                |Cells |
 +------+------------------------------+--------------------------------------+------+
-|1     |top                           |                                      |  3663|
-|2     |  DMA_FIFO_i                  |DMA_FIFO                              |  3660|
+|1     |top                           |                                      |  3658|
+|2     |  DMA_FIFO_i                  |DMA_FIFO                              |  3655|
 |3     |    microblaze_0_axi_periph   |DMA_FIFO_microblaze_0_axi_periph_0    |   374|
 |4     |    microblaze_0_xlconcat     |DMA_FIFO_microblaze_0_xlconcat_0      |     0|
 |5     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_18ZXB1K |   496|
 +------+------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8717 ; free virtual = 27715
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10462 ; free virtual = 27835
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2135.102 ; gain = 268.406 ; free physical = 8769 ; free virtual = 27767
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2135.102 ; gain = 400.125 ; free physical = 8769 ; free virtual = 27767
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2134.191 ; gain = 268.438 ; free physical = 10513 ; free virtual = 27887
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.191 ; gain = 400.156 ; free physical = 10513 ; free virtual = 27887
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2135.102 ; gain = 0.000 ; free physical = 8844 ; free virtual = 27842
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2134.191 ; gain = 0.000 ; free physical = 10579 ; free virtual = 27953
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2135.102 ; gain = 0.000 ; free physical = 8787 ; free virtual = 27785
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2134.191 ; gain = 0.000 ; free physical = 10522 ; free virtual = 27896
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-70 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
+68 Infos, 66 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 2135.102 ; gain = 696.801 ; free physical = 8912 ; free virtual = 27909
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2135.102 ; gain = 0.000 ; free physical = 8912 ; free virtual = 27909
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 2134.191 ; gain = 695.895 ; free physical = 10646 ; free virtual = 28020
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2134.191 ; gain = 0.000 ; free physical = 10646 ; free virtual = 28020
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/synth_1/DMA_FIFO_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file DMA_FIFO_wrapper_utilization_synth.rpt -pb DMA_FIFO_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Feb  5 17:35:35 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Feb  7 20:12:17 2021...

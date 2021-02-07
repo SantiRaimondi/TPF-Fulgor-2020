@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-//Date        : Fri Feb  5 17:28:27 2021
+//Date        : Sun Feb  7 20:02:52 2021
 //Host        : huaira running 64-bit Linux Mint 20
 //Command     : generate_target DMA_FIFO.bd
 //Design      : DMA_FIFO
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "DMA_FIFO,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=DMA_FIFO,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=26,numReposBlks=20,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_board_cnt=2,da_clkrst_cnt=23,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "DMA_FIFO.hwdef" *) 
+(* CORE_GENERATION_INFO = "DMA_FIFO,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=DMA_FIFO,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=25,numReposBlks=19,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=11,da_board_cnt=3,da_clkrst_cnt=69,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "DMA_FIFO.hwdef" *) 
 module DMA_FIFO
    (ddr3_sdram_addr,
     ddr3_sdram_ba,
@@ -177,8 +177,7 @@ module DMA_FIFO
   wire axis_data_fifo_1_M_AXIS_TLAST;
   wire [1:1]axis_data_fifo_1_M_AXIS_TREADY;
   wire axis_data_fifo_1_M_AXIS_TVALID;
-  wire mdm_1_debug_sys_rst;
-  wire microblaze_0_Clk;
+  wire mdm_1_Debug_SYS_Rst;
   wire [31:0]microblaze_0_M_AXI_DC_ARADDR;
   wire [1:0]microblaze_0_M_AXI_DC_ARBURST;
   wire [3:0]microblaze_0_M_AXI_DC_ARCACHE;
@@ -345,11 +344,10 @@ module DMA_FIFO
   wire mig_7series_0_DDR3_WE_N;
   wire mig_7series_0_mmcm_locked;
   wire mig_7series_0_ui_clk;
-  wire mig_7series_0_ui_clk_sync_rst;
   wire reset_1;
-  wire [0:0]rst_mig_7series_0_100M_bus_struct_reset;
   wire rst_mig_7series_0_100M_mb_reset;
-  wire [0:0]rst_mig_7series_0_100M_peripheral_aresetn;
+  wire [0:0]rst_mig_7series_0_200M_bus_struct_reset;
+  wire [0:0]rst_mig_7series_0_200M_interconnect_aresetn;
   wire [0:0]rst_mig_7series_0_200M_peripheral_aresetn;
   wire sys_diff_clock_1_CLK_N;
   wire sys_diff_clock_1_CLK_P;
@@ -372,8 +370,8 @@ module DMA_FIFO
   assign sys_diff_clock_1_CLK_N = sys_diff_clock_clk_n;
   assign sys_diff_clock_1_CLK_P = sys_diff_clock_clk_p;
   DMA_FIFO_axi_dma_0_0 axi_dma_0
-       (.axi_resetn(rst_mig_7series_0_100M_peripheral_aresetn),
-        .m_axi_mm2s_aclk(microblaze_0_Clk),
+       (.axi_resetn(rst_mig_7series_0_200M_peripheral_aresetn),
+        .m_axi_mm2s_aclk(mig_7series_0_ui_clk),
         .m_axi_mm2s_araddr(axi_dma_0_M_AXI_MM2S_ARADDR),
         .m_axi_mm2s_arburst(axi_dma_0_M_AXI_MM2S_ARBURST),
         .m_axi_mm2s_arcache(axi_dma_0_M_AXI_MM2S_ARCACHE),
@@ -387,7 +385,7 @@ module DMA_FIFO
         .m_axi_mm2s_rready(axi_dma_0_M_AXI_MM2S_RREADY),
         .m_axi_mm2s_rresp(axi_dma_0_M_AXI_MM2S_RRESP),
         .m_axi_mm2s_rvalid(axi_dma_0_M_AXI_MM2S_RVALID),
-        .m_axi_s2mm_aclk(microblaze_0_Clk),
+        .m_axi_s2mm_aclk(mig_7series_0_ui_clk),
         .m_axi_s2mm_awaddr(axi_dma_0_M_AXI_S2MM_AWADDR),
         .m_axi_s2mm_awburst(axi_dma_0_M_AXI_S2MM_AWBURST),
         .m_axi_s2mm_awcache(axi_dma_0_M_AXI_S2MM_AWCACHE),
@@ -404,7 +402,7 @@ module DMA_FIFO
         .m_axi_s2mm_wready(axi_dma_0_M_AXI_S2MM_WREADY),
         .m_axi_s2mm_wstrb(axi_dma_0_M_AXI_S2MM_WSTRB),
         .m_axi_s2mm_wvalid(axi_dma_0_M_AXI_S2MM_WVALID),
-        .m_axi_sg_aclk(microblaze_0_Clk),
+        .m_axi_sg_aclk(mig_7series_0_ui_clk),
         .m_axi_sg_araddr(axi_dma_0_M_AXI_SG_ARADDR),
         .m_axi_sg_arburst(axi_dma_0_M_AXI_SG_ARBURST),
         .m_axi_sg_arcache(axi_dma_0_M_AXI_SG_ARCACHE),
@@ -441,7 +439,7 @@ module DMA_FIFO
         .m_axis_mm2s_tvalid(axi_dma_0_M_AXIS_MM2S_TVALID),
         .mm2s_introut(axi_dma_0_mm2s_introut),
         .s2mm_introut(axi_dma_0_s2mm_introut),
-        .s_axi_lite_aclk(microblaze_0_Clk),
+        .s_axi_lite_aclk(mig_7series_0_ui_clk),
         .s_axi_lite_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR[9:0]),
         .s_axi_lite_arready(microblaze_0_axi_periph_M02_AXI_ARREADY),
         .s_axi_lite_arvalid(microblaze_0_axi_periph_M02_AXI_ARVALID),
@@ -612,13 +610,12 @@ module DMA_FIFO
         .S04_AXI_wstrb(axi_dma_0_M_AXI_SG_WSTRB),
         .S04_AXI_wvalid(axi_dma_0_M_AXI_SG_WVALID),
         .aclk(mig_7series_0_ui_clk),
-        .aclk1(microblaze_0_Clk),
-        .aresetn(rst_mig_7series_0_100M_peripheral_aresetn));
+        .aresetn(rst_mig_7series_0_200M_interconnect_aresetn));
   DMA_FIFO_axi_uartlite_0_0 axi_uartlite_0
        (.rx(axi_uartlite_0_UART_RxD),
-        .s_axi_aclk(microblaze_0_Clk),
+        .s_axi_aclk(mig_7series_0_ui_clk),
         .s_axi_araddr(microblaze_0_axi_periph_M01_AXI_ARADDR[3:0]),
-        .s_axi_aresetn(rst_mig_7series_0_100M_peripheral_aresetn),
+        .s_axi_aresetn(rst_mig_7series_0_200M_peripheral_aresetn),
         .s_axi_arready(microblaze_0_axi_periph_M01_AXI_ARREADY),
         .s_axi_arvalid(microblaze_0_axi_periph_M01_AXI_ARVALID),
         .s_axi_awaddr(microblaze_0_axi_periph_M01_AXI_AWADDR[3:0]),
@@ -637,8 +634,8 @@ module DMA_FIFO
         .s_axi_wvalid(microblaze_0_axi_periph_M01_AXI_WVALID),
         .tx(axi_uartlite_0_UART_TxD));
   DMA_FIFO_axis_broadcaster_0_0 axis_broadcaster_0
-       (.aclk(microblaze_0_Clk),
-        .aresetn(rst_mig_7series_0_100M_peripheral_aresetn),
+       (.aclk(mig_7series_0_ui_clk),
+        .aresetn(rst_mig_7series_0_200M_interconnect_aresetn),
         .m_axis_tdata({axis_broadcaster_0_M01_AXIS_TDATA,axis_broadcaster_0_M00_AXIS_TDATA}),
         .m_axis_tkeep({axis_broadcaster_0_M01_AXIS_TKEEP,axis_broadcaster_0_M00_AXIS_TKEEP}),
         .m_axis_tlast({axis_broadcaster_0_M01_AXIS_TLAST,axis_broadcaster_0_M00_AXIS_TLAST}),
@@ -650,8 +647,8 @@ module DMA_FIFO
         .s_axis_tready(axi_dma_0_M_AXIS_MM2S_TREADY),
         .s_axis_tvalid(axi_dma_0_M_AXIS_MM2S_TVALID));
   DMA_FIFO_axis_combiner_0_0 axis_combiner_0
-       (.aclk(microblaze_0_Clk),
-        .aresetn(rst_mig_7series_0_100M_peripheral_aresetn),
+       (.aclk(mig_7series_0_ui_clk),
+        .aresetn(rst_mig_7series_0_200M_interconnect_aresetn),
         .m_axis_tdata(axis_combiner_0_M_AXIS_TDATA),
         .m_axis_tkeep(axis_combiner_0_M_AXIS_TKEEP),
         .m_axis_tlast(axis_combiner_0_M_AXIS_TLAST),
@@ -668,8 +665,8 @@ module DMA_FIFO
         .m_axis_tlast(axis_data_fifo_0_M_AXIS_TLAST),
         .m_axis_tready(axis_data_fifo_0_M_AXIS_TREADY),
         .m_axis_tvalid(axis_data_fifo_0_M_AXIS_TVALID),
-        .s_axis_aclk(microblaze_0_Clk),
-        .s_axis_aresetn(rst_mig_7series_0_100M_peripheral_aresetn),
+        .s_axis_aclk(mig_7series_0_ui_clk),
+        .s_axis_aresetn(rst_mig_7series_0_200M_peripheral_aresetn),
         .s_axis_tdata(axis_broadcaster_0_M00_AXIS_TDATA),
         .s_axis_tkeep(axis_broadcaster_0_M00_AXIS_TKEEP),
         .s_axis_tlast(axis_broadcaster_0_M00_AXIS_TLAST),
@@ -681,8 +678,8 @@ module DMA_FIFO
         .m_axis_tlast(axis_data_fifo_1_M_AXIS_TLAST),
         .m_axis_tready(axis_data_fifo_1_M_AXIS_TREADY),
         .m_axis_tvalid(axis_data_fifo_1_M_AXIS_TVALID),
-        .s_axis_aclk(microblaze_0_Clk),
-        .s_axis_aresetn(rst_mig_7series_0_100M_peripheral_aresetn),
+        .s_axis_aclk(mig_7series_0_ui_clk),
+        .s_axis_aresetn(rst_mig_7series_0_200M_peripheral_aresetn),
         .s_axis_tdata(axis_broadcaster_0_M01_AXIS_TDATA),
         .s_axis_tkeep(axis_broadcaster_0_M01_AXIS_TKEEP),
         .s_axis_tlast(axis_broadcaster_0_M01_AXIS_TLAST),
@@ -698,12 +695,12 @@ module DMA_FIFO
         .Dbg_TDI_0(microblaze_0_debug_TDI),
         .Dbg_TDO_0(microblaze_0_debug_TDO),
         .Dbg_Update_0(microblaze_0_debug_UPDATE),
-        .Debug_SYS_Rst(mdm_1_debug_sys_rst));
+        .Debug_SYS_Rst(mdm_1_Debug_SYS_Rst));
   (* BMM_INFO_PROCESSOR = "microblaze-le > DMA_FIFO microblaze_0_local_memory/dlmb_bram_if_cntlr" *) 
   (* KEEP_HIERARCHY = "yes" *) 
   DMA_FIFO_microblaze_0_0 microblaze_0
        (.Byte_Enable(microblaze_0_dlmb_1_BE),
-        .Clk(microblaze_0_Clk),
+        .Clk(mig_7series_0_ui_clk),
         .DCE(microblaze_0_dlmb_1_CE),
         .DReady(microblaze_0_dlmb_1_READY),
         .DUE(microblaze_0_dlmb_1_UE),
@@ -815,11 +812,11 @@ module DMA_FIFO
         .intr(microblaze_0_intr),
         .irq(microblaze_0_interrupt_INTERRUPT),
         .processor_ack({microblaze_0_interrupt_ACK[0],microblaze_0_interrupt_ACK[1]}),
-        .processor_clk(microblaze_0_Clk),
+        .processor_clk(mig_7series_0_ui_clk),
         .processor_rst(rst_mig_7series_0_100M_mb_reset),
-        .s_axi_aclk(microblaze_0_Clk),
+        .s_axi_aclk(mig_7series_0_ui_clk),
         .s_axi_araddr(microblaze_0_intc_axi_ARADDR[8:0]),
-        .s_axi_aresetn(rst_mig_7series_0_100M_peripheral_aresetn),
+        .s_axi_aresetn(rst_mig_7series_0_200M_peripheral_aresetn),
         .s_axi_arready(microblaze_0_intc_axi_ARREADY),
         .s_axi_arvalid(microblaze_0_intc_axi_ARVALID),
         .s_axi_awaddr(microblaze_0_intc_axi_AWADDR[8:0]),
@@ -837,10 +834,10 @@ module DMA_FIFO
         .s_axi_wstrb(microblaze_0_intc_axi_WSTRB),
         .s_axi_wvalid(microblaze_0_intc_axi_WVALID));
   DMA_FIFO_microblaze_0_axi_periph_0 microblaze_0_axi_periph
-       (.ACLK(microblaze_0_Clk),
-        .ARESETN(rst_mig_7series_0_100M_peripheral_aresetn),
-        .M00_ACLK(microblaze_0_Clk),
-        .M00_ARESETN(rst_mig_7series_0_100M_peripheral_aresetn),
+       (.ACLK(mig_7series_0_ui_clk),
+        .ARESETN(rst_mig_7series_0_200M_interconnect_aresetn),
+        .M00_ACLK(mig_7series_0_ui_clk),
+        .M00_ARESETN(rst_mig_7series_0_200M_peripheral_aresetn),
         .M00_AXI_araddr(microblaze_0_intc_axi_ARADDR),
         .M00_AXI_arready(microblaze_0_intc_axi_ARREADY),
         .M00_AXI_arvalid(microblaze_0_intc_axi_ARVALID),
@@ -858,8 +855,8 @@ module DMA_FIFO
         .M00_AXI_wready(microblaze_0_intc_axi_WREADY),
         .M00_AXI_wstrb(microblaze_0_intc_axi_WSTRB),
         .M00_AXI_wvalid(microblaze_0_intc_axi_WVALID),
-        .M01_ACLK(microblaze_0_Clk),
-        .M01_ARESETN(rst_mig_7series_0_100M_peripheral_aresetn),
+        .M01_ACLK(mig_7series_0_ui_clk),
+        .M01_ARESETN(rst_mig_7series_0_200M_peripheral_aresetn),
         .M01_AXI_araddr(microblaze_0_axi_periph_M01_AXI_ARADDR),
         .M01_AXI_arready(microblaze_0_axi_periph_M01_AXI_ARREADY),
         .M01_AXI_arvalid(microblaze_0_axi_periph_M01_AXI_ARVALID),
@@ -877,8 +874,8 @@ module DMA_FIFO
         .M01_AXI_wready(microblaze_0_axi_periph_M01_AXI_WREADY),
         .M01_AXI_wstrb(microblaze_0_axi_periph_M01_AXI_WSTRB),
         .M01_AXI_wvalid(microblaze_0_axi_periph_M01_AXI_WVALID),
-        .M02_ACLK(microblaze_0_Clk),
-        .M02_ARESETN(rst_mig_7series_0_100M_peripheral_aresetn),
+        .M02_ACLK(mig_7series_0_ui_clk),
+        .M02_ARESETN(rst_mig_7series_0_200M_peripheral_aresetn),
         .M02_AXI_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR),
         .M02_AXI_arready(microblaze_0_axi_periph_M02_AXI_ARREADY),
         .M02_AXI_arvalid(microblaze_0_axi_periph_M02_AXI_ARVALID),
@@ -895,8 +892,8 @@ module DMA_FIFO
         .M02_AXI_wdata(microblaze_0_axi_periph_M02_AXI_WDATA),
         .M02_AXI_wready(microblaze_0_axi_periph_M02_AXI_WREADY),
         .M02_AXI_wvalid(microblaze_0_axi_periph_M02_AXI_WVALID),
-        .S00_ACLK(microblaze_0_Clk),
-        .S00_ARESETN(rst_mig_7series_0_100M_peripheral_aresetn),
+        .S00_ACLK(mig_7series_0_ui_clk),
+        .S00_ARESETN(rst_mig_7series_0_200M_peripheral_aresetn),
         .S00_AXI_araddr(microblaze_0_axi_dp_ARADDR),
         .S00_AXI_arprot(microblaze_0_axi_dp_ARPROT),
         .S00_AXI_arready(microblaze_0_axi_dp_ARREADY),
@@ -936,8 +933,8 @@ module DMA_FIFO
         .ILMB_ready(microblaze_0_ilmb_1_READY),
         .ILMB_ue(microblaze_0_ilmb_1_UE),
         .ILMB_wait(microblaze_0_ilmb_1_WAIT),
-        .LMB_Clk(microblaze_0_Clk),
-        .SYS_Rst(rst_mig_7series_0_100M_bus_struct_reset));
+        .LMB_Clk(mig_7series_0_ui_clk),
+        .SYS_Rst(rst_mig_7series_0_200M_bus_struct_reset));
   DMA_FIFO_microblaze_0_xlconcat_0 microblaze_0_xlconcat
        (.In0(axi_dma_0_mm2s_introut),
         .In1(axi_dma_0_s2mm_introut),
@@ -998,23 +995,15 @@ module DMA_FIFO
         .sys_clk_n(sys_diff_clock_1_CLK_N),
         .sys_clk_p(sys_diff_clock_1_CLK_P),
         .sys_rst(reset_1),
-        .ui_addn_clk_0(microblaze_0_Clk),
-        .ui_clk(mig_7series_0_ui_clk),
-        .ui_clk_sync_rst(mig_7series_0_ui_clk_sync_rst));
-  DMA_FIFO_rst_mig_7series_0_100M_0 rst_mig_7series_0_100M
-       (.aux_reset_in(1'b1),
-        .bus_struct_reset(rst_mig_7series_0_100M_bus_struct_reset),
-        .dcm_locked(mig_7series_0_mmcm_locked),
-        .ext_reset_in(reset_1),
-        .mb_debug_sys_rst(mdm_1_debug_sys_rst),
-        .mb_reset(rst_mig_7series_0_100M_mb_reset),
-        .peripheral_aresetn(rst_mig_7series_0_100M_peripheral_aresetn),
-        .slowest_sync_clk(microblaze_0_Clk));
+        .ui_clk(mig_7series_0_ui_clk));
   DMA_FIFO_rst_mig_7series_0_200M_0 rst_mig_7series_0_200M
        (.aux_reset_in(1'b1),
+        .bus_struct_reset(rst_mig_7series_0_200M_bus_struct_reset),
         .dcm_locked(mig_7series_0_mmcm_locked),
-        .ext_reset_in(mig_7series_0_ui_clk_sync_rst),
-        .mb_debug_sys_rst(1'b0),
+        .ext_reset_in(reset_1),
+        .interconnect_aresetn(rst_mig_7series_0_200M_interconnect_aresetn),
+        .mb_debug_sys_rst(mdm_1_Debug_SYS_Rst),
+        .mb_reset(rst_mig_7series_0_100M_mb_reset),
         .peripheral_aresetn(rst_mig_7series_0_200M_peripheral_aresetn),
         .slowest_sync_clk(mig_7series_0_ui_clk));
 endmodule
@@ -1179,6 +1168,14 @@ module DMA_FIFO_microblaze_0_axi_periph_0
   input [3:0]S00_AXI_wstrb;
   input [0:0]S00_AXI_wvalid;
 
+  wire M00_ACLK_1;
+  wire M00_ARESETN_1;
+  wire M01_ACLK_1;
+  wire M01_ARESETN_1;
+  wire M02_ACLK_1;
+  wire M02_ARESETN_1;
+  wire S00_ACLK_1;
+  wire S00_ARESETN_1;
   wire [31:0]m00_couplers_to_microblaze_0_axi_periph_ARADDR;
   wire m00_couplers_to_microblaze_0_axi_periph_ARREADY;
   wire m00_couplers_to_microblaze_0_axi_periph_ARVALID;
@@ -1320,6 +1317,8 @@ module DMA_FIFO_microblaze_0_axi_periph_0
   wire xbar_to_m02_couplers_WREADY;
   wire [2:2]xbar_to_m02_couplers_WVALID;
 
+  assign M00_ACLK_1 = M00_ACLK;
+  assign M00_ARESETN_1 = M00_ARESETN;
   assign M00_AXI_araddr[31:0] = m00_couplers_to_microblaze_0_axi_periph_ARADDR;
   assign M00_AXI_arvalid = m00_couplers_to_microblaze_0_axi_periph_ARVALID;
   assign M00_AXI_awaddr[31:0] = m00_couplers_to_microblaze_0_axi_periph_AWADDR;
@@ -1329,6 +1328,8 @@ module DMA_FIFO_microblaze_0_axi_periph_0
   assign M00_AXI_wdata[31:0] = m00_couplers_to_microblaze_0_axi_periph_WDATA;
   assign M00_AXI_wstrb[3:0] = m00_couplers_to_microblaze_0_axi_periph_WSTRB;
   assign M00_AXI_wvalid = m00_couplers_to_microblaze_0_axi_periph_WVALID;
+  assign M01_ACLK_1 = M01_ACLK;
+  assign M01_ARESETN_1 = M01_ARESETN;
   assign M01_AXI_araddr[31:0] = m01_couplers_to_microblaze_0_axi_periph_ARADDR;
   assign M01_AXI_arvalid = m01_couplers_to_microblaze_0_axi_periph_ARVALID;
   assign M01_AXI_awaddr[31:0] = m01_couplers_to_microblaze_0_axi_periph_AWADDR;
@@ -1338,6 +1339,8 @@ module DMA_FIFO_microblaze_0_axi_periph_0
   assign M01_AXI_wdata[31:0] = m01_couplers_to_microblaze_0_axi_periph_WDATA;
   assign M01_AXI_wstrb[3:0] = m01_couplers_to_microblaze_0_axi_periph_WSTRB;
   assign M01_AXI_wvalid = m01_couplers_to_microblaze_0_axi_periph_WVALID;
+  assign M02_ACLK_1 = M02_ACLK;
+  assign M02_ARESETN_1 = M02_ARESETN;
   assign M02_AXI_araddr[31:0] = m02_couplers_to_microblaze_0_axi_periph_ARADDR;
   assign M02_AXI_arvalid = m02_couplers_to_microblaze_0_axi_periph_ARVALID;
   assign M02_AXI_awaddr[31:0] = m02_couplers_to_microblaze_0_axi_periph_AWADDR;
@@ -1346,6 +1349,8 @@ module DMA_FIFO_microblaze_0_axi_periph_0
   assign M02_AXI_rready = m02_couplers_to_microblaze_0_axi_periph_RREADY;
   assign M02_AXI_wdata[31:0] = m02_couplers_to_microblaze_0_axi_periph_WDATA;
   assign M02_AXI_wvalid = m02_couplers_to_microblaze_0_axi_periph_WVALID;
+  assign S00_ACLK_1 = S00_ACLK;
+  assign S00_ARESETN_1 = S00_ARESETN;
   assign S00_AXI_arready[0] = microblaze_0_axi_periph_to_s00_couplers_ARREADY;
   assign S00_AXI_awready[0] = microblaze_0_axi_periph_to_s00_couplers_AWREADY;
   assign S00_AXI_bresp[1:0] = microblaze_0_axi_periph_to_s00_couplers_BRESP;
@@ -1392,8 +1397,8 @@ module DMA_FIFO_microblaze_0_axi_periph_0
   assign microblaze_0_axi_periph_to_s00_couplers_WSTRB = S00_AXI_wstrb[3:0];
   assign microblaze_0_axi_periph_to_s00_couplers_WVALID = S00_AXI_wvalid[0];
   m00_couplers_imp_WA6B8S m00_couplers
-       (.M_ACLK(microblaze_0_axi_periph_ACLK_net),
-        .M_ARESETN(microblaze_0_axi_periph_ARESETN_net),
+       (.M_ACLK(M00_ACLK_1),
+        .M_ARESETN(M00_ARESETN_1),
         .M_AXI_araddr(m00_couplers_to_microblaze_0_axi_periph_ARADDR),
         .M_AXI_arready(m00_couplers_to_microblaze_0_axi_periph_ARREADY),
         .M_AXI_arvalid(m00_couplers_to_microblaze_0_axi_periph_ARVALID),
@@ -1431,8 +1436,8 @@ module DMA_FIFO_microblaze_0_axi_periph_0
         .S_AXI_wstrb(xbar_to_m00_couplers_WSTRB),
         .S_AXI_wvalid(xbar_to_m00_couplers_WVALID));
   m01_couplers_imp_170PWUL m01_couplers
-       (.M_ACLK(microblaze_0_axi_periph_ACLK_net),
-        .M_ARESETN(microblaze_0_axi_periph_ARESETN_net),
+       (.M_ACLK(M01_ACLK_1),
+        .M_ARESETN(M01_ARESETN_1),
         .M_AXI_araddr(m01_couplers_to_microblaze_0_axi_periph_ARADDR),
         .M_AXI_arready(m01_couplers_to_microblaze_0_axi_periph_ARREADY),
         .M_AXI_arvalid(m01_couplers_to_microblaze_0_axi_periph_ARVALID),
@@ -1470,8 +1475,8 @@ module DMA_FIFO_microblaze_0_axi_periph_0
         .S_AXI_wstrb(xbar_to_m01_couplers_WSTRB),
         .S_AXI_wvalid(xbar_to_m01_couplers_WVALID));
   m02_couplers_imp_VI8DF3 m02_couplers
-       (.M_ACLK(microblaze_0_axi_periph_ACLK_net),
-        .M_ARESETN(microblaze_0_axi_periph_ARESETN_net),
+       (.M_ACLK(M02_ACLK_1),
+        .M_ARESETN(M02_ARESETN_1),
         .M_AXI_araddr(m02_couplers_to_microblaze_0_axi_periph_ARADDR),
         .M_AXI_arready(m02_couplers_to_microblaze_0_axi_periph_ARREADY),
         .M_AXI_arvalid(m02_couplers_to_microblaze_0_axi_periph_ARVALID),
@@ -1528,8 +1533,8 @@ module DMA_FIFO_microblaze_0_axi_periph_0
         .M_AXI_wready(s00_couplers_to_xbar_WREADY),
         .M_AXI_wstrb(s00_couplers_to_xbar_WSTRB),
         .M_AXI_wvalid(s00_couplers_to_xbar_WVALID),
-        .S_ACLK(microblaze_0_axi_periph_ACLK_net),
-        .S_ARESETN(microblaze_0_axi_periph_ARESETN_net),
+        .S_ACLK(S00_ACLK_1),
+        .S_ARESETN(S00_ARESETN_1),
         .S_AXI_araddr(microblaze_0_axi_periph_to_s00_couplers_ARADDR),
         .S_AXI_arprot(microblaze_0_axi_periph_to_s00_couplers_ARPROT),
         .S_AXI_arready(microblaze_0_axi_periph_to_s00_couplers_ARREADY),

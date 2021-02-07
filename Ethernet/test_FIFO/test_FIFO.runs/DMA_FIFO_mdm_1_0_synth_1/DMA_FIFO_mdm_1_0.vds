@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
 # Vivado v2019.2 (64-bit)
-# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Feb  3 00:02:28 2021
-# Process ID: 1572
-# Current directory: D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1
-# Command line: vivado.exe -log DMA_FIFO_mdm_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DMA_FIFO_mdm_1_0.tcl
-# Log file: D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1/DMA_FIFO_mdm_1_0.vds
-# Journal file: D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1\vivado.jou
+# Start of session at: Sun Feb  7 20:04:43 2021
+# Process ID: 25271
+# Current directory: /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1
+# Command line: vivado -log DMA_FIFO_mdm_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DMA_FIFO_mdm_1_0.tcl
+# Log file: /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1/DMA_FIFO_mdm_1_0.vds
+# Journal file: /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source DMA_FIFO_mdm_1_0.tcl -notrace
 Command: synth_design -top DMA_FIFO_mdm_1_0 -part xc7k325tffg900-2 -mode out_of_context
@@ -16,11 +16,11 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5648 
+INFO: Helper process launched with PID 25574 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 894.809 ; gain = 233.363
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1877.914 ; gain = 201.688 ; free physical = 4979 ; free virtual = 22177
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'DMA_FIFO_mdm_1_0' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/synth/DMA_FIFO_mdm_1_0.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'DMA_FIFO_mdm_1_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/synth/DMA_FIFO_mdm_1_0.vhd:74]
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
 	Parameter C_USE_BSCAN bound to: 0 - type: integer 
@@ -53,8 +53,8 @@ INFO: [Synth 8-638] synthesizing module 'DMA_FIFO_mdm_1_0' [d:/dario/fulgor/trab
 	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
 	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'MDM' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:12601' bound to instance 'U0' of component 'MDM' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/synth/DMA_FIFO_mdm_1_0.vhd:1655]
-INFO: [Synth 8-638] synthesizing module 'MDM' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:14256]
+INFO: [Synth 8-3491] module 'MDM' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:12601' bound to instance 'U0' of component 'MDM' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/synth/DMA_FIFO_mdm_1_0.vhd:1655]
+INFO: [Synth 8-638] synthesizing module 'MDM' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:14256]
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
 	Parameter C_USE_BSCAN bound to: 0 - type: integer 
@@ -87,35 +87,35 @@ INFO: [Synth 8-638] synthesizing module 'MDM' [d:/dario/fulgor/trabajo_final/viv
 	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
 	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* buffer_type = "none" *) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:15789]
+INFO: [Synth 8-5534] Detected attribute (* buffer_type = "none" *) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:15789]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter DISABLE_JTAG bound to: FALSE - type: string 
 	Parameter JTAG_CHAIN bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'MB_BSCANE2' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:311' bound to instance 'BSCAN_I' of component 'MB_BSCANE2' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:15861]
-INFO: [Synth 8-638] synthesizing module 'MB_BSCANE2' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:335]
+INFO: [Synth 8-3491] module 'MB_BSCANE2' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:311' bound to instance 'BSCAN_I' of component 'MB_BSCANE2' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:15861]
+INFO: [Synth 8-638] synthesizing module 'MB_BSCANE2' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:335]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter DISABLE_JTAG bound to: FALSE - type: string 
 	Parameter JTAG_CHAIN bound to: 2 - type: integer 
 	Parameter DISABLE_JTAG bound to: FALSE - type: string 
 	Parameter JTAG_CHAIN bound to: 2 - type: integer 
-INFO: [Synth 8-113] binding component instance 'BSCANE2_I' to cell 'BSCANE2' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:345]
-INFO: [Synth 8-256] done synthesizing module 'MB_BSCANE2' (1#1) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:335]
+INFO: [Synth 8-113] binding component instance 'BSCANE2_I' to cell 'BSCANE2' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:345]
+INFO: [Synth 8-256] done synthesizing module 'MB_BSCANE2' (1#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:335]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter INIT bound to: 2'b10 
-INFO: [Synth 8-3491] module 'MB_LUT1' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:1459' bound to instance 'LUT1_I' of component 'MB_LUT1' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:15879]
-INFO: [Synth 8-638] synthesizing module 'MB_LUT1' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:1473]
+INFO: [Synth 8-3491] module 'MB_LUT1' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:1459' bound to instance 'LUT1_I' of component 'MB_LUT1' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:15879]
+INFO: [Synth 8-638] synthesizing module 'MB_LUT1' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:1473]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter INIT bound to: 2'b10 
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:1490]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:1490]
 	Parameter INIT bound to: 2'b10 
-INFO: [Synth 8-113] binding component instance 'Native' to cell 'LUT1' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:1495]
-INFO: [Synth 8-256] done synthesizing module 'MB_LUT1' (2#1) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:1473]
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'LUT1' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:1495]
+INFO: [Synth 8-256] done synthesizing module 'MB_LUT1' (2#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:1473]
 	Parameter C_TARGET bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'MB_BUFG' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:373' bound to instance 'BUFG_DRCK' of component 'MB_BUFG' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:16347]
-INFO: [Synth 8-638] synthesizing module 'MB_BUFG' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:386]
+INFO: [Synth 8-3491] module 'MB_BUFG' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:373' bound to instance 'BUFG_DRCK' of component 'MB_BUFG' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:16347]
+INFO: [Synth 8-638] synthesizing module 'MB_BUFG' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:386]
 	Parameter C_TARGET bound to: 1 - type: integer 
-INFO: [Synth 8-113] binding component instance 'Native' to cell 'BUFG' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:396]
-INFO: [Synth 8-256] done synthesizing module 'MB_BUFG' (3#1) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:386]
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'BUFG' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:396]
+INFO: [Synth 8-256] done synthesizing module 'MB_BUFG' (3#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:386]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
 	Parameter C_USE_BSCAN bound to: 0 - type: integer 
@@ -145,8 +145,8 @@ INFO: [Synth 8-256] done synthesizing module 'MB_BUFG' (3#1) [d:/dario/fulgor/tr
 	Parameter C_TRACE_ID bound to: 110 - type: integer 
 	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'MDM_Core' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:5720' bound to instance 'MDM_Core_I1' of component 'MDM_Core' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:16445]
-INFO: [Synth 8-638] synthesizing module 'MDM_Core' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:6957]
+INFO: [Synth 8-3491] module 'MDM_Core' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:5720' bound to instance 'MDM_Core_I1' of component 'MDM_Core' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:16445]
+INFO: [Synth 8-638] synthesizing module 'MDM_Core' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:6957]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
 	Parameter C_USE_BSCAN bound to: 0 - type: integer 
@@ -176,11 +176,11 @@ INFO: [Synth 8-638] synthesizing module 'MDM_Core' [d:/dario/fulgor/trabajo_fina
 	Parameter C_TRACE_ID bound to: 110 - type: integer 
 	Parameter C_M_AXIS_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXIS_ID_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:287' bound to instance 'config_scan_reset_i' of component 'xil_scan_reset_control' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:7640]
-INFO: [Synth 8-638] synthesizing module 'xil_scan_reset_control' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:296]
-INFO: [Synth 8-256] done synthesizing module 'xil_scan_reset_control' (4#1) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:296]
-INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:287' bound to instance 'sel_n_reset_i' of component 'xil_scan_reset_control' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:7650]
-INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:287' bound to instance 'shift_n_reset_i' of component 'xil_scan_reset_control' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:7660]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:287' bound to instance 'config_scan_reset_i' of component 'xil_scan_reset_control' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:7640]
+INFO: [Synth 8-638] synthesizing module 'xil_scan_reset_control' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:296]
+INFO: [Synth 8-256] done synthesizing module 'xil_scan_reset_control' (4#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:296]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:287' bound to instance 'sel_n_reset_i' of component 'xil_scan_reset_control' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:7650]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:287' bound to instance 'shift_n_reset_i' of component 'xil_scan_reset_control' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:7660]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter C_USE_BSCAN bound to: 0 - type: integer 
 	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
@@ -198,8 +198,8 @@ INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'd:/dario/fulgo
 	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
 	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_EN_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'JTAG_CONTROL' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3003' bound to instance 'JTAG_CONTROL_I' of component 'JTAG_CONTROL' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:10351]
-INFO: [Synth 8-638] synthesizing module 'JTAG_CONTROL' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3276]
+INFO: [Synth 8-3491] module 'JTAG_CONTROL' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3003' bound to instance 'JTAG_CONTROL_I' of component 'JTAG_CONTROL' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:10351]
+INFO: [Synth 8-638] synthesizing module 'JTAG_CONTROL' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3276]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter C_USE_BSCAN bound to: 0 - type: integer 
 	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer 
@@ -217,88 +217,88 @@ INFO: [Synth 8-638] synthesizing module 'JTAG_CONTROL' [d:/dario/fulgor/trabajo_
 	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer 
 	Parameter C_TRACE_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_EN_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:287' bound to instance 'config_with_scan_reset_i' of component 'xil_scan_reset_control' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3585]
-INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:287' bound to instance 'sel_with_scan_reset_i' of component 'xil_scan_reset_control' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3593]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:287' bound to instance 'config_with_scan_reset_i' of component 'xil_scan_reset_control' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3585]
+INFO: [Synth 8-3491] module 'xil_scan_reset_control' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:287' bound to instance 'sel_with_scan_reset_i' of component 'xil_scan_reset_control' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3593]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-3491] module 'MB_FDC_1' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:672' bound to instance 'FDC_I' of component 'MB_FDC_1' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3650]
-INFO: [Synth 8-638] synthesizing module 'MB_FDC_1' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:688]
-	Parameter C_TARGET bound to: 1 - type: integer 
-	Parameter INIT bound to: 1'b0 
-	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDC_1' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:709]
-INFO: [Synth 8-256] done synthesizing module 'MB_FDC_1' (5#1) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:688]
-	Parameter C_TARGET bound to: 1 - type: integer 
-	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-3491] module 'MB_FDRE_1' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:731' bound to instance 'SYNC_FDRE' of component 'MB_FDRE_1' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3660]
-INFO: [Synth 8-638] synthesizing module 'MB_FDRE_1' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:748]
+INFO: [Synth 8-3491] module 'MB_FDC_1' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:672' bound to instance 'FDC_I' of component 'MB_FDC_1' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3650]
+INFO: [Synth 8-638] synthesizing module 'MB_FDC_1' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:688]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter INIT bound to: 1'b0 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDRE_1' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:771]
-INFO: [Synth 8-256] done synthesizing module 'MB_FDRE_1' (6#1) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:748]
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDC_1' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:709]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDC_1' (5#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:688]
+	Parameter C_TARGET bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-3491] module 'MB_FDRE_1' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:731' bound to instance 'SYNC_FDRE' of component 'MB_FDRE_1' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3660]
+INFO: [Synth 8-638] synthesizing module 'MB_FDRE_1' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:748]
+	Parameter C_TARGET bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'FDRE_1' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:771]
+INFO: [Synth 8-256] done synthesizing module 'MB_FDRE_1' (6#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:748]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0000000101100111 
-INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:794' bound to instance 'SRL16E_1' of component 'MB_SRL16E' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3854]
-INFO: [Synth 8-638] synthesizing module 'MB_SRL16E' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:794' bound to instance 'SRL16E_1' of component 'MB_SRL16E' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3854]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0000000101100111 
 	Parameter INIT bound to: 16'b0000000101100111 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:822]
-INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E' (7#1) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:822]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E' (7#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0100001010000111 
-INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:794' bound to instance 'SRL16E_2' of component 'MB_SRL16E' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3872]
-INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized1' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:794' bound to instance 'SRL16E_2' of component 'MB_SRL16E' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3872]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized1' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0100001010000111 
 	Parameter INIT bound to: 16'b0100001010000111 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:822]
-INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized1' (7#1) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:822]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized1' (7#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0100010001000011 
-INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:794' bound to instance 'SRL16E_ID_1' of component 'MB_SRL16E' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3943]
-INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized3' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:794' bound to instance 'SRL16E_ID_1' of component 'MB_SRL16E' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3943]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized3' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0100010001000011 
 	Parameter INIT bound to: 16'b0100010001000011 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:822]
-INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized3' (7#1) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:822]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized3' (7#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0101100001001101 
-INFO: [Synth 8-3491] module 'MB_SRL16E' declared at 'd:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:794' bound to instance 'SRL16E_ID_2' of component 'MB_SRL16E' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3961]
-INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized5' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
+INFO: [Synth 8-3491] module 'MB_SRL16E' declared at '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:794' bound to instance 'SRL16E_ID_2' of component 'MB_SRL16E' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3961]
+INFO: [Synth 8-638] synthesizing module 'MB_SRL16E__parameterized5' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
 	Parameter C_TARGET bound to: 1 - type: integer 
 	Parameter C_STATIC bound to: 1 - type: bool 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
 	Parameter INIT bound to: 16'b0101100001001101 
 	Parameter INIT bound to: 16'b0101100001001101 
 	Parameter IS_CLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:822]
-INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized5' (7#1) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:4121]
-WARNING: [Synth 8-6014] Unused sequential element set_Ext_BRK_reg was removed.  [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:4049]
-INFO: [Synth 8-256] done synthesizing module 'JTAG_CONTROL' (8#1) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3276]
-INFO: [Synth 8-256] done synthesizing module 'MDM_Core' (9#1) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:6957]
-INFO: [Synth 8-256] done synthesizing module 'MDM' (10#1) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:14256]
-INFO: [Synth 8-256] done synthesizing module 'DMA_FIFO_mdm_1_0' (11#1) [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/synth/DMA_FIFO_mdm_1_0.vhd:74]
+INFO: [Synth 8-113] binding component instance 'MB_SRL16E_I1' to cell 'SRL16E' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:822]
+INFO: [Synth 8-256] done synthesizing module 'MB_SRL16E__parameterized5' (7#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:818]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:4121]
+WARNING: [Synth 8-6014] Unused sequential element set_Ext_BRK_reg was removed.  [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:4049]
+INFO: [Synth 8-256] done synthesizing module 'JTAG_CONTROL' (8#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:3276]
+INFO: [Synth 8-256] done synthesizing module 'MDM_Core' (9#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:6957]
+INFO: [Synth 8-256] done synthesizing module 'MDM' (10#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/f9aa/hdl/mdm_v3_2_vh_rfs.vhd:14256]
+INFO: [Synth 8-256] done synthesizing module 'DMA_FIFO_mdm_1_0' (11#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/synth/DMA_FIFO_mdm_1_0.vhd:74]
 WARNING: [Synth 8-3331] design MB_SRL16E__parameterized5 has unconnected port Config_Reset
 WARNING: [Synth 8-3331] design MB_SRL16E__parameterized3 has unconnected port Config_Reset
 WARNING: [Synth 8-3331] design MB_SRL16E__parameterized1 has unconnected port Config_Reset
@@ -401,7 +401,7 @@ WARNING: [Synth 8-3331] design JTAG_CONTROL has unconnected port Dbg_Trig_In_3[1
 WARNING: [Synth 8-3331] design JTAG_CONTROL has unconnected port Dbg_Trig_In_3[2]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 990.691 ; gain = 329.246
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1956.633 ; gain = 280.406 ; free physical = 4691 ; free virtual = 21890
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -414,54 +414,54 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 990.691 ; gain = 329.246
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1956.633 ; gain = 280.406 ; free physical = 4633 ; free virtual = 21834
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 990.691 ; gain = 329.246
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1956.633 ; gain = 280.406 ; free physical = 4633 ; free virtual = 21834
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 990.691 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1959.602 ; gain = 0.000 ; free physical = 4409 ; free virtual = 21610
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/DMA_FIFO_mdm_1_0_ooc_trace.xdc] for cell 'U0'
-Finished Parsing XDC File [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/DMA_FIFO_mdm_1_0_ooc_trace.xdc] for cell 'U0'
-Parsing XDC File [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/DMA_FIFO_mdm_1_0.xdc] for cell 'U0'
-Finished Parsing XDC File [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/DMA_FIFO_mdm_1_0.xdc] for cell 'U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/DMA_FIFO_mdm_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DMA_FIFO_mdm_1_0_propImpl.xdc].
+Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/DMA_FIFO_mdm_1_0_ooc_trace.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/DMA_FIFO_mdm_1_0_ooc_trace.xdc] for cell 'U0'
+Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/DMA_FIFO_mdm_1_0.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/DMA_FIFO_mdm_1_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mdm_1_0/DMA_FIFO_mdm_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DMA_FIFO_mdm_1_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/DMA_FIFO_mdm_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1075.723 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2118.414 ; gain = 0.000 ; free physical = 3671 ; free virtual = 20879
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   FDC_1 => FDCE (inverted pins: C): 1 instance 
   FDRE_1 => FDRE (inverted pins: C): 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1087.836 ; gain = 12.113
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2118.414 ; gain = 0.000 ; free physical = 3695 ; free virtual = 20904
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2725 ; free virtual = 19936
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2725 ; free virtual = 19936
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2723 ; free virtual = 19933
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:38 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2693 ; free virtual = 19907
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -563,7 +563,7 @@ Start Cross Boundary and Area Optimization
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MDM_Core_I1/Use_BSCAN.Config_Reg_reg[31] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:40 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2613 ; free virtual = 19831
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -575,13 +575,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:51 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2958 ; free virtual = 20230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:52 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2936 ; free virtual = 20218
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -593,7 +593,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:52 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2956 ; free virtual = 20227
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -617,13 +617,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:57 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2823 ; free virtual = 20114
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:57 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2823 ; free virtual = 20113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -642,25 +642,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:57 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2821 ; free virtual = 20111
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:57 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2818 ; free virtual = 20109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:57 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2817 ; free virtual = 20108
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:57 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2817 ; free virtual = 20108
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -727,18 +727,18 @@ Report Instance Areas:
 |13    |    \Use_E2.LUT1_I                   |MB_LUT1                   |     1|
 +------+-------------------------------------+--------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:57 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2817 ; free virtual = 20107
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4311 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:01:05 . Memory (MB): peak = 1087.836 ; gain = 329.246
-Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1087.836 ; gain = 426.391
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 2118.414 ; gain = 280.406 ; free physical = 2858 ; free virtual = 20150
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 2118.414 ; gain = 442.188 ; free physical = 2857 ; free virtual = 20149
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1087.836 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2118.414 ; gain = 0.000 ; free physical = 2912 ; free virtual = 20204
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1102.867 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2118.414 ; gain = 0.000 ; free physical = 2833 ; free virtual = 20125
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   FDC_1 => FDCE (inverted pins: C): 1 instance 
@@ -747,17 +747,17 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 73 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 1102.867 ; gain = 774.309
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1102.867 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:01:16 . Memory (MB): peak = 2118.414 ; gain = 680.113 ; free physical = 2955 ; free virtual = 20249
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2118.414 ; gain = 0.000 ; free physical = 2955 ; free virtual = 20249
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1/DMA_FIFO_mdm_1_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1/DMA_FIFO_mdm_1_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP DMA_FIFO_mdm_1_0, cache-ID = ef093f8b4cb72c78
 INFO: [Coretcl 2-1174] Renamed 12 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1102.867 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2142.426 ; gain = 0.000 ; free physical = 2920 ; free virtual = 20202
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1/DMA_FIFO_mdm_1_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_mdm_1_0_synth_1/DMA_FIFO_mdm_1_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file DMA_FIFO_mdm_1_0_utilization_synth.rpt -pb DMA_FIFO_mdm_1_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Feb  3 00:04:03 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Feb  7 20:06:14 2021...
