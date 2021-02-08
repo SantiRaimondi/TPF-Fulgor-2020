@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Sun Feb  7 20:10:13 2021
+| Date         : Sun Feb  7 21:45:08 2021
 | Host         : huaira running 64-bit Linux Mint 20
 | Command      : report_utilization -file DMA_FIFO_axi_smc_0_utilization_synth.rpt -pb DMA_FIFO_axi_smc_0_utilization_synth.pb
 | Design       : DMA_FIFO_axi_smc_0
@@ -30,15 +30,15 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 11853 |     0 |    203800 |  5.82 |
-|   LUT as Logic             |  6999 |     0 |    203800 |  3.43 |
+| Slice LUTs*                | 11807 |     0 |    203800 |  5.79 |
+|   LUT as Logic             |  6953 |     0 |    203800 |  3.41 |
 |   LUT as Memory            |  4854 |     0 |     64000 |  7.58 |
 |     LUT as Distributed RAM |  4590 |     0 |           |       |
 |     LUT as Shift Register  |   264 |     0 |           |       |
-| Slice Registers            | 17475 |     0 |    407600 |  4.29 |
-|   Register as Flip Flop    | 17475 |     0 |    407600 |  4.29 |
+| Slice Registers            | 17410 |     0 |    407600 |  4.27 |
+|   Register as Flip Flop    | 17410 |     0 |    407600 |  4.27 |
 |   Register as Latch        |     0 |     0 |    407600 |  0.00 |
-| F7 Muxes                   |   399 |     0 |    101900 |  0.39 |
+| F7 Muxes                   |   398 |     0 |    101900 |  0.39 |
 | F8 Muxes                   |   128 |     0 |     50950 |  0.25 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -59,7 +59,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 268   |          Yes |         Set |            - |
-| 17207 |          Yes |       Reset |            - |
+| 17142 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -153,15 +153,15 @@ Table of Contents
 +----------+-------+---------------------+
 | Ref Name |  Used | Functional Category |
 +----------+-------+---------------------+
-| FDRE     | 17207 |        Flop & Latch |
+| FDRE     | 17142 |        Flop & Latch |
 | RAMD32   |  6870 |  Distributed Memory |
-| LUT3     |  3161 |                 LUT |
+| LUT3     |  3120 |                 LUT |
 | RAMS32   |  2280 |  Distributed Memory |
-| LUT6     |  2032 |                 LUT |
-| LUT5     |  1956 |                 LUT |
-| LUT4     |  1050 |                 LUT |
-| LUT2     |   527 |                 LUT |
-| MUXF7    |   399 |               MuxFx |
+| LUT6     |  2123 |                 LUT |
+| LUT5     |  1870 |                 LUT |
+| LUT4     |   995 |                 LUT |
+| LUT2     |   556 |                 LUT |
+| MUXF7    |   398 |               MuxFx |
 | LUT1     |   341 |                 LUT |
 | FDSE     |   268 |        Flop & Latch |
 | SRLC32E  |   152 |  Distributed Memory |

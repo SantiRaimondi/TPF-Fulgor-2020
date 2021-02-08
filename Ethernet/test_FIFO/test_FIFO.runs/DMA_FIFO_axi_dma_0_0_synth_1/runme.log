@@ -15,9 +15,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 25922 
+INFO: Helper process launched with PID 43482 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:28 . Memory (MB): peak = 1872.762 ; gain = 201.688 ; free physical = 4366 ; free virtual = 21644
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 1873.734 ; gain = 202.688 ; free physical = 5760 ; free virtual = 23439
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'DMA_FIFO_axi_dma_0_0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_dma_0_0/synth/DMA_FIFO_axi_dma_0_0.vhd:158]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 10 - type: integer 
@@ -47,8 +47,8 @@ INFO: [Synth 8-638] synthesizing module 'DMA_FIFO_axi_dma_0_0' [/home/becario/et
 	Parameter C_INCLUDE_S2MM_SF bound to: 1 - type: integer 
 	Parameter C_S2MM_BURST_SIZE bound to: 16 - type: integer 
 	Parameter C_M_AXI_S2MM_ADDR_WIDTH bound to: 32 - type: integer 
-	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 64 - type: integer 
-	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
 	Parameter C_INCREASE_THROUGHPUT bound to: 0 - type: integer 
 	Parameter C_FAMILY bound to: kintex7 - type: string 
@@ -78,8 +78,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_dma' [/home/becario/ethernet/TPF-Fu
 	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
 	Parameter C_S2MM_BURST_SIZE bound to: 16 - type: integer 
 	Parameter C_M_AXI_S2MM_ADDR_WIDTH bound to: 32 - type: integer 
-	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 64 - type: integer 
-	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_ENABLE_MULTI_CHANNEL bound to: 0 - type: integer 
 	Parameter C_NUM_S2MM_CHANNELS bound to: 1 - type: integer 
 	Parameter C_NUM_MM2S_CHANNELS bound to: 1 - type: integer 
@@ -1380,8 +1380,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover' [/home/becario/ethernet/
 	Parameter C_M_AXI_S2MM_AWID bound to: 1 - type: integer 
 	Parameter C_M_AXI_S2MM_ID_WIDTH bound to: 4 - type: integer 
 	Parameter C_M_AXI_S2MM_ADDR_WIDTH bound to: 32 - type: integer 
-	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 64 - type: integer 
-	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_INCLUDE_S2MM_STSFIFO bound to: 1 - type: integer 
 	Parameter C_S2MM_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
 	Parameter C_S2MM_STSCMD_IS_ASYNC bound to: 0 - type: integer 
@@ -1872,8 +1872,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [/home/be
 	Parameter C_S2MM_AWID bound to: 1 - type: integer 
 	Parameter C_S2MM_ID_WIDTH bound to: 4 - type: integer 
 	Parameter C_S2MM_ADDR_WIDTH bound to: 32 - type: integer 
-	Parameter C_S2MM_MDATA_WIDTH bound to: 64 - type: integer 
-	Parameter C_S2MM_SDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S2MM_MDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2MM_SDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_INCLUDE_S2MM_STSFIFO bound to: 1 - type: integer 
 	Parameter C_S2MM_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
 	Parameter C_S2MM_STSCMD_IS_ASYNC bound to: 0 - type: integer 
@@ -1965,16 +1965,16 @@ INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized6' (68#1)
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized6' (68#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (69#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_ibttcc' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:25731]
-	Parameter C_SF_XFER_BYTES_WIDTH bound to: 8 - type: integer 
+	Parameter C_SF_XFER_BYTES_WIDTH bound to: 7 - type: integer 
 	Parameter C_DRE_ALIGN_WIDTH bound to: 1 - type: integer 
-	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter C_SEL_ADDR_WIDTH bound to: 2 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
-	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
 	Parameter C_MAX_BURST_LEN bound to: 16 - type: integer 
 	Parameter C_CMD_WIDTH bound to: 71 - type: integer 
 	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
 	Parameter C_BTT_USED bound to: 14 - type: integer 
-	Parameter C_NATIVE_XFER_WIDTH bound to: 64 - type: integer 
+	Parameter C_NATIVE_XFER_WIDTH bound to: 32 - type: integer 
 	Parameter C_STRT_SF_OFFSET_WIDTH bound to: 1 - type: integer 
 	Parameter C_MCDMA bound to: 1 - type: integer 
 INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:26151]
@@ -1987,9 +1987,6 @@ WARNING: [Synth 8-6014] Unused sequential element sig_xfer_is_seq_reg was remove
 WARNING: [Synth 8-6014] Unused sequential element sig_xfer_reg_empty_reg was removed.  [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:28171]
 WARNING: [Synth 8-6014] Unused sequential element sig_xfer_reg_full_reg was removed.  [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:28172]
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ibttcc' (70#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:25731]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf__parameterized0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
-	Parameter C_WDATA_WIDTH bound to: 64 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf__parameterized0' (70#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_realign' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:47011]
 	Parameter C_ENABLE_INDET_BTT bound to: 1 - type: integer 
 	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
@@ -1998,7 +1995,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_realign' [/home/beca
 	Parameter C_SUPPORT_SCATTER bound to: 1 - type: integer 
 	Parameter C_ENABLE_S2MM_TKEEP bound to: 1 - type: integer 
 	Parameter C_BTT_USED bound to: 14 - type: integer 
-	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
 	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
 	Parameter C_STRT_SF_OFFSET_WIDTH bound to: 1 - type: integer 
 	Parameter C_FAMILY bound to: kintex7 - type: string 
@@ -2028,13 +2025,13 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_scatter' [/home/beca
 	Parameter C_ENABLE_INDET_BTT bound to: 1 - type: integer 
 	Parameter C_DRE_ALIGN_WIDTH bound to: 1 - type: integer 
 	Parameter C_BTT_USED bound to: 14 - type: integer 
-	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
 	Parameter C_ENABLE_S2MM_TKEEP bound to: 1 - type: integer 
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:45338]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_mssai_skid_buf' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:44167]
-	Parameter C_WDATA_WIDTH bound to: 64 - type: integer 
-	Parameter C_INDEX_WIDTH bound to: 3 - type: integer 
+	Parameter C_WDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_INDEX_WIDTH bound to: 2 - type: integer 
 INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:44194]
 INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:44195]
 INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:44197]
@@ -2043,36 +2040,30 @@ INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/becario/ether
 INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:44221]
 INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:44222]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_ms_strb_set' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:42603]
-	Parameter C_STRB_WIDTH bound to: 8 - type: integer 
-	Parameter C_INDEX_WIDTH bound to: 3 - type: integer 
+	Parameter C_STRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_INDEX_WIDTH bound to: 2 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ms_strb_set' (71#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:42603]
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mssai_skid_buf' (72#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:44167]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized1' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
-	Parameter C_OP_MODE bound to: 0 - type: integer 
-	Parameter C_STRB_WIDTH bound to: 8 - type: integer 
-	Parameter C_OFFSET_WIDTH bound to: 3 - type: integer 
-	Parameter C_NUM_BYTES_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized1' (72#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_slice' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:44856]
-	Parameter C_DATA_WIDTH bound to: 14 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 9 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_slice' (73#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:44856]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized8' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-	Parameter C_DWIDTH bound to: 14 - type: integer 
+	Parameter C_DWIDTH bound to: 9 - type: integer 
 	Parameter C_DEPTH bound to: 16 - type: integer 
 	Parameter C_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized8' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-	Parameter C_DWIDTH bound to: 14 - type: integer 
+	Parameter C_DWIDTH bound to: 9 - type: integer 
 	Parameter C_DEPTH bound to: 16 - type: integer 
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized8' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-	Parameter C_DWIDTH bound to: 14 - type: integer 
+	Parameter C_DWIDTH bound to: 9 - type: integer 
 	Parameter C_DEPTH bound to: 16 - type: integer 
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized8' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
 	Parameter C_DEPTH bound to: 16 - type: integer 
-	Parameter C_DWIDTH bound to: 14 - type: integer 
+	Parameter C_DWIDTH bound to: 9 - type: integer 
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized8' (73#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
 INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized8' (73#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
@@ -2084,20 +2075,20 @@ WARNING: [Synth 8-6014] Unused sequential element sig_sm_ld_scatter_cmd_reg was 
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_realign' (75#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:47011]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_indet_btt' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:28430]
 	Parameter C_SF_FIFO_DEPTH bound to: 128 - type: integer 
-	Parameter C_IBTT_XFER_BYTES_WIDTH bound to: 8 - type: integer 
+	Parameter C_IBTT_XFER_BYTES_WIDTH bound to: 7 - type: integer 
 	Parameter C_STRT_OFFSET_WIDTH bound to: 1 - type: integer 
 	Parameter C_MAX_BURST_LEN bound to: 16 - type: integer 
-	Parameter C_MMAP_DWIDTH bound to: 64 - type: integer 
-	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_MMAP_DWIDTH bound to: 32 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
 	Parameter C_ENABLE_SKID_BUF bound to: 11111 - type: string 
 	Parameter C_ENABLE_S2MM_TKEEP bound to: 1 - type: integer 
 	Parameter C_ENABLE_DRE bound to: 0 - type: integer 
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_stbs_set_nodre' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:24209]
-	Parameter C_STROBE_WIDTH bound to: 8 - type: integer 
+	Parameter C_STROBE_WIDTH bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_stbs_set_nodre' (76#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:24209]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord__parameterized0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
-	Parameter C_DWIDTH bound to: 10 - type: integer 
+	Parameter C_DWIDTH bound to: 9 - type: integer 
 	Parameter C_DEPTH bound to: 16 - type: integer 
 	Parameter C_DATA_CNT_WIDTH bound to: 5 - type: integer 
 	Parameter C_NEED_ALMOST_EMPTY bound to: 0 - type: integer 
@@ -2118,26 +2109,26 @@ INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg__parameterized0' [/home/be
 	Parameter C_PORTS_DIFFER bound to: 0 - type: integer 
 	Parameter C_RD_ACK_LOW bound to: 0 - type: integer 
 	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
-	Parameter C_READ_DATA_WIDTH bound to: 10 - type: integer 
+	Parameter C_READ_DATA_WIDTH bound to: 9 - type: integer 
 	Parameter C_READ_DEPTH bound to: 16 - type: integer 
 	Parameter C_RD_ERR_LOW bound to: 0 - type: integer 
 	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
 	Parameter C_WR_ERR_LOW bound to: 0 - type: integer 
 	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
 	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
-	Parameter C_WRITE_DATA_WIDTH bound to: 10 - type: integer 
+	Parameter C_WRITE_DATA_WIDTH bound to: 9 - type: integer 
 	Parameter C_WRITE_DEPTH bound to: 16 - type: integer 
 	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
 	Parameter C_XPM_FIFO bound to: 1 - type: integer 
 	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
 	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
 	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
-	Parameter WRITE_DATA_WIDTH bound to: 10 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 9 - type: integer 
 	Parameter READ_MODE bound to: fwft - type: string 
 	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
 	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
 	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
-	Parameter READ_DATA_WIDTH bound to: 10 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 9 - type: integer 
 	Parameter WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
 	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
 	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
@@ -2153,14 +2144,14 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized1' [/tools
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
 	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
 	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
-	Parameter WRITE_DATA_WIDTH bound to: 10 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 9 - type: integer 
 	Parameter WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
 	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
 	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
 	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
 	Parameter READ_MODE bound to: fwft - type: string 
 	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
-	Parameter READ_DATA_WIDTH bound to: 10 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 9 - type: integer 
 	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
 	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
 	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
@@ -2179,13 +2170,13 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [/tools
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
 	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
 	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
-	Parameter WRITE_DATA_WIDTH bound to: 10 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 9 - type: integer 
 	Parameter WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
 	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
 	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
 	Parameter READ_MODE bound to: 1 - type: integer 
 	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
-	Parameter READ_DATA_WIDTH bound to: 10 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 9 - type: integer 
 	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
 	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
 	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
@@ -2202,7 +2193,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [/tools
 	Parameter RD_MODE bound to: 1 - type: integer 
 	Parameter ENABLE_ECC bound to: 0 - type: integer 
 	Parameter FIFO_READ_DEPTH bound to: 16 - type: integer 
-	Parameter FIFO_SIZE bound to: 160 - type: integer 
+	Parameter FIFO_SIZE bound to: 144 - type: integer 
 	Parameter WR_WIDTH_LOG bound to: 4 - type: integer 
 	Parameter WR_DEPTH_LOG bound to: 4 - type: integer 
 	Parameter WR_PNTR_WIDTH bound to: 4 - type: integer 
@@ -2241,7 +2232,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized5' [/to
 INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized5' (76#1) [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
-	Parameter MEMORY_SIZE bound to: 160 - type: integer 
+	Parameter MEMORY_SIZE bound to: 144 - type: integer 
 	Parameter MEMORY_PRIMITIVE bound to: 0 - type: integer 
 	Parameter CLOCKING_MODE bound to: 0 - type: integer 
 	Parameter ECC_MODE bound to: 0 - type: integer 
@@ -2256,32 +2247,32 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/too
 	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
 	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
-	Parameter WRITE_DATA_WIDTH_A bound to: 10 - type: integer 
-	Parameter READ_DATA_WIDTH_A bound to: 10 - type: integer 
-	Parameter BYTE_WRITE_WIDTH_A bound to: 10 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 9 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 9 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 9 - type: integer 
 	Parameter ADDR_WIDTH_A bound to: 4 - type: integer 
 	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
 	Parameter READ_LATENCY_A bound to: 2 - type: integer 
 	Parameter WRITE_MODE_A bound to: 2 - type: integer 
 	Parameter RST_MODE_A bound to: SYNC - type: string 
-	Parameter WRITE_DATA_WIDTH_B bound to: 10 - type: integer 
-	Parameter READ_DATA_WIDTH_B bound to: 10 - type: integer 
-	Parameter BYTE_WRITE_WIDTH_B bound to: 10 - type: integer 
+	Parameter WRITE_DATA_WIDTH_B bound to: 9 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 9 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 9 - type: integer 
 	Parameter ADDR_WIDTH_B bound to: 4 - type: integer 
 	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
 	Parameter READ_LATENCY_B bound to: 2 - type: integer 
 	Parameter WRITE_MODE_B bound to: 2 - type: integer 
 	Parameter RST_MODE_B bound to: SYNC - type: string 
 	Parameter P_MEMORY_PRIMITIVE bound to: auto - type: string 
-	Parameter P_MIN_WIDTH_DATA_A bound to: 10 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_B bound to: 10 - type: integer 
-	Parameter P_MIN_WIDTH_DATA bound to: 10 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_ECC bound to: 10 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 9 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 9 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 9 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 9 - type: integer 
 	Parameter P_MAX_DEPTH_DATA bound to: 16 - type: integer 
 	Parameter P_ECC_MODE bound to: no_ecc - type: string 
 	Parameter P_MEMORY_OPT bound to: yes - type: string 
-	Parameter P_WIDTH_COL_WRITE_A bound to: 10 - type: integer 
-	Parameter P_WIDTH_COL_WRITE_B bound to: 10 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 9 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 9 - type: integer 
 	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
 	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
 	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
@@ -2303,7 +2294,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/too
 	Parameter rstb_loop_iter bound to: 12 - type: integer 
 	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
 	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 10 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 9 - type: integer 
 	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
 INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:484]
 WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:2882]
@@ -2339,7 +2330,7 @@ INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM g
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord__parameterized0' (76#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord__parameterized1' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
-	Parameter C_DWIDTH bound to: 74 - type: integer 
+	Parameter C_DWIDTH bound to: 38 - type: integer 
 	Parameter C_DEPTH bound to: 128 - type: integer 
 	Parameter C_DATA_CNT_WIDTH bound to: 8 - type: integer 
 	Parameter C_NEED_ALMOST_EMPTY bound to: 0 - type: integer 
@@ -2360,26 +2351,26 @@ INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg__parameterized1' [/home/be
 	Parameter C_PORTS_DIFFER bound to: 0 - type: integer 
 	Parameter C_RD_ACK_LOW bound to: 0 - type: integer 
 	Parameter C_USE_EMBEDDED_REG bound to: 1 - type: integer 
-	Parameter C_READ_DATA_WIDTH bound to: 74 - type: integer 
+	Parameter C_READ_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter C_READ_DEPTH bound to: 128 - type: integer 
 	Parameter C_RD_ERR_LOW bound to: 0 - type: integer 
 	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
 	Parameter C_WR_ERR_LOW bound to: 0 - type: integer 
 	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
 	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
-	Parameter C_WRITE_DATA_WIDTH bound to: 74 - type: integer 
+	Parameter C_WRITE_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter C_WRITE_DEPTH bound to: 128 - type: integer 
 	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
 	Parameter C_XPM_FIFO bound to: 1 - type: integer 
 	Parameter FIFO_MEMORY_TYPE bound to: block - type: string 
 	Parameter FIFO_WRITE_DEPTH bound to: 128 - type: integer 
 	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
-	Parameter WRITE_DATA_WIDTH bound to: 74 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter READ_MODE bound to: fwft - type: string 
 	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
 	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
 	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
-	Parameter READ_DATA_WIDTH bound to: 74 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter WR_DATA_COUNT_WIDTH bound to: 8 - type: integer 
 	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
 	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
@@ -2395,14 +2386,14 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized3' [/tools
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
 	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
 	Parameter FIFO_WRITE_DEPTH bound to: 128 - type: integer 
-	Parameter WRITE_DATA_WIDTH bound to: 74 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter WR_DATA_COUNT_WIDTH bound to: 8 - type: integer 
 	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
 	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
 	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
 	Parameter READ_MODE bound to: fwft - type: string 
 	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
-	Parameter READ_DATA_WIDTH bound to: 74 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
 	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
 	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
@@ -2421,13 +2412,13 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized1' [/tools
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
 	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
 	Parameter FIFO_WRITE_DEPTH bound to: 128 - type: integer 
-	Parameter WRITE_DATA_WIDTH bound to: 74 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter WR_DATA_COUNT_WIDTH bound to: 8 - type: integer 
 	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
 	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
 	Parameter READ_MODE bound to: 1 - type: integer 
 	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
-	Parameter READ_DATA_WIDTH bound to: 74 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
 	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
 	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
@@ -2444,8 +2435,8 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized1' [/tools
 	Parameter RD_MODE bound to: 1 - type: integer 
 	Parameter ENABLE_ECC bound to: 0 - type: integer 
 	Parameter FIFO_READ_DEPTH bound to: 128 - type: integer 
-	Parameter FIFO_SIZE bound to: 9472 - type: integer 
-	Parameter WR_WIDTH_LOG bound to: 7 - type: integer 
+	Parameter FIFO_SIZE bound to: 4864 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 6 - type: integer 
 	Parameter WR_DEPTH_LOG bound to: 7 - type: integer 
 	Parameter WR_PNTR_WIDTH bound to: 7 - type: integer 
 	Parameter RD_PNTR_WIDTH bound to: 7 - type: integer 
@@ -2475,7 +2466,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized1' [/tools
 	Parameter EN_DVLD bound to: 1'b1 
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
-	Parameter MEMORY_SIZE bound to: 9472 - type: integer 
+	Parameter MEMORY_SIZE bound to: 4864 - type: integer 
 	Parameter MEMORY_PRIMITIVE bound to: 2 - type: integer 
 	Parameter CLOCKING_MODE bound to: 0 - type: integer 
 	Parameter ECC_MODE bound to: 0 - type: integer 
@@ -2490,32 +2481,32 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/too
 	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
 	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
-	Parameter WRITE_DATA_WIDTH_A bound to: 74 - type: integer 
-	Parameter READ_DATA_WIDTH_A bound to: 74 - type: integer 
-	Parameter BYTE_WRITE_WIDTH_A bound to: 74 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 38 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 38 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 38 - type: integer 
 	Parameter ADDR_WIDTH_A bound to: 7 - type: integer 
 	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
 	Parameter READ_LATENCY_A bound to: 2 - type: integer 
 	Parameter WRITE_MODE_A bound to: 2 - type: integer 
 	Parameter RST_MODE_A bound to: SYNC - type: string 
-	Parameter WRITE_DATA_WIDTH_B bound to: 74 - type: integer 
-	Parameter READ_DATA_WIDTH_B bound to: 74 - type: integer 
-	Parameter BYTE_WRITE_WIDTH_B bound to: 74 - type: integer 
+	Parameter WRITE_DATA_WIDTH_B bound to: 38 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 38 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 38 - type: integer 
 	Parameter ADDR_WIDTH_B bound to: 7 - type: integer 
 	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
 	Parameter READ_LATENCY_B bound to: 2 - type: integer 
 	Parameter WRITE_MODE_B bound to: 2 - type: integer 
 	Parameter RST_MODE_B bound to: SYNC - type: string 
 	Parameter P_MEMORY_PRIMITIVE bound to: block - type: string 
-	Parameter P_MIN_WIDTH_DATA_A bound to: 74 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_B bound to: 74 - type: integer 
-	Parameter P_MIN_WIDTH_DATA bound to: 74 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_ECC bound to: 74 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 38 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 38 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 38 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 38 - type: integer 
 	Parameter P_MAX_DEPTH_DATA bound to: 128 - type: integer 
 	Parameter P_ECC_MODE bound to: no_ecc - type: string 
 	Parameter P_MEMORY_OPT bound to: yes - type: string 
-	Parameter P_WIDTH_COL_WRITE_A bound to: 74 - type: integer 
-	Parameter P_WIDTH_COL_WRITE_B bound to: 74 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 38 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 38 - type: integer 
 	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
 	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
 	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
@@ -2533,11 +2524,11 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/too
 	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
 	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
 	Parameter P_SDP_WRITE_MODE bound to: no - type: string 
-	Parameter rsta_loop_iter bound to: 76 - type: integer 
-	Parameter rstb_loop_iter bound to: 76 - type: integer 
+	Parameter rsta_loop_iter bound to: 40 - type: integer 
+	Parameter rstb_loop_iter bound to: 40 - type: integer 
 	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
 	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
-	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 74 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 38 - type: integer 
 	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
 WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:2882]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
@@ -2564,9 +2555,9 @@ WARNING: [Synth 8-6014] Unused sequential element hold_ff_q_reg was removed.  [/
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord__parameterized1' (76#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf__parameterized1' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
-	Parameter C_WDATA_WIDTH bound to: 72 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf__parameterized1' (76#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf__parameterized0' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
+	Parameter C_WDATA_WIDTH bound to: 40 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf__parameterized0' (76#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
@@ -2586,29 +2577,29 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_wrdata_cntl' [/home/becar
 	Parameter C_REALIGNER_INCLUDED bound to: 1 - type: integer 
 	Parameter C_ENABLE_INDET_BTT bound to: 1 - type: integer 
 	Parameter C_SF_BYTES_RCVD_WIDTH bound to: 14 - type: integer 
-	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter C_SEL_ADDR_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_CNTL_FIFO_DEPTH bound to: 4 - type: integer 
-	Parameter C_MMAP_DWIDTH bound to: 64 - type: integer 
-	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_MMAP_DWIDTH bound to: 32 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
 	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized9' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-	Parameter C_DWIDTH bound to: 36 - type: integer 
+	Parameter C_DWIDTH bound to: 27 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized9' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-	Parameter C_DWIDTH bound to: 36 - type: integer 
+	Parameter C_DWIDTH bound to: 27 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized9' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-	Parameter C_DWIDTH bound to: 36 - type: integer 
+	Parameter C_DWIDTH bound to: 27 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized9' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
 	Parameter C_DEPTH bound to: 4 - type: integer 
-	Parameter C_DWIDTH bound to: 36 - type: integer 
+	Parameter C_DWIDTH bound to: 27 - type: integer 
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized9' (77#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
 INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized9' (77#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
@@ -2618,17 +2609,17 @@ WARNING: [Synth 8-6014] Unused sequential element sig_next_last_strb_reg_reg was
 WARNING: [Synth 8-6014] Unused sequential element sig_next_eof_reg_reg was removed.  [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:16970]
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wrdata_cntl' (78#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid2mm_buf' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
-	Parameter C_MDATA_WIDTH bound to: 64 - type: integer 
-	Parameter C_SDATA_WIDTH bound to: 64 - type: integer 
-	Parameter C_ADDR_LSB_WIDTH bound to: 3 - type: integer 
+	Parameter C_MDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_SDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDR_LSB_WIDTH bound to: 2 - type: integer 
 INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19023]
 INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19024]
 INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19026]
 INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19027]
 INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_demux' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
-	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
-	Parameter C_MMAP_DWIDTH bound to: 64 - type: integer 
-	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
+	Parameter C_SEL_ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MMAP_DWIDTH bound to: 32 - type: integer 
+	Parameter C_STREAM_DWIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_demux' (79#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
 INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid2mm_buf' (80#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
@@ -2659,14 +2650,12 @@ INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM ge
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-256] done synthesizing module 'DMA_FIFO_axi_dma_0_0' (84#1) [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_dma_0_0/synth/DMA_FIFO_axi_dma_0_0.vhd:158]
-WARNING: [Synth 8-3331] design axi_datamover_wr_demux has unconnected port debeat_saddr_lsb[2]
 WARNING: [Synth 8-3331] design axi_datamover_wr_demux has unconnected port debeat_saddr_lsb[1]
 WARNING: [Synth 8-3331] design axi_datamover_wr_demux has unconnected port debeat_saddr_lsb[0]
 WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized9 has unconnected port fifo_async_rd_reset
 WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized9 has unconnected port fifo_async_rd_clk
-WARNING: [Synth 8-3331] design axi_datamover_strb_gen2__parameterized1 has unconnected port end_addr_offset[2]
-WARNING: [Synth 8-3331] design axi_datamover_strb_gen2__parameterized1 has unconnected port end_addr_offset[1]
-WARNING: [Synth 8-3331] design axi_datamover_strb_gen2__parameterized1 has unconnected port end_addr_offset[0]
+WARNING: [Synth 8-3331] design axi_datamover_strb_gen2 has unconnected port end_addr_offset[1]
+WARNING: [Synth 8-3331] design axi_datamover_strb_gen2 has unconnected port end_addr_offset[0]
 WARNING: [Synth 8-3331] design axi_datamover_wrdata_cntl has unconnected port realign2wdc_eop_error
 WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized1 has unconnected port fifo_async_rd_reset
 WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized1 has unconnected port fifo_async_rd_clk
@@ -2678,42 +2667,6 @@ WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected p
 WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port injectsbiterra
 WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port injectdbiterra
 WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port clkb
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[73]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[72]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[71]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[70]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[69]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[68]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[67]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[66]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[65]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[64]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[63]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[62]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[61]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[60]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[59]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[58]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[57]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[56]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[55]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[54]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[53]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[52]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[51]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[50]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[49]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[48]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[47]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[46]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[45]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[44]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[43]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[42]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[41]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[40]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[39]
-WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[38]
 WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[37]
 WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[36]
 WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[35]
@@ -2759,9 +2712,47 @@ WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected p
 WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port rsta
 WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port regcea
 WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port injectsbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port injectdbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port clkb
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[8]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[7]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[6]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[5]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[4]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[3]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[2]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[1]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[0]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port injectsbiterrb
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port injectdbiterrb
+WARNING: [Synth 8-3331] design axi_datamover_sfifo_autord__parameterized0 has unconnected port SFIFO_Clr_Rd_Data_Valid
+WARNING: [Synth 8-3331] design axi_datamover_indet_btt has unconnected port dre2ibtt_strt_addr_offset[0]
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized8 has unconnected port fifo_async_rd_reset
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized8 has unconnected port fifo_async_rd_clk
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized7 has unconnected port fifo_async_rd_reset
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized7 has unconnected port fifo_async_rd_clk
+WARNING: [Synth 8-3331] design axi_datamover_ibttcc has unconnected port cmd2mstr_command[25]
+WARNING: [Synth 8-3331] design axi_datamover_ibttcc has unconnected port cmd2mstr_command[24]
+WARNING: [Synth 8-3331] design axi_datamover_ibttcc has unconnected port cmd2mstr_command[23]
+WARNING: [Synth 8-3331] design axi_datamover_ibttcc has unconnected port cmd2mstr_command[22]
+WARNING: [Synth 8-3331] design axi_datamover_ibttcc has unconnected port cmd2mstr_command[21]
+WARNING: [Synth 8-3331] design axi_datamover_ibttcc has unconnected port cmd2mstr_command[20]
+WARNING: [Synth 8-3331] design axi_datamover_ibttcc has unconnected port cmd2mstr_command[19]
+WARNING: [Synth 8-3331] design axi_datamover_ibttcc has unconnected port cmd2mstr_command[18]
+WARNING: [Synth 8-3331] design axi_datamover_ibttcc has unconnected port cmd2mstr_command[17]
+WARNING: [Synth 8-3331] design axi_datamover_ibttcc has unconnected port cmd2mstr_command[16]
+WARNING: [Synth 8-3331] design axi_datamover_ibttcc has unconnected port cmd2mstr_command[15]
+WARNING: [Synth 8-3331] design axi_datamover_ibttcc has unconnected port cmd2mstr_command[14]
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized6 has unconnected port fifo_async_rd_reset
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized6 has unconnected port fifo_async_rd_clk
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized5 has unconnected port fifo_async_rd_reset
+WARNING: [Synth 8-3331] design axi_datamover_fifo__parameterized5 has unconnected port fifo_async_rd_clk
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port calc2wsc_calc_error
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port addr2wsc_fifo_empty
+WARNING: [Synth 8-3331] design axi_datamover_wr_status_cntl has unconnected port data2wsc_last_error
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 2097.480 ; gain = 426.406 ; free physical = 2760 ; free virtual = 20043
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:44 . Memory (MB): peak = 2095.453 ; gain = 424.406 ; free physical = 5568 ; free virtual = 23272
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2774,12 +2765,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:01:02 . Memory (MB): peak = 2106.387 ; gain = 435.312 ; free physical = 2607 ; free virtual = 19890
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:45 . Memory (MB): peak = 2101.391 ; gain = 430.344 ; free physical = 5433 ; free virtual = 23133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:28 ; elapsed = 00:01:02 . Memory (MB): peak = 2106.387 ; gain = 435.312 ; free physical = 2607 ; free virtual = 19890
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:45 . Memory (MB): peak = 2101.391 ; gain = 430.344 ; free physical = 5433 ; free virtual = 23133
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2109.355 ; gain = 0.000 ; free physical = 2720 ; free virtual = 19997
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2107.328 ; gain = 0.000 ; free physical = 5530 ; free virtual = 23230
 INFO: [Netlist 29-17] Analyzing 606 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -2806,21 +2797,21 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/DMA_FIFO_axi_dma_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2249.199 ; gain = 0.000 ; free physical = 2591 ; free virtual = 19901
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2237.172 ; gain = 0.000 ; free physical = 6239 ; free virtual = 23936
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 606 instances were transformed.
   FDR => FDRE: 606 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2249.199 ; gain = 0.000 ; free physical = 2589 ; free virtual = 19899
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2237.172 ; gain = 0.000 ; free physical = 6232 ; free virtual = 23929
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:01:15 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 2263 ; free virtual = 19581
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:55 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 7488 ; free virtual = 25186
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:01:15 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 2263 ; free virtual = 19581
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:55 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 7488 ; free virtual = 25186
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -2830,7 +2821,7 @@ Applied set_property DONT_TOUCH = true for U0/I_PRMRY_DATAMOVER/\GEN_MM2S_FULL.I
 Applied set_property DONT_TOUCH = true for U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_DATA_FIFO/\BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_XD_FIFO/\NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:01:15 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 2261 ; free virtual = 19578
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:55 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 7485 ; free virtual = 25183
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'GEN_ASYNC_WRITE.rst_wvalid_re_reg' into 'GEN_ASYNC_WRITE.bvalid_i_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec2a/hdl/axi_dma_v7_1_vh_rfs.vhd:2485]
 INFO: [Synth 8-4471] merging register 'GEN_ASYNC_READ.rst_rvalid_re_reg' into 'GEN_ASYNC_READ.s_axi_lite_rvalid_i_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec2a/hdl/axi_dma_v7_1_vh_rfs.vhd:2965]
@@ -2855,9 +2846,7 @@ INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To p
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:18182]
 INFO: [Synth 8-802] inferred FSM for state register 'sig_psm_state_reg' in module 'axi_datamover_ibttcc'
 INFO: [Synth 8-802] inferred FSM for state register 'sig_csm_state_reg' in module 'axi_datamover_ibttcc'
-INFO: [Synth 8-5546] ROM "var_ms_strb_index" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "var_start_vector" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "var_end_vector" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "var_ms_strb_index" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'sig_cmdcntl_sm_state_reg' in module 'axi_datamover_s2mm_realign'
 INFO: [Synth 8-5546] ROM "lvar_num_set" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/tools/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1058]
@@ -2967,7 +2956,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized1'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:01:24 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 3347 ; free virtual = 20668
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:01:01 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 7344 ; free virtual = 25045
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2983,57 +2972,54 @@ Detailed RTL Component Info :
 	   2 Input     28 Bit       Adders := 1     
 	   2 Input     16 Bit       Adders := 3     
 	   3 Input     14 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 15    
+	   2 Input      8 Bit       Adders := 11    
 	   4 Input      8 Bit       Adders := 8     
-	   2 Input      7 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 7     
 	   4 Input      7 Bit       Adders := 10    
 	   3 Input      7 Bit       Adders := 2     
 	   2 Input      6 Bit       Adders := 1     
 	   3 Input      5 Bit       Adders := 2     
 	   2 Input      5 Bit       Adders := 3     
 	   4 Input      5 Bit       Adders := 4     
-	   2 Input      4 Bit       Adders := 8     
-	   3 Input      4 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 5     
+	   3 Input      4 Bit       Adders := 3     
 	   4 Input      4 Bit       Adders := 5     
-	   3 Input      3 Bit       Adders := 9     
-	   2 Input      3 Bit       Adders := 10    
-	   2 Input      2 Bit       Adders := 2     
+	   3 Input      3 Bit       Adders := 11    
+	   2 Input      3 Bit       Adders := 11    
+	   2 Input      2 Bit       Adders := 4     
 	   4 Input      2 Bit       Adders := 3     
 +---Registers : 
 	               91 Bit    Registers := 4     
-	               74 Bit    Registers := 2     
-	               72 Bit    Registers := 2     
 	               71 Bit    Registers := 2     
 	               68 Bit    Registers := 2     
-	               64 Bit    Registers := 6     
+	               40 Bit    Registers := 2     
 	               39 Bit    Registers := 2     
+	               38 Bit    Registers := 2     
 	               35 Bit    Registers := 1     
 	               34 Bit    Registers := 6     
-	               32 Bit    Registers := 27    
+	               32 Bit    Registers := 33    
 	               26 Bit    Registers := 4     
 	               23 Bit    Registers := 2     
 	               16 Bit    Registers := 6     
-	               14 Bit    Registers := 11    
-	               10 Bit    Registers := 3     
+	               14 Bit    Registers := 10    
+	               10 Bit    Registers := 1     
 	                9 Bit    Registers := 3     
-	                8 Bit    Registers := 40    
-	                7 Bit    Registers := 15    
+	                8 Bit    Registers := 30    
+	                7 Bit    Registers := 16    
 	                6 Bit    Registers := 2     
-	                5 Bit    Registers := 7     
-	                4 Bit    Registers := 60    
-	                3 Bit    Registers := 28    
-	                2 Bit    Registers := 19    
+	                5 Bit    Registers := 10    
+	                4 Bit    Registers := 69    
+	                3 Bit    Registers := 23    
+	                2 Bit    Registers := 24    
 	                1 Bit    Registers := 767   
 +---RAMs : 
-	               9K Bit         RAMs := 1     
-	               4K Bit         RAMs := 1     
-	              160 Bit         RAMs := 1     
+	               4K Bit         RAMs := 2     
+	              144 Bit         RAMs := 1     
 +---Muxes : 
-	   2 Input     72 Bit        Muxes := 1     
-	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     40 Bit        Muxes := 1     
 	   2 Input     34 Bit        Muxes := 2     
 	  74 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 12    
+	   2 Input     32 Bit        Muxes := 15    
 	   2 Input     28 Bit        Muxes := 1     
 	   2 Input     26 Bit        Muxes := 10    
 	   2 Input     23 Bit        Muxes := 3     
@@ -3042,23 +3028,22 @@ Detailed RTL Component Info :
 	   4 Input     14 Bit        Muxes := 2     
 	   3 Input     14 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 2     
-	   2 Input      9 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 34    
-	   8 Input      8 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 23    
+	   8 Input      8 Bit        Muxes := 1     
 	   3 Input      8 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 8     
+	   2 Input      7 Bit        Muxes := 10    
 	  74 Input      7 Bit        Muxes := 1     
 	   7 Input      7 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 3     
-	   2 Input      4 Bit        Muxes := 24    
-	   4 Input      4 Bit        Muxes := 5     
-	   9 Input      4 Bit        Muxes := 3     
-	   3 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 20    
-	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 28    
+	   4 Input      4 Bit        Muxes := 9     
+	   9 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 24    
+	   3 Input      3 Bit        Muxes := 2     
 	   6 Input      3 Bit        Muxes := 2     
-	   2 Input      2 Bit        Muxes := 120   
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 121   
 	   5 Input      2 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 3     
 	   4 Input      2 Bit        Muxes := 21    
@@ -3701,7 +3686,7 @@ Module axi_datamover_ibttcc
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     16 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 3     
 +---Registers : 
 	               32 Bit    Registers := 3     
 	               16 Bit    Registers := 1     
@@ -3714,25 +3699,14 @@ Detailed RTL Component Info :
 	   2 Input     16 Bit        Muxes := 1     
 	   4 Input     14 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 3     
-	   2 Input      8 Bit        Muxes := 1     
 	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 7     
 	   7 Input      7 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 6     
 	   6 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 6     
 	   2 Input      1 Bit        Muxes := 6     
 	   7 Input      1 Bit        Muxes := 3     
 	   6 Input      1 Bit        Muxes := 5     
-Module axi_datamover_skid_buf__parameterized0 
-Detailed RTL Component Info : 
-+---Registers : 
-	               64 Bit    Registers := 2     
-	                8 Bit    Registers := 3     
-	                1 Bit    Registers := 10    
-+---Muxes : 
-	   2 Input     64 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
 Module srl_fifo_rbu_f__parameterized7 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -3746,32 +3720,22 @@ Detailed RTL Component Info :
 Module axi_datamover_ms_strb_set 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   9 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
 Module axi_datamover_mssai_skid_buf 
 Detailed RTL Component Info : 
 +---Registers : 
-	               64 Bit    Registers := 2     
-	                8 Bit    Registers := 3     
-	                3 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 14    
 +---Muxes : 
-	   2 Input     64 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
-Module axi_datamover_strb_gen2__parameterized1 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input      4 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 2     
-	   8 Input      8 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 1     
 Module axi_datamover_slice 
 Detailed RTL Component Info : 
 +---Registers : 
-	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
@@ -3790,18 +3754,18 @@ Module axi_datamover_s2mm_scatter
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     14 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
 +---Registers : 
 	               14 Bit    Registers := 3     
-	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
 	                1 Bit    Registers := 10    
 +---Muxes : 
 	   4 Input     14 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 2     
-	   3 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 3     
 Module axi_datamover_s2mm_realign 
 Detailed RTL Component Info : 
@@ -3831,9 +3795,9 @@ Detailed RTL Component Info :
 Module xpm_memory_base__parameterized0 
 Detailed RTL Component Info : 
 +---Registers : 
-	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
 +---RAMs : 
-	              160 Bit         RAMs := 1     
+	              144 Bit         RAMs := 1     
 Module xpm_counter_updn__parameterized6 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -3872,9 +3836,9 @@ Detailed RTL Component Info :
 Module xpm_memory_base__parameterized1 
 Detailed RTL Component Info : 
 +---Registers : 
-	               74 Bit    Registers := 2     
+	               38 Bit    Registers := 2     
 +---RAMs : 
-	               9K Bit         RAMs := 1     
+	               4K Bit         RAMs := 1     
 Module xpm_fifo_base__parameterized1 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -3897,27 +3861,27 @@ Detailed RTL Component Info :
 	   2 Input      8 Bit       Adders := 1     
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 3     
-Module axi_datamover_skid_buf__parameterized1 
+Module axi_datamover_skid_buf__parameterized0 
 Detailed RTL Component Info : 
 +---Registers : 
-	               72 Bit    Registers := 2     
-	                9 Bit    Registers := 3     
+	               40 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
 	                1 Bit    Registers := 10    
 +---Muxes : 
-	   2 Input     72 Bit        Muxes := 1     
-	   2 Input      9 Bit        Muxes := 1     
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
 Module axi_datamover_indet_btt 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
 Module axi_datamover_addr_cntl__parameterized0 
 Detailed RTL Component Info : 
@@ -3945,24 +3909,26 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	               14 Bit    Registers := 1     
-	                8 Bit    Registers := 3     
-	                4 Bit    Registers := 2     
-	                3 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 23    
 +---Muxes : 
 	   3 Input     14 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 15    
 Module axi_datamover_skid2mm_buf 
 Detailed RTL Component Info : 
 +---Registers : 
-	               64 Bit    Registers := 2     
-	                8 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
 	                1 Bit    Registers := 7     
 +---Muxes : 
-	   2 Input     64 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
 Module axi_datamover_s2mm_full_wrap 
 Detailed RTL Component Info : 
@@ -4009,29 +3975,50 @@ INFO: [Synth 8-4471] merging register 'I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
 INFO: [Synth 8-4471] merging register 'I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' into 'I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/4919/hdl/axi_sg_v4_1_rfs.vhd:1968]
 INFO: [Synth 8-4471] merging register 'I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_RD_DATA_CNTL/sig_halt_reg_reg' into 'I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_BASIC_WRAPPER/I_WR_STATUS_CNTLR/sig_halt_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/4919/hdl/axi_sg_v4_1_rfs.vhd:5849]
 INFO: [Synth 8-4471] merging register 'GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/GEN_UPDT_FOR_QUEUE.mm2s_pending_ptr_updt_reg' into 'GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF/updt_data_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/ec2a/hdl/axi_dma_v7_1_vh_rfs.vhd:13016]
-INFO: [Synth 8-4471] merging register 'GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO/sig_init_reg_reg' into 'I_WRESP_STATUS_FIFO/sig_init_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
-INFO: [Synth 8-4471] merging register 'GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO/sig_init_reg2_reg' into 'I_WRESP_STATUS_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
-INFO: [Synth 8-4471] merging register 'sig_stop_request_reg' into 'sig_sready_stop_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19578]
-INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_reset_reg_reg' into 'I_DRE_CNTL_FIFO/sig_init_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:44276]
-INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_stop_request_reg' into 'GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sready_stop_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:44271]
-INFO: [Synth 8-4471] merging register 'ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_stop_request_reg' into 'ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sready_stop_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19578]
-INFO: [Synth 8-5546] ROM "SAME_WIDTH_NO_DRE.I_IBTTCC_STBS_SET/lvar_num_set" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "SAME_WIDTH_NO_DRE_WDC.I_WDC_STBS_SET/lvar_num_set" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
 INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg2_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
-INFO: [Synth 8-4471] merging register 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg_reg' into 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
-INFO: [Synth 8-4471] merging register 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg2_reg' into 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
-INFO: [Synth 8-4471] merging register 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' into 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
-INFO: [Synth 8-4471] merging register 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_input_user_type_reg_reg[3:0]' into 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_input_cache_type_reg_reg[3:0]' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:8040]
-INFO: [Synth 8-4471] merging register 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg_reg' into 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
-INFO: [Synth 8-4471] merging register 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg_reg' into 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
-INFO: [Synth 8-4471] merging register 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg2_reg' into 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
-INFO: [Synth 8-4471] merging register 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/sig_rd_xfer_cmplt_reg' into 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/sig_last_mmap_dbeat_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:12507]
-INFO: [Synth 8-4471] merging register 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/OMIT_DRE_CNTL.I_DRE_CNTL_FIFO/sig_init_reg_reg' into 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
-INFO: [Synth 8-4471] merging register 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/OMIT_DRE_CNTL.I_DRE_CNTL_FIFO/sig_init_reg2_reg' into 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
-INFO: [Synth 8-4471] merging register 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_reset_reg_reg' into 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19583]
-INFO: [Synth 8-4471] merging register 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_stop_request_reg' into 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_sready_stop_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19578]
-INFO: [Synth 8-4471] merging register 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' into 'GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' into 'I_MSTR_PCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_MSTR_PCC/sig_input_user_type_reg_reg[3:0]' into 'I_MSTR_PCC/sig_input_cache_type_reg_reg[3:0]' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:8040]
+INFO: [Synth 8-4471] merging register 'I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg_reg' into 'I_MSTR_PCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_RD_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg_reg' into 'I_MSTR_PCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_RD_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg2_reg' into 'I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_RD_DATA_CNTL/sig_rd_xfer_cmplt_reg' into 'I_RD_DATA_CNTL/sig_last_mmap_dbeat_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:12507]
+INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_MM2S_SF.I_RD_SF/OMIT_DRE_CNTL.I_DRE_CNTL_FIFO/sig_init_reg_reg' into 'I_MSTR_PCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_MM2S_SF.I_RD_SF/OMIT_DRE_CNTL.I_DRE_CNTL_FIFO/sig_init_reg2_reg' into 'I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_reset_reg_reg' into 'I_MSTR_PCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19583]
+INFO: [Synth 8-4471] merging register 'ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_stop_request_reg' into 'ENABLE_AXIS_SKID.I_MM2S_SKID_BUF/sig_sready_stop_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19578]
+INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' into 'I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg2_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/sig_init_reg_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/sig_init_reg2_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_WR_STATUS_CNTLR/GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO/sig_init_reg_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_WR_STATUS_CNTLR/GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO/sig_init_reg2_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' into 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_user_type_reg_reg[3:0]' into 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_cache_type_reg_reg[3:0]' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:26365]
+INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_child_user_type_reg_reg[3:0]' into 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_child_cache_type_reg_reg[3:0]' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:27030]
+INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_child_qual_user_type_reg[3:0]' into 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_child_qual_cache_type_reg[3:0]' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:27083]
+INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_xfer_user_reg_reg[3:0]' into 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_xfer_cache_reg_reg[3:0]' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:26214]
+INFO: [Synth 8-4471] merging register 'ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_reset_reg_reg' into 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19583]
+INFO: [Synth 8-4471] merging register 'ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_stop_request_reg' into 'ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sready_stop_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19578]
+INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/I_DRE_CNTL_FIFO/sig_init_reg_reg' into 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_reset_reg_reg' into 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:44276]
+INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_stop_request_reg' into 'GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sready_stop_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:44271]
+INFO: [Synth 8-4471] merging register 'GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sready_stop_reg_reg' into 'GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sready_stop_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19804]
+INFO: [Synth 8-4471] merging register 'GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_reset_reg_reg' into 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19583]
+INFO: [Synth 8-4471] merging register 'GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_stop_request_reg' into 'GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sready_stop_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19578]
+INFO: [Synth 8-4471] merging register 'I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg_reg' into 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg2_reg' into 'GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/I_DRE_CNTL_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_WR_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg_reg' into 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1961]
+INFO: [Synth 8-4471] merging register 'I_WR_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg2_reg' into 'GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/I_DRE_CNTL_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_WR_DATA_CNTL/sig_halt_reg_reg' into 'I_WR_STATUS_CNTLR/sig_halt_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:16442]
+INFO: [Synth 8-4471] merging register 'I_WR_DATA_CNTL/sig_halt_reg_dly1_reg' into 'I_WR_STATUS_CNTLR/sig_halt_reg_dly1_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:17422]
+INFO: [Synth 8-4471] merging register 'I_WR_STATUS_CNTLR/sig_halt_reg_dly2_reg' into 'I_WR_DATA_CNTL/sig_halt_reg_dly2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:18852]
+INFO: [Synth 8-4471] merging register 'I_S2MM_MMAP_SKID_BUF/sig_reset_reg_reg' into 'GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_mmap_reset_reg_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:19064]
+INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/I_DRE_CNTL_FIFO/sig_init_reg2_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:1962]
+INFO: [Synth 8-4471] merging register 'I_WR_STATUS_CNTLR/sig_halt_reg_dly3_reg' into 'I_WR_DATA_CNTL/sig_halt_reg_dly3_reg' [/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ipshared/1e40/hdl/axi_datamover_v5_1_vh_rfs.vhd:18796]
+INFO: [Synth 8-5546] ROM "GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/SAME_WIDTH_NO_DRE.I_IBTTCC_STBS_SET/lvar_num_set" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/SAME_WIDTH_NO_DRE_WDC.I_WDC_STBS_SET/lvar_num_set" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -4049,23 +4036,19 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[67]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[33]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_input_tag_reg_reg[0]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_input_eof_reg_reg'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[33] )
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_user_type_reg_reg[0]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_eof_reg_reg'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_user_type_reg_reg[1]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_eof_reg_reg'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_user_type_reg_reg[2]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_eof_reg_reg'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_user_type_reg_reg[3]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_eof_reg_reg'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_cache_type_reg_reg[0]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_eof_reg_reg'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_cache_type_reg_reg[1]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_eof_reg_reg'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_cache_type_reg_reg[2]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_eof_reg_reg'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_cache_type_reg_reg[3]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_input_eof_reg_reg'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[68]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[69]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[69]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[70]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[70]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[71]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[71] )
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[8]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[35]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[36]'
+INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[36]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[37]'
+INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[37]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[38]'
+INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[38]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[39]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_data_skid_reg_reg[39] )
+INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[4]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
 INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/nxtdesc_int_reg[0]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/nxtdesc_int_reg[1]'
 INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/nxtdesc_int_reg[1]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/nxtdesc_int_reg[2]'
 INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/nxtdesc_int_reg[2]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/nxtdesc_int_reg[3]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/I_DRE_CNTL_FIFO/sig_init_reg_reg' (FD) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg'
 INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/nxtdesc_int_reg[3]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/nxtdesc_int_reg[4]'
 INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/nxtdesc_int_reg[4]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_QUEUE/nxtdesc_int_reg[5]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SG_ENGINE.I_SG_ENGINE /\I_SG_FETCH_QUEUE/nxtdesc_int_reg[5] )
@@ -4089,14 +4072,11 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_AXI_
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_AXI_DMA_REG_MODULE/\GEN_MM2S_REGISTERS.I_MM2S_DMA_REGISTER/dmacr_i_reg[11] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_AXI_DMA_REG_MODULE/\GEN_S2MM_REGISTERS.I_S2MM_DMA_REGISTER/dmacr_i_reg[15] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_AXI_DMA_REG_MODULE/\GEN_MM2S_REGISTERS.I_MM2S_DMA_REGISTER/dmacr_i_reg[15] )
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[3]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[2]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[0]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[1]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[1]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[4]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[7]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[4]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[6]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[4]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[4]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[5]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[5]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sready_stop_reg_reg'
+INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[3]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[1]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sstrb_stop_mask_reg[0]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_sready_stop_reg_reg'
+INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg[3]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg[4]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg[4]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg[5]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg[5]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg[6]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg[6]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg[7]'
@@ -4107,24 +4087,12 @@ INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg[11]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg[12]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg[12]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg[13]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_max_first_increment_reg[13] )
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_reset_reg_reg' (FD) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_WR_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg_reg' (FD) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_WR_DATA_CNTL/GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO/sig_init_reg2_reg' (FDS) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SG_ENGINE.I_SG_ENGINE /\I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_RD_DATA_CNTL/sig_coelsc_interr_reg_reg )
 INFO: [Synth 8-3886] merging instance 'U0/INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR/GEN_S2MM_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_S2MM_SG_IF/GEN_DESC_UPDT_QUEUE.GEN_DESC_UPDT_NO_STSAPP.updt_desc_sts_reg[32]' (FDE) to 'U0/INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR/GEN_S2MM_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_S2MM_SG_IF/GEN_DESC_UPDT_QUEUE.GEN_DESC_UPDT_NO_STSAPP.updt_desc_sts_reg[26]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' (FD) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_S2MM_MMAP_SKID_BUF/sig_reset_reg_reg'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' (FDS) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/I_DRE_CNTL_FIFO/sig_init_reg2_reg'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sstrb_stop_mask_reg[3]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sstrb_stop_mask_reg[2]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sstrb_stop_mask_reg[0]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sstrb_stop_mask_reg[3]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sstrb_stop_mask_reg[1]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sstrb_stop_mask_reg[7]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sstrb_stop_mask_reg[6]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sstrb_stop_mask_reg[4]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sstrb_stop_mask_reg[5]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sready_stop_reg_reg' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg_reg' (FD) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_S2MM_MMAP_SKID_BUF/sig_reset_reg_reg'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO/sig_init_reg2_reg' (FDS) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/I_DRE_CNTL_FIFO/sig_init_reg2_reg'
+INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sstrb_stop_mask_reg[0]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_adjusted_addr_incr_ireg2_reg[8]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[7]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_adjusted_addr_incr_ireg2_reg[9]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[7]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_adjusted_addr_incr_ireg2_reg[10]' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[7]'
@@ -4144,10 +4112,7 @@ INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_addr_cntr_incr_ireg2_reg[15] )
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_sm_ld_calc3_reg_reg' (FDR) to 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/FSM_onehot_sig_pcc_sm_state_reg[4]'
 INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/FSM_onehot_sig_pcc_sm_state_reg[3]' (FDR) to 'U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_sm_ld_calc2_reg_reg'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF/sig_reset_reg_reg' (FD) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_S2MM_MMAP_SKID_BUF/sig_reset_reg_reg'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_S2MM_MMAP_SKID_BUF/sig_reset_reg_reg' (FD) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_mmap_reset_reg_reg'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sready_stop_reg_reg' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
-INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_mmap_reset_reg_reg' (FD) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_WR_STATUS_CNTLR/I_WRESP_STATUS_FIFO/sig_init_reg_reg'
+INFO: [Synth 8-3886] merging instance 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sready_stop_reg_reg' (FDRE) to 'U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[0]'
 INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[5]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[23]'
 INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[6]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
 INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[7]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
@@ -4158,8 +4123,30 @@ INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DAT
 INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[12]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
 INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[13]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
 INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[14]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[15]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[16]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[17]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[18]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[19]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[20]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[21]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[22]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[24]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[25]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[26]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[27]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[28]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[29]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[30]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[31]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[65]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[66]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[67]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[4]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[3]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[2]' (FDRE) to 'U0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[0]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sstrb_stop_mask_reg[3] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_xfer_len_reg_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\GEN_SG_ENGINE.I_SG_ENGINE /\I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[37] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR /\GEN_S2MM_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_S2MM_SG_IF/GEN_DESC_UPDT_QUEUE.GEN_DESC_UPDT_NO_STSAPP.updt_desc_sts_reg[25] )
@@ -4274,10 +4261,10 @@ INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instan
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/sig_curr_eof_reg_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/sig_next_len_reg_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_len_reg_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/SLICE_INSERTION/storage_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/SLICE_INSERTION/storage_data_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR /\GEN_S2MM_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_S2MM_SM/FSM_sequential_GEN_SM_FOR_NO_LENGTH.s2mm_cs_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:40 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 5499 ; free virtual = 22833
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:13 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 7688 ; free virtual = 25397
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -4290,7 +4277,7 @@ Block RAM: Preliminary Mapping	Report (see note below)
 |Module Name                                                                                                                                                                                                                    | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |U0/I_PRMRY_DATAMOVER/\GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst          | gen_wr_a.gen_word_narrow.mem_reg | 128 x 39(NO_CHANGE)    | W |   | 128 x 39(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
-|U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 128 x 74(NO_CHANGE)    | W |   | 128 x 74(NO_CHANGE)    |   | R | Port A and B     | 1      | 1      | 
+|U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 128 x 38(NO_CHANGE)    | W |   | 128 x 38(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
@@ -4299,7 +4286,7 @@ Distributed RAM: Preliminary Mapping	Report (see note below)
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+-------------+
 |Module Name                                                                                                                                                                                                                      | RTL Object                       | Inference | Size (Depth x Width) | Primitives  | 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+-------------+
-|U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 10              | RAM32M x 2	 | 
+|U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 9               | RAM32M x 2	 | 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+-------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
@@ -4316,7 +4303,7 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:48 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 5357 ; free virtual = 22709
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:20 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 8784 ; free virtual = 26493
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -4324,8 +4311,9 @@ Start Timing Optimization
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:52 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 5035 ; free virtual = 22377
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:23 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 8620 ; free virtual = 26329
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -4336,7 +4324,7 @@ Block RAM: Final Mapping	Report
 |Module Name                                                                                                                                                                                                                    | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |U0/I_PRMRY_DATAMOVER/\GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst          | gen_wr_a.gen_word_narrow.mem_reg | 128 x 39(NO_CHANGE)    | W |   | 128 x 39(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
-|U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 128 x 74(NO_CHANGE)    | W |   | 128 x 74(NO_CHANGE)    |   | R | Port A and B     | 1      | 1      | 
+|U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 128 x 38(NO_CHANGE)    | W |   | 128 x 38(NO_CHANGE)    |   | R | Port A and B     | 0      | 1      | 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 
@@ -4344,7 +4332,7 @@ Distributed RAM: Final Mapping	Report
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+-------------+
 |Module Name                                                                                                                                                                                                                      | RTL Object                       | Inference | Size (Depth x Width) | Primitives  | 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+-------------+
-|U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 10              | RAM32M x 2	 | 
+|U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 9               | RAM32M x 2	 | 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+-------------+
 
 ---------------------------------------------------------------------------------
@@ -4361,7 +4349,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\INCLUDE_MM2S_SOF_EOF_GENERATOR.I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SM/FSM_sequential_mm2s_cs_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:55 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 5009 ; free virtual = 22364
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:26 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 8634 ; free virtual = 26353
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -4387,13 +4375,13 @@ Finished Final Netlist Cleanup
 INFO: [Synth 8-3295] tying undriven pin I_AXI_DMA_REG_MODULE/strm_valid_int2_inferred:in0 to constant 0
 INFO: [Synth 8-3295] tying undriven pin I_AXI_DMA_REG_MODULE/strm_valid_int_cdc_to_inferred:in0 to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:58 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 4866 ; free virtual = 22341
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:28 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 8720 ; free virtual = 26440
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:58 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 4866 ; free virtual = 22341
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:28 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 8721 ; free virtual = 26441
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -4412,25 +4400,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:59 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 4861 ; free virtual = 22337
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:29 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 8726 ; free virtual = 26446
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:59 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 4861 ; free virtual = 22337
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:29 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 8726 ; free virtual = 26446
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:59 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 4855 ; free virtual = 22331
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:29 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 8726 ; free virtual = 26446
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:59 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 4855 ; free virtual = 22331
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:29 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 8726 ; free virtual = 26446
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -4449,8 +4437,8 @@ Dynamic Shift Register Report:
 |dsrl__6     | INFERRED_GEN.data_reg[5]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
 |dsrl__7     | INFERRED_GEN.data_reg[5]  | 21     | 21         | 21     | 0       | 0      | 0      | 0      | 
 |dsrl__8     | INFERRED_GEN.data_reg[3]  | 25     | 25         | 25     | 0       | 0      | 0      | 0      | 
-|dsrl__9     | INFERRED_GEN.data_reg[15] | 14     | 14         | 14     | 0       | 0      | 0      | 0      | 
-|dsrl__10    | INFERRED_GEN.data_reg[3]  | 36     | 36         | 36     | 0       | 0      | 0      | 0      | 
+|dsrl__9     | INFERRED_GEN.data_reg[15] | 9      | 9          | 9      | 0       | 0      | 0      | 0      | 
+|dsrl__10    | INFERRED_GEN.data_reg[3]  | 27     | 27         | 27     | 0       | 0      | 0      | 0      | 
 +------------+---------------------------+--------+------------+--------+---------+--------+--------+--------+
 
 ---------------------------------------------------------------------------------
@@ -4470,28 +4458,27 @@ Report Cell Usage:
 +------+-----------+------+
 |      |Cell       |Count |
 +------+-----------+------+
-|1     |CARRY4     |    60|
+|1     |CARRY4     |    58|
 |2     |LUT1       |    89|
-|3     |LUT2       |   284|
-|4     |LUT3       |   690|
-|5     |LUT4       |   446|
-|6     |LUT5       |   355|
-|7     |LUT6       |   607|
+|3     |LUT2       |   277|
+|4     |LUT3       |   546|
+|5     |LUT4       |   429|
+|6     |LUT5       |   337|
+|7     |LUT6       |   587|
 |8     |RAM32M     |     2|
-|9     |RAMB18E1_1 |     1|
-|10    |RAMB36E1_1 |     2|
-|11    |SRL16E     |   187|
-|12    |FDR        |   263|
-|13    |FDRE       |  3449|
-|14    |FDSE       |   121|
+|9     |RAMB36E1_1 |     2|
+|10    |SRL16E     |   180|
+|11    |FDR        |   263|
+|12    |FDRE       |  3141|
+|13    |FDSE       |   121|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+------------------------------------------------------------------+-------------------------------------------+------+
 |      |Instance                                                          |Module                                     |Cells |
 +------+------------------------------------------------------------------+-------------------------------------------+------+
-|1     |top                                                               |                                           |  6556|
-|2     |  U0                                                              |axi_dma                                    |  6556|
+|1     |top                                                               |                                           |  6032|
+|2     |  U0                                                              |axi_dma                                    |  6032|
 |3     |    \GEN_SG_ENGINE.I_SG_ENGINE                                    |axi_sg                                     |  1748|
 |4     |      \GEN_DESC_UPDATE.I_SG_UPDATE_MNGR                           |axi_sg_updt_mngr                           |   123|
 |5     |        I_UPDT_CMDSTS_IF                                          |axi_sg_updt_cmdsts_if                      |    11|
@@ -4502,9 +4489,9 @@ Report Instance Areas:
 |10    |      I_SG_AXI_DATAMOVER                                          |axi_sg_datamover                           |   380|
 |11    |        \GEN_MM2S_BASIC.I_MM2S_BASIC_WRAPPER                      |axi_sg_mm2s_basic_wrap                     |   141|
 |12    |          I_ADDR_CNTL                                             |axi_sg_addr_cntl                           |    37|
-|13    |          I_CMD_STATUS                                            |axi_sg_cmd_status_45                       |    49|
-|14    |            \GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO                   |axi_sg_fifo__parameterized0_46             |    15|
-|15    |            I_CMD_FIFO                                            |axi_sg_fifo_47                             |    34|
+|13    |          I_CMD_STATUS                                            |axi_sg_cmd_status_46                       |    49|
+|14    |            \GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO                   |axi_sg_fifo__parameterized0_47             |    15|
+|15    |            I_CMD_FIFO                                            |axi_sg_fifo_48                             |    34|
 |16    |          I_MSTR_SCC                                              |axi_sg_scc                                 |    33|
 |17    |          I_RD_DATA_CNTL                                          |axi_sg_rddata_cntl                         |    11|
 |18    |          I_RD_STATUS_CNTLR                                       |axi_sg_rd_status_cntl                      |     7|
@@ -4520,12 +4507,12 @@ Report Instance Areas:
 |28    |            \GEN_OMIT_INDET_BTT.I_DATA_CNTL_STATUS_FIFO           |axi_sg_fifo__parameterized2                |    20|
 |29    |              \USE_SRL_FIFO.I_SYNC_FIFO                           |srl_fifo_f__parameterized0                 |    17|
 |30    |                I_SRL_FIFO_RBU_F                                  |srl_fifo_rbu_f__parameterized0             |    17|
-|31    |                  CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f_44                   |     7|
+|31    |                  CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f_45                   |     7|
 |32    |                  DYNSHREG_F_I                                    |dynshreg_f__parameterized0                 |     9|
 |33    |            I_WRESP_STATUS_FIFO                                   |axi_sg_fifo__parameterized1                |    17|
 |34    |              \USE_SRL_FIFO.I_SYNC_FIFO                           |srl_fifo_f                                 |    14|
 |35    |                I_SRL_FIFO_RBU_F                                  |srl_fifo_rbu_f                             |    14|
-|36    |                  CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f_43                   |     7|
+|36    |                  CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f_44                   |     7|
 |37    |                  DYNSHREG_F_I                                    |dynshreg_f                                 |     5|
 |38    |      I_SG_FETCH_MNGR                                             |axi_sg_ftch_mngr                           |   224|
 |39    |        I_FTCH_CMDSTS_IF                                          |axi_sg_ftch_cmdsts_if                      |    23|
@@ -4537,7 +4524,7 @@ Report Instance Areas:
 |45    |      \GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SG_IF  |axi_dma_mm2s_sg_if                         |   115|
 |46    |        \GEN_UPDT_FOR_QUEUE.GEN_NO_MICRO_DMA.XFERRED_BYTE_FIFO    |srl_fifo_f__parameterized1                 |    47|
 |47    |          I_SRL_FIFO_RBU_F                                        |srl_fifo_rbu_f__parameterized1             |    47|
-|48    |            CNTR_INCR_DECR_ADDN_F_I                               |cntr_incr_decr_addn_f__parameterized0_42   |    15|
+|48    |            CNTR_INCR_DECR_ADDN_F_I                               |cntr_incr_decr_addn_f__parameterized0_43   |    15|
 |49    |            DYNSHREG_F_I                                          |dynshreg_f__parameterized1                 |    26|
 |50    |      \GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S_SM     |axi_dma_mm2s_sm                            |    11|
 |51    |      \GEN_MM2S_DMA_CONTROL.I_MM2S_CMDSTS                         |axi_dma_mm2s_cmdsts_if                     |    13|
@@ -4554,65 +4541,65 @@ Report Instance Areas:
 |62    |        \GEN_ASYNC_READ.REG_ARVALID_TO_IPCLK                      |cdc_sync__parameterized3                   |     5|
 |63    |        \GEN_ASYNC_READ.REG_DATA2LITE_CLOCK                       |cdc_sync__parameterized4                   |   128|
 |64    |        \GEN_ASYNC_READ.REG_RADDR_TO_IPCLK                        |cdc_sync__parameterized2                   |    40|
-|65    |        \GEN_ASYNC_WRITE.AWVLD_CDC_TO                             |cdc_sync_38                                |     4|
-|66    |        \GEN_ASYNC_WRITE.REG2_WREADY                              |cdc_sync_39                                |     6|
-|67    |        \GEN_ASYNC_WRITE.REG3_WREADY                              |cdc_sync_40                                |     5|
+|65    |        \GEN_ASYNC_WRITE.AWVLD_CDC_TO                             |cdc_sync_39                                |     4|
+|66    |        \GEN_ASYNC_WRITE.REG2_WREADY                              |cdc_sync_40                                |     6|
+|67    |        \GEN_ASYNC_WRITE.REG3_WREADY                              |cdc_sync_41                                |     5|
 |68    |        \GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK                       |cdc_sync__parameterized0                   |    13|
 |69    |        \GEN_ASYNC_WRITE.REG_WADDR_TO_IPCLK1                      |cdc_sync__parameterized1                   |    43|
-|70    |        \GEN_ASYNC_WRITE.WVLD_CDC_TO                              |cdc_sync_41                                |     4|
-|71    |      \GEN_MM2S_REGISTERS.GEN_INTROUT_ASYNC.PROC_REG_INTR2LITE    |cdc_sync_36                                |     4|
+|70    |        \GEN_ASYNC_WRITE.WVLD_CDC_TO                              |cdc_sync_42                                |     4|
+|71    |      \GEN_MM2S_REGISTERS.GEN_INTROUT_ASYNC.PROC_REG_INTR2LITE    |cdc_sync_37                                |     4|
 |72    |      \GEN_MM2S_REGISTERS.I_MM2S_DMA_REGISTER                     |axi_dma_register                           |   140|
-|73    |      \GEN_S2MM_REGISTERS.GEN_INTROUT_ASYNC.PROC_REG_INTR2LITE    |cdc_sync_37                                |     4|
+|73    |      \GEN_S2MM_REGISTERS.GEN_INTROUT_ASYNC.PROC_REG_INTR2LITE    |cdc_sync_38                                |     4|
 |74    |      \GEN_S2MM_REGISTERS.I_S2MM_DMA_REGISTER                     |axi_dma_register_s2mm                      |   129|
-|75    |    I_PRMRY_DATAMOVER                                             |axi_datamover                              |  3616|
+|75    |    I_PRMRY_DATAMOVER                                             |axi_datamover                              |  3092|
 |76    |      \GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER                          |axi_datamover_mm2s_full_wrap               |  1051|
-|77    |        \ENABLE_AXIS_SKID.I_MM2S_SKID_BUF                         |axi_datamover_skid_buf                     |   123|
+|77    |        \ENABLE_AXIS_SKID.I_MM2S_SKID_BUF                         |axi_datamover_skid_buf_19                  |   123|
 |78    |        \GEN_INCLUDE_MM2S_SF.I_RD_SF                              |axi_datamover_rd_sf                        |   262|
 |79    |          I_DATA_FIFO                                             |axi_datamover_sfifo_autord                 |   237|
 |80    |            \BLK_MEM.I_SYNC_FIFOGEN_FIFO                          |sync_fifo_fg                               |   237|
 |81    |              \xpm_fifo_instance.xpm_fifo_sync_inst               |xpm_fifo_sync                              |   224|
 |82    |                xpm_fifo_base_inst                                |xpm_fifo_base                              |   224|
 |83    |                  \gen_sdpram.xpm_memory_base_inst                |xpm_memory_base                            |     1|
-|84    |                  \gen_fwft.rdpp1_inst                            |xpm_counter_updn__parameterized1_28        |     8|
-|85    |                  rdp_inst                                        |xpm_counter_updn__parameterized2_29        |    47|
-|86    |                  rdpp1_inst                                      |xpm_counter_updn__parameterized3_30        |    18|
-|87    |                  rst_d1_inst                                     |xpm_fifo_reg_bit_31                        |    12|
-|88    |                  wrp_inst                                        |xpm_counter_updn__parameterized2_32        |    31|
-|89    |                  wrpp1_inst                                      |xpm_counter_updn__parameterized3_33        |    25|
-|90    |                  wrpp2_inst                                      |xpm_counter_updn__parameterized0_34        |    19|
-|91    |                  xpm_fifo_rst_inst                               |xpm_fifo_rst_35                            |    10|
+|84    |                  \gen_fwft.rdpp1_inst                            |xpm_counter_updn__parameterized1_29        |     8|
+|85    |                  rdp_inst                                        |xpm_counter_updn__parameterized2_30        |    47|
+|86    |                  rdpp1_inst                                      |xpm_counter_updn__parameterized3_31        |    18|
+|87    |                  rst_d1_inst                                     |xpm_fifo_reg_bit_32                        |    12|
+|88    |                  wrp_inst                                        |xpm_counter_updn__parameterized2_33        |    31|
+|89    |                  wrpp1_inst                                      |xpm_counter_updn__parameterized3_34        |    25|
+|90    |                  wrpp2_inst                                      |xpm_counter_updn__parameterized0_35        |    19|
+|91    |                  xpm_fifo_rst_inst                               |xpm_fifo_rst_36                            |    10|
 |92    |          \OMIT_DRE_CNTL.I_DRE_CNTL_FIFO                          |axi_datamover_fifo__parameterized3         |    13|
 |93    |            \USE_SRL_FIFO.I_SYNC_FIFO                             |srl_fifo_f__parameterized4                 |    10|
 |94    |              I_SRL_FIFO_RBU_F                                    |srl_fifo_rbu_f__parameterized4             |    10|
-|95    |                CNTR_INCR_DECR_ADDN_F_I                           |cntr_incr_decr_addn_f_27                   |     8|
+|95    |                CNTR_INCR_DECR_ADDN_F_I                           |cntr_incr_decr_addn_f_28                   |     8|
 |96    |        I_ADDR_CNTL                                               |axi_datamover_addr_cntl                    |   102|
-|97    |          \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO                         |axi_datamover_fifo__parameterized1_22      |    57|
-|98    |            \USE_SRL_FIFO.I_SYNC_FIFO                             |srl_fifo_f__parameterized2_23              |    52|
-|99    |              I_SRL_FIFO_RBU_F                                    |srl_fifo_rbu_f__parameterized2_24          |    52|
-|100   |                CNTR_INCR_DECR_ADDN_F_I                           |cntr_incr_decr_addn_f_25                   |    10|
-|101   |                DYNSHREG_F_I                                      |dynshreg_f__parameterized2_26              |    41|
+|97    |          \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO                         |axi_datamover_fifo__parameterized1_23      |    57|
+|98    |            \USE_SRL_FIFO.I_SYNC_FIFO                             |srl_fifo_f__parameterized2_24              |    52|
+|99    |              I_SRL_FIFO_RBU_F                                    |srl_fifo_rbu_f__parameterized2_25          |    52|
+|100   |                CNTR_INCR_DECR_ADDN_F_I                           |cntr_incr_decr_addn_f_26                   |    10|
+|101   |                DYNSHREG_F_I                                      |dynshreg_f__parameterized2_27              |    41|
 |102   |        I_CMD_STATUS                                              |axi_datamover_cmd_status                   |    67|
 |103   |          \GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO                     |axi_datamover_fifo__parameterized0         |    14|
-|104   |          I_CMD_FIFO                                              |axi_datamover_fifo_21                      |    53|
+|104   |          I_CMD_FIFO                                              |axi_datamover_fifo_22                      |    53|
 |105   |        I_MSTR_PCC                                                |axi_datamover_pcc                          |   358|
 |106   |          I_STRT_STRB_GEN                                         |axi_datamover_strb_gen2                    |     2|
 |107   |        I_RD_DATA_CNTL                                            |axi_datamover_rddata_cntl                  |   121|
 |108   |          \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO                    |axi_datamover_fifo__parameterized2         |    52|
 |109   |            \USE_SRL_FIFO.I_SYNC_FIFO                             |srl_fifo_f__parameterized3                 |    49|
 |110   |              I_SRL_FIFO_RBU_F                                    |srl_fifo_rbu_f__parameterized3             |    49|
-|111   |                CNTR_INCR_DECR_ADDN_F_I                           |cntr_incr_decr_addn_f_20                   |    23|
+|111   |                CNTR_INCR_DECR_ADDN_F_I                           |cntr_incr_decr_addn_f_21                   |    23|
 |112   |                DYNSHREG_F_I                                      |dynshreg_f__parameterized3                 |    24|
 |113   |        I_RD_STATUS_CNTLR                                         |axi_datamover_rd_status_cntl               |     9|
-|114   |        I_RESET                                                   |axi_datamover_reset_19                     |     9|
-|115   |      \GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER                          |axi_datamover_s2mm_full_wrap               |  2565|
-|116   |        \ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF                    |axi_datamover_skid_buf__parameterized0     |   241|
-|117   |        \GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT                      |axi_datamover_indet_btt                    |   706|
-|118   |          \ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF                  |axi_datamover_skid_buf__parameterized1     |   254|
-|119   |          I_DATA_FIFO                                             |axi_datamover_sfifo_autord__parameterized1 |   233|
-|120   |            \BLK_MEM.I_SYNC_FIFOGEN_FIFO                          |sync_fifo_fg__parameterized1               |   233|
-|121   |              \xpm_fifo_instance.xpm_fifo_sync_inst               |xpm_fifo_sync__parameterized3              |   225|
-|122   |                xpm_fifo_base_inst                                |xpm_fifo_base__parameterized1              |   225|
-|123   |                  \gen_sdpram.xpm_memory_base_inst                |xpm_memory_base__parameterized1            |     2|
+|114   |        I_RESET                                                   |axi_datamover_reset_20                     |     9|
+|115   |      \GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER                          |axi_datamover_s2mm_full_wrap               |  2041|
+|116   |        \ENABLE_AXIS_SKID.I_S2MM_STRM_SKID_BUF                    |axi_datamover_skid_buf                     |   131|
+|117   |        \GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT                      |axi_datamover_indet_btt                    |   585|
+|118   |          \ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF                  |axi_datamover_skid_buf__parameterized0     |   133|
+|119   |          I_DATA_FIFO                                             |axi_datamover_sfifo_autord__parameterized1 |   230|
+|120   |            \BLK_MEM.I_SYNC_FIFOGEN_FIFO                          |sync_fifo_fg__parameterized1               |   230|
+|121   |              \xpm_fifo_instance.xpm_fifo_sync_inst               |xpm_fifo_sync__parameterized3              |   224|
+|122   |                xpm_fifo_base_inst                                |xpm_fifo_base__parameterized1              |   224|
+|123   |                  \gen_sdpram.xpm_memory_base_inst                |xpm_memory_base__parameterized1            |     1|
 |124   |                  \gen_fwft.rdpp1_inst                            |xpm_counter_updn__parameterized1_14        |     8|
 |125   |                  rdp_inst                                        |xpm_counter_updn__parameterized2           |    47|
 |126   |                  rdpp1_inst                                      |xpm_counter_updn__parameterized3           |    18|
@@ -4621,11 +4608,11 @@ Report Instance Areas:
 |129   |                  wrpp1_inst                                      |xpm_counter_updn__parameterized3_17        |    25|
 |130   |                  wrpp2_inst                                      |xpm_counter_updn__parameterized0           |    19|
 |131   |                  xpm_fifo_rst_inst                               |xpm_fifo_rst_18                            |    10|
-|132   |          I_XD_FIFO                                               |axi_datamover_sfifo_autord__parameterized0 |   187|
-|133   |            \NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO                      |sync_fifo_fg__parameterized0               |   187|
-|134   |              \xpm_fifo_instance.xpm_fifo_sync_inst               |xpm_fifo_sync__parameterized1              |   168|
-|135   |                xpm_fifo_base_inst                                |xpm_fifo_base__parameterized0              |   168|
-|136   |                  \gen_sdpram.xpm_memory_base_inst                |xpm_memory_base__parameterized0            |    22|
+|132   |          I_XD_FIFO                                               |axi_datamover_sfifo_autord__parameterized0 |   202|
+|133   |            \NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO                      |sync_fifo_fg__parameterized0               |   202|
+|134   |              \xpm_fifo_instance.xpm_fifo_sync_inst               |xpm_fifo_sync__parameterized1              |   166|
+|135   |                xpm_fifo_base_inst                                |xpm_fifo_base__parameterized0              |   166|
+|136   |                  \gen_sdpram.xpm_memory_base_inst                |xpm_memory_base__parameterized0            |    20|
 |137   |                  \gen_fwft.rdpp1_inst                            |xpm_counter_updn__parameterized1           |     9|
 |138   |                  rdp_inst                                        |xpm_counter_updn__parameterized6           |    17|
 |139   |                  rdpp1_inst                                      |xpm_counter_updn__parameterized7           |    10|
@@ -4634,94 +4621,93 @@ Report Instance Areas:
 |142   |                  wrpp1_inst                                      |xpm_counter_updn__parameterized7_13        |    12|
 |143   |                  wrpp2_inst                                      |xpm_counter_updn__parameterized5           |    11|
 |144   |                  xpm_fifo_rst_inst                               |xpm_fifo_rst                               |    10|
-|145   |        \GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC                    |axi_datamover_ibttcc                       |   410|
-|146   |        \GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER                   |axi_datamover_s2mm_realign                 |   524|
-|147   |          \GEN_INCLUDE_SCATTER.I_S2MM_SCATTER                     |axi_datamover_s2mm_scatter                 |   475|
-|148   |            I_MSSAI_SKID_BUF                                      |axi_datamover_mssai_skid_buf               |   278|
-|149   |            I_TSTRB_FIFO                                          |axi_datamover_fifo__parameterized8         |    39|
-|150   |              \USE_SRL_FIFO.I_SYNC_FIFO                           |srl_fifo_f__parameterized8                 |    33|
-|151   |                I_SRL_FIFO_RBU_F                                  |srl_fifo_rbu_f__parameterized8             |    33|
-|152   |                  CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f__parameterized0      |    15|
-|153   |                  DYNSHREG_F_I                                    |dynshreg_f__parameterized8                 |    17|
-|154   |            SLICE_INSERTION                                       |axi_datamover_slice                        |    50|
-|155   |          I_DRE_CNTL_FIFO                                         |axi_datamover_fifo__parameterized7         |    42|
+|145   |        \GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC                    |axi_datamover_ibttcc                       |   402|
+|146   |        \GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER                   |axi_datamover_s2mm_realign                 |   354|
+|147   |          \GEN_INCLUDE_SCATTER.I_S2MM_SCATTER                     |axi_datamover_s2mm_scatter                 |   310|
+|148   |            I_MSSAI_SKID_BUF                                      |axi_datamover_mssai_skid_buf               |   138|
+|149   |            I_TSTRB_FIFO                                          |axi_datamover_fifo__parameterized8         |    37|
+|150   |              \USE_SRL_FIFO.I_SYNC_FIFO                           |srl_fifo_f__parameterized8                 |    31|
+|151   |                I_SRL_FIFO_RBU_F                                  |srl_fifo_rbu_f__parameterized8             |    31|
+|152   |                  CNTR_INCR_DECR_ADDN_F_I                         |cntr_incr_decr_addn_f__parameterized0      |    17|
+|153   |                  DYNSHREG_F_I                                    |dynshreg_f__parameterized8                 |    13|
+|154   |            SLICE_INSERTION                                       |axi_datamover_slice                        |    33|
+|155   |          I_DRE_CNTL_FIFO                                         |axi_datamover_fifo__parameterized7         |    37|
 |156   |            \USE_SRL_FIFO.I_SYNC_FIFO                             |srl_fifo_f__parameterized7                 |    34|
 |157   |              I_SRL_FIFO_RBU_F                                    |srl_fifo_rbu_f__parameterized7             |    34|
 |158   |                CNTR_INCR_DECR_ADDN_F_I                           |cntr_incr_decr_addn_f_11                   |    11|
 |159   |                DYNSHREG_F_I                                      |dynshreg_f__parameterized7                 |    22|
-|160   |        I_ADDR_CNTL                                               |axi_datamover_addr_cntl__parameterized0    |   103|
-|161   |          \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO                         |axi_datamover_fifo__parameterized1         |    56|
-|162   |            \USE_SRL_FIFO.I_SYNC_FIFO                             |srl_fifo_f__parameterized2                 |    53|
-|163   |              I_SRL_FIFO_RBU_F                                    |srl_fifo_rbu_f__parameterized2             |    53|
+|160   |        I_ADDR_CNTL                                               |axi_datamover_addr_cntl__parameterized0    |   101|
+|161   |          \GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO                         |axi_datamover_fifo__parameterized1         |    55|
+|162   |            \USE_SRL_FIFO.I_SYNC_FIFO                             |srl_fifo_f__parameterized2                 |    52|
+|163   |              I_SRL_FIFO_RBU_F                                    |srl_fifo_rbu_f__parameterized2             |    52|
 |164   |                CNTR_INCR_DECR_ADDN_F_I                           |cntr_incr_decr_addn_f_10                   |     9|
-|165   |                DYNSHREG_F_I                                      |dynshreg_f__parameterized2                 |    43|
-|166   |        I_CMD_STATUS                                              |axi_datamover_cmd_status__parameterized0   |    96|
+|165   |                DYNSHREG_F_I                                      |dynshreg_f__parameterized2                 |    42|
+|166   |        I_CMD_STATUS                                              |axi_datamover_cmd_status__parameterized0   |   104|
 |167   |          \GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO                     |axi_datamover_fifo__parameterized4         |    42|
-|168   |          I_CMD_FIFO                                              |axi_datamover_fifo                         |    54|
-|169   |        I_RESET                                                   |axi_datamover_reset                        |     7|
-|170   |        I_S2MM_MMAP_SKID_BUF                                      |axi_datamover_skid2mm_buf                  |   218|
-|171   |        I_WR_DATA_CNTL                                            |axi_datamover_wrdata_cntl                  |   152|
-|172   |          \GEN_INDET_BTT.I_STRT_STRB_GEN                          |axi_datamover_strb_gen2__parameterized1    |     5|
-|173   |          \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO                    |axi_datamover_fifo__parameterized9         |    44|
-|174   |            \USE_SRL_FIFO.I_SYNC_FIFO                             |srl_fifo_f__parameterized9                 |    41|
-|175   |              I_SRL_FIFO_RBU_F                                    |srl_fifo_rbu_f__parameterized9             |    41|
-|176   |                CNTR_INCR_DECR_ADDN_F_I                           |cntr_incr_decr_addn_f                      |    18|
-|177   |                DYNSHREG_F_I                                      |dynshreg_f__parameterized9                 |    22|
-|178   |        I_WR_STATUS_CNTLR                                         |axi_datamover_wr_status_cntl               |   108|
-|179   |          \GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO        |axi_datamover_fifo__parameterized6         |    40|
-|180   |            \USE_SRL_FIFO.I_SYNC_FIFO                             |srl_fifo_f__parameterized6                 |    37|
-|181   |              I_SRL_FIFO_RBU_F                                    |srl_fifo_rbu_f__parameterized6             |    37|
-|182   |                CNTR_INCR_DECR_ADDN_F_I                           |cntr_incr_decr_addn_f__parameterized1_9    |    14|
-|183   |                DYNSHREG_F_I                                      |dynshreg_f__parameterized6                 |    21|
-|184   |          I_WRESP_STATUS_FIFO                                     |axi_datamover_fifo__parameterized5         |    31|
-|185   |            \USE_SRL_FIFO.I_SYNC_FIFO                             |srl_fifo_f__parameterized5                 |    22|
-|186   |              I_SRL_FIFO_RBU_F                                    |srl_fifo_rbu_f__parameterized5             |    22|
-|187   |                CNTR_INCR_DECR_ADDN_F_I                           |cntr_incr_decr_addn_f__parameterized1      |    12|
-|188   |                DYNSHREG_F_I                                      |dynshreg_f__parameterized5                 |     4|
-|189   |    I_RST_MODULE                                                  |axi_dma_rst_module                         |   126|
-|190   |      \GEN_RESET_FOR_MM2S.RESET_I                                 |axi_dma_reset                              |    55|
-|191   |        \GEN_ASYNC_RESET.GEN_PRMRY_GRTR_EQL_SCNDRY.HALT_PROCESS   |cdc_sync_6                                 |     4|
-|192   |        \GEN_ASYNC_RESET.REG_HALT_CMPLT_IN                        |cdc_sync_7                                 |     5|
-|193   |        \GEN_ASYNC_RESET.REG_RESET_OUT                            |cdc_sync_8                                 |     5|
-|194   |      \GEN_RESET_FOR_S2MM.RESET_I                                 |axi_dma_reset_1                            |    57|
-|195   |        \GEN_ASYNC_RESET.GEN_PRMRY_GRTR_EQL_SCNDRY.HALT_PROCESS   |cdc_sync_3                                 |     4|
-|196   |        \GEN_ASYNC_RESET.REG_HALT_CMPLT_IN                        |cdc_sync_4                                 |     5|
-|197   |        \GEN_ASYNC_RESET.REG_RESET_OUT                            |cdc_sync_5                                 |     5|
-|198   |      REG_HRD_RST                                                 |cdc_sync                                   |     4|
-|199   |      REG_HRD_RST_OUT                                             |cdc_sync_2                                 |     4|
+|168   |          I_CMD_FIFO                                              |axi_datamover_fifo                         |    62|
+|169   |        I_RESET                                                   |axi_datamover_reset                        |     5|
+|170   |        I_S2MM_MMAP_SKID_BUF                                      |axi_datamover_skid2mm_buf                  |   114|
+|171   |        I_WR_DATA_CNTL                                            |axi_datamover_wrdata_cntl                  |   142|
+|172   |          \GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO                    |axi_datamover_fifo__parameterized9         |    44|
+|173   |            \USE_SRL_FIFO.I_SYNC_FIFO                             |srl_fifo_f__parameterized9                 |    41|
+|174   |              I_SRL_FIFO_RBU_F                                    |srl_fifo_rbu_f__parameterized9             |    41|
+|175   |                CNTR_INCR_DECR_ADDN_F_I                           |cntr_incr_decr_addn_f                      |    16|
+|176   |                DYNSHREG_F_I                                      |dynshreg_f__parameterized9                 |    23|
+|177   |        I_WR_STATUS_CNTLR                                         |axi_datamover_wr_status_cntl               |   103|
+|178   |          \GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO        |axi_datamover_fifo__parameterized6         |    40|
+|179   |            \USE_SRL_FIFO.I_SYNC_FIFO                             |srl_fifo_f__parameterized6                 |    37|
+|180   |              I_SRL_FIFO_RBU_F                                    |srl_fifo_rbu_f__parameterized6             |    37|
+|181   |                CNTR_INCR_DECR_ADDN_F_I                           |cntr_incr_decr_addn_f__parameterized1_9    |    14|
+|182   |                DYNSHREG_F_I                                      |dynshreg_f__parameterized6                 |    21|
+|183   |          I_WRESP_STATUS_FIFO                                     |axi_datamover_fifo__parameterized5         |    25|
+|184   |            \USE_SRL_FIFO.I_SYNC_FIFO                             |srl_fifo_f__parameterized5                 |    22|
+|185   |              I_SRL_FIFO_RBU_F                                    |srl_fifo_rbu_f__parameterized5             |    22|
+|186   |                CNTR_INCR_DECR_ADDN_F_I                           |cntr_incr_decr_addn_f__parameterized1      |    12|
+|187   |                DYNSHREG_F_I                                      |dynshreg_f__parameterized5                 |     4|
+|188   |    I_RST_MODULE                                                  |axi_dma_rst_module                         |   126|
+|189   |      \GEN_RESET_FOR_MM2S.RESET_I                                 |axi_dma_reset                              |    55|
+|190   |        \GEN_ASYNC_RESET.GEN_PRMRY_GRTR_EQL_SCNDRY.HALT_PROCESS   |cdc_sync_6                                 |     4|
+|191   |        \GEN_ASYNC_RESET.REG_HALT_CMPLT_IN                        |cdc_sync_7                                 |     5|
+|192   |        \GEN_ASYNC_RESET.REG_RESET_OUT                            |cdc_sync_8                                 |     5|
+|193   |      \GEN_RESET_FOR_S2MM.RESET_I                                 |axi_dma_reset_1                            |    57|
+|194   |        \GEN_ASYNC_RESET.GEN_PRMRY_GRTR_EQL_SCNDRY.HALT_PROCESS   |cdc_sync_3                                 |     4|
+|195   |        \GEN_ASYNC_RESET.REG_HALT_CMPLT_IN                        |cdc_sync_4                                 |     5|
+|196   |        \GEN_ASYNC_RESET.REG_RESET_OUT                            |cdc_sync_5                                 |     5|
+|197   |      REG_HRD_RST                                                 |cdc_sync                                   |     4|
+|198   |      REG_HRD_RST_OUT                                             |cdc_sync_2                                 |     4|
 +------+------------------------------------------------------------------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:59 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 4858 ; free virtual = 22334
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:29 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 8726 ; free virtual = 26446
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 713 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:14 ; elapsed = 00:01:54 . Memory (MB): peak = 2249.199 ; gain = 435.312 ; free physical = 4907 ; free virtual = 22383
-Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:59 . Memory (MB): peak = 2249.199 ; gain = 578.125 ; free physical = 4907 ; free virtual = 22383
+Synthesis finished with 0 errors, 0 critical warnings and 655 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:25 . Memory (MB): peak = 2237.172 ; gain = 430.344 ; free physical = 8777 ; free virtual = 26497
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:29 . Memory (MB): peak = 2237.172 ; gain = 566.125 ; free physical = 8777 ; free virtual = 26497
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2249.199 ; gain = 0.000 ; free physical = 4966 ; free virtual = 22442
-INFO: [Netlist 29-17] Analyzing 328 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2237.172 ; gain = 0.000 ; free physical = 8846 ; free virtual = 26565
+INFO: [Netlist 29-17] Analyzing 325 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2249.199 ; gain = 0.000 ; free physical = 4896 ; free virtual = 22372
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2237.172 ; gain = 0.000 ; free physical = 8786 ; free virtual = 26506
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 265 instances were transformed.
   FDR => FDRE: 263 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-900 Infos, 180 Warnings, 0 Critical Warnings and 0 Errors encountered.
+916 Infos, 180 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:02:14 . Memory (MB): peak = 2249.199 ; gain = 769.379 ; free physical = 5037 ; free virtual = 22513
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2249.199 ; gain = 0.000 ; free physical = 5036 ; free virtual = 22512
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:41 . Memory (MB): peak = 2237.172 ; gain = 754.379 ; free physical = 8921 ; free virtual = 26641
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2237.172 ; gain = 0.000 ; free physical = 8928 ; free virtual = 26648
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_dma_0_0_synth_1/DMA_FIFO_axi_dma_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP DMA_FIFO_axi_dma_0_0, cache-ID = db4741c90e99f19f
-INFO: [Coretcl 2-1174] Renamed 198 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2273.211 ; gain = 0.000 ; free physical = 4989 ; free virtual = 22474
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP DMA_FIFO_axi_dma_0_0, cache-ID = e19e97c2173b0a00
+INFO: [Coretcl 2-1174] Renamed 197 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2261.184 ; gain = 0.000 ; free physical = 8913 ; free virtual = 26642
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_dma_0_0_synth_1/DMA_FIFO_axi_dma_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file DMA_FIFO_axi_dma_0_0_utilization_synth.rpt -pb DMA_FIFO_axi_dma_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Feb  7 20:08:03 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Feb  7 21:42:49 2021...

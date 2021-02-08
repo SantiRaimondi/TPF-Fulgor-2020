@@ -265,10 +265,10 @@ module bd_c263_wrapper
   input S03_AXI_bready;
   output [1:0]S03_AXI_bresp;
   output S03_AXI_bvalid;
-  input [63:0]S03_AXI_wdata;
+  input [31:0]S03_AXI_wdata;
   input S03_AXI_wlast;
   output S03_AXI_wready;
-  input [7:0]S03_AXI_wstrb;
+  input [3:0]S03_AXI_wstrb;
   input S03_AXI_wvalid;
   input [31:0]S04_AXI_araddr;
   input [1:0]S04_AXI_arburst;
@@ -415,10 +415,10 @@ module bd_c263_wrapper
   wire S03_AXI_bready;
   wire [1:0]S03_AXI_bresp;
   wire S03_AXI_bvalid;
-  wire [63:0]S03_AXI_wdata;
+  wire [31:0]S03_AXI_wdata;
   wire S03_AXI_wlast;
   wire S03_AXI_wready;
-  wire [7:0]S03_AXI_wstrb;
+  wire [3:0]S03_AXI_wstrb;
   wire S03_AXI_wvalid;
   wire [31:0]S04_AXI_araddr;
   wire [1:0]S04_AXI_arburst;

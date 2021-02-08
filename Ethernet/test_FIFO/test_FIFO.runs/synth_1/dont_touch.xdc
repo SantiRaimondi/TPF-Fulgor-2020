@@ -52,16 +52,10 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DMA_FIFO_axi_ua
 # IP: bd/DMA_FIFO/ip/DMA_FIFO_axi_dma_0_0/DMA_FIFO_axi_dma_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DMA_FIFO_axi_dma_0_0 || ORIG_REF_NAME==DMA_FIFO_axi_dma_0_0} -quiet] -quiet
 
-# IP: bd/DMA_FIFO/ip/DMA_FIFO_axis_data_fifo_1_0/DMA_FIFO_axis_data_fifo_1_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DMA_FIFO_axis_data_fifo_1_0 || ORIG_REF_NAME==DMA_FIFO_axis_data_fifo_1_0} -quiet] -quiet
+# IP: bd/DMA_FIFO/ip/DMA_FIFO_auto_pc_0/DMA_FIFO_auto_pc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DMA_FIFO_auto_pc_0 || ORIG_REF_NAME==DMA_FIFO_auto_pc_0} -quiet] -quiet
 
-# IP: bd/DMA_FIFO/ip/DMA_FIFO_axis_data_fifo_0_0/DMA_FIFO_axis_data_fifo_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DMA_FIFO_axis_data_fifo_0_0 || ORIG_REF_NAME==DMA_FIFO_axis_data_fifo_0_0} -quiet] -quiet
-
-# IP: bd/DMA_FIFO/ip/DMA_FIFO_axis_broadcaster_0_0/DMA_FIFO_axis_broadcaster_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DMA_FIFO_axis_broadcaster_0_0 || ORIG_REF_NAME==DMA_FIFO_axis_broadcaster_0_0} -quiet] -quiet
-
-# IP: bd/DMA_FIFO/ip/DMA_FIFO_axis_combiner_0_0/DMA_FIFO_axis_combiner_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DMA_FIFO_axis_combiner_0_0 || ORIG_REF_NAME==DMA_FIFO_axis_combiner_0_0} -quiet] -quiet
+# IP: bd/DMA_FIFO/ip/DMA_FIFO_axi_traffic_gen_0_0/DMA_FIFO_axi_traffic_gen_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DMA_FIFO_axi_traffic_gen_0_0 || ORIG_REF_NAME==DMA_FIFO_axi_traffic_gen_0_0} -quiet] -quiet
 
 # XDC: bd/DMA_FIFO/DMA_FIFO_ooc.xdc

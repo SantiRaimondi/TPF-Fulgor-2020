@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1612739494">
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1612744852">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BITSTR-SYSDEF" Name="DMA_FIFO_wrapper.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
@@ -127,22 +127,20 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_axis_combiner_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_dlmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_rst_mig_7series_0_200M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_axis_data_fifo_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_axis_broadcaster_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_microblaze_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_ilmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_axi_traffic_gen_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_axi_uartlite_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_dlmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_ilmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_microblaze_0_axi_intc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_axis_data_fifo_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_rst_mig_7series_0_200M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_axi_smc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_mig_7series_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_microblaze_0_axi_intc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_ilmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_microblaze_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_axi_dma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DMA_FIFO_mig_7series_0_0"/>
 </GenRun>
