@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="DMA_FIFO" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1612808958"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1612808958"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1612808958"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1612808958"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1612818268"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1612818268"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1612818268"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1612818268"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0.xci" Type="IP">
         <Instance HierarchyPath="mig_7series_0"/>

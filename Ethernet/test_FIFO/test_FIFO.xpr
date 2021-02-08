@@ -66,23 +66,26 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_dlmb_v10_0/DMA_FIFO_dlmb_v10_0.xci">
-          <Proxy FileSetName="DMA_FIFO_dlmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_ilmb_v10_0/DMA_FIFO_ilmb_v10_0.xci">
-          <Proxy FileSetName="DMA_FIFO_ilmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_dlmb_bram_if_cntlr_0/DMA_FIFO_dlmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="DMA_FIFO_dlmb_bram_if_cntlr_0"/>
+        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_axi_dma_0_0/DMA_FIFO_axi_dma_0_0.xci">
+          <Proxy FileSetName="DMA_FIFO_axi_dma_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_ilmb_bram_if_cntlr_0/DMA_FIFO_ilmb_bram_if_cntlr_0.xci">
           <Proxy FileSetName="DMA_FIFO_ilmb_bram_if_cntlr_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_xbar_0/DMA_FIFO_xbar_0.xci">
+          <Proxy FileSetName="DMA_FIFO_xbar_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_lmb_bram_0/DMA_FIFO_lmb_bram_0.xci">
           <Proxy FileSetName="DMA_FIFO_lmb_bram_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_xbar_0/DMA_FIFO_xbar_0.xci">
-          <Proxy FileSetName="DMA_FIFO_xbar_0"/>
+        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_proc_sys_reset_0_1/DMA_FIFO_proc_sys_reset_0_1.xci">
+          <Proxy FileSetName="DMA_FIFO_proc_sys_reset_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_axi_bram_ctrl_0_0/DMA_FIFO_axi_bram_ctrl_0_0.xci">
+          <Proxy FileSetName="DMA_FIFO_axi_bram_ctrl_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_blk_mem_gen_0_0/DMA_FIFO_blk_mem_gen_0_0.xci">
+          <Proxy FileSetName="DMA_FIFO_blk_mem_gen_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_microblaze_0_axi_intc_0/DMA_FIFO_microblaze_0_axi_intc_0.xci">
           <Proxy FileSetName="DMA_FIFO_microblaze_0_axi_intc_0"/>
@@ -96,26 +99,23 @@
         <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_axi_uartlite_0_0/DMA_FIFO_axi_uartlite_0_0.xci">
           <Proxy FileSetName="DMA_FIFO_axi_uartlite_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_axi_dma_0_0/DMA_FIFO_axi_dma_0_0.xci">
-          <Proxy FileSetName="DMA_FIFO_axi_dma_0_0"/>
+        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_axis_data_fifo_0_0/DMA_FIFO_axis_data_fifo_0_0.xci">
+          <Proxy FileSetName="DMA_FIFO_axis_data_fifo_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_proc_sys_reset_0_1/DMA_FIFO_proc_sys_reset_0_1.xci">
-          <Proxy FileSetName="DMA_FIFO_proc_sys_reset_0_1"/>
+        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_ilmb_v10_0/DMA_FIFO_ilmb_v10_0.xci">
+          <Proxy FileSetName="DMA_FIFO_ilmb_v10_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0.xci">
-          <Proxy FileSetName="DMA_FIFO_mig_7series_0_0"/>
+        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_dlmb_bram_if_cntlr_0/DMA_FIFO_dlmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="DMA_FIFO_dlmb_bram_if_cntlr_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_dlmb_v10_0/DMA_FIFO_dlmb_v10_0.xci">
+          <Proxy FileSetName="DMA_FIFO_dlmb_v10_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_microblaze_0_0/DMA_FIFO_microblaze_0_0.xci">
           <Proxy FileSetName="DMA_FIFO_microblaze_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_axi_bram_ctrl_0_0/DMA_FIFO_axi_bram_ctrl_0_0.xci">
-          <Proxy FileSetName="DMA_FIFO_axi_bram_ctrl_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_blk_mem_gen_0_0/DMA_FIFO_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="DMA_FIFO_blk_mem_gen_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_axis_data_fifo_0_0/DMA_FIFO_axis_data_fifo_0_0.xci">
-          <Proxy FileSetName="DMA_FIFO_axis_data_fifo_0_0"/>
+        <CompFileExtendedInfo CompFileName="DMA_FIFO.bd" FileRelPathName="ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0.xci">
+          <Proxy FileSetName="DMA_FIFO_mig_7series_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/DMA_FIFO/hdl/DMA_FIFO_wrapper.v">
@@ -123,12 +123,6 @@
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/mig_a.prj">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="ScopedToCell" Val="DMA_FIFO_mig_7series_0_0"/>
         </FileInfo>
       </File>
       <Config>
@@ -442,9 +436,7 @@
     </Run>
     <Run Id="DMA_FIFO_axi_bram_ctrl_0_0_synth_1" Type="Ft3:Synth" SrcSet="DMA_FIFO_axi_bram_ctrl_0_0" Part="xc7k325tffg900-2" ConstrsSet="DMA_FIFO_axi_bram_ctrl_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DMA_FIFO_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -454,9 +446,7 @@
     </Run>
     <Run Id="DMA_FIFO_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="DMA_FIFO_blk_mem_gen_0_0" Part="xc7k325tffg900-2" ConstrsSet="DMA_FIFO_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DMA_FIFO_blk_mem_gen_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -466,9 +456,7 @@
     </Run>
     <Run Id="DMA_FIFO_axis_data_fifo_0_0_synth_1" Type="Ft3:Synth" SrcSet="DMA_FIFO_axis_data_fifo_0_0" Part="xc7k325tffg900-2" ConstrsSet="DMA_FIFO_axis_data_fifo_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DMA_FIFO_axis_data_fifo_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -734,9 +722,7 @@
     </Run>
     <Run Id="DMA_FIFO_axi_bram_ctrl_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="DMA_FIFO_axi_bram_ctrl_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DMA_FIFO_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -753,9 +739,7 @@
     </Run>
     <Run Id="DMA_FIFO_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="DMA_FIFO_blk_mem_gen_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DMA_FIFO_blk_mem_gen_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -772,9 +756,7 @@
     </Run>
     <Run Id="DMA_FIFO_axis_data_fifo_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="DMA_FIFO_axis_data_fifo_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DMA_FIFO_axis_data_fifo_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
