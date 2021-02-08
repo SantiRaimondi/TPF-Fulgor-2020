@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-//Date        : Mon Feb  8 19:02:45 2021
+//Date        : Mon Feb  8 19:52:37 2021
 //Host        : huaira running 64-bit Linux Mint 20
 //Command     : generate_target DMA_FIFO.bd
 //Design      : DMA_FIFO
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "DMA_FIFO,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=DMA_FIFO,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=25,numReposBlks=18,numNonXlnxBlks=0,numHierBlks=7,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=14,da_board_cnt=5,da_clkrst_cnt=79,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "DMA_FIFO.hwdef" *) 
+(* CORE_GENERATION_INFO = "DMA_FIFO,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=DMA_FIFO,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=26,numReposBlks=19,numNonXlnxBlks=0,numHierBlks=7,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=14,da_board_cnt=5,da_clkrst_cnt=79,da_mb_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "DMA_FIFO.hwdef" *) 
 module DMA_FIFO
    (ddr3_sdram_addr,
     ddr3_sdram_ba,
@@ -366,7 +366,9 @@ module DMA_FIFO
   wire mig_7series_0_mmcm_locked;
   wire mig_7series_0_ui_addn_clk_0;
   wire mig_7series_0_ui_clk;
+  wire mig_7series_0_ui_clk_sync_rst;
   wire [0:0]proc_sys_reset_0_bus_struct_reset;
+  wire [0:0]proc_sys_reset_1_peripheral_aresetn;
   wire reset_1;
   wire rst_mig_7series_0_100M_mb_reset;
   wire [0:0]rst_mig_7series_0_200M_interconnect_aresetn;
@@ -1021,7 +1023,7 @@ module DMA_FIFO
         .In4(mig_7series_0_init_calib_complete),
         .dout(microblaze_0_intr));
   DMA_FIFO_mig_7series_0_0 mig_7series_0
-       (.aresetn(rst_mig_7series_0_200M_peripheral_aresetn),
+       (.aresetn(proc_sys_reset_1_peripheral_aresetn),
         .ddr3_addr(mig_7series_0_DDR3_ADDR),
         .ddr3_ba(mig_7series_0_DDR3_BA),
         .ddr3_cas_n(mig_7series_0_DDR3_CAS_N),
@@ -1078,7 +1080,8 @@ module DMA_FIFO
         .sys_clk_p(sys_diff_clock_1_CLK_P),
         .sys_rst(reset_1),
         .ui_addn_clk_0(mig_7series_0_ui_addn_clk_0),
-        .ui_clk(mig_7series_0_ui_clk));
+        .ui_clk(mig_7series_0_ui_clk),
+        .ui_clk_sync_rst(mig_7series_0_ui_clk_sync_rst));
   DMA_FIFO_proc_sys_reset_0_1 proc_sys_reset_0
        (.aux_reset_in(1'b1),
         .bus_struct_reset(proc_sys_reset_0_bus_struct_reset),
@@ -1089,6 +1092,13 @@ module DMA_FIFO
         .mb_reset(rst_mig_7series_0_100M_mb_reset),
         .peripheral_aresetn(rst_mig_7series_0_200M_peripheral_aresetn),
         .slowest_sync_clk(mig_7series_0_ui_addn_clk_0));
+  DMA_FIFO_proc_sys_reset_1_0 proc_sys_reset_1
+       (.aux_reset_in(1'b1),
+        .dcm_locked(mig_7series_0_mmcm_locked),
+        .ext_reset_in(mig_7series_0_ui_clk_sync_rst),
+        .mb_debug_sys_rst(1'b0),
+        .peripheral_aresetn(proc_sys_reset_1_peripheral_aresetn),
+        .slowest_sync_clk(mig_7series_0_ui_clk));
 endmodule
 
 module DMA_FIFO_microblaze_0_axi_periph_0

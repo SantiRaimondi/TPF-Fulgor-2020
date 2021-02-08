@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="DMA_FIFO_ilmb_v10_0_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1612800392">
-  <File Type="PA-TCL" Name="DMA_FIFO_ilmb_v10_0.tcl"/>
   <File Type="RDS-DCP" Name="DMA_FIFO_ilmb_v10_0.dcp"/>
+  <File Type="PA-TCL" Name="DMA_FIFO_ilmb_v10_0.tcl"/>
   <File Type="REPORTS-TCL" Name="DMA_FIFO_ilmb_v10_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="DMA_FIFO_ilmb_v10_0.vds"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DMA_FIFO_ilmb_v10_0">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="DMA_FIFO_axis_data_fifo_0_0_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1612808961">
-  <File Type="RDS-UTIL" Name="DMA_FIFO_axis_data_fifo_0_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="DMA_FIFO_axis_data_fifo_0_0_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="DMA_FIFO_axis_data_fifo_0_0_utilization_synth.rpt"/>
   <File Type="RDS-RDS" Name="DMA_FIFO_axis_data_fifo_0_0.vds"/>
   <File Type="RDS-DCP" Name="DMA_FIFO_axis_data_fifo_0_0.dcp"/>
   <File Type="PA-TCL" Name="DMA_FIFO_axis_data_fifo_0_0.tcl"/>
