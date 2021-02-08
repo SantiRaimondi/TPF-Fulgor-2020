@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Sun Feb  7 20:04:38 2021
+// Date        : Mon Feb  8 13:07:37 2021
 // Host        : huaira running 64-bit Linux Mint 20
 // Command     : write_verilog -force -mode synth_stub -rename_top DMA_FIFO_ilmb_v10_0 -prefix
 //               DMA_FIFO_ilmb_v10_0_ DMA_FIFO_dlmb_v10_0_stub.v

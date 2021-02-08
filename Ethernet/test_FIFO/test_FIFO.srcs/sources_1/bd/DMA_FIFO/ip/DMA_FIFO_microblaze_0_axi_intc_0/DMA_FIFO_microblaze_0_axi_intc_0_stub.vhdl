@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Sun Feb  7 21:41:58 2021
+-- Date        : Mon Feb  8 13:07:41 2021
 -- Host        : huaira running 64-bit Linux Mint 20
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_microblaze_0_axi_intc_0/DMA_FIFO_microblaze_0_axi_intc_0_stub.vhdl

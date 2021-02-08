@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Sun Feb  7 21:45:58 2021
+| Date         : Mon Feb  8 13:12:03 2021
 | Host         : huaira running 64-bit Linux Mint 20
 | Command      : report_utilization -file DMA_FIFO_wrapper_utilization_synth.rpt -pb DMA_FIFO_wrapper_utilization_synth.pb
 | Design       : DMA_FIFO_wrapper
@@ -159,26 +159,26 @@ Table of Contents
 8. Black Boxes
 --------------
 
-+-----------------------------------+------+
-|              Ref Name             | Used |
-+-----------------------------------+------+
-| DMA_FIFO_xbar_0                   |    1 |
-| DMA_FIFO_rst_mig_7series_0_200M_0 |    1 |
-| DMA_FIFO_mig_7series_0_0          |    1 |
-| DMA_FIFO_microblaze_0_axi_intc_0  |    1 |
-| DMA_FIFO_microblaze_0_0           |    1 |
-| DMA_FIFO_mdm_1_0                  |    1 |
-| DMA_FIFO_lmb_bram_0               |    1 |
-| DMA_FIFO_ilmb_v10_0               |    1 |
-| DMA_FIFO_ilmb_bram_if_cntlr_0     |    1 |
-| DMA_FIFO_dlmb_v10_0               |    1 |
-| DMA_FIFO_dlmb_bram_if_cntlr_0     |    1 |
-| DMA_FIFO_axi_uartlite_0_0         |    1 |
-| DMA_FIFO_axi_traffic_gen_0_0      |    1 |
-| DMA_FIFO_axi_smc_0                |    1 |
-| DMA_FIFO_axi_dma_0_0              |    1 |
-| DMA_FIFO_auto_pc_0                |    1 |
-+-----------------------------------+------+
++----------------------------------+------+
+|             Ref Name             | Used |
++----------------------------------+------+
+| DMA_FIFO_xbar_0                  |    1 |
+| DMA_FIFO_proc_sys_reset_0_1      |    1 |
+| DMA_FIFO_mig_7series_0_0         |    1 |
+| DMA_FIFO_microblaze_0_axi_intc_0 |    1 |
+| DMA_FIFO_microblaze_0_0          |    1 |
+| DMA_FIFO_mdm_1_0                 |    1 |
+| DMA_FIFO_lmb_bram_0              |    1 |
+| DMA_FIFO_ilmb_v10_0              |    1 |
+| DMA_FIFO_ilmb_bram_if_cntlr_0    |    1 |
+| DMA_FIFO_dlmb_v10_0              |    1 |
+| DMA_FIFO_dlmb_bram_if_cntlr_0    |    1 |
+| DMA_FIFO_axi_uartlite_0_0        |    1 |
+| DMA_FIFO_axi_traffic_gen_0_0     |    1 |
+| DMA_FIFO_axi_smc_0               |    1 |
+| DMA_FIFO_axi_dma_0_0             |    1 |
+| DMA_FIFO_auto_pc_0               |    1 |
++----------------------------------+------+
 
 
 9. Instantiated Netlists
