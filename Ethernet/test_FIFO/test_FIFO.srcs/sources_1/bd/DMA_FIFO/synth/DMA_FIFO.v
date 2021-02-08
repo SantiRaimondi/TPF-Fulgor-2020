@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-//Date        : Mon Feb  8 18:04:19 2021
+//Date        : Mon Feb  8 19:02:45 2021
 //Host        : huaira running 64-bit Linux Mint 20
 //Command     : generate_target DMA_FIFO.bd
 //Design      : DMA_FIFO
@@ -346,7 +346,7 @@ module DMA_FIFO
   wire [0:1]microblaze_0_interrupt_ACK;
   wire [31:0]microblaze_0_interrupt_ADDRESS;
   wire microblaze_0_interrupt_INTERRUPT;
-  wire [5:0]microblaze_0_intr;
+  wire [4:0]microblaze_0_intr;
   wire [13:0]mig_7series_0_DDR3_ADDR;
   wire [2:0]mig_7series_0_DDR3_BA;
   wire mig_7series_0_DDR3_CAS_N;
@@ -1016,10 +1016,9 @@ module DMA_FIFO
   DMA_FIFO_microblaze_0_xlconcat_0 microblaze_0_xlconcat
        (.In0(axi_dma_0_mm2s_introut),
         .In1(axi_dma_0_s2mm_introut),
-        .In2(1'b0),
+        .In2(blk_mem_gen_0_rsta_busy),
         .In3(axi_uartlite_0_interrupt),
         .In4(mig_7series_0_init_calib_complete),
-        .In5(blk_mem_gen_0_rsta_busy),
         .dout(microblaze_0_intr));
   DMA_FIFO_mig_7series_0_0 mig_7series_0
        (.aresetn(rst_mig_7series_0_200M_peripheral_aresetn),

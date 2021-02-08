@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date             : Mon Feb  8 18:17:17 2021
+| Date             : Mon Feb  8 19:11:08 2021
 | Host             : huaira running 64-bit Linux Mint 20
 | Command          : report_power -file DMA_FIFO_wrapper_power_routed.rpt -pb DMA_FIFO_wrapper_power_summary_routed.pb -rpx DMA_FIFO_wrapper_power_routed.rpx
 | Design           : DMA_FIFO_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.800        |
+| Total On-Chip Power (W)  | 2.810        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.622        |
+| Dynamic (W)              | 2.632        |
 | Device Static (W)        | 0.178        |
 | Effective TJA (C/W)      | 1.8          |
 | Max Ambient (C)          | 80.0         |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.264 |       53 |       --- |             --- |
-| Slice Logic              |     0.110 |    82817 |       --- |             --- |
-|   LUT as Logic           |     0.083 |    22198 |    203800 |           10.89 |
-|   LUT as Distributed RAM |     0.019 |     6468 |     64000 |           10.11 |
-|   Register               |     0.006 |    35529 |    407600 |            8.72 |
+| Clocks                   |     0.270 |       53 |       --- |             --- |
+| Slice Logic              |     0.111 |    82801 |       --- |             --- |
+|   LUT as Logic           |     0.085 |    22183 |    203800 |           10.88 |
+|   LUT as Distributed RAM |     0.018 |     6468 |     64000 |           10.11 |
+|   Register               |     0.005 |    35521 |    407600 |            8.71 |
 |   CARRY4                 |     0.002 |      419 |     50950 |            0.82 |
 |   F7/F8 Muxes            |    <0.001 |     1068 |    203800 |            0.52 |
 |   LUT as Shift Register  |    <0.001 |      975 |     64000 |            1.52 |
-|   Others                 |    <0.001 |     1878 |       --- |             --- |
-| Signals                  |     0.159 |    60263 |       --- |             --- |
-| Block RAM                |     0.030 |     19.5 |       445 |            4.38 |
+|   Others                 |    <0.001 |     1877 |       --- |             --- |
+| Signals                  |     0.163 |    60337 |       --- |             --- |
+| Block RAM                |     0.031 |     19.5 |       445 |            4.38 |
 | MMCM                     |     0.215 |        2 |        10 |           20.00 |
 | PLL                      |     0.133 |        1 |        10 |           10.00 |
-| I/O                      |     1.045 |      119 |       500 |           23.80 |
+| I/O                      |     1.044 |      119 |       500 |           23.80 |
 | PHASER                   |     0.661 |       44 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
 | Static Power             |     0.178 |          |           |                 |
-| Total                    |     2.800 |          |           |                 |
+| Total                    |     2.810 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.871 |       0.787 |      0.084 |
+| Vccint    |       1.000 |     0.881 |       0.798 |      0.084 |
 | Vccaux    |       1.800 |     0.697 |       0.668 |      0.029 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
@@ -199,24 +199,24 @@ Table of Contents
 +--------------------------------------+-----------+
 | Name                                 | Power (W) |
 +--------------------------------------+-----------+
-| DMA_FIFO_wrapper                     |     2.622 |
-|   DMA_FIFO_i                         |     2.622 |
+| DMA_FIFO_wrapper                     |     2.632 |
+|   DMA_FIFO_i                         |     2.631 |
 |     axi_bram_ctrl_0                  |     0.002 |
 |       U0                             |     0.002 |
 |     axi_dma_0                        |     0.012 |
 |       U0                             |     0.012 |
-|     axi_smc                          |     0.267 |
-|       inst                           |     0.267 |
-|     blk_mem_gen_0                    |     0.003 |
-|       U0                             |     0.003 |
+|     axi_smc                          |     0.260 |
+|       inst                           |     0.260 |
+|     blk_mem_gen_0                    |     0.004 |
+|       U0                             |     0.004 |
 |     microblaze_0                     |     0.041 |
 |       U0                             |     0.041 |
 |     microblaze_0_axi_intc            |     0.001 |
 |       U0                             |     0.001 |
 |     microblaze_0_local_memory        |     0.004 |
 |       lmb_bram                       |     0.004 |
-|     mig_7series_0                    |     2.288 |
-|       u_DMA_FIFO_mig_7series_0_0_mig |     2.288 |
+|     mig_7series_0                    |     2.304 |
+|       u_DMA_FIFO_mig_7series_0_0_mig |     2.304 |
 +--------------------------------------+-----------+
 
 
