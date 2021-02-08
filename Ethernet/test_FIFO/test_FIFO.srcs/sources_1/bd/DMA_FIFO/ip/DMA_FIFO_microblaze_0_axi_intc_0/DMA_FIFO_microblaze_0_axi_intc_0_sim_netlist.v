@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Mon Feb  8 13:07:41 2021
+// Date        : Mon Feb  8 15:30:32 2021
 // Host        : huaira running 64-bit Linux Mint 20
 // Command     : write_verilog -force -mode funcsim
 //               /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_microblaze_0_axi_intc_0/DMA_FIFO_microblaze_0_axi_intc_0_sim_netlist.v
@@ -94,7 +94,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0
   wire [1:0]NLW_U0_processor_ack_out_UNCONNECTED;
 
   (* C_ADDR_WIDTH = "32" *) 
-  (* C_ASYNC_INTR = "-16" *) 
+  (* C_ASYNC_INTR = "-12" *) 
   (* C_CASCADE_MASTER = "0" *) 
   (* C_DISABLE_SYNCHRONIZERS = "1" *) 
   (* C_ENABLE_ASYNC = "0" *) 
@@ -1398,7 +1398,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_address_decoder
         .O(ip2bus_wrack_reg));
 endmodule
 
-(* C_ADDR_WIDTH = "32" *) (* C_ASYNC_INTR = "-16" *) (* C_CASCADE_MASTER = "0" *) 
+(* C_ADDR_WIDTH = "32" *) (* C_ASYNC_INTR = "-12" *) (* C_CASCADE_MASTER = "0" *) 
 (* C_DISABLE_SYNCHRONIZERS = "1" *) (* C_ENABLE_ASYNC = "0" *) (* C_EN_CASCADE_MODE = "0" *) 
 (* C_FAMILY = "kintex7" *) (* C_HAS_CIE = "1" *) (* C_HAS_FAST = "1" *) 
 (* C_HAS_ILR = "0" *) (* C_HAS_IPR = "1" *) (* C_HAS_IVR = "1" *) 
@@ -2241,6 +2241,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
   wire [4:0]intr;
   wire intr_d1;
   (* async_reg = "true" *) wire [0:1]intr_ff;
+  (* async_reg = "true" *) wire [0:1]intr_ff__0;
   wire [4:0]ipr;
   wire irq;
   wire irq_gen;
@@ -2285,7 +2286,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
   wire second_ack_sync_d1;
   wire second_ack_sync_d2;
 
-  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT3 #(
     .INIT(8'h32)) 
     \ACK_EN_SYNC_ON_AXI_CLK_GEN.NO_CASCADE_MASTER.first_ack_active_i_1 
@@ -2299,7 +2300,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
         .D(\ACK_EN_SYNC_ON_AXI_CLK_GEN.NO_CASCADE_MASTER.first_ack_active_i_1_n_0 ),
         .Q(first_ack_active),
         .R(SR));
-  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \ACK_EN_SYNC_ON_AXI_CLK_GEN.NO_CASCADE_MASTER.first_ack_i_1 
@@ -2376,7 +2377,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
         .I4(ack_or),
         .I5(first_ack),
         .O(current_state__0[0]));
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \FSM_sequential_IRQ_LEVEL_GEN.IRQ_LEVEL_FAST_ON_AXI_CLK_GEN.current_state[0]_i_2 
@@ -2384,7 +2385,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
         .I1(ivar_index_axi_clk[2]),
         .I2(\FSM_sequential_IRQ_LEVEL_GEN.IRQ_LEVEL_FAST_ON_AXI_CLK_GEN.current_state[1]_i_3_n_0 ),
         .O(\FSM_sequential_IRQ_LEVEL_GEN.IRQ_LEVEL_FAST_ON_AXI_CLK_GEN.current_state[0]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
   LUT4 #(
     .INIT(16'h0530)) 
     \FSM_sequential_IRQ_LEVEL_GEN.IRQ_LEVEL_FAST_ON_AXI_CLK_GEN.current_state[1]_i_1 
@@ -2393,7 +2394,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
         .I2(current_state[1]),
         .I3(current_state[0]),
         .O(current_state__0[1]));
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT4 #(
     .INIT(16'h57F7)) 
     \FSM_sequential_IRQ_LEVEL_GEN.IRQ_LEVEL_FAST_ON_AXI_CLK_GEN.current_state[1]_i_2 
@@ -2426,7 +2427,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
         .D(current_state__0[1]),
         .Q(current_state[1]),
         .R(SR));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
   LUT4 #(
     .INIT(16'h00E0)) 
     \INTR_DETECT_GEN[0].LVL_DETECT_GEN.hw_intr[0]_i_1 
@@ -2441,7 +2442,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
         .D(\INTR_DETECT_GEN[0].LVL_DETECT_GEN.hw_intr[0]_i_1_n_0 ),
         .Q(hw_intr[0]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
   LUT4 #(
     .INIT(16'h00E0)) 
     \INTR_DETECT_GEN[1].LVL_DETECT_GEN.hw_intr[1]_i_1 
@@ -2456,12 +2457,31 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
         .D(\INTR_DETECT_GEN[1].LVL_DETECT_GEN.hw_intr[1]_i_1_n_0 ),
         .Q(hw_intr[1]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  (* ASYNC_REG *) 
+  (* KEEP = "yes" *) 
+  FDRE #(
+    .INIT(1'b0)) 
+    \INTR_DETECT_GEN[2].ASYNC_GEN.intr_ff_reg[0] 
+       (.C(s_axi_aclk),
+        .CE(1'b1),
+        .D(intr[2]),
+        .Q(intr_ff[0]),
+        .R(1'b0));
+  (* ASYNC_REG *) 
+  (* KEEP = "yes" *) 
+  FDRE #(
+    .INIT(1'b0)) 
+    \INTR_DETECT_GEN[2].ASYNC_GEN.intr_ff_reg[1] 
+       (.C(s_axi_aclk),
+        .CE(1'b1),
+        .D(intr_ff[0]),
+        .Q(intr_ff[1]),
+        .R(1'b0));
   LUT5 #(
     .INIT(32'h0000AE00)) 
     \INTR_DETECT_GEN[2].EDGE_DETECT_GEN.hw_intr[2]_i_1 
        (.I0(hw_intr[2]),
-        .I1(intr[2]),
+        .I1(intr_ff[1]),
         .I2(intr_d1),
         .I3(s_axi_aresetn),
         .I4(p_2_in),
@@ -2475,7 +2495,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
   FDRE \INTR_DETECT_GEN[2].EDGE_DETECT_GEN.intr_d1_reg 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(intr[2]),
+        .D(intr_ff[1]),
         .Q(intr_d1),
         .R(SR));
   (* SOFT_HLUTNM = "soft_lutpair31" *) 
@@ -2508,7 +2528,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
        (.C(s_axi_aclk),
         .CE(1'b1),
         .D(intr[4]),
-        .Q(intr_ff[0]),
+        .Q(intr_ff__0[0]),
         .R(1'b0));
   (* ASYNC_REG *) 
   (* KEEP = "yes" *) 
@@ -2517,14 +2537,14 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
     \INTR_DETECT_GEN[4].ASYNC_GEN.intr_ff_reg[1] 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(intr_ff[0]),
-        .Q(intr_ff[1]),
+        .D(intr_ff__0[0]),
+        .Q(intr_ff__0[1]),
         .R(1'b0));
   LUT5 #(
     .INIT(32'h0000AE00)) 
     \INTR_DETECT_GEN[4].EDGE_DETECT_GEN.hw_intr[4]_i_1 
        (.I0(hw_intr[4]),
-        .I1(intr_ff[1]),
+        .I1(intr_ff__0[1]),
         .I2(\INTR_DETECT_GEN[4].EDGE_DETECT_GEN.intr_d1_reg_n_0 ),
         .I3(s_axi_aresetn),
         .I4(p_4_in),
@@ -2538,7 +2558,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
   FDRE \INTR_DETECT_GEN[4].EDGE_DETECT_GEN.intr_d1_reg 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(intr_ff[1]),
+        .D(intr_ff__0[1]),
         .Q(\INTR_DETECT_GEN[4].EDGE_DETECT_GEN.intr_d1_reg_n_0 ),
         .R(SR));
   LUT2 #(
@@ -2620,7 +2640,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
         .D(Irq_i),
         .Q(irq),
         .R(SR));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
   LUT2 #(
     .INIT(4'h1)) 
     \IRQ_LEVEL_GEN.IRQ_LEVEL_FAST_ON_AXI_CLK_GEN.in_idle_i_1 
@@ -2641,7 +2661,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
         .ivar_index_axi_clk(ivar_index_axi_clk),
         .s_axi_aclk(s_axi_aclk),
         .s_axi_wdata(s_axi_wdata));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT3 #(
     .INIT(8'h80)) 
     \IVAR_INDEX_SYNC_ON_AXI_CLK_GEN.idle_and_irq_d1_i_1 
@@ -2703,7 +2723,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
         .D(\IVAR_INDEX_SYNC_ON_AXI_CLK_GEN.ivar_index_axi_clk[2]_i_1_n_0 ),
         .Q(ivar_index_axi_clk[2]),
         .R(SR));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT4 #(
     .INIT(16'h0080)) 
     \IVAR_INDEX_SYNC_ON_AXI_CLK_GEN.ivar_index_sample_en_i_1 
@@ -2839,7 +2859,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
         .I4(hw_intr[0]),
         .I5(\REG_GEN[0].IAR_FAST_MODE_GEN.iar_reg0 ),
         .O(\REG_GEN[0].isr[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \REG_GEN[0].isr[0]_i_3 
@@ -2909,7 +2929,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
         .I4(hw_intr[1]),
         .I5(\REG_GEN[1].IAR_FAST_MODE_GEN.iar_reg0 ),
         .O(\REG_GEN[1].isr[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \REG_GEN[1].isr[1]_i_2 
@@ -2979,7 +2999,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
         .I4(hw_intr[2]),
         .I5(\REG_GEN[2].IAR_FAST_MODE_GEN.iar_reg0 ),
         .O(\REG_GEN[2].isr[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \REG_GEN[2].isr[2]_i_2 
@@ -3119,6 +3139,7 @@ module DMA_FIFO_microblaze_0_axi_intc_0_intc_core
         .I4(hw_intr[4]),
         .I5(\REG_GEN[4].IAR_FAST_MODE_GEN.iar_reg0 ),
         .O(\REG_GEN[4].isr[4]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \REG_GEN[4].isr[4]_i_2 

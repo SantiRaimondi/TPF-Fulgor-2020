@@ -196,7 +196,7 @@ BEGIN
       C_KIND_OF_INTR => X"fffffffc",
       C_KIND_OF_EDGE => X"FFFFFFFF",
       C_KIND_OF_LVL => X"FFFFFFFF",
-      C_ASYNC_INTR => X"FFFFFFF0",
+      C_ASYNC_INTR => X"FFFFFFF4",
       C_NUM_SYNC_FF => 2,
       C_ADDR_WIDTH => 32,
       C_IVAR_RESET_VALUE => X"0000000000000010",

@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 create_project -in_memory -part xc7k325tffg900-2
@@ -62,12 +61,24 @@ set_property used_in_implementation false [get_files -all /home/becario/ethernet
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_34/bd_c263_sawn_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_35/bd_c263_swn_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_36/bd_c263_sbn_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_37/bd_c263_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_38/bd_c263_m00arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_39/bd_c263_m00rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_40/bd_c263_m00awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_41/bd_c263_m00wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_42/bd_c263_m00bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_40/bd_c263_s04a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_41/bd_c263_sarn_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_42/bd_c263_srn_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_43/bd_c263_sawn_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_44/bd_c263_swn_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_45/bd_c263_sbn_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_46/bd_c263_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_47/bd_c263_m00arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_48/bd_c263_m00rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_49/bd_c263_m00awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_50/bd_c263_m00wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_51/bd_c263_m00bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_53/bd_c263_m01s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_54/bd_c263_m01arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_55/bd_c263_m01rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_56/bd_c263_m01awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_57/bd_c263_m01wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_58/bd_c263_m01bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
