@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7k325tffg900-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -111,6 +110,9 @@ set_property used_in_implementation false [get_files -all /home/becario/ethernet
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_bram_ctrl_0_0/DMA_FIFO_axi_bram_ctrl_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_blk_mem_gen_0_0/DMA_FIFO_blk_mem_gen_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axis_data_fifo_0_0/DMA_FIFO_axis_data_fifo_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_proc_sys_reset_1_0/DMA_FIFO_proc_sys_reset_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_proc_sys_reset_1_0/DMA_FIFO_proc_sys_reset_1_0.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_proc_sys_reset_1_0/DMA_FIFO_proc_sys_reset_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/DMA_FIFO_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_microblaze_0_0/data/mb_bootloop_le.elf]
 
