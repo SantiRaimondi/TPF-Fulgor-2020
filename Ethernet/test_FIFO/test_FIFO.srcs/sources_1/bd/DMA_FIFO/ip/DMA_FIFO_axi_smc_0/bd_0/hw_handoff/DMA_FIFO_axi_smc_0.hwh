@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Feb  8 18:04:27 2021" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Feb  8 19:02:53 2021" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="kintex7" BOARD="xilinx.com:kc705:part0:1.6" DEVICE="7k325t" NAME="bd_c263" PACKAGE="ffg900" SPEEDGRADE="-2"/>
 
@@ -103,6 +103,336 @@
         <CONNECTION INSTANCE="clk_map_psr0" PORT="aux_reset_in"/>
         <CONNECTION INSTANCE="clk_map_psr_aclk" PORT="aux_reset_in"/>
         <CONNECTION INSTANCE="clk_map_psr_aclk1" PORT="aux_reset_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="S01_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_araddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_araddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="S01_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arlen">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arlen"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="2" NAME="S01_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arsize">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arsize"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="S01_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arburst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arburst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="S01_AXI_arlock" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arlock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arlock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="S01_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arcache">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arcache"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="2" NAME="S01_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arprot">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arprot"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="S01_AXI_arqos" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arqos">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arqos"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S01_AXI_arvalid" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S01_AXI_arready" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="S01_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_rdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_rdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="S01_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_rresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_rresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S01_AXI_rlast" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_rlast">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_rlast"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S01_AXI_rvalid" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_rvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_rvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S01_AXI_rready" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_rready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_rready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="12" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awaddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awaddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="M01_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awlen">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awlen"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="M01_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awsize">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awsize"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="M01_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awburst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awburst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="M01_AXI_awlock" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awlock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awlock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="M01_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awcache">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awcache"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="M01_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awprot">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awprot"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="M01_AXI_awqos" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awqos">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awqos"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="M01_AXI_awvalid" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="M01_AXI_awready" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="M01_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_wdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_wdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="M01_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_wstrb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_wstrb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="M01_AXI_wlast" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_wlast">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_wlast"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="M01_AXI_wvalid" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_wvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_wvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="M01_AXI_wready" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_wready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_wready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="M01_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_bresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_bresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="M01_AXI_bvalid" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_bvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_bvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="M01_AXI_bready" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_bready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_bready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="12" NAME="M01_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_araddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_araddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="M01_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arlen">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arlen"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="M01_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arsize">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arsize"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="M01_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arburst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arburst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="M01_AXI_arlock" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arlock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arlock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="M01_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arcache">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arcache"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="M01_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arprot">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arprot"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="M01_AXI_arqos" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arqos">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arqos"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="M01_AXI_arvalid" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="M01_AXI_arready" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="M01_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_rdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_rdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="M01_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_rresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_rresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="M01_AXI_rlast" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_rlast">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_rlast"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="M01_AXI_rvalid" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_rvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_rvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="M01_AXI_rready" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_rready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_rready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="S03_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awaddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awaddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="S03_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awlen">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awlen"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="2" NAME="S03_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awsize">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awsize"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="S03_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awburst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awburst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="S03_AXI_awlock" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awlock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awlock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="S03_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awcache">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awcache"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="2" NAME="S03_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awprot">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awprot"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="S03_AXI_awqos" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awqos">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awqos"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S03_AXI_awvalid" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S03_AXI_awready" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="S03_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_wdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_wdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="S03_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_wstrb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_wstrb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S03_AXI_wlast" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_wlast">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_wlast"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S03_AXI_wvalid" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_wvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_wvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S03_AXI_wready" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_wready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_wready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="S03_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_bresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_bresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S03_AXI_bvalid" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_bvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_bvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S03_AXI_bready" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_bready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_bready"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="31" NAME="S00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="s00_entry_pipeline_s00_mmu_s_axi_awaddr">
@@ -270,81 +600,6 @@
         <CONNECTION INSTANCE="s00_entry_pipeline_s00_mmu" PORT="s_axi_rready"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="31" NAME="S01_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_araddr">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_araddr"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="7" NAME="S01_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arlen">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arlen"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="2" NAME="S01_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arsize">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arsize"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="1" NAME="S01_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arburst">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arburst"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="0" NAME="S01_AXI_arlock" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arlock">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arlock"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="3" NAME="S01_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arcache">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arcache"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="2" NAME="S01_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arprot">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arprot"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="3" NAME="S01_AXI_arqos" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arqos">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arqos"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="S01_AXI_arvalid" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arvalid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="S01_AXI_arready" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_arready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_arready"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="31" NAME="S01_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_rdata">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_rdata"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="1" NAME="S01_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_rresp">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_rresp"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="S01_AXI_rlast" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_rlast">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_rlast"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="S01_AXI_rvalid" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_rvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_rvalid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="S01_AXI_rready" SIGIS="undef" SIGNAME="s01_entry_pipeline_s01_mmu_s_axi_rready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s01_entry_pipeline_s01_mmu" PORT="s_axi_rready"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="I" LEFT="31" NAME="S02_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="s02_entry_pipeline_s02_mmu_s_axi_araddr">
       <CONNECTIONS>
         <CONNECTION INSTANCE="s02_entry_pipeline_s02_mmu" PORT="s_axi_araddr"/>
@@ -418,261 +673,6 @@
     <PORT DIR="I" NAME="S02_AXI_rready" SIGIS="undef" SIGNAME="s02_entry_pipeline_s02_mmu_s_axi_rready">
       <CONNECTIONS>
         <CONNECTION INSTANCE="s02_entry_pipeline_s02_mmu" PORT="s_axi_rready"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="31" NAME="S03_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awaddr">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awaddr"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="7" NAME="S03_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awlen">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awlen"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="2" NAME="S03_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awsize">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awsize"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="1" NAME="S03_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awburst">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awburst"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="0" NAME="S03_AXI_awlock" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awlock">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awlock"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="3" NAME="S03_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awcache">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awcache"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="2" NAME="S03_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awprot">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awprot"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="3" NAME="S03_AXI_awqos" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awqos">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awqos"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="S03_AXI_awvalid" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awvalid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="S03_AXI_awready" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_awready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_awready"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="31" NAME="S03_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_wdata">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_wdata"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="3" NAME="S03_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_wstrb">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_wstrb"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="S03_AXI_wlast" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_wlast">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_wlast"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="S03_AXI_wvalid" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_wvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_wvalid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="S03_AXI_wready" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_wready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_wready"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="1" NAME="S03_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_bresp">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_bresp"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="S03_AXI_bvalid" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_bvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_bvalid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="S03_AXI_bready" SIGIS="undef" SIGNAME="s03_entry_pipeline_s03_mmu_s_axi_bready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s03_entry_pipeline_s03_mmu" PORT="s_axi_bready"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="31" NAME="S04_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awaddr">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awaddr"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="7" NAME="S04_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awlen">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awlen"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="2" NAME="S04_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awsize">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awsize"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="1" NAME="S04_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awburst">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awburst"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="0" NAME="S04_AXI_awlock" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awlock">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awlock"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="3" NAME="S04_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awcache">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awcache"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="2" NAME="S04_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awprot">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awprot"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="3" NAME="S04_AXI_awqos" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awqos">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awqos"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="S04_AXI_awvalid" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awvalid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="S04_AXI_awready" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awready"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="31" NAME="S04_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_wdata">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_wdata"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="3" NAME="S04_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_wstrb">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_wstrb"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="S04_AXI_wlast" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_wlast">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_wlast"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="S04_AXI_wvalid" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_wvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_wvalid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="S04_AXI_wready" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_wready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_wready"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="1" NAME="S04_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_bresp">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_bresp"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="S04_AXI_bvalid" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_bvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_bvalid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="S04_AXI_bready" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_bready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_bready"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="31" NAME="S04_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_araddr">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_araddr"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="7" NAME="S04_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arlen">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arlen"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="2" NAME="S04_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arsize">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arsize"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="1" NAME="S04_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arburst">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arburst"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="0" NAME="S04_AXI_arlock" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arlock">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arlock"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="3" NAME="S04_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arcache">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arcache"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="2" NAME="S04_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arprot">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arprot"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="3" NAME="S04_AXI_arqos" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arqos">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arqos"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="S04_AXI_arvalid" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arvalid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="S04_AXI_arready" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arready"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="31" NAME="S04_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_rdata">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_rdata"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="1" NAME="S04_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_rresp">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_rresp"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="S04_AXI_rlast" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_rlast">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_rlast"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="S04_AXI_rvalid" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_rvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_rvalid"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="S04_AXI_rready" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_rready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_rready"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="29" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="m00_exit_pipeline_m00_exit_m_axi_awaddr">
@@ -840,169 +840,169 @@
         <CONNECTION INSTANCE="m00_exit_pipeline_m00_exit" PORT="m_axi_rready"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="12" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awaddr">
+    <PORT DIR="I" LEFT="31" NAME="S04_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awaddr">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awaddr"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awaddr"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="7" NAME="M01_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awlen">
+    <PORT DIR="I" LEFT="7" NAME="S04_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awlen">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awlen"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awlen"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="2" NAME="M01_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awsize">
+    <PORT DIR="I" LEFT="2" NAME="S04_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awsize">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awsize"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awsize"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="1" NAME="M01_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awburst">
+    <PORT DIR="I" LEFT="1" NAME="S04_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awburst">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awburst"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awburst"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="0" NAME="M01_AXI_awlock" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awlock">
+    <PORT DIR="I" LEFT="0" NAME="S04_AXI_awlock" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awlock">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awlock"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awlock"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="3" NAME="M01_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awcache">
+    <PORT DIR="I" LEFT="3" NAME="S04_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awcache">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awcache"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awcache"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="2" NAME="M01_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awprot">
+    <PORT DIR="I" LEFT="2" NAME="S04_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awprot">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awprot"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awprot"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="3" NAME="M01_AXI_awqos" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awqos">
+    <PORT DIR="I" LEFT="3" NAME="S04_AXI_awqos" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awqos">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awqos"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awqos"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="M01_AXI_awvalid" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awvalid">
+    <PORT DIR="I" NAME="S04_AXI_awvalid" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awvalid">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awvalid"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awvalid"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="M01_AXI_awready" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_awready">
+    <PORT DIR="O" NAME="S04_AXI_awready" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_awready">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_awready"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_awready"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="31" NAME="M01_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_wdata">
+    <PORT DIR="I" LEFT="31" NAME="S04_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_wdata">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_wdata"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_wdata"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="3" NAME="M01_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_wstrb">
+    <PORT DIR="I" LEFT="3" NAME="S04_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_wstrb">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_wstrb"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_wstrb"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="M01_AXI_wlast" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_wlast">
+    <PORT DIR="I" NAME="S04_AXI_wlast" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_wlast">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_wlast"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_wlast"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="M01_AXI_wvalid" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_wvalid">
+    <PORT DIR="I" NAME="S04_AXI_wvalid" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_wvalid">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_wvalid"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_wvalid"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="M01_AXI_wready" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_wready">
+    <PORT DIR="O" NAME="S04_AXI_wready" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_wready">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_wready"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_wready"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="1" NAME="M01_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_bresp">
+    <PORT DIR="O" LEFT="1" NAME="S04_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_bresp">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_bresp"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_bresp"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="M01_AXI_bvalid" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_bvalid">
+    <PORT DIR="O" NAME="S04_AXI_bvalid" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_bvalid">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_bvalid"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_bvalid"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="M01_AXI_bready" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_bready">
+    <PORT DIR="I" NAME="S04_AXI_bready" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_bready">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_bready"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_bready"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="12" NAME="M01_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_araddr">
+    <PORT DIR="I" LEFT="31" NAME="S04_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_araddr">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_araddr"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_araddr"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="7" NAME="M01_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arlen">
+    <PORT DIR="I" LEFT="7" NAME="S04_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arlen">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arlen"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arlen"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="2" NAME="M01_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arsize">
+    <PORT DIR="I" LEFT="2" NAME="S04_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arsize">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arsize"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arsize"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="1" NAME="M01_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arburst">
+    <PORT DIR="I" LEFT="1" NAME="S04_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arburst">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arburst"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arburst"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="0" NAME="M01_AXI_arlock" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arlock">
+    <PORT DIR="I" LEFT="0" NAME="S04_AXI_arlock" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arlock">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arlock"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arlock"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="3" NAME="M01_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arcache">
+    <PORT DIR="I" LEFT="3" NAME="S04_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arcache">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arcache"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arcache"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="2" NAME="M01_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arprot">
+    <PORT DIR="I" LEFT="2" NAME="S04_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arprot">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arprot"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arprot"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="3" NAME="M01_AXI_arqos" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arqos">
+    <PORT DIR="I" LEFT="3" NAME="S04_AXI_arqos" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arqos">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arqos"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arqos"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="M01_AXI_arvalid" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arvalid">
+    <PORT DIR="I" NAME="S04_AXI_arvalid" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arvalid">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arvalid"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arvalid"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="M01_AXI_arready" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_arready">
+    <PORT DIR="O" NAME="S04_AXI_arready" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_arready">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_arready"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_arready"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="31" NAME="M01_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_rdata">
+    <PORT DIR="O" LEFT="31" NAME="S04_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_rdata">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_rdata"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_rdata"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="1" NAME="M01_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_rresp">
+    <PORT DIR="O" LEFT="1" NAME="S04_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_rresp">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_rresp"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_rresp"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="M01_AXI_rlast" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_rlast">
+    <PORT DIR="O" NAME="S04_AXI_rlast" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_rlast">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_rlast"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_rlast"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="M01_AXI_rvalid" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_rvalid">
+    <PORT DIR="O" NAME="S04_AXI_rvalid" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_rvalid">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_rvalid"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_rvalid"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="M01_AXI_rready" SIGIS="undef" SIGNAME="m01_exit_pipeline_m01_exit_m_axi_rready">
+    <PORT DIR="I" NAME="S04_AXI_rready" SIGIS="undef" SIGNAME="s04_entry_pipeline_s04_mmu_s_axi_rready">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="m01_exit_pipeline_m01_exit" PORT="m_axi_rready"/>
+        <CONNECTION INSTANCE="s04_entry_pipeline_s04_mmu" PORT="s_axi_rready"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -2701,7 +2701,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="10" FULLNAME="/m00_nodes/m00_aw_node" HWVERSION="1.0" INSTANCE="m00_nodes_m00_aw_node" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="10" FULLNAME="/m00_nodes/m00_aw_node" HWVERSION="1.0" INSTANCE="m00_nodes_m00_aw_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -2792,7 +2792,7 @@
         <PARAMETER NAME="M14_NUM_BYTES" VALUE="64"/>
         <PARAMETER NAME="M15_NUM_BYTES" VALUE="64"/>
         <PARAMETER NAME="Component_Name" VALUE="bd_c263_m00awn_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
         <PORT CLKFREQUENCY="200000000" DIR="I" NAME="s_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
@@ -2882,7 +2882,7 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="switchboards_aw_switchboard_M00_SC" NAME="S_SC" TYPE="TARGET" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="switchboards_aw_switchboard_M00_SC" NAME="S_SC" TYPE="SLAVE" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="INFO" PHYSICAL="s_sc_info"/>
             <PORTMAP LOGICAL="PAYLD" PHYSICAL="s_sc_payld"/>
@@ -2891,7 +2891,7 @@
             <PORTMAP LOGICAL="SEND" PHYSICAL="s_sc_send"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="m00_nodes_m00_aw_node_M_SC" NAME="M_SC" TYPE="INITIATOR" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="m00_nodes_m00_aw_node_M_SC" NAME="M_SC" TYPE="MASTER" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="INFO" PHYSICAL="m_sc_info"/>
             <PORTMAP LOGICAL="PAYLD" PHYSICAL="m_sc_payld"/>
@@ -2900,7 +2900,7 @@
             <PORTMAP LOGICAL="SEND" PHYSICAL="m_sc_send"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="m00_nodes_m00_aw_node_M_AXIS_ARB" NAME="M_AXIS_ARB" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="m00_nodes_m00_aw_node_M_AXIS_ARB" NAME="M_AXIS_ARB" TYPE="MASTER" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -3294,7 +3294,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="10" FULLNAME="/m00_nodes/m00_w_node" HWVERSION="1.0" INSTANCE="m00_nodes_m00_w_node" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="10" FULLNAME="/m00_nodes/m00_w_node" HWVERSION="1.0" INSTANCE="m00_nodes_m00_w_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -3385,7 +3385,7 @@
         <PARAMETER NAME="M14_NUM_BYTES" VALUE="64"/>
         <PARAMETER NAME="M15_NUM_BYTES" VALUE="64"/>
         <PARAMETER NAME="Component_Name" VALUE="bd_c263_m00wn_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
         <PORT CLKFREQUENCY="200000000" DIR="I" NAME="s_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
@@ -3475,7 +3475,7 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="switchboards_w_switchboard_M00_SC" NAME="S_SC" TYPE="TARGET" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="switchboards_w_switchboard_M00_SC" NAME="S_SC" TYPE="SLAVE" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="INFO" PHYSICAL="s_sc_info"/>
             <PORTMAP LOGICAL="PAYLD" PHYSICAL="s_sc_payld"/>
@@ -3484,7 +3484,7 @@
             <PORTMAP LOGICAL="SEND" PHYSICAL="s_sc_send"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="m00_nodes_m00_w_node_M_SC" NAME="M_SC" TYPE="INITIATOR" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="m00_nodes_m00_w_node_M_SC" NAME="M_SC" TYPE="MASTER" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="INFO" PHYSICAL="m_sc_info"/>
             <PORTMAP LOGICAL="PAYLD" PHYSICAL="m_sc_payld"/>
@@ -3493,7 +3493,7 @@
             <PORTMAP LOGICAL="SEND" PHYSICAL="m_sc_send"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="m00_nodes_m00_aw_node_M_AXIS_ARB" NAME="S_AXIS_ARB" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="m00_nodes_m00_aw_node_M_AXIS_ARB" NAME="S_AXIS_ARB" TYPE="SLAVE" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -3909,7 +3909,7 @@
             <PORTMAP LOGICAL="SEND" PHYSICAL="s_sc_ar_send"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="m00_nodes_m00_aw_node_M_SC" NAME="S_SC_AW" TYPE="TARGET" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="m00_nodes_m00_aw_node_M_SC" NAME="S_SC_AW" TYPE="SLAVE" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="INFO" PHYSICAL="s_sc_aw_info"/>
             <PORTMAP LOGICAL="PAYLD" PHYSICAL="s_sc_aw_payld"/>
@@ -3918,7 +3918,7 @@
             <PORTMAP LOGICAL="SEND" PHYSICAL="s_sc_aw_send"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="m00_nodes_m00_w_node_M_SC" NAME="S_SC_W" TYPE="TARGET" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="m00_nodes_m00_w_node_M_SC" NAME="S_SC_W" TYPE="SLAVE" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="INFO" PHYSICAL="s_sc_w_info"/>
             <PORTMAP LOGICAL="PAYLD" PHYSICAL="s_sc_w_payld"/>
@@ -5023,7 +5023,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="10" FULLNAME="/m01_nodes/m01_aw_node" HWVERSION="1.0" INSTANCE="m01_nodes_m01_aw_node" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="10" FULLNAME="/m01_nodes/m01_aw_node" HWVERSION="1.0" INSTANCE="m01_nodes_m01_aw_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -5114,7 +5114,7 @@
         <PARAMETER NAME="M14_NUM_BYTES" VALUE="4"/>
         <PARAMETER NAME="M15_NUM_BYTES" VALUE="4"/>
         <PARAMETER NAME="Component_Name" VALUE="bd_c263_m01awn_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
         <PORT CLKFREQUENCY="200000000" DIR="I" NAME="s_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
@@ -5204,7 +5204,7 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="switchboards_aw_switchboard_M01_SC" NAME="S_SC" TYPE="TARGET" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="switchboards_aw_switchboard_M01_SC" NAME="S_SC" TYPE="SLAVE" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="INFO" PHYSICAL="s_sc_info"/>
             <PORTMAP LOGICAL="PAYLD" PHYSICAL="s_sc_payld"/>
@@ -5213,7 +5213,7 @@
             <PORTMAP LOGICAL="SEND" PHYSICAL="s_sc_send"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="m01_nodes_m01_aw_node_M_SC" NAME="M_SC" TYPE="INITIATOR" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="m01_nodes_m01_aw_node_M_SC" NAME="M_SC" TYPE="MASTER" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="INFO" PHYSICAL="m_sc_info"/>
             <PORTMAP LOGICAL="PAYLD" PHYSICAL="m_sc_payld"/>
@@ -5222,7 +5222,7 @@
             <PORTMAP LOGICAL="SEND" PHYSICAL="m_sc_send"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="m01_nodes_m01_aw_node_M_AXIS_ARB" NAME="M_AXIS_ARB" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="m01_nodes_m01_aw_node_M_AXIS_ARB" NAME="M_AXIS_ARB" TYPE="MASTER" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -5616,7 +5616,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="10" FULLNAME="/m01_nodes/m01_w_node" HWVERSION="1.0" INSTANCE="m01_nodes_m01_w_node" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
+    <MODULE COREREVISION="10" FULLNAME="/m01_nodes/m01_w_node" HWVERSION="1.0" INSTANCE="m01_nodes_m01_w_node" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="sc_node" VLNV="xilinx.com:ip:sc_node:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=smartconnect;v=v1_0;d=pg247-smartconnect.pdf"/>
       </DOCUMENTS>
@@ -5707,7 +5707,7 @@
         <PARAMETER NAME="M14_NUM_BYTES" VALUE="4"/>
         <PARAMETER NAME="M15_NUM_BYTES" VALUE="4"/>
         <PARAMETER NAME="Component_Name" VALUE="bd_c263_m01wn_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>
         <PORT CLKFREQUENCY="200000000" DIR="I" NAME="s_sc_aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
@@ -5797,7 +5797,7 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="switchboards_w_switchboard_M01_SC" NAME="S_SC" TYPE="TARGET" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="switchboards_w_switchboard_M01_SC" NAME="S_SC" TYPE="SLAVE" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="INFO" PHYSICAL="s_sc_info"/>
             <PORTMAP LOGICAL="PAYLD" PHYSICAL="s_sc_payld"/>
@@ -5806,7 +5806,7 @@
             <PORTMAP LOGICAL="SEND" PHYSICAL="s_sc_send"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="m01_nodes_m01_w_node_M_SC" NAME="M_SC" TYPE="INITIATOR" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="m01_nodes_m01_w_node_M_SC" NAME="M_SC" TYPE="MASTER" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="INFO" PHYSICAL="m_sc_info"/>
             <PORTMAP LOGICAL="PAYLD" PHYSICAL="m_sc_payld"/>
@@ -5815,7 +5815,7 @@
             <PORTMAP LOGICAL="SEND" PHYSICAL="m_sc_send"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="m01_nodes_m01_aw_node_M_AXIS_ARB" NAME="S_AXIS_ARB" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="m01_nodes_m01_aw_node_M_AXIS_ARB" NAME="S_AXIS_ARB" TYPE="SLAVE" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -6231,7 +6231,7 @@
             <PORTMAP LOGICAL="SEND" PHYSICAL="s_sc_ar_send"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="m01_nodes_m01_aw_node_M_SC" NAME="S_SC_AW" TYPE="TARGET" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="m01_nodes_m01_aw_node_M_SC" NAME="S_SC_AW" TYPE="SLAVE" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="INFO" PHYSICAL="s_sc_aw_info"/>
             <PORTMAP LOGICAL="PAYLD" PHYSICAL="s_sc_aw_payld"/>
@@ -6240,7 +6240,7 @@
             <PORTMAP LOGICAL="SEND" PHYSICAL="s_sc_aw_send"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="m01_nodes_m01_w_node_M_SC" NAME="S_SC_W" TYPE="TARGET" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="m01_nodes_m01_w_node_M_SC" NAME="S_SC_W" TYPE="SLAVE" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="INFO" PHYSICAL="s_sc_w_info"/>
             <PORTMAP LOGICAL="PAYLD" PHYSICAL="s_sc_w_payld"/>
@@ -32870,7 +32870,7 @@
             <PORTMAP LOGICAL="RECV" PHYSICAL="s_sc_recv"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="switchboards_aw_switchboard_M00_SC" NAME="M00_SC" TYPE="INITIATOR" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="switchboards_aw_switchboard_M00_SC" NAME="M00_SC" TYPE="MASTER" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="RECV" PHYSICAL="m_sc_recv"/>
             <PORTMAP LOGICAL="SEND" PHYSICAL="m_sc_send"/>
@@ -32889,7 +32889,7 @@
             <PORTMAP LOGICAL="RECV" PHYSICAL="s_sc_recv"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="switchboards_aw_switchboard_M01_SC" NAME="M01_SC" TYPE="INITIATOR" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="switchboards_aw_switchboard_M01_SC" NAME="M01_SC" TYPE="MASTER" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="RECV" PHYSICAL="m_sc_recv"/>
             <PORTMAP LOGICAL="SEND" PHYSICAL="m_sc_send"/>
@@ -34241,7 +34241,7 @@
             <PORTMAP LOGICAL="RECV" PHYSICAL="s_sc_recv"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="switchboards_w_switchboard_M00_SC" NAME="M00_SC" TYPE="INITIATOR" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="switchboards_w_switchboard_M00_SC" NAME="M00_SC" TYPE="MASTER" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="RECV" PHYSICAL="m_sc_recv"/>
             <PORTMAP LOGICAL="SEND" PHYSICAL="m_sc_send"/>
@@ -34260,7 +34260,7 @@
             <PORTMAP LOGICAL="RECV" PHYSICAL="s_sc_recv"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="switchboards_w_switchboard_M01_SC" NAME="M01_SC" TYPE="INITIATOR" VLNV="xilinx.com:interface:sc:1.0">
+        <BUSINTERFACE BUSNAME="switchboards_w_switchboard_M01_SC" NAME="M01_SC" TYPE="MASTER" VLNV="xilinx.com:interface:sc:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="RECV" PHYSICAL="m_sc_recv"/>
             <PORTMAP LOGICAL="SEND" PHYSICAL="m_sc_send"/>
