@@ -1,4 +1,4 @@
-def CounterGenSysMult2(A,B,rango,NB_OUT,NB_OUT_F): # A Y B MATRICES
+def CounterGenSysMult2(A,B,latencia,rango,NB_OUT,NB_OUT_F): # A Y B MATRICES
 
     import numpy as np
     import math
@@ -13,9 +13,9 @@ def CounterGenSysMult2(A,B,rango,NB_OUT,NB_OUT_F): # A Y B MATRICES
     vector_matching_fixed = open("vector_matching_fixed.out","w")
     vector_matching_float = open("vector_matching_float.out","w")
     
-    for ptr in range(n):          # SE LOGUEAN CEROS Y UNOS AL COMIENZO DE LOS .txt DE LAS ENTRADAS
-        for x in range(n):
-            if(x < n-1):
+    for ptr in range(latencia):          # SE LOGUEAN CEROS  AL COMIENZO DE LOS .out DE LAS SALIDAS
+        for x in range(n*n):
+            if(x < (n*n)-1):
                 vector_matching_fixed.write('%d\t'%(0))
                 vector_matching_float.write('%d\t'%(0))
 
@@ -120,13 +120,13 @@ def CounterGenSysMult2(A,B,rango,NB_OUT,NB_OUT_F): # A Y B MATRICES
 
 #                print('\n C_w[:,col][row] : \n',C_w[:,col][row])
                 
-                if(row < n-1):
-                    vector_matching_fixed.write('%d\t'%(C_w_fixed_aux.intvalue))
-                    vector_matching_float.write('%d\t'%(C_w[:,col][row]* rango * rango))
-
-                else:
+                if(col == n-1 and row == n-1):
                     vector_matching_fixed.write('%d\n'%(C_w_fixed_aux.intvalue))
                     vector_matching_float.write('%d\n'%(C_w[:,col][row]* rango * rango))
+
+                else:
+                    vector_matching_fixed.write('%d\t'%(C_w_fixed_aux.intvalue))
+                    vector_matching_float.write('%d\t'%(C_w[:,col][row]* rango * rango))
                     
                         
                 
