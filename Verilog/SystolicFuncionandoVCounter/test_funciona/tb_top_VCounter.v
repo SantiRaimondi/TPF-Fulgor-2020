@@ -1,5 +1,5 @@
 //`define COUNTER_LIMIT 0
-`define DIMENSION 8
+`define DIMENSION 4
 `define I_BITS 8
 //`define O_BITS = (I_BITS*2) + $clog2(DIMENSION)
 `timescale 1ns/100ps
