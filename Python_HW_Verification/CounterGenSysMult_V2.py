@@ -3,17 +3,26 @@ def CounterGenSysMult2(A,B,rango,NB_OUT,NB_OUT_F): # A Y B MATRICES
     import numpy as np
     import math
     import _fixedInt as fInt
+
+    n = len(A)  ## Numero de filas en matriz A o de columnas en matriz B.
+    print('LONGITUD DE A : ',n)
+    N_clocks = (len(A[0]))  ## Ciclos necesarios para obtener el valor final de la celda P44
+    
+######################################################################################
     
     vector_matching_fixed = open("vector_matching_fixed.out","w")
     vector_matching_float = open("vector_matching_float.out","w")
     
-    n = len(A)  ## Numero de filas en matriz A o de columnas en matriz B.
-    print('LONGITUD DE A : ',n)
+    for ptr in range(n):          # SE LOGUEAN CEROS Y UNOS AL COMIENZO DE LOS .txt DE LAS ENTRADAS
+        for x in range(n):
+            if(x < n-1):
+                vector_matching_fixed.write('%d\t'%(0))
+                vector_matching_float.write('%d\t'%(0))
+
+            else:
+                vector_matching_fixed.write('%d\n'%(0))
+                vector_matching_float.write('%d\n'%(0))
     
-    
-###############################################################################
-    
-    N_clocks = (len(A[0]))  ## Ciclos necesarios para obtener el valor final de la celda P44
     count = 0
     counter_finish_list = []
     
@@ -96,28 +105,28 @@ def CounterGenSysMult2(A,B,rango,NB_OUT,NB_OUT_F): # A Y B MATRICES
         A_w[:,0] = A[:,i]       # Nuevas entradas en primera coluna de A_w
         B_w[0,:] = B[:,i]       # Nuevas entradas en primera fila de B_w
         
-        for row in range(n):
-            for col in range(n):   
+        for col in range(n):
+            for row in range(n):   
                 
-                C_w[row][col] = C_w[row][col] + (A_w[row][col] * B_w[row][col])  # Se calcula resultado en punto flotante
+                C_w[:,col][row] = C_w[:,col][row] + (A_w[:,col][row] * B_w[:,col][row])  # Se calcula resultado en punto flotante
                 
                 C_w_fixed_aux = fInt.DeFixedInt(NB_OUT,NB_OUT_F,'S','trunc','wrap') # Se crea objeto DeFixedInt()
 
-                C_w_fixed_aux.value = C_w[row][col]      # Se sobreescribe el atributo .value con el resultado en punto flotante
+                C_w_fixed_aux.value = C_w[:,col][row]  # Se sobreescribe el atributo .value con el resultado en punto flotante
 
-                C_w_fixed[row][col] = C_w_fixed_aux.fValue # Finalmente se pasa el resultdo fixeado a la nueva matriz
+                C_w_fixed[:,col][row] = C_w_fixed_aux.fValue # Finalmente se pasa el resultdo fixeado a la nueva matriz
                 
 #                print('\n i = ',i, '\n') 
 
-#                print('\n C_w[row][col] : \n',C_w[row][col])
+#                print('\n C_w[:,col][row] : \n',C_w[:,col][row])
                 
-                if(col < n-1):
+                if(row < n-1):
                     vector_matching_fixed.write('%d\t'%(C_w_fixed_aux.intvalue))
-                    vector_matching_float.write('%d\t'%(C_w[row][col]* rango * rango))
+                    vector_matching_float.write('%d\t'%(C_w[:,col][row]* rango * rango))
 
                 else:
                     vector_matching_fixed.write('%d\n'%(C_w_fixed_aux.intvalue))
-                    vector_matching_float.write('%d\n'%(C_w[row][col]* rango * rango))
+                    vector_matching_float.write('%d\n'%(C_w[:,col][row]* rango * rango))
                     
                         
                 
