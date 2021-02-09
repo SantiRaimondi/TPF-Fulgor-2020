@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Mon Feb  8 18:08:57 2021
-// Host        : huaira running 64-bit Linux Mint 20
-// Command     : write_verilog -force -mode synth_stub -rename_top DMA_FIFO_axi_smc_0 -prefix
-//               DMA_FIFO_axi_smc_0_ DMA_FIFO_axi_smc_0_stub.v
+// Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+// Date        : Mon Feb  8 21:12:06 2021
+// Host        : DESKTOP-9VJG89D running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_stub.v
 // Design      : DMA_FIFO_axi_smc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7k325tffg900-2

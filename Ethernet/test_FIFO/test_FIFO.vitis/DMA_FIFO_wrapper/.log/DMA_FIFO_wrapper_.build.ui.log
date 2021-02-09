@@ -1,97 +1,0 @@
-2021-02-04T23:14:34.066353121171255-23:14:34 **** Build of project DMA_FIFO_wrapper ****
-233235237-buildplatform.sh 34483 DMA_FIFO_wrapper  
-233235237-XSDB Server Channel: tcfchan#1
-233235237-Building the BSP Library for domain  - standalone_domain on processor microblaze_0
-233235237-Running Make include in microblaze_0/libsrc/axidma_v9_10/src
-233235237-
-233235237-make -C microblaze_0/libsrc/axidma_v9_10/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
-233235237-COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
-233235237- -Wall -Wextra"
-233235237-
-233235237-Running Make include in microblaze_0/libsrc/uartlite_v3_3/src
-233235237-
-233235237-make -C microblaze_0/libsrc/uartlite_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" 
-233235237-"COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-section
-233235237-s -Wall -Wextra"
-233235237-
-233235237-Running Make include in microblaze_0/libsrc/bram_v4_3/src
-233235237-
-233235237-make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
-233235237-PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
-233235237-all -Wextra"
-233235237-
-233235237-Running Make include in microblaze_0/libsrc/standalone_v7_1/src
-233235237-
-233235237-make -C microblaze_0/libsrc/standalone_v7_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar
-233235237-" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-secti
-233235237-ons -Wall -Wextra"
-233235237-
-233235237-Running Make include in microblaze_0/libsrc/cpu_v2_10/src
-233235237-
-233235237-make -C microblaze_0/libsrc/cpu_v2_10/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
-233235237-PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
-233235237-all -Wextra"
-233235237-
-233235237-Running Make include in microblaze_0/libsrc/intc_v3_10/src
-233235237-
-233235237-make -C microblaze_0/libsrc/intc_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
-233235237-MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
-233235237-Wall -Wextra"
-233235237-
-233235237-Running Make libs in microblaze_0/libsrc/axidma_v9_10/src
-233235237-
-233235237-make -C microblaze_0/libsrc/axidma_v9_10/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
-233235237-PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
-233235237-all -Wextra"
-233235237-
-233235237-Compiling axidma
-233235237-
-233235237-mb-ar: creating ../../../lib/libxil.a
-233235237-Running Make libs in microblaze_0/libsrc/uartlite_v3_3/src
-233235237-
-233235237-make -C microblaze_0/libsrc/uartlite_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
-233235237-MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
-233235237-Wall -Wextra"
-233235237-
-233235237-Compiling uartlite
-233235237-
-233235237-Running Make libs in microblaze_0/libsrc/bram_v4_3/src
-233235237-
-233235237-make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
-233235237-ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
-233235237- -Wextra"
-233235237-
-233235237-Compiling bram
-233235237-
-233235237-Running Make libs in microblaze_0/libsrc/standalone_v7_1/src
-233235237-
-233235237-make -C microblaze_0/libsrc/standalone_v7_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
-233235237-COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
-233235237- -Wall -Wextra"
-233235237-
-233235237-Compiling standalone
-233235237-
-233235237/DMA_FIFO_wrapper/microblaze_0/standalone_domain/bsp/microblaze_0/libsrc/standalone_v7_1/src/microblaze_sleep.c75-1-1#pragma message: For the sleep routines, assembly instructions are used0-microblaze_sleep.c:75:9: note: #pragma message: For the sleep routines, assembly instructions are used
-233235237- #pragma message ("For the sleep routines, assembly instructions are used")
-233235237-         ^~~~~~~
-233235237-Running Make libs in microblaze_0/libsrc/cpu_v2_10/src
-233235237-
-233235237-make -C microblaze_0/libsrc/cpu_v2_10/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
-233235237-ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
-233235237- -Wextra"
-233235237-
-233235237-Compiling cpu
-233235237-
-233235237-Running Make libs in microblaze_0/libsrc/intc_v3_10/src
-233235237-
-233235237-make -C microblaze_0/libsrc/intc_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
-233235237-LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
-233235237-l -Wextra"
-233235237-
-233235237-Compiling intc
-233235237-
-233235237-Finished building libraries
-233235237-
-121171255-
-23:14:48 Build Finished (took 14s.476ms)
-

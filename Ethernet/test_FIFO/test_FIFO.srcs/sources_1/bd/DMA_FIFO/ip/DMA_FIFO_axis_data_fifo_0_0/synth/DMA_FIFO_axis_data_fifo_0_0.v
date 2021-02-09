@@ -53,7 +53,7 @@
 (* X_CORE_INFO = "axis_data_fifo_v2_0_2_top,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "DMA_FIFO_axis_data_fifo_0_0,axis_data_fifo_v2_0_2_top,{}" *)
 (* CORE_GENERATION_INFO = "DMA_FIFO_axis_data_fifo_0_0,axis_data_fifo_v2_0_2_top,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axis_data_fifo,x_ipVersion=2.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=kintex7,C_AXIS_TDATA_WIDTH=32,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_AXIS_TUSER_WIDTH=1,C_AXIS_SIGNAL_SET=0b00000000000000000000000000011011,C_FIFO_DEPTH=1024,C_FIFO_MODE=1,C_IS_ACLK_ASYNC=0,C_SYNCHRONIZER_STAGE=3,C_ACLKEN_CONV_MODE=0,C_ECC_MODE=0,C_FIFO_MEMORY_TYPE=a\
-uto,C_USE_ADV_FEATURES=825241648,C_PROG_EMPTY_THRESH=5,C_PROG_FULL_THRESH=11}" *)
+uto,C_USE_ADV_FEATURES=825503796,C_PROG_EMPTY_THRESH=5,C_PROG_FULL_THRESH=11}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module DMA_FIFO_axis_data_fifo_0_0 (
   s_axis_aresetn,
@@ -67,7 +67,9 @@ module DMA_FIFO_axis_data_fifo_0_0 (
   m_axis_tready,
   m_axis_tdata,
   m_axis_tkeep,
-  m_axis_tlast
+  m_axis_tlast,
+  axis_wr_data_count,
+  axis_rd_data_count
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_RSTIF, POLARITY ACTIVE_LOW, INSERT_VIP 0, TYPE INTERCONNECT" *)
@@ -98,6 +100,8 @@ output wire [3 : 0] m_axis_tkeep;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0, CLK_DOMAIN DMA_FIFO_mig_7series_0_0_ui_clk, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TLAST" *)
 output wire m_axis_tlast;
+output wire [31 : 0] axis_wr_data_count;
+output wire [31 : 0] axis_rd_data_count;
 
   axis_data_fifo_v2_0_2_top #(
     .C_FAMILY("kintex7"),
@@ -113,7 +117,7 @@ output wire m_axis_tlast;
     .C_ACLKEN_CONV_MODE(0),
     .C_ECC_MODE(0),
     .C_FIFO_MEMORY_TYPE("auto"),
-    .C_USE_ADV_FEATURES(825241648),
+    .C_USE_ADV_FEATURES(825503796),
     .C_PROG_EMPTY_THRESH(5),
     .C_PROG_FULL_THRESH(11)
   ) inst (
@@ -140,8 +144,8 @@ output wire m_axis_tlast;
     .m_axis_tid(),
     .m_axis_tdest(),
     .m_axis_tuser(),
-    .axis_wr_data_count(),
-    .axis_rd_data_count(),
+    .axis_wr_data_count(axis_wr_data_count),
+    .axis_rd_data_count(axis_rd_data_count),
     .almost_empty(),
     .prog_empty(),
     .almost_full(),

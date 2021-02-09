@@ -65,13 +65,15 @@ module DMA_FIFO_axis_data_fifo_0_0 (
   m_axis_tready,
   m_axis_tdata,
   m_axis_tkeep,
-  m_axis_tlast
+  m_axis_tlast,
+  axis_wr_data_count,
+  axis_rd_data_count
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_RSTIF, POLARITY ACTIVE_LOW, INSERT_VIP 0, TYPE INTERCONNECT" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S_RSTIF RST" *)
 input wire s_axis_aresetn;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_CLKIF, ASSOCIATED_BUSIF S_AXIS:M_AXIS, FREQ_HZ 200000000, PHASE 0, CLK_DOMAIN DMA_FIFO_mig_7series_0_0_ui_clk, ASSOCIATED_RESET s_axis_aresetn, INSERT_VIP 0, ASSOCIATED_CLKEN s_axis_aclken" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_CLKIF, ASSOCIATED_BUSIF S_AXIS:M_AXIS, FREQ_HZ 100000000, PHASE 0, CLK_DOMAIN DMA_FIFO_mig_7series_0_0_ui_clk, ASSOCIATED_RESET s_axis_aresetn, INSERT_VIP 0, ASSOCIATED_CLKEN s_axis_aclken" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S_CLKIF CLK" *)
 input wire s_axis_aclk;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TVALID" *)
@@ -82,7 +84,7 @@ output wire s_axis_tready;
 input wire [31 : 0] s_axis_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TKEEP" *)
 input wire [3 : 0] s_axis_tkeep;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 200000000, PHASE 0, CLK_DOMAIN DMA_FIFO_mig_7series_0_0_ui_clk, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0, CLK_DOMAIN DMA_FIFO_mig_7series_0_0_ui_clk, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TLAST" *)
 input wire s_axis_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TVALID" *)
@@ -93,9 +95,11 @@ input wire m_axis_tready;
 output wire [31 : 0] m_axis_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TKEEP" *)
 output wire [3 : 0] m_axis_tkeep;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 200000000, PHASE 0, CLK_DOMAIN DMA_FIFO_mig_7series_0_0_ui_clk, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0, CLK_DOMAIN DMA_FIFO_mig_7series_0_0_ui_clk, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TLAST" *)
 output wire m_axis_tlast;
+output wire [31 : 0] axis_wr_data_count;
+output wire [31 : 0] axis_rd_data_count;
 
   axis_data_fifo_v2_0_2_top #(
     .C_FAMILY("kintex7"),
@@ -111,7 +115,7 @@ output wire m_axis_tlast;
     .C_ACLKEN_CONV_MODE(0),
     .C_ECC_MODE(0),
     .C_FIFO_MEMORY_TYPE("auto"),
-    .C_USE_ADV_FEATURES(825241648),
+    .C_USE_ADV_FEATURES(825503796),
     .C_PROG_EMPTY_THRESH(5),
     .C_PROG_FULL_THRESH(11)
   ) inst (
@@ -138,8 +142,8 @@ output wire m_axis_tlast;
     .m_axis_tid(),
     .m_axis_tdest(),
     .m_axis_tuser(),
-    .axis_wr_data_count(),
-    .axis_rd_data_count(),
+    .axis_wr_data_count(axis_wr_data_count),
+    .axis_rd_data_count(axis_rd_data_count),
     .almost_empty(),
     .prog_empty(),
     .almost_full(),

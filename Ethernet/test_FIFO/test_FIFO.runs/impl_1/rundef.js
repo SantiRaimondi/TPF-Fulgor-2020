@@ -4,17 +4,13 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //
 
-echo "This script was generated under a different operating system."
-echo "Please update the PATH variable below, before executing this script"
-exit
-
 var WshShell = new ActiveXObject( "WScript.Shell" );
 var ProcEnv = WshShell.Environment( "Process" );
 var PathVal = ProcEnv("PATH");
 if ( PathVal.length == 0 ) {
-  PathVal = "/tools/Xilinx/Vitis/2019.2/bin:/tools/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/lin64;/tools/Xilinx/Vivado/2019.2/bin;";
+  PathVal = "D:/Xilinx/Vitis/2019.2/bin;D:/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2019.2/ids_lite/ISE/lib/nt64;D:/Xilinx/Vivado/2019.2/bin;";
 } else {
-  PathVal = "/tools/Xilinx/Vitis/2019.2/bin:/tools/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/lin64;/tools/Xilinx/Vivado/2019.2/bin;" + PathVal;
+  PathVal = "D:/Xilinx/Vitis/2019.2/bin;D:/Xilinx/Vivado/2019.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2019.2/ids_lite/ISE/lib/nt64;D:/Xilinx/Vivado/2019.2/bin;" + PathVal;
 }
 
 ProcEnv("PATH") = PathVal;
@@ -27,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "init_design", "begin" );
+ISETouchFile( "write_bitstream", "begin" );
 ISEStep( "vivado",
          "-log DMA_FIFO_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source DMA_FIFO_wrapper.tcl -notrace" );
 

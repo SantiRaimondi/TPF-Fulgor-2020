@@ -3847,11 +3847,81 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 08 18:16:39 UTC 2021</spirit:value>
+            <spirit:value>Mon Feb 08 23:44:47 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:f6fdfd3f</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_elaboratebd</spirit:name>
+        <spirit:displayName>Elaborate BD</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:elaborate.bd</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_elaboratebd_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Feb 08 23:44:47 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:9b227e59</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesis</spirit:name>
+        <spirit:displayName>Verilog Synthesis</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>bd_c263</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Feb 08 23:48:00 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:fd719923</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:modelName>bd_c263</spirit:modelName>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:fd719923</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>DMA_FIFO_axi_smc_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Feb 08 23:48:00 UTC 2021</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:fd719923</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3909,7 +3979,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Feb 07 23:03:09 UTC 2021</spirit:value>
+            <spirit:value>Wed Feb 03 02:50:12 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -3929,7 +3999,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 08 18:29:10 UTC 2021</spirit:value>
+            <spirit:value>Mon Feb 08 23:48:00 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -3957,7 +4027,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 08 18:29:10 UTC 2021</spirit:value>
+            <spirit:value>Mon Feb 08 23:48:00 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -3977,7 +4047,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 08 18:29:10 UTC 2021</spirit:value>
+            <spirit:value>Mon Feb 08 23:48:00 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -3999,77 +4069,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 08 22:52:47 UTC 2021</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fd719923</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
-        <spirit:name>xilinx_elaboratebd</spirit:name>
-        <spirit:displayName>Elaborate BD</spirit:displayName>
-        <spirit:envIdentifier>:vivado.xilinx.com:elaborate.bd</spirit:envIdentifier>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_elaboratebd_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 08 22:02:35 UTC 2021</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9b227e59</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
-        <spirit:name>xilinx_verilogsynthesis</spirit:name>
-        <spirit:displayName>Verilog Synthesis</spirit:displayName>
-        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
-        <spirit:language>verilog</spirit:language>
-        <spirit:modelName>bd_c263</spirit:modelName>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_verilogsynthesis_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 08 22:52:38 UTC 2021</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fd719923</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
-        <spirit:name>xilinx_synthesisconstraints</spirit:name>
-        <spirit:displayName>Synthesis Constraints</spirit:displayName>
-        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
-        <spirit:modelName>bd_c263</spirit:modelName>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fd719923</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
-        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
-        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
-        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
-        <spirit:language>verilog</spirit:language>
-        <spirit:modelName>DMA_FIFO_axi_smc_0</spirit:modelName>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 08 22:52:38 UTC 2021</spirit:value>
+            <spirit:value>Tue Feb 09 00:12:34 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -7917,6 +7917,40 @@
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
+      <spirit:name>xilinx_elaboratebd_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sc_post_elab.rld</spirit:name>
+        <spirit:userFileType>elaboratedData</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sc_xtlm_DMA_FIFO_axi_smc_0.mem</spirit:name>
+        <spirit:userFileType>elaboratedData</spirit:userFileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>bd_0/bd_c263.bd</spirit:name>
+        <spirit:userFileType>block_diagram</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>ooc.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/DMA_FIFO_axi_smc_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_xilinx_com_ip_sc_util_1_0__ref_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>../../ipshared/1ddd/hdl/verilog/sc_util_v1_0_4_constants.vh</spirit:name>
@@ -8274,40 +8308,6 @@
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_elaboratebd_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>sc_post_elab.rld</spirit:name>
-        <spirit:userFileType>elaboratedData</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>sc_xtlm_DMA_FIFO_axi_smc_0.mem</spirit:name>
-        <spirit:userFileType>elaboratedData</spirit:userFileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>bd_0/bd_c263.bd</spirit:name>
-        <spirit:userFileType>block_diagram</spirit:userFileType>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>ooc.xdc</spirit:name>
-        <spirit:userFileType>xdc</spirit:userFileType>
-        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
-        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>synth/DMA_FIFO_axi_smc_0.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-    </spirit:fileSet>
   </spirit:fileSets>
   <spirit:description>The AXI SmartConnect IP connects one or more AXI memory-mapped master devices to one or more AXI memory-mapped slave devices</spirit:description>
   <spirit:parameters>
@@ -8358,194 +8358,229 @@
         <xilinx:tag xilinx:name="bd_viewable">false</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK.ASSOCIATED_BUSIF" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK.ASSOCIATED_CLKEN" xilinx:valueSource="constant"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK.CLK_DOMAIN" xilinx:valueSource="default_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK.FREQ_HZ" xilinx:valueSource="default_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK.PHASE" xilinx:valueSource="default_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK1.ASSOCIATED_BUSIF" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK1.ASSOCIATED_CLKEN" xilinx:valueSource="constant"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK1.CLK_DOMAIN" xilinx:valueSource="ip_propagated"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK1.FREQ_HZ" xilinx:valueSource="default_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK1.PHASE" xilinx:valueSource="default_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.ADDR_WIDTH" xilinx:valueSource="ip_propagated"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK.ASSOCIATED_BUSIF" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK.ASSOCIATED_CLKEN" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK.ASSOCIATED_RESET" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK.FREQ_HZ" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK1.ASSOCIATED_BUSIF" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK1.ASSOCIATED_CLKEN" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK1.ASSOCIATED_RESET" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK1.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK1.FREQ_HZ" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ACLK1.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.ADDR_WIDTH" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.ARUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.AWUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.BUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.DATA_WIDTH" xilinx:valueSource="propagated"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.DATA_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.FREQ_HZ" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_REGION" xilinx:valueSource="constant"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_BRESP" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_BURST" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_CACHE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_LOCK" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_PROT" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_QOS" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_REGION" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_RRESP" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_WSTRB" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.ID_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.MAX_BURST_LENGTH" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.NUM_READ_THREADS" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.NUM_WRITE_THREADS" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.PROTOCOL" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.READ_WRITE_MODE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.RUSER_BITS_PER_BYTE" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.RUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.WUSER_BITS_PER_BYTE" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.WUSER_WIDTH" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.ADDR_WIDTH" xilinx:valueSource="ip_propagated"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.ADDR_WIDTH" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.ARUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.AWUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.BUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.DATA_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.FREQ_HZ" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.HAS_QOS" xilinx:valueSource="default_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.HAS_REGION" xilinx:valueSource="constant"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.HAS_BRESP" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.HAS_BURST" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.HAS_CACHE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.HAS_LOCK" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.HAS_PROT" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.HAS_QOS" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.HAS_REGION" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.HAS_RRESP" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.HAS_WSTRB" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.ID_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.MAX_BURST_LENGTH" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.NUM_READ_THREADS" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.NUM_WRITE_THREADS" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.PROTOCOL" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.READ_WRITE_MODE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.RUSER_BITS_PER_BYTE" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.RUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.WUSER_BITS_PER_BYTE" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M01_AXI.WUSER_WIDTH" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RST.ARESETN.POLARITY" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ARUSER_WIDTH" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.AWUSER_WIDTH" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RST.ARESETN.POLARITY" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ARUSER_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.AWUSER_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.DATA_WIDTH" xilinx:valueSource="auto_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.DATA_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.FREQ_HZ" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_BRESP" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_BURST" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_CACHE" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_LOCK" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_PROT" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_QOS" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_REGION" xilinx:valueSource="constant"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_RRESP" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_WSTRB" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ID_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.MAX_BURST_LENGTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_READ_THREADS" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_WRITE_THREADS" xilinx:valueSource="constant_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_BRESP" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_BURST" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_CACHE" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_LOCK" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_PROT" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_QOS" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_REGION" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_RRESP" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.HAS_WSTRB" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ID_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.MAX_BURST_LENGTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_READ_THREADS" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_WRITE_THREADS" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.PROTOCOL" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.READ_WRITE_MODE" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.RUSER_BITS_PER_BYTE" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.RUSER_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.WUSER_BITS_PER_BYTE" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.WUSER_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.ADDR_WIDTH" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.ARUSER_WIDTH" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.AWUSER_WIDTH" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.PROTOCOL" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.READ_WRITE_MODE" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.RUSER_BITS_PER_BYTE" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.RUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.WUSER_BITS_PER_BYTE" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.WUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.ADDR_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.ARUSER_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.AWUSER_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.DATA_WIDTH" xilinx:valueSource="auto_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.DATA_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.FREQ_HZ" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_BRESP" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_BURST" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_CACHE" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_LOCK" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_PROT" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_QOS" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_REGION" xilinx:valueSource="constant"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_RRESP" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_WSTRB" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.ID_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.MAX_BURST_LENGTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.NUM_READ_THREADS" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_BRESP" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_BURST" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_CACHE" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_LOCK" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_PROT" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_QOS" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_REGION" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_RRESP" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.HAS_WSTRB" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.ID_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.MAX_BURST_LENGTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.NUM_READ_THREADS" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.NUM_WRITE_THREADS" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.PROTOCOL" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.READ_WRITE_MODE" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.RUSER_BITS_PER_BYTE" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.RUSER_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.WUSER_BITS_PER_BYTE" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.WUSER_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.ADDR_WIDTH" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.ARUSER_WIDTH" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.AWUSER_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.PROTOCOL" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.READ_WRITE_MODE" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.RUSER_BITS_PER_BYTE" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.RUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.WUSER_BITS_PER_BYTE" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S01_AXI.WUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.ADDR_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.ARUSER_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.AWUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.DATA_WIDTH" xilinx:valueSource="auto_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.DATA_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.FREQ_HZ" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_BRESP" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_BURST" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_CACHE" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_LOCK" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_PROT" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_QOS" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_REGION" xilinx:valueSource="constant"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_RRESP" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_WSTRB" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.ID_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.MAX_BURST_LENGTH" xilinx:valueSource="user_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_BRESP" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_BURST" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_CACHE" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_LOCK" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_PROT" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_QOS" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_REGION" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_RRESP" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.HAS_WSTRB" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.ID_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.MAX_BURST_LENGTH" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.NUM_READ_THREADS" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.NUM_WRITE_THREADS" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.PROTOCOL" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.READ_WRITE_MODE" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.RUSER_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.WUSER_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.ADDR_WIDTH" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.ARUSER_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.AWUSER_WIDTH" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.PROTOCOL" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.READ_WRITE_MODE" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.RUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.RUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.WUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S02_AXI.WUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.ADDR_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.ARUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.AWUSER_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.DATA_WIDTH" xilinx:valueSource="auto_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.DATA_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.FREQ_HZ" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_BRESP" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_BURST" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_CACHE" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_LOCK" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_PROT" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_QOS" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_REGION" xilinx:valueSource="constant"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_RRESP" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_WSTRB" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.ID_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.MAX_BURST_LENGTH" xilinx:valueSource="user_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_BRESP" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_BURST" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_CACHE" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_LOCK" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_PROT" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_QOS" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_REGION" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_RRESP" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.HAS_WSTRB" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.ID_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.MAX_BURST_LENGTH" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.NUM_READ_THREADS" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.NUM_WRITE_THREADS" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.PROTOCOL" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.READ_WRITE_MODE" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.RUSER_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.WUSER_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.ADDR_WIDTH" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.ARUSER_WIDTH" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.AWUSER_WIDTH" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.PROTOCOL" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.READ_WRITE_MODE" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.RUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.RUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.WUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S03_AXI.WUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.ADDR_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.ARUSER_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.AWUSER_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.BUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.DATA_WIDTH" xilinx:valueSource="auto_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.DATA_WIDTH" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.FREQ_HZ" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_BRESP" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_BURST" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_CACHE" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_LOCK" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_PROT" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_QOS" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_REGION" xilinx:valueSource="constant"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_RRESP" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_WSTRB" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.ID_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.MAX_BURST_LENGTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_BRESP" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_BURST" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_CACHE" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_LOCK" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_PROT" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_QOS" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_REGION" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_RRESP" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.HAS_WSTRB" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.ID_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.MAX_BURST_LENGTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.NUM_READ_THREADS" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.NUM_WRITE_THREADS" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.PROTOCOL" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.READ_WRITE_MODE" xilinx:valueSource="auto_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.RUSER_WIDTH" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="constant_prop"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.WUSER_WIDTH" xilinx:valueSource="constant_prop"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.PROTOCOL" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.READ_WRITE_MODE" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.RUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.RUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.WUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S04_AXI.WUSER_WIDTH" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.NUM_CLKS" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.NUM_MI" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.NUM_SI" xilinx:valueSource="user"/>
