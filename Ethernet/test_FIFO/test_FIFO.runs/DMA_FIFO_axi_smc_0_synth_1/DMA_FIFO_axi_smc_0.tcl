@@ -25,61 +25,61 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.cache/wt [current_project]
-set_property parent.project_path /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.xpr [current_project]
+set_property webtalk.parent_dir D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.cache/wt [current_project]
+set_property parent.project_path D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:kc705:part0:1.6 [current_project]
-set_property ip_output_repo /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.cache/ip [current_project]
+set_property ip_output_repo d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_ip -quiet /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0.xci
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_1/bd_c263_psr0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_1/bd_c263_psr0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_2/bd_c263_psr_aclk_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_2/bd_c263_psr_aclk_0.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_3/bd_c263_psr_aclk1_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_3/bd_c263_psr_aclk1_0.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_4/bd_c263_arsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_5/bd_c263_rsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_6/bd_c263_awsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_7/bd_c263_wsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_8/bd_c263_bsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_12/bd_c263_s00a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_13/bd_c263_sarn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_14/bd_c263_srn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_15/bd_c263_sawn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_16/bd_c263_swn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_17/bd_c263_sbn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_21/bd_c263_s01a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_22/bd_c263_sarn_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_23/bd_c263_srn_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_27/bd_c263_s02a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_28/bd_c263_sarn_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_29/bd_c263_srn_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_33/bd_c263_s03a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_34/bd_c263_sawn_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_35/bd_c263_swn_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_36/bd_c263_sbn_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_40/bd_c263_s04a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_41/bd_c263_sarn_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_42/bd_c263_srn_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_43/bd_c263_sawn_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_44/bd_c263_swn_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_45/bd_c263_sbn_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_46/bd_c263_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_47/bd_c263_m00arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_48/bd_c263_m00rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_49/bd_c263_m00awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_50/bd_c263_m00wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_51/bd_c263_m00bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_53/bd_c263_m01s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_54/bd_c263_m01arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_55/bd_c263_m01rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_56/bd_c263_m01awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_57/bd_c263_m01wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_58/bd_c263_m01bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/ooc.xdc]
+read_ip -quiet D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0.xci
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_1/bd_c263_psr0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_1/bd_c263_psr0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_2/bd_c263_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_2/bd_c263_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_3/bd_c263_psr_aclk1_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_3/bd_c263_psr_aclk1_0.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_4/bd_c263_arsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_5/bd_c263_rsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_6/bd_c263_awsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_7/bd_c263_wsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_8/bd_c263_bsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_12/bd_c263_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_13/bd_c263_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_14/bd_c263_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_15/bd_c263_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_16/bd_c263_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_17/bd_c263_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_21/bd_c263_s01a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_22/bd_c263_sarn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_23/bd_c263_srn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_27/bd_c263_s02a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_28/bd_c263_sarn_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_29/bd_c263_srn_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_33/bd_c263_s03a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_34/bd_c263_sawn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_35/bd_c263_swn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_36/bd_c263_sbn_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_40/bd_c263_s04a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_41/bd_c263_sarn_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_42/bd_c263_srn_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_43/bd_c263_sawn_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_44/bd_c263_swn_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_45/bd_c263_sbn_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_46/bd_c263_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_47/bd_c263_m00arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_48/bd_c263_m00rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_49/bd_c263_m00awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_50/bd_c263_m00wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_51/bd_c263_m00bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_53/bd_c263_m01s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_54/bd_c263_m01arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_55/bd_c263_m01rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_56/bd_c263_m01awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_57/bd_c263_m01wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/bd_0/ip/ip_58/bd_c263_m01bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -93,7 +93,7 @@ read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-set cached_ip [config_ip_cache -export -no_bom  -dir /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_smc_0_synth_1 -new_name DMA_FIFO_axi_smc_0 -ip [get_ips DMA_FIFO_axi_smc_0]]
+set cached_ip [config_ip_cache -export -no_bom  -dir D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_smc_0_synth_1 -new_name DMA_FIFO_axi_smc_0 -ip [get_ips DMA_FIFO_axi_smc_0]]
 
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
@@ -134,32 +134,32 @@ write_checkpoint -force -noxdef DMA_FIFO_axi_smc_0.dcp
 create_report "DMA_FIFO_axi_smc_0_synth_1_synth_report_utilization_0" "report_utilization -file DMA_FIFO_axi_smc_0_utilization_synth.rpt -pb DMA_FIFO_axi_smc_0_utilization_synth.pb"
 
 if { [catch {
-  file copy -force /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_smc_0_synth_1/DMA_FIFO_axi_smc_0.dcp /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0.dcp
+  file copy -force D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_smc_0_synth_1/DMA_FIFO_axi_smc_0.dcp D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_stub.v
+  write_verilog -force -mode synth_stub D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_stub.vhdl
+  write_vhdl -force -mode synth_stub D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_sim_netlist.v
+  write_verilog -force -mode funcsim D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -169,47 +169,47 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_smc_0_synth_1/DMA_FIFO_axi_smc_0.dcp /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0.dcp
+  file copy -force D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_smc_0_synth_1/DMA_FIFO_axi_smc_0.dcp D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_smc_0_synth_1/DMA_FIFO_axi_smc_0_stub.v /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_stub.v
+  file rename -force D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_smc_0_synth_1/DMA_FIFO_axi_smc_0_stub.v D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_smc_0_synth_1/DMA_FIFO_axi_smc_0_stub.vhdl /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_stub.vhdl
+  file rename -force D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_smc_0_synth_1/DMA_FIFO_axi_smc_0_stub.vhdl D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_smc_0_synth_1/DMA_FIFO_axi_smc_0_sim_netlist.v /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_sim_netlist.v
+  file rename -force D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_smc_0_synth_1/DMA_FIFO_axi_smc_0_sim_netlist.v D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_smc_0_synth_1/DMA_FIFO_axi_smc_0_sim_netlist.vhdl /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_sim_netlist.vhdl
+  file rename -force D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.runs/DMA_FIFO_axi_smc_0_synth_1/DMA_FIFO_axi_smc_0_sim_netlist.vhdl D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 }; # end if cached_ip 
 
-if {[file isdir /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.ip_user_files/ip/DMA_FIFO_axi_smc_0]} {
+if {[file isdir D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.ip_user_files/ip/DMA_FIFO_axi_smc_0]} {
   catch { 
-    file copy -force /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_stub.v /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.ip_user_files/ip/DMA_FIFO_axi_smc_0
+    file copy -force D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_stub.v D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.ip_user_files/ip/DMA_FIFO_axi_smc_0
   }
 }
 
-if {[file isdir /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.ip_user_files/ip/DMA_FIFO_axi_smc_0]} {
+if {[file isdir D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.ip_user_files/ip/DMA_FIFO_axi_smc_0]} {
   catch { 
-    file copy -force /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_stub.vhdl /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.ip_user_files/ip/DMA_FIFO_axi_smc_0
+    file copy -force D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_axi_smc_0/DMA_FIFO_axi_smc_0_stub.vhdl D:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.ip_user_files/ip/DMA_FIFO_axi_smc_0
   }
 }
 file delete __synthesis_is_running__

@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Sun Feb  7 20:08:33 2021
-// Host        : huaira running 64-bit Linux Mint 20
+// Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+// Date        : Wed Feb  3 00:00:04 2021
+// Host        : DESKTOP-9VJG89D running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               /home/becario/ethernet/TPF-Fulgor-2020/Ethernet/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0_stub.v
+//               d:/dario/fulgor/trabajo_final/vivado_projects/test_FIFO/test_FIFO.srcs/sources_1/bd/DMA_FIFO/ip/DMA_FIFO_mig_7series_0_0/DMA_FIFO_mig_7series_0_0_stub.v
 // Design      : DMA_FIFO_mig_7series_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7k325tffg900-2

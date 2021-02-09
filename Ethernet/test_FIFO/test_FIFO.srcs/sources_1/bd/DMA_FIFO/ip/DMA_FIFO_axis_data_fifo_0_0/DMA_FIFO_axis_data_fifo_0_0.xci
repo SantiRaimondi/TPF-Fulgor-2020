@@ -67,7 +67,7 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_PROG_EMPTY_THRESH">5</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_PROG_FULL_THRESH">11</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_SYNCHRONIZER_STAGE">3</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_ADV_FEATURES">825241648</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_ADV_FEATURES">825503796</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ACLKEN_CONV_MODE">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Component_Name">DMA_FIFO_axis_data_fifo_0_0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ENABLE_ECC">0</spirit:configurableElementValue>
@@ -79,12 +79,12 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.HAS_ECC_ERR_INJECT">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.HAS_PROG_EMPTY">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.HAS_PROG_FULL">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.HAS_RD_DATA_COUNT">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.HAS_RD_DATA_COUNT">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.HAS_TKEEP">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.HAS_TLAST">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.HAS_TREADY">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.HAS_TSTRB">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.HAS_WR_DATA_COUNT">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.HAS_WR_DATA_COUNT">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.IS_ACLK_ASYNC">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PROG_EMPTY_THRESH">5</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PROG_FULL_THRESH">11</spirit:configurableElementValue>
@@ -150,9 +150,14 @@
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_CLKIF.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_RSTIF.POLARITY" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_RSTIF.TYPE" xilinx:valuePermission="bd"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.FIFO_MEMORY_TYPE" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.FIFO_MODE" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.HAS_RD_DATA_COUNT" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.HAS_TKEEP" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.HAS_TLAST" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.HAS_TSTRB" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.HAS_WR_DATA_COUNT" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.IS_ACLK_ASYNC" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.TDATA_NUM_BYTES" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.TDEST_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.TID_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>

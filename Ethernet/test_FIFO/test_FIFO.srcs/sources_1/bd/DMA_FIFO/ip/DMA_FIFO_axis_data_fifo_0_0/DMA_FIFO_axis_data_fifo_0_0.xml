@@ -685,11 +685,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 08 18:29:18 UTC 2021</spirit:value>
+            <spirit:value>Wed Feb 03 02:50:38 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:011c0628</spirit:value>
+            <spirit:value>9:f9175cc4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -703,11 +703,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 08 18:29:18 UTC 2021</spirit:value>
+            <spirit:value>Wed Feb 03 02:50:38 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:011c0628</spirit:value>
+            <spirit:value>9:f9175cc4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -723,11 +723,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 08 18:29:18 UTC 2021</spirit:value>
+            <spirit:value>Wed Feb 03 02:50:38 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:011c0628</spirit:value>
+            <spirit:value>9:f9175cc4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -746,11 +746,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 08 18:29:18 UTC 2021</spirit:value>
+            <spirit:value>Wed Feb 03 02:50:38 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5aae27d1</spirit:value>
+            <spirit:value>9:07b2d126</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -766,11 +766,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 08 18:29:18 UTC 2021</spirit:value>
+            <spirit:value>Wed Feb 03 02:50:38 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5aae27d1</spirit:value>
+            <spirit:value>9:07b2d126</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -784,11 +784,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 08 18:31:30 UTC 2021</spirit:value>
+            <spirit:value>Wed Feb 03 03:13:24 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:011c0628</spirit:value>
+            <spirit:value>9:f9175cc4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1335,7 +1335,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.axis_wr_data_count" xilinx:dependency="(spirit:decode(id(&apos;PARAM_VALUE.HAS_WR_DATA_COUNT&apos;)) = 1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.axis_wr_data_count" xilinx:dependency="(spirit:decode(id(&apos;PARAM_VALUE.HAS_WR_DATA_COUNT&apos;)) = 1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -1359,7 +1359,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.axis_rd_data_count" xilinx:dependency="(spirit:decode(id(&apos;PARAM_VALUE.HAS_RD_DATA_COUNT&apos;)) = 1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.axis_rd_data_count" xilinx:dependency="(spirit:decode(id(&apos;PARAM_VALUE.HAS_RD_DATA_COUNT&apos;)) = 1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -1586,7 +1586,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_USE_ADV_FEATURES</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_USE_ADV_FEATURES">825241648</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_USE_ADV_FEATURES">825503796</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_PROG_EMPTY_THRESH</spirit:name>
@@ -1924,7 +1924,7 @@
     <spirit:parameter>
       <spirit:name>HAS_WR_DATA_COUNT</spirit:name>
       <spirit:displayName>Enable write data count</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.HAS_WR_DATA_COUNT" spirit:choiceRef="choice_pairs_37189c7b" spirit:order="15">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.HAS_WR_DATA_COUNT" spirit:choiceRef="choice_pairs_37189c7b" spirit:order="15">1</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -1936,7 +1936,7 @@
     <spirit:parameter>
       <spirit:name>HAS_RD_DATA_COUNT</spirit:name>
       <spirit:displayName>Enable read data count</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.HAS_RD_DATA_COUNT" spirit:choiceRef="choice_pairs_37189c7b" spirit:order="16">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.HAS_RD_DATA_COUNT" spirit:choiceRef="choice_pairs_37189c7b" spirit:order="16">1</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -2099,9 +2099,14 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_CLKIF.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_RSTIF.POLARITY" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_RSTIF.TYPE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.FIFO_MEMORY_TYPE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.FIFO_MODE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.HAS_RD_DATA_COUNT" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.HAS_TKEEP" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.HAS_TLAST" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.HAS_TSTRB" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.HAS_WR_DATA_COUNT" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.IS_ACLK_ASYNC" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.TDATA_NUM_BYTES" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.TDEST_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.TID_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>

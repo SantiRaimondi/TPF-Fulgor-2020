@@ -36,11 +36,11 @@ module tb_top_VCounter();
     integer               ptr_b ;
 
     // Vector Matching: (descomentar cuando este listo)
-    //integer               code_error3;
-    //integer               ptr_c ;
-    //integer               fid_c ;
-    //reg [O_BITS-1:0]      c_tmp [(DIMENSION*DIMENSION)-1:0] ;
-    //reg [(DIMENSION*DIMENSION*O_BITS)-1:0] i_c; no necesario probablemente
+    integer               code_error3;
+    integer               ptr_c ;
+    integer               fid_c ;
+    reg [O_BITS-1:0]      c_tmp [(DIMENSION*DIMENSION)-1:0] ;
+    //reg [(DIMENSION*DIMENSION*O_BITS)-1:0] i_c; no necesario
     //DESCOMENTAR CUANDO SE VEA UN *VM*
 
     //variables extra
@@ -60,8 +60,8 @@ module tb_top_VCounter();
 	   if(fid_b==0) $stop;
       
       //*VM* necesario
-      //fid_c  = $fopen("C:/Users/Usuario/Downloads/SystolicFuncionandoVCounter/SystolicFuncionandoVCounter/matrixC8x8.out","r");
-	   //if(fid_b==0) $stop;
+	   fid_c  = $fopen("C:/Users/Usuario/Downloads/vectormatching.out","r");
+	   if(fid_b==0) $stop;
    
       clock    = 1'b0  ;
    end
@@ -82,12 +82,12 @@ module tb_top_VCounter();
 	     code_error2 <= $fscanf(fid_b,"%d",b_tmp[DIMENSION-1-ptr_b]);
 	     if(code_error2!=1) $stop;
 	   end
-      //*VM*no chequado/probablemente lo unico que se necesite(mas una xor)
+      //*VM*lo unico que se necesite(mas una xor)
       //se guarda en fid_c los resultados del python para hacer una xor con con_out_c
-      //for(ptr_c=0;ptr_c<DIMENSION;ptr_c = ptr_c+1) begin
-	   //  code_error3 <= $fscanf(fid_c,"%d",c_tmp[DIMENSION-1-ptr_c]);
-	   //  if(code_error3!=1) $stop;
-	   //end
+	   for(ptr_c=0;ptr_c<(DIMENSION*DIMENSION);ptr_c = ptr_c+1) begin
+	     code_error3 <= $fscanf(fid_c,"%d",c_tmp[ptr_c]);
+	     if(code_error3!=1) $stop;
+	   end
 
       i_reset <= reset_tmp;
       //guardo lo que antes era     
