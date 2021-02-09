@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_VCounter_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top_VCounter" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="9622fs"></ZoomEndTime>
+      <Cursor1Time time="4500fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="209"></NameColumnWidth>
+      <ValueColumnWidth column_width="89"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/tb_top_VCounter/i_reset" type="logic">
+      <obj_property name="ElementShortName">i_reset</obj_property>
+      <obj_property name="ObjectShortName">i_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_VCounter/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_VCounter/i_a" type="array">
+      <obj_property name="ElementShortName">i_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_VCounter/i_b" type="array">
+      <obj_property name="ElementShortName">i_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_b[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">6</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_VCounter/reset_tmp" type="logic">
+      <obj_property name="ElementShortName">reset_tmp</obj_property>
+      <obj_property name="ObjectShortName">reset_tmp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_VCounter/o_c" type="array">
+      <obj_property name="ElementShortName">o_c[287:0]</obj_property>
+      <obj_property name="ObjectShortName">o_c[287:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_VCounter/fid_reset" type="array">
+      <obj_property name="ElementShortName">fid_reset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fid_reset[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_VCounter/fid_a" type="array">
+      <obj_property name="ElementShortName">fid_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fid_a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_VCounter/fid_b" type="array">
+      <obj_property name="ElementShortName">fid_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fid_b[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_VCounter/code_error" type="array">
+      <obj_property name="ElementShortName">code_error[31:0]</obj_property>
+      <obj_property name="ObjectShortName">code_error[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_VCounter/code_error1" type="array">
+      <obj_property name="ElementShortName">code_error1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">code_error1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_VCounter/code_error2" type="array">
+      <obj_property name="ElementShortName">code_error2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">code_error2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_VCounter/ptr_a" type="array">
+      <obj_property name="ElementShortName">ptr_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ptr_a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_VCounter/ptr_b" type="array">
+      <obj_property name="ElementShortName">ptr_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ptr_b[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/con_finish" type="array">
+      <obj_property name="ElementShortName">con_finish[15:0]</obj_property>
+      <obj_property name="ObjectShortName">con_finish[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#808000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="group87" type="group">
+      <obj_property name="label">INPUTS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="divider" fp_name="divider86">
+         <obj_property name="label">INPUTS</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#008080</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_VCounter/a_tmp" type="array">
+         <obj_property name="ElementShortName">a_tmp[3:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">a_tmp[3:0][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">6</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_VCounter/b_tmp" type="array">
+         <obj_property name="ElementShortName">b_tmp[3:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">b_tmp[3:0][7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">6</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group88" type="group">
+      <obj_property name="label">OUTPUTS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="divider" fp_name="divider85">
+         <obj_property name="label">OUTPUT (rtl, python)</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#D2691E</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/con_out_c" type="array">
+         <obj_property name="ElementShortName">con_out_c[15:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">con_out_c[15:0][17:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">15</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_VCounter/c_tmp" type="array">
+         <obj_property name="ElementShortName">c_tmp[15:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">c_tmp[15:0][17:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group89" type="group">
+      <obj_property name="label">VM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="divider" fp_name="divider84">
+         <obj_property name="label">vectormatching</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="BkColor">#DCDCDC</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_VCounter/con_out_c" type="array">
+         <obj_property name="ElementShortName">con_out_c[15:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">con_out_c[15:0][17:0]</obj_property>
+         <obj_property name="Reversed">false</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[15]" type="array">
+            <obj_property name="ElementShortName">[15][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[15][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[14]" type="array">
+            <obj_property name="ElementShortName">[14][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[14][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[13]" type="array">
+            <obj_property name="ElementShortName">[13][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[13][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[12]" type="array">
+            <obj_property name="ElementShortName">[12][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[12][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[11]" type="array">
+            <obj_property name="ElementShortName">[11][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[11][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[10]" type="array">
+            <obj_property name="ElementShortName">[10][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[10][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[9]" type="array">
+            <obj_property name="ElementShortName">[9][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[9][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[8]" type="array">
+            <obj_property name="ElementShortName">[8][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[8][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[7]" type="array">
+            <obj_property name="ElementShortName">[7][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[7][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[6]" type="array">
+            <obj_property name="ElementShortName">[6][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[6][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[5]" type="array">
+            <obj_property name="ElementShortName">[5][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[5][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[4]" type="array">
+            <obj_property name="ElementShortName">[4][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[4][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[3]" type="array">
+            <obj_property name="ElementShortName">[3][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[3][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[2]" type="array">
+            <obj_property name="ElementShortName">[2][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[2][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[1]" type="array">
+            <obj_property name="ElementShortName">[1][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[0]" type="array">
+            <obj_property name="ElementShortName">[0][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][17:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[15]" type="array">
+            <obj_property name="ElementShortName">[15][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[15][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[14]" type="array">
+            <obj_property name="ElementShortName">[14][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[14][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[13]" type="array">
+            <obj_property name="ElementShortName">[13][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[13][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[12]" type="array">
+            <obj_property name="ElementShortName">[12][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[12][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[11]" type="array">
+            <obj_property name="ElementShortName">[11][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[11][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[10]" type="array">
+            <obj_property name="ElementShortName">[10][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[10][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[9]" type="array">
+            <obj_property name="ElementShortName">[9][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[9][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[8]" type="array">
+            <obj_property name="ElementShortName">[8][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[8][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[7]" type="array">
+            <obj_property name="ElementShortName">[7][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[7][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[6]" type="array">
+            <obj_property name="ElementShortName">[6][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[6][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[5]" type="array">
+            <obj_property name="ElementShortName">[5][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[5][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[4]" type="array">
+            <obj_property name="ElementShortName">[4][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[4][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[3]" type="array">
+            <obj_property name="ElementShortName">[3][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[3][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[2]" type="array">
+            <obj_property name="ElementShortName">[2][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[2][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[1]" type="array">
+            <obj_property name="ElementShortName">[1][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/con_out_c[0]" type="array">
+            <obj_property name="ElementShortName">[0][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][17:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_top_VCounter/c_tmp" type="array">
+         <obj_property name="ElementShortName">c_tmp[15:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">c_tmp[15:0][17:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[15]" type="array">
+            <obj_property name="ElementShortName">[15][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[15][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[14]" type="array">
+            <obj_property name="ElementShortName">[14][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[14][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[13]" type="array">
+            <obj_property name="ElementShortName">[13][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[13][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[12]" type="array">
+            <obj_property name="ElementShortName">[12][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[12][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[11]" type="array">
+            <obj_property name="ElementShortName">[11][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[11][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[10]" type="array">
+            <obj_property name="ElementShortName">[10][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[10][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[9]" type="array">
+            <obj_property name="ElementShortName">[9][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[9][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[8]" type="array">
+            <obj_property name="ElementShortName">[8][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[8][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[7]" type="array">
+            <obj_property name="ElementShortName">[7][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[7][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[6]" type="array">
+            <obj_property name="ElementShortName">[6][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[6][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[5]" type="array">
+            <obj_property name="ElementShortName">[5][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[5][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[4]" type="array">
+            <obj_property name="ElementShortName">[4][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[4][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[3]" type="array">
+            <obj_property name="ElementShortName">[3][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[3][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[2]" type="array">
+            <obj_property name="ElementShortName">[2][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[2][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[1]" type="array">
+            <obj_property name="ElementShortName">[1][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[0]" type="array">
+            <obj_property name="ElementShortName">[0][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][17:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[15]" type="array">
+            <obj_property name="ElementShortName">[15][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[15][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[14]" type="array">
+            <obj_property name="ElementShortName">[14][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[14][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[13]" type="array">
+            <obj_property name="ElementShortName">[13][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[13][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[12]" type="array">
+            <obj_property name="ElementShortName">[12][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[12][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[11]" type="array">
+            <obj_property name="ElementShortName">[11][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[11][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[10]" type="array">
+            <obj_property name="ElementShortName">[10][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[10][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[9]" type="array">
+            <obj_property name="ElementShortName">[9][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[9][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[8]" type="array">
+            <obj_property name="ElementShortName">[8][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[8][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[7]" type="array">
+            <obj_property name="ElementShortName">[7][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[7][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[6]" type="array">
+            <obj_property name="ElementShortName">[6][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[6][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[5]" type="array">
+            <obj_property name="ElementShortName">[5][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[5][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[4]" type="array">
+            <obj_property name="ElementShortName">[4][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[4][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[3]" type="array">
+            <obj_property name="ElementShortName">[3][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[3][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[2]" type="array">
+            <obj_property name="ElementShortName">[2][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[2][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[1]" type="array">
+            <obj_property name="ElementShortName">[1][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/c_tmp[0]" type="array">
+            <obj_property name="ElementShortName">[0][17:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][17:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_top_VCounter/match" type="array">
+         <obj_property name="ElementShortName">match[15:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">match[15:0][17:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="group1242" type="group">
+         <obj_property name="label">?</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /i_clock" type="logic">
+            <obj_property name="ElementShortName">i_clock</obj_property>
+            <obj_property name="ObjectShortName">i_clock</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /i_a" type="array">
+            <obj_property name="ElementShortName">i_a[7:0]</obj_property>
+            <obj_property name="ObjectShortName">i_a[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /i_b" type="array">
+            <obj_property name="ElementShortName">i_b[7:0]</obj_property>
+            <obj_property name="ObjectShortName">i_b[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /o_a" type="array">
+            <obj_property name="ElementShortName">o_a[7:0]</obj_property>
+            <obj_property name="ObjectShortName">o_a[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /o_b" type="array">
+            <obj_property name="ElementShortName">o_b[7:0]</obj_property>
+            <obj_property name="ObjectShortName">o_b[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /o_c" type="array">
+            <obj_property name="ElementShortName">o_c[17:0]</obj_property>
+            <obj_property name="ObjectShortName">o_c[17:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /o_finish" type="logic">
+            <obj_property name="ElementShortName">o_finish</obj_property>
+            <obj_property name="ObjectShortName">o_finish</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /reg_a" type="array">
+            <obj_property name="ElementShortName">reg_a[7:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_a[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /reg_b" type="array">
+            <obj_property name="ElementShortName">reg_b[7:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_b[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /reg_c" type="array">
+            <obj_property name="ElementShortName">reg_c[17:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_c[17:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /reg_finish" type="logic">
+            <obj_property name="ElementShortName">reg_finish</obj_property>
+            <obj_property name="ObjectShortName">reg_finish</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /counter" type="array">
+            <obj_property name="ElementShortName">counter[2:0]</obj_property>
+            <obj_property name="ObjectShortName">counter[2:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /prod" type="array">
+            <obj_property name="ElementShortName">prod[15:0]</obj_property>
+            <obj_property name="ObjectShortName">prod[15:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /final_prod" type="array">
+            <obj_property name="ElementShortName">final_prod[14:0]</obj_property>
+            <obj_property name="ObjectShortName">final_prod[14:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /COUNTER_LIMIT" type="array">
+            <obj_property name="ElementShortName">COUNTER_LIMIT[31:0]</obj_property>
+            <obj_property name="ObjectShortName">COUNTER_LIMIT[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /DIMENSION" type="array">
+            <obj_property name="ElementShortName">DIMENSION[31:0]</obj_property>
+            <obj_property name="ObjectShortName">DIMENSION[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /I_BITS" type="array">
+            <obj_property name="ElementShortName">I_BITS[31:0]</obj_property>
+            <obj_property name="ObjectShortName">I_BITS[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /O_BITS" type="array">
+            <obj_property name="ElementShortName">O_BITS[31:0]</obj_property>
+            <obj_property name="ObjectShortName">O_BITS[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[0].u_PE00 /COUNTER_BITS" type="array">
+            <obj_property name="ElementShortName">COUNTER_BITS[31:0]</obj_property>
+            <obj_property name="ObjectShortName">COUNTER_BITS[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group1241" type="group">
+         <obj_property name="label">(1,0)</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="divider" fp_name="divider655">
+            <obj_property name="label">ggg</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /i_clock" type="logic">
+            <obj_property name="ElementShortName">i_clock</obj_property>
+            <obj_property name="ObjectShortName">i_clock</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /i_a" type="array">
+            <obj_property name="ElementShortName">i_a[7:0]</obj_property>
+            <obj_property name="ObjectShortName">i_a[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /i_b" type="array">
+            <obj_property name="ElementShortName">i_b[7:0]</obj_property>
+            <obj_property name="ObjectShortName">i_b[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /o_a" type="array">
+            <obj_property name="ElementShortName">o_a[7:0]</obj_property>
+            <obj_property name="ObjectShortName">o_a[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /o_b" type="array">
+            <obj_property name="ElementShortName">o_b[7:0]</obj_property>
+            <obj_property name="ObjectShortName">o_b[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /o_c" type="array">
+            <obj_property name="ElementShortName">o_c[17:0]</obj_property>
+            <obj_property name="ObjectShortName">o_c[17:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /o_finish" type="logic">
+            <obj_property name="ElementShortName">o_finish</obj_property>
+            <obj_property name="ObjectShortName">o_finish</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /reg_a" type="array">
+            <obj_property name="ElementShortName">reg_a[7:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_a[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /reg_b" type="array">
+            <obj_property name="ElementShortName">reg_b[7:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_b[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /reg_c" type="array">
+            <obj_property name="ElementShortName">reg_c[17:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_c[17:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /reg_finish" type="logic">
+            <obj_property name="ElementShortName">reg_finish</obj_property>
+            <obj_property name="ObjectShortName">reg_finish</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /counter" type="array">
+            <obj_property name="ElementShortName">counter[2:0]</obj_property>
+            <obj_property name="ObjectShortName">counter[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /prod" type="array">
+            <obj_property name="ElementShortName">prod[15:0]</obj_property>
+            <obj_property name="ObjectShortName">prod[15:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /final_prod" type="array">
+            <obj_property name="ElementShortName">final_prod[14:0]</obj_property>
+            <obj_property name="ObjectShortName">final_prod[14:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /COUNTER_LIMIT" type="array">
+            <obj_property name="ElementShortName">COUNTER_LIMIT[31:0]</obj_property>
+            <obj_property name="ObjectShortName">COUNTER_LIMIT[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /DIMENSION" type="array">
+            <obj_property name="ElementShortName">DIMENSION[31:0]</obj_property>
+            <obj_property name="ObjectShortName">DIMENSION[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /I_BITS" type="array">
+            <obj_property name="ElementShortName">I_BITS[31:0]</obj_property>
+            <obj_property name="ObjectShortName">I_BITS[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /O_BITS" type="array">
+            <obj_property name="ElementShortName">O_BITS[31:0]</obj_property>
+            <obj_property name="ObjectShortName">O_BITS[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.genblk1[1].u_PE00 /COUNTER_BITS" type="array">
+            <obj_property name="ElementShortName">COUNTER_BITS[31:0]</obj_property>
+            <obj_property name="ObjectShortName">COUNTER_BITS[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /i_clock" type="logic">
+            <obj_property name="ElementShortName">i_clock</obj_property>
+            <obj_property name="ObjectShortName">i_clock</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /i_a" type="array">
+            <obj_property name="ElementShortName">i_a[7:0]</obj_property>
+            <obj_property name="ObjectShortName">i_a[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /i_b" type="array">
+            <obj_property name="ElementShortName">i_b[7:0]</obj_property>
+            <obj_property name="ObjectShortName">i_b[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /o_a" type="array">
+            <obj_property name="ElementShortName">o_a[7:0]</obj_property>
+            <obj_property name="ObjectShortName">o_a[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /o_b" type="array">
+            <obj_property name="ElementShortName">o_b[7:0]</obj_property>
+            <obj_property name="ObjectShortName">o_b[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /o_c" type="array">
+            <obj_property name="ElementShortName">o_c[17:0]</obj_property>
+            <obj_property name="ObjectShortName">o_c[17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /o_finish" type="logic">
+            <obj_property name="ElementShortName">o_finish</obj_property>
+            <obj_property name="ObjectShortName">o_finish</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /reg_a" type="array">
+            <obj_property name="ElementShortName">reg_a[7:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_a[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /reg_b" type="array">
+            <obj_property name="ElementShortName">reg_b[7:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_b[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /reg_c" type="array">
+            <obj_property name="ElementShortName">reg_c[17:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_c[17:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /reg_finish" type="logic">
+            <obj_property name="ElementShortName">reg_finish</obj_property>
+            <obj_property name="ObjectShortName">reg_finish</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /counter" type="array">
+            <obj_property name="ElementShortName">counter[2:0]</obj_property>
+            <obj_property name="ObjectShortName">counter[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /prod" type="array">
+            <obj_property name="ElementShortName">prod[15:0]</obj_property>
+            <obj_property name="ObjectShortName">prod[15:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /final_prod" type="array">
+            <obj_property name="ElementShortName">final_prod[14:0]</obj_property>
+            <obj_property name="ObjectShortName">final_prod[14:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /COUNTER_LIMIT" type="array">
+            <obj_property name="ElementShortName">COUNTER_LIMIT[31:0]</obj_property>
+            <obj_property name="ObjectShortName">COUNTER_LIMIT[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /DIMENSION" type="array">
+            <obj_property name="ElementShortName">DIMENSION[31:0]</obj_property>
+            <obj_property name="ObjectShortName">DIMENSION[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /I_BITS" type="array">
+            <obj_property name="ElementShortName">I_BITS[31:0]</obj_property>
+            <obj_property name="ObjectShortName">I_BITS[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /O_BITS" type="array">
+            <obj_property name="ElementShortName">O_BITS[31:0]</obj_property>
+            <obj_property name="ObjectShortName">O_BITS[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /COUNTER_BITS" type="array">
+            <obj_property name="ElementShortName">COUNTER_BITS[31:0]</obj_property>
+            <obj_property name="ObjectShortName">COUNTER_BITS[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group1283" type="group">
+         <obj_property name="label">(0,0)</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /i_clock" type="logic">
+            <obj_property name="ElementShortName">i_clock</obj_property>
+            <obj_property name="ObjectShortName">i_clock</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /i_a" type="array">
+            <obj_property name="ElementShortName">i_a[7:0]</obj_property>
+            <obj_property name="ObjectShortName">i_a[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /i_b" type="array">
+            <obj_property name="ElementShortName">i_b[7:0]</obj_property>
+            <obj_property name="ObjectShortName">i_b[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /o_a" type="array">
+            <obj_property name="ElementShortName">o_a[7:0]</obj_property>
+            <obj_property name="ObjectShortName">o_a[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /o_b" type="array">
+            <obj_property name="ElementShortName">o_b[7:0]</obj_property>
+            <obj_property name="ObjectShortName">o_b[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /o_c" type="array">
+            <obj_property name="ElementShortName">o_c[17:0]</obj_property>
+            <obj_property name="ObjectShortName">o_c[17:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /o_finish" type="logic">
+            <obj_property name="ElementShortName">o_finish</obj_property>
+            <obj_property name="ObjectShortName">o_finish</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /reg_a" type="array">
+            <obj_property name="ElementShortName">reg_a[7:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_a[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /reg_b" type="array">
+            <obj_property name="ElementShortName">reg_b[7:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_b[7:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /reg_c" type="array">
+            <obj_property name="ElementShortName">reg_c[17:0]</obj_property>
+            <obj_property name="ObjectShortName">reg_c[17:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /reg_finish" type="logic">
+            <obj_property name="ElementShortName">reg_finish</obj_property>
+            <obj_property name="ObjectShortName">reg_finish</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /counter" type="array">
+            <obj_property name="ElementShortName">counter[2:0]</obj_property>
+            <obj_property name="ObjectShortName">counter[2:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /prod" type="array">
+            <obj_property name="ElementShortName">prod[15:0]</obj_property>
+            <obj_property name="ObjectShortName">prod[15:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /final_prod" type="array">
+            <obj_property name="ElementShortName">final_prod[14:0]</obj_property>
+            <obj_property name="ObjectShortName">final_prod[14:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /COUNTER_LIMIT" type="array">
+            <obj_property name="ElementShortName">COUNTER_LIMIT[31:0]</obj_property>
+            <obj_property name="ObjectShortName">COUNTER_LIMIT[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /DIMENSION" type="array">
+            <obj_property name="ElementShortName">DIMENSION[31:0]</obj_property>
+            <obj_property name="ObjectShortName">DIMENSION[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /I_BITS" type="array">
+            <obj_property name="ElementShortName">I_BITS[31:0]</obj_property>
+            <obj_property name="ObjectShortName">I_BITS[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /O_BITS" type="array">
+            <obj_property name="ElementShortName">O_BITS[31:0]</obj_property>
+            <obj_property name="ObjectShortName">O_BITS[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_top_VCounter/u_systolic_processorVCounter/\genblk1[0].genblk1.u_PE0 /COUNTER_BITS" type="array">
+            <obj_property name="ElementShortName">COUNTER_BITS[31:0]</obj_property>
+            <obj_property name="ObjectShortName">COUNTER_BITS[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>
