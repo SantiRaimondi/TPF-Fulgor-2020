@@ -44,7 +44,7 @@ def InputGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, round
     
 ####### CUANTIZACION, NORMALIZACION Y LOGUEO DE ENTRADAS EN ARCHIVOS DE TEXTO ######################
 
-    for ptr in range(3):          # SE LOGUEAN CEROS Y UNOS AL COMIENZO DE LOS .txt DE LAS ENTRADAS
+    for ptr in range(N-1):          # SE LOGUEAN CEROS Y UNOS AL COMIENZO DE LOS .txt DE LAS ENTRADAS
         for x in range(N):
             if(x < N-1):
                 file0_fixed.write('%d\t'%(0))
