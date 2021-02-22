@@ -16,6 +16,7 @@ module PE_VCounter
 (
     input i_clock,
     //input i_reset,
+    input [2:0] rf_matrix_size, //GPIO, Entrada desde el micro para controlar cantidad de enteros y fraccionales de la salida
     input i_a_reset,
     input i_b_reset,
     input signed [I_BITS-1:0] i_a,
@@ -24,7 +25,7 @@ module PE_VCounter
     output o_b_reset,
     output [I_BITS-1:0] o_a,
     output [I_BITS-1:0] o_b,
-    output [O_BITS-1:0] o_c,
+    output [15:0] o_c, //Salida de cantidad de bits fija
     output o_finish
 );
 
@@ -41,6 +42,7 @@ wire signed [(I_BITS*2)-1:0] prod;
 wire signed [(I_BITS-1)*2:0] final_prod;
 wire internal_reset;
 reg reg_reset;
+wire signed [15:0] wire_o_c;
 
 //Funcionamiento
 assign internal_reset = i_a_reset | i_b_reset;
@@ -49,6 +51,7 @@ assign prod = i_a*i_b;
 //*************************************************************************
 assign final_prod = {prod[(I_BITS*2)-1] , prod[((I_BITS - 1) * 2)-1 :0]};  //CAMBIO PARA ALINEAR LA COMA  1 BIT PARA SIGNO, RESTO FRACCIONALES
 //                 / Replica el signo  // Toma todos los decimales de la mult/
+
 //*************************************************************************
 always @(posedge i_clock) begin
     reg_reset <= internal_reset;
@@ -90,9 +93,26 @@ begin
         reg_finish = 1'b1;
 end
 
+always@(*) //Los bits del acumulador se recortan para matchear el tamano de la salida y se redondea el LSB utilizado
+begin
+    case(rf_matrix_size)
+        0:
+        wire_o_c = reg_c[15:0];
+        1:
+        wire_o_c = reg_c[16:1] + reg_c[0];
+        2:
+        wire_o_c = reg_c[17:2] + reg_c[1];
+        3:
+        wire_o_c = reg_c[18:3] + reg_c[2];
+        4:
+        wire_o_c = reg_c[19:4] + reg_c[3];
+        default:
+    endcase
+end
+
 assign o_a=reg_a;
 assign o_b=reg_b;
-assign o_c=reg_c;
+assign o_c=wire_o_c;
 assign o_finish=reg_finish;
 assign o_a_reset=reg_reset;
 assign o_b_reset=reg_reset;
