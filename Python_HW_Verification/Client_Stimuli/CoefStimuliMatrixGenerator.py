@@ -3,8 +3,7 @@
 
 # In[ ]:
 
-
-def CoefInputMatrixGenerator(N,N_matrix_mult):
+def CoefStimuliMatGen(N,N_matrix_mult):
     
     import numpy as np
 
@@ -105,7 +104,7 @@ def CoefInputMatrixGenerator(N,N_matrix_mult):
         for d in range(len(postmult_B[h])):
             postmult_B[h][d] = np.flip(postmult_B[h][d])
     
-    premult_A = np.asarray(premult_A) #Se prepara el formato para ingreso a la funcion InputGenerator()
+    premult_A = np.asarray(premult_A) #Se prepara el formato para ingreso a la funcion StimuliGenerator()
     postmult_B = np.asarray(postmult_B)
 
 #    premult_A = np.flip(premult_A)
@@ -118,5 +117,7 @@ def CoefInputMatrixGenerator(N,N_matrix_mult):
 #    print('len(postmult_B) = ',len(postmult_B[0]))
 #    print('\n postmult_B: \n',postmult_B)
     
-    return (premult_A,postmult_B)  #Las salidas son entrada de la funcion InputGenerator()
+    return (premult_A,postmult_B)  #Las salidas son entrada de la funcion StimuliGenerator()
 
+
+# %%
