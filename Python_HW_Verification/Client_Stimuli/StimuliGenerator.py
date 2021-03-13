@@ -8,7 +8,7 @@ def StimuliGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, rou
     PORT = 7
     FORMAT = 'utf-8'
     DISCONNECT_MESSAGE = "!DISCONNECT"
-    SERVER = "192.168.0.206" #IP del server al que me quiero conectar
+    SERVER = "" #IP del server al que me quiero conectar
     ADDR = (SERVER, PORT)
 
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -16,7 +16,7 @@ def StimuliGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, rou
 
     def send_to_server(msg):
         #message = msg.encode(FORMAT)
-        message = bytearray(msg, FORMAT)
+        message = bytearray(str(msg),FORMAT)
         #msg_length = len(message)
         #send_length = str(msg_length).encode(FORMAT)
         #send_length += b' ' * (HEADER - len(send_length)) #Se hace padding agregando caracteres blancos, cantidad: 64-len
@@ -26,10 +26,31 @@ def StimuliGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, rou
 
     N = len(premult_A)
     M = N
-    
+
     N_matrix_mult = len(postmult_B)//len(premult_A)
 #    print('N_matrix_mult: ',N_matrix_mult)
+
+
+#### SE DEFINEN LAS VARIABLES PARA ARMAR LA TRAMA ######################
+
+    trama_completa = [] # (17085) 10101010_00010000__00XX0X0X_00XX0X0X__PAYLOAD_BYTES_01010101 
+
+    cabecera = 170
+    rf_matrix_size = N
+
+    datalength = (bin(N*N_matrix_mult + N - 1)[2:]).zfill(16)
+    datalength_low = int(datalength[8:16],2)
+    datalength_high = int(datalength[0:8],2)
     
+    finaltrama = 85
+
+    trama_completa.append((cabecera).to_bytes(1,byteorder='big'))
+    trama_completa.append((rf_matrix_size).to_bytes(1,byteorder='big'))
+    trama_completa.append((datalength_low).to_bytes(1,byteorder='big'))
+    trama_completa.append((datalength_high).to_bytes(1,byteorder='big'))
+    
+########################################################################
+
     premult_A_stream   = np.zeros((N, (N_matrix_mult*M + M -1)), dtype = float)
     postmult_B_stream  = np.zeros(((N_matrix_mult*N + N -1, M)), dtype = float)
     
@@ -54,13 +75,10 @@ def StimuliGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, rou
     premult_A_stream = np.flip(premult_A_stream, axis=1)
     postmult_B_stream = np.flip(postmult_B_stream.T, axis=1)
     
-    print('LEN(premult_A_stream):\n',len(premult_A_stream))
-    print('LEN(postmult_B_stream):\n',len(postmult_B_stream))    
+#    print('LEN(premult_A_stream):\n',len(premult_A_stream))
+#    print('LEN(postmult_B_stream):\n',len(postmult_B_stream))    
     
 ####### CUANTIZACION, NORMALIZACION Y TRANSMISIÓN DE DATOS ######################
-
-#    for ptr in range(N-1):          # PARA POSIBILIDAD DE AGREGAR CEROS DE LATENCIA AL COMIENZO
-#        for x in range(N):
 
     for line in range(len(premult_A_stream[0])):
 
@@ -70,21 +88,27 @@ def StimuliGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, rou
         b_float_norm = postmult_B_stream[:,line] / rango                         # SE NORMALIZA ENTRE -1 Y +0.99...
         b_fix = fInt.arrayFixedInt(NB,NB_F,b_float_norm,'S',roundMode,saturateMode) 
 
-        print('line: \n', line)
-        print('premult_A_stream[:,line]: \n', premult_A_stream[:,line])
-        print('postmult_B_stream[:,line]: \n', premult_A_stream[:,line])
+#        print('line: \n', line)
+#        print('premult_A_stream[:,line]: \n', premult_A_stream[:,line])
+#        print('postmult_B_stream[:,line]: \n', premult_A_stream[:,line])
 
-        for element in range(len(premult_A_stream)):
+        for element in range(N):
             
-            send_to_server(str(a_fix[element].intvalue))                # PARA PUNTO FIJO
-#            send_to_server(str(premult_A_stream[:,line][element]))       # PARA PUNTO FLOTANTE
+            int_a_element = a_fix[element].intvalue
+            trama_completa.append((int_a_element).to_bytes(1,byteorder='big'))                           # PARA PUNTO FIJO
+#            premult_A_stream[:,line][element]       # PARA PUNTO FLOTANTE
 
-        for element in range(len(postmult_B_stream)):
+        for element in range(N):
 
-            send_to_server(str(b_fix[element].intvalue))                # PARA PUNTO FIJO
-#            send_to_server(str(postmult_B_stream[:,row][element]))      # PARA PUNTO FLOTANTE
+            int_b_element = b_fix[element].intvalue
+            trama_completa.append((int_b_element).to_bytes(1,byteorder='big'))                           # PARA PUNTO FIJO
+#            postmult_B_stream[:,row][element]      # PARA PUNTO FLOTANTE
 
-#    for ptr in range(30):        # PARA POSIBILIDAD DE TRANSMITIR CEROS AL FINAL
-#        for x in range(N):
 
-    send_to_server(DISCONNECT_MESSAGE)
+    trama_completa.append((finaltrama).to_bytes(1,byteorder='big'))
+
+#    for byte in range(len(trama_completa)):
+#        trama_completa[byte] = str(trama_completa[byte])
+
+#    print(trama_completa)
+    send_to_server(trama_completa)

@@ -1,31 +1,38 @@
 import socket
 import threading
+import time
 
-HEADER = 64
+HEADER = 170
 PORT = 7
 #SERVER = "172.16.0.91" #Kintex 68A
 SERVER = socket.gethostbyname(socket.gethostname()) #Esta linea averigua la IP privada de este dispositivo
 ADDR = (SERVER,PORT)
 FORMAT = 'utf-8'
-DISCONNECT_MESSAGE = "!DISCONNECT"
+DISCONNECT_MESSAGE = str(b'\x85')
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(ADDR)
 
 def handle_client(conn, addr):
     print(f"[NEW CONNECTION] {addr} connected")
-
+    i=0
     connected = True
     while connected:
-        msg_length = conn.recv(HEADER).decode(FORMAT)
-        if msg_length:
-            msg_length = int(msg_length)
-            msg = conn.recv(msg_length).decode(FORMAT)
-            if msg == DISCONNECT_MESSAGE:
-                connected = False
+#        msg_length = conn.recv(HEADER).decode(FORMAT)
 
-            print(f"[{addr}] {msg}")
-            conn.send("Message received".encode(FORMAT))
+#        if msg_length:
+#            msg_length = int(msg_length)
+        msg = conn.recv(HEADER).decode(FORMAT)
+
+        if msg == DISCONNECT_MESSAGE:
+            connected = False
+        i = i+1
+        
+        if i>1200:
+            connected = False
+
+        print(f"[{addr}] {msg}")                  # (f"[{addr}] {msg}")
+#        conn.send("Message received".encode(FORMAT))
 
     conn.close()
 

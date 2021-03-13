@@ -31,8 +31,8 @@ def PlataformaVerificacion():
 ########### PARAMETRIZACION AUTOMATICA ###############
     
     ########## ENTRADAS  ############
-    N = 32
-    N_matrix_mult = 10
+    N = 3
+    N_matrix_mult = 2
     
     Input_Data_Type = 'fixed'
     rango = 255

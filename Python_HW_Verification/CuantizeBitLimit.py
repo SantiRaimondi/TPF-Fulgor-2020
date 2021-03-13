@@ -47,8 +47,9 @@ def CuanBitLimitFunction(C_w,n,NB_OUT_FULL,NB_OUT_F_FULL):
             i = i+1
             if(i>16):
                 break 
-            for x in range(16-len(C_w_bits)):
-                C_w_bits = C_w_bits + "0"
+            if(len(C_w_bits) <= 16):
+                for x in range(16-len(C_w_bits)):
+                    C_w_bits = C_w_bits + "0"
 
 #                print("\n ROUNDED: C_w_bits",C_w_bits, "\n")   0001_1010_1110_1011
 
