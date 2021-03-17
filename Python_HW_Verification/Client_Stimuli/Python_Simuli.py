@@ -31,8 +31,8 @@ def PlataformaVerificacion():
 ########### PARAMETRIZACION AUTOMATICA ###############
     
     ########## ENTRADAS  ############
-    N = 3
-    N_matrix_mult = 2
+    N = 22
+    N_matrix_mult = 1
     
     Input_Data_Type = 'fixed'
     rango = 255
@@ -40,8 +40,6 @@ def PlataformaVerificacion():
     NB_F = 7
     roundMode = 'round'
     saturateMode = 'saturate'
-    
-    latencia = N
     
 ######################################################################
 ######## COMIENZA CONCATENACION DE FUNCIONES #########################
