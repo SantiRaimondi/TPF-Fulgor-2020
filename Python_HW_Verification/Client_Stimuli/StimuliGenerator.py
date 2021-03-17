@@ -8,7 +8,7 @@ def StimuliGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, rou
     PORT = 7
     FORMAT = 'utf-8'
     DISCONNECT_MESSAGE = "!DISCONNECT"
-    SERVER = "172.16.0.91" #IP del server al que me quiero conectar
+    SERVER = "127.0.1.1" #IP del server al que me quiero conectar
     ADDR = (SERVER, PORT)
 
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -16,7 +16,7 @@ def StimuliGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, rou
 
     def send_to_server(msg):
         #message = msg.encode(FORMAT)
-        message = bytearray(msg)
+        message = bytearray(str(msg),FORMAT)
         #msg_length = len(message)
         #send_length = str(msg_length).encode(FORMAT)
         #send_length += b' ' * (HEADER - len(send_length)) #Se hace padding agregando caracteres blancos, cantidad: 64-len
@@ -68,6 +68,23 @@ def StimuliGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, rou
     print("postmult_B_stream",postmult_B_stream)
     print("len de premult_B_stream",len(postmult_B_stream))
     print("len de premult_B_stream[0]",len(postmult_B_stream[0]))
+
+    cabecera = 170 #0xAA
+
+    rf_matrix_size = N #int(((bin(N))[2:]).zfill(8),2)
+
+    datalength = (bin(2*len(premult_A_stream)*len(premult_A_stream[0]))[2:]).zfill(16)
+    print("datalength,decimal : ",2*len(premult_A_stream)*len(premult_A_stream[0]))
+    print("datalength,binario : ",datalength)
+    datalength_low = int(datalength[8:16],2)
+    datalength_high = int(datalength[0:8],2)
+
+    finaltrama = 85
+
+    trama_completa.append(cabecera)  # b'//x03'
+    trama_completa.append(rf_matrix_size)
+    trama_completa.append(datalength_low)
+    trama_completa.append(datalength_high)
     
 
 ####### CUANTIZACION, NORMALIZACION Y TRANSMISIÓN DE DATOS ######################
@@ -97,36 +114,24 @@ def StimuliGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, rou
 #            postmult_B_stream[:,row][element]      # PARA PUNTO FLOTANTE
 
 
-
-    cabecera = 170 #0xAA
-
-    rf_matrix_size = N #int(((bin(N))[2:]).zfill(8),2)
-
-    datalength = (bin(2*len(premult_A_stream)*len(premult_A_stream[0]))[2:]).zfill(16)
-    print("datalength,decimal : ",2*len(premult_A_stream)*len(premult_A_stream[0]))
-    print("datalength,binario : ",datalength)
-    datalength_low = int(datalength[8:16],2)
-    datalength_high = int(datalength[0:8],2)
-
-    finaltrama = 85
-
-    trama_completa.append(cabecera)  # b'//x03'
-    trama_completa.append(rf_matrix_size)
-    trama_completa.append(datalength_low)
-    trama_completa.append(datalength_high)
-
     trama_completa.append(finaltrama)
 
-#    for byte in range(len(trama_completa)):
-#        trama_completa[byte] = str(trama_completa[byte])
+    send_to_server(trama_completa)
 
-    print(trama_completa)
+    separador = []
+
+    for symbol in range(1024):
+        separador.append(hex(255))
+
+    send_to_server(separador)
 
     count = 0
-    for x in range(len(trama_completa)):
+    for byte in range(len(trama_completa)):
+        trama_completa[byte] = hex(trama_completa[byte])
         count += 1
 
+    print(trama_completa)
     print("count : ",count)
 
 
-#    send_to_server(trama_completa)
+    send_to_server(trama_completa)
