@@ -1,4 +1,4 @@
-def StimuliGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, roundMode, saturateMode):
+def StimuliGenerator(Input_Data_Type,byte_to_byte,rango, premult_A, postmult_B, NB, NB_F, roundMode, saturateMode):
     import numpy as np
     import _fixedInt as fInt
     import socket
@@ -31,8 +31,8 @@ def StimuliGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, rou
     print("N_matrix_mult : ",N_matrix_mult)
 
 
-#### SE DEFINEN LAS VARIABLES PARA ARMAR LA TRAMA ######################
-
+#### SE DEFINEN LAS VARIABLES PARA ARMAR LA TRAMA ####################
+#  
     trama_completa = [] # (17085) 10101010_00010000__00XX0X0X_00XX0X0X__PAYLOAD_BYTES_01010101 
     
 ########################################################################
@@ -74,8 +74,8 @@ def StimuliGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, rou
     rf_matrix_size = N #int(((bin(N))[2:]).zfill(8),2)
 
     datalength = (bin(2*len(premult_A_stream)*len(premult_A_stream[0]))[2:]).zfill(16)
-    print("datalength,decimal : ",2*len(premult_A_stream)*len(premult_A_stream[0]))
-    print("datalength,binario : ",datalength)
+    print("payload datalength,decimal : ",2*len(premult_A_stream)*len(premult_A_stream[0]))
+    print("payload datalength,binario : ",datalength)
     datalength_low = int(datalength[8:16],2)
     datalength_high = int(datalength[0:8],2)
 
@@ -101,17 +101,30 @@ def StimuliGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, rou
 #        print('premult_A_stream[:,line]: \n', premult_A_stream[:,line])
 #        print('postmult_B_stream[:,line]: \n', premult_A_stream[:,line])
 
-        for element in range(N):
-            
-            int_a_element = a_fix[element].intvalue
-            trama_completa.append(int_a_element)                           # PARA PUNTO FIJO
-#            premult_A_stream[:,line][element]       # PARA PUNTO FLOTANTE
+        if(byte_to_byte == True): # Intercala bytes de columnas de A con bytes de filas de B
 
-        for element in range(N):
+            for element in range(N):
 
-            int_b_element = b_fix[element].intvalue
-            trama_completa.append(int_b_element)                           # PARA PUNTO FIJO
-#            postmult_B_stream[:,row][element]      # PARA PUNTO FLOTANTE
+                int_element = a_fix[element].intvalue
+
+                trama_completa.append(int_element)
+
+                int_element = b_fix[element].intvalue
+
+                trama_completa.append(int_element)
+
+        else: # Intercala columnas de A con filas de B
+            for element in range(N):
+                
+                int_a_element = a_fix[element].intvalue
+                trama_completa.append(int_a_element)                           # PARA PUNTO FIJO
+    #            premult_A_stream[:,line][element]       # PARA PUNTO FLOTANTE
+
+            for element in range(N):
+
+                int_b_element = b_fix[element].intvalue
+                trama_completa.append(int_b_element)                           # PARA PUNTO FIJO
+    #            postmult_B_stream[:,row][element]      # PARA PUNTO FLOTANTE
 
 
     trama_completa.append(finaltrama)
@@ -123,15 +136,15 @@ def StimuliGenerator(Input_Data_Type,rango, premult_A, postmult_B, NB, NB_F, rou
     for symbol in range(1024):
         separador.append(hex(255))
 
-    send_to_server(separador)
+#    send_to_server(separador)
 
     count = 0
     for byte in range(len(trama_completa)):
         trama_completa[byte] = hex(trama_completa[byte])
         count += 1
 
-    print(trama_completa)
-    print("count : ",count)
+#    print(trama_completa)
+    print("total byte count : ",count)
 
 
-    send_to_server(trama_completa)
+#    send_to_server(trama_completa)
