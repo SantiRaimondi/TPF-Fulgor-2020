@@ -13,6 +13,7 @@ module tb_top_VCounter();
     
 
     //wire [16*18-1:0] o_c  ;
+    reg                   i_valid  ;
     reg                   i_reset  ;
     reg                   clock    ;
     reg [(I_BITS*DIMENSION)-1:0] i_a;
@@ -45,7 +46,8 @@ module tb_top_VCounter();
     //DESCOMENTAR CUANDO SE VEA UN *VM*
 
    initial begin
-      #10 res=3'b100;
+      #10 res=3'b100;//rf_matrix_size
+      i_valid = 1'b1;
       //C:/Users/Usuario/Desktop/Nuevaeta/TestSystolic_FP/reset4.out
       
       fid_reset  = $fopen("C:/Users/Usuario/Desktop/r32.out","r");
@@ -113,6 +115,7 @@ module tb_top_VCounter();
        )
    u_systolic_processorVCounter
      (
+        .i_valid(i_valid),
         .i_clock(clock),
         .i_reset(i_reset),
         .i_a_full(i_a),

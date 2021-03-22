@@ -6,6 +6,7 @@ module systolic_processorVCounter
 )
 (
     //input [O_BITS-1:0] i_testsalidas [(SIZE*SIZE)-1:0],
+    input i_valid,
     input i_clock,
     input i_reset,
     input [SIZE*I_BITS-1:0] i_a_full,
@@ -69,6 +70,7 @@ generate
             )
             u_PE0
             (
+                .i_valid(i_valid),
                 .i_clock(i_clock),
                 .rf_matrix_size(XYZ),
                 .i_a(i_a[0]),
@@ -93,6 +95,7 @@ generate
                 )
                 u_PE00
                 (
+                    .i_valid(i_valid),
                     .i_clock(i_clock),
                     .rf_matrix_size(XYZ),
                     .i_a(i_a[i+j+1]),
@@ -119,6 +122,7 @@ generate
             )
             u_PE1
             (
+                .i_valid(i_valid),
                 .i_clock(i_clock),
                 .rf_matrix_size(XYZ),
                 .i_a(con_hor[(i-1)*SIZE+0]),
@@ -143,6 +147,7 @@ generate
                 )
                 u_PE2
                 (
+                    .i_valid(i_valid),
                     .i_clock(i_clock),
                     .rf_matrix_size(XYZ),
                     .i_a(con_hor[(i-1)*SIZE+j+1]),

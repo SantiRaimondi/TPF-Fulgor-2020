@@ -14,6 +14,7 @@ module PE_VCounter_FP
 
 //En los fraccionales para sumar al acumulador quedarian ((I_BITS - 1) * 2) debido a que primero se multiplican las entradas aumentando asi su cantidad de bits fraccionales.
 (
+    input i_valid,
     input i_clock,
     //input i_reset,
     input [2:0] rf_matrix_size, //GPIO, Entrada desde el micro para controlar cantidad de enteros y fraccionales de la salida
@@ -55,36 +56,46 @@ assign prod = i_a*i_b;
 assign final_prod = {prod[(I_BITS*2)-1] , prod[((I_BITS - 1) * 2)-1 :0]};  //CAMBIO PARA ALINEAR LA COMA  1 BIT PARA SIGNO, RESTO FRACCIONALES
 //                 / Replica el signo  // Toma todos los decimales de la mult/
 //*************************************************************************
-always @(posedge i_clock) begin
-    reg_reset <= internal_reset;
+
+always @(posedge i_clock) 
+begin
+    if(i_valid)
+    begin
+        reg_reset <= internal_reset;
+    end
 end
+
 always@(posedge i_clock )
 begin
-    if(internal_reset)
+    if(i_valid)
     begin
-        reg_a <= {I_BITS{1'b0}};
-        reg_b <= {I_BITS{1'b0}};
-        reg_c <= {O_BITS{1'b0}};
-        counter <= {COUNTER_BITS{1'b0}}; 
-    end
+        if(internal_reset)
+        begin
+            reg_a <= {I_BITS{1'b0}};
+            reg_b <= {I_BITS{1'b0}};
+            reg_c <= {O_BITS{1'b0}};
+            counter <= {COUNTER_BITS{1'b0}}; 
+        end
 
-    else
-    begin
-        if(counter < DIMENSION) 
-            begin
-                reg_a <= i_a;
-                reg_b <= i_b;
-                reg_c <= prod + reg_c; //SI QUIERO USAR FULL RESOLUTION DEJO prod, SI QUIERO OPTIMIZAR USO final_prod
-                counter <= counter + 1;
-            end
-        else //ACA DEBERIAMOS BLOQUEAR POR UN DETERMINADO TIEMPO PARA PODER EXTRAER EL DATO HACIA LA FIFO
-            begin //para que funcione con mas matrices y no se autobloquee la celda
-                reg_a <= i_a;
-                reg_b <= i_b;
-                reg_c <= prod; //se sobreescribe reg_c
-                counter <= 1; // reseteo counter a 1 ya que la primer suma de la matriz entrante se hace cuando (counter = DIMENSION)
-            end
+        else
+        begin
+            if(counter < DIMENSION) 
+                begin
+                    reg_a <= i_a;
+                    reg_b <= i_b;
+                    reg_c <= prod + reg_c; //SI QUIERO USAR FULL RESOLUTION DEJO prod, SI QUIERO OPTIMIZAR USO final_prod
+                    counter <= counter + 1;
+                end
+            else //ACA DEBERIAMOS BLOQUEAR POR UN DETERMINADO TIEMPO PARA PODER EXTRAER EL DATO HACIA LA FIFO
+                begin //para que funcione con mas matrices y no se autobloquee la celda
+                    reg_a <= i_a;
+                    reg_b <= i_b;
+                    reg_c <= prod; //se sobreescribe reg_c
+                    counter <= 1; // reseteo counter a 1 ya que la primer suma de la matriz entrante se hace cuando (counter = DIMENSION)
+                end
+        end
     end
+    
 end
 
 always@(*)
