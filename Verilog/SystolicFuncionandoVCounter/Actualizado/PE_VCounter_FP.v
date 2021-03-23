@@ -45,8 +45,8 @@ wire signed [(I_BITS-1)*2:0] final_prod;
 wire internal_reset;
 reg reg_reset;
 reg signed [15:0] wire_o_c;
-wire signed [1:0] wire_reg_c; // hacer con las demas
-wire signed [15:0] wire_reg_cc; //
+wire signed [1:0] wire_reg_c [4:0]; // 
+wire signed [15:0] wire_reg_cc [4:0]; //
 
 //Funcionamiento
 assign internal_reset = i_a_reset | i_b_reset;
@@ -106,23 +106,33 @@ begin
         reg_finish = 1'b1;
 end
 
-assign wire_reg_c = {1'b0,reg_c[4]}; //hacer con todas
-assign wire_reg_cc = reg_c[20:5];
+
+assign wire_reg_c[0] = {1'b0,reg_c[0]}; 
+assign wire_reg_c[1] = {1'b0,reg_c[1]}; 
+assign wire_reg_c[2] = {1'b0,reg_c[2]}; 
+assign wire_reg_c[3] = {1'b0,reg_c[3]}; 
+assign wire_reg_c[4] = {1'b0,reg_c[4]}; 
+
+assign wire_reg_cc[0] = reg_c[16:1];
+assign wire_reg_cc[1] = reg_c[17:2];
+assign wire_reg_cc[2] = reg_c[18:3];
+assign wire_reg_cc[3] = reg_c[19:4];
+assign wire_reg_cc[4] = reg_c[20:5];
+
 always@(*) //Los bits del acumulador se recortan para matchear el tamano de la salida y se redondea el LSB utilizado
 begin
     case(rf_matrix_size)
         0:
-        wire_o_c = reg_c[15:0];
+        wire_o_c = wire_reg_cc[0] + wire_reg_c[0];
         1:
-        wire_o_c = reg_c[17:1] + reg_c[0];
+        wire_o_c = wire_reg_cc[1] + wire_reg_c[1];
         2:
-        wire_o_c = reg_c[17:2] + reg_c[1];
+        wire_o_c = wire_reg_cc[2] + wire_reg_c[2];
         3:
-        wire_o_c = reg_c[18:3] + reg_c[2];
+        wire_o_c = wire_reg_cc[3] + wire_reg_c[3];
         4:
-        wire_o_c = wire_reg_cc + wire_reg_c; // se castea a signadas
-        default:
-        wire_o_c = reg_c[19:4] + reg_c[3];
+        wire_o_c = wire_reg_cc[4] + wire_reg_c[4];
+        //default:
     endcase
 end
 
