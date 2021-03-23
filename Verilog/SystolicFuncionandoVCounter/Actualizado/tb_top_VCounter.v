@@ -1,5 +1,5 @@
 //`define COUNTER_LIMIT 0
-`define DIMENSION 32
+`define DIMENSION 4
 `define I_BITS 8
 //`define O_BITS = (I_BITS*2) + $clog2(DIMENSION)
 `timescale 1ns/100ps
@@ -46,21 +46,21 @@ module tb_top_VCounter();
     //DESCOMENTAR CUANDO SE VEA UN *VM*
 
    initial begin
-      #10 res=3'b100;//rf_matrix_size
+      #10 res = $clog2(DIMENSION) //3'b100;//rf_matrix_size
       i_valid = 1'b1;
       //C:/Users/Usuario/Desktop/Nuevaeta/TestSystolic_FP/reset4.out
       
-      fid_reset  = $fopen("/home/mathrisk/Desktop/TB_Files/r32.out","r");
+      fid_reset  = $fopen("/home/mathrisk/Desktop/REPOS/TPF-Fulgor-2020/Python_HW_Verification/reset_stream.out","r");
 	   if(fid_reset==0) $stop;
    
-      fid_a  = $fopen("/home/mathrisk/Desktop/TB_Files/a32.out","r");
+      fid_a  = $fopen("/home/mathrisk/Desktop/REPOS/TPF-Fulgor-2020/Python_HW_Verification/premult_A_stream_fixed.out","r");
 	   if(fid_a==0) $stop;
 
-      fid_b  = $fopen("/home/mathrisk/Desktop/TB_Files/b32.out","r");
+      fid_b  = $fopen("/home/mathrisk/Desktop/REPOS/TPF-Fulgor-2020/Python_HW_Verification/postmult_B_stream_fixed.out","r");
 	   if(fid_b==0) $stop;
 
       //*VM* necesario
-      fid_c  = $fopen("/home/mathrisk/Desktop/TB_Files/c32.out","r");
+      fid_c  = $fopen("/home/mathrisk/Desktop/REPOS/TPF-Fulgor-2020/Python_HW_Verification/vector_matching_fixed.out","r");
 	   if(fid_b==0) $stop;
 
       clock    = 1'b0  ;
