@@ -1,18 +1,15 @@
-def CounterGenSysMult2(A,B,latencia,rango,NB_OUT_LIM,NB_OUT_F_LIM,NB_OUT_FULL,NB_OUT_F_FULL): # A Y B MATRICES
+def CounterGenSysMult2(A,B,latencia,rango,NB_OUT,NB_OUT_F): # A Y B MATRICES
 
     import numpy as np
     import math
     import _fixedInt as fInt
-    import CuantizeBitLimit as cuanbitlim
 
     n = len(A)  ## Numero de filas en matriz A o de columnas en matriz B.
     print('LONGITUD DE A : ',n)
     N_clocks = (len(A[0]))  ## Ciclos necesarios para obtener el valor final de la celda P44
     
 ######################################################################################
-    verilog_eq_int = 0
-    C_w_bits = ""
-
+    
     vector_matching_fixed = open("vector_matching_fixed.out","w")
     vector_matching_float = open("vector_matching_float.out","w")
     
@@ -72,7 +69,7 @@ def CounterGenSysMult2(A,B,latencia,rango,NB_OUT_LIM,NB_OUT_F_LIM,NB_OUT_FULL,NB
                             result_logged = 1
                             
                             
-#            print('\n result_logged = ',result_logged,'\n')
+            print('\n result_logged = ',result_logged,'\n')
             
             result_logged = 0  # En cada clock se reinicia esta variable en 0
             
@@ -96,7 +93,7 @@ def CounterGenSysMult2(A,B,latencia,rango,NB_OUT_LIM,NB_OUT_F_LIM,NB_OUT_FULL,NB
 
                 current_mat += 1   ## Se aumenta el indice que afecta al logueo de resultados en result_list
             
-#            print('\n CURRENT MAT = ',current_mat,'\n')
+            print('\n CURRENT MAT = ',current_mat,'\n')
             
             
 ######### SE DESPLAZAN VARIABLES Y REALIZAN LAS OPERACIONES DE MULTIPLICACION Y ACUMULACION #########
@@ -108,39 +105,39 @@ def CounterGenSysMult2(A,B,latencia,rango,NB_OUT_LIM,NB_OUT_F_LIM,NB_OUT_FULL,NB
         A_w[:,0] = A[:,i]       # Nuevas entradas en primera coluna de A_w
         B_w[0,:] = B[:,i]       # Nuevas entradas en primera fila de B_w
         
-        C_w_fixed_aux = fInt.DeFixedInt(NB_OUT_LIM,NB_OUT_F_LIM,'S','round','saturate') # Se crea objeto DeFixedInt()
-
         for col in range(n):
             for row in range(n):   
                 
                 C_w[:,col][row] = C_w[:,col][row] + (A_w[:,col][row] * B_w[:,col][row])  # Se calcula resultado en punto flotante
+                
+                C_w_fixed_aux = fInt.DeFixedInt(NB_OUT,NB_OUT_F,'S','trunc','wrap') # Se crea objeto DeFixedInt()
 
-                C_w_bits = cuanbitlim.CuanBitLimitFunction(C_w[:,col][row],n,NB_OUT_FULL,NB_OUT_F_FULL)
+                C_w_fixed_aux.value = C_w[:,col][row]  # Se sobreescribe el atributo .value con el resultado en punto flotante
 
-                print("\n ROUNDED: C_w_bits",C_w_bits, "\n")   # 0001_1010_111X_1011
+                C_w_fixed[:,col][row] = C_w_fixed_aux.fValue # Finalmente se pasa el resultdo fixeado a la nueva matriz
+                
+#                print('\n i = ',i, '\n') 
 
-                C_w_fixed_aux.value = float(int(C_w_bits,2))  # Se sobreescribe el atributo .value con el resultado en punto flotante
-
-                verilog_eq_int = C_w_fixed_aux.intvalue # Se convierte a entero equivalente de verilog
-
-                C_w_fixed[:,col][row] = C_w_fixed_aux.fValue # Finalmente se pasa el resultado fixeado a la nueva matriz
-
-#                vector_matching_fixed.write('%d\n'%(C_w_fixed_aux.intvalue ))
+#                print('\n C_w[:,col][row] : \n',C_w[:,col][row])
                 
                 if(col == n-1 and row == n-1):
-                    vector_matching_fixed.write('%d\n'%(verilog_eq_int))
+                    vector_matching_fixed.write('%d\n'%(C_w_fixed_aux.intvalue))
                     vector_matching_float.write('%d\n'%(C_w[:,col][row]* rango * rango))
 
                 else:
-                    vector_matching_fixed.write('%d\t'%(verilog_eq_int))
+                    vector_matching_fixed.write('%d\t'%(C_w_fixed_aux.intvalue))
                     vector_matching_float.write('%d\t'%(C_w[:,col][row]* rango * rango))
+                    
+                        
                 
-#        print('\n i = ',i, '\n') 
+        print('\n i = ',i, '\n') 
+#        print('A_w :\n',A_w)
+#        print('B_w :\n',B_w)
             
-#        print(counter_finish_list)
+        print(counter_finish_list)
 
-#        print('\n C_w : \n',C_w)
-#        print('\n C_w_fixed : \n',C_w_fixed)
+        print('\n C_w : \n',C_w)
+        print('\n C_w_fixed : \n',C_w_fixed)
     
     vector_matching_fixed.close()
     vector_matching_float.close()
