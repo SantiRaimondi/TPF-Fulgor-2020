@@ -73,109 +73,24 @@
 
 	assign S_AXIS_TREADY	= axis_tready;
 	// Control state machine implementation
-	always @(posedge S_AXIS_ACLK) 
-	begin  
-	  if (!S_AXIS_ARESETN) 
-	  // Synchronous reset (active low)
-	    begin
-	      mst_exec_state <= IDLE;
-	    end  
-	  else
-	    case (mst_exec_state)
-	      IDLE: 
-	        // The sink starts accepting tdata when 
-	        // there tvalid is asserted to mark the
-	        // presence of valid streaming data 
-	          if (S_AXIS_TVALID)
-	            begin
-	              mst_exec_state <= WRITE_FIFO;
-	            end
-	          else
-	            begin
-	              mst_exec_state <= IDLE;
-	            end
-	      WRITE_FIFO: 
-	        // When the sink has accepted all the streaming input data,
-	        // the interface swiches functionality to a streaming master
-	        if (writes_done)
-	          begin
-	            mst_exec_state <= IDLE;
-	          end
-	        else
-	          begin
-	            // The sink accepts and stores tdata 
-	            // into FIFO
-	            mst_exec_state <= WRITE_FIFO;
-	          end
-
-	    endcase
-	end
+	
 	// AXI Streaming Sink 
 	// 
 	// The example design sink is always ready to accept the S_AXIS_TDATA  until
 	// the FIFO is not filled with NUMBER_OF_INPUT_WORDS number of input words.
 	assign axis_tready = ((mst_exec_state == WRITE_FIFO) && (write_pointer <= NUMBER_OF_INPUT_WORDS-1));
 
-	always@(posedge S_AXIS_ACLK)
-	begin
-	  if(!S_AXIS_ARESETN)
-	    begin
-	      write_pointer <= 0;
-	      writes_done <= 1'b0;
-	    end  
-	  else
-	    if (write_pointer <= NUMBER_OF_INPUT_WORDS-1)
-	      begin
-	        if (fifo_wren)
-	          begin
-	            // write pointer is incremented after every write to the FIFO
-	            // when FIFO write signal is enabled.
-	            write_pointer <= write_pointer + 1;
-	            writes_done <= 1'b0;
-	          end
-	          if ((write_pointer == NUMBER_OF_INPUT_WORDS-1)|| S_AXIS_TLAST)
-	            begin
-	              // reads_done is asserted when NUMBER_OF_INPUT_WORDS numbers of streaming data 
-	              // has been written to the FIFO which is also marked by S_AXIS_TLAST(kept for optional usage).
-	              writes_done <= 1'b1;
-	            end
-	      end  
-	end
-
-	// FIFO write enable generation
-	assign fifo_wren = S_AXIS_TVALID && axis_tready;
-
-	// FIFO Implementation
-	generate 
-	  for(byte_index=0; byte_index<= (C_S_AXIS_TDATA_WIDTH/8-1); byte_index=byte_index+1)
-	  begin:FIFO_GEN
-
-	    reg  [(C_S_AXIS_TDATA_WIDTH/4)-1:0] stream_data_fifo [0 : NUMBER_OF_INPUT_WORDS-1];
-
-	    // Streaming input data is stored in FIFO
-
-	    always @( posedge S_AXIS_ACLK )
-	    begin
-	      if (fifo_wren)// && S_AXIS_TSTRB[byte_index])
-	        begin
-	          stream_data_fifo[write_pointer] <= S_AXIS_TDATA[(byte_index*8+7) -: 8];
-	        end  
-	    end  
-	  end		
-	endgenerate
+	
 
 	// Add user logic here
-
+	////////////////////////////////////////////////////////////////////////////////////////////
 
 	
 	integer k;
-	integer l=0;
 
-	assign
-
-	wire [4:0] reg_matrix_size;
+	reg [4:0] reg_matrix_size;
 	reg [8:0] read_pointer;
-	reg write_pointer;
+	reg [8:0] reg_read_pointer;
 
 	reg [NB_DATA-1:0] wire_bufferA [(C_S_AXIS_TDATA_WIDTH/2)-1:0];
 	reg [NB_DATA-1:0] wire_bufferB [(C_S_AXIS_TDATA_WIDTH/2)-1:0];
@@ -188,56 +103,135 @@
 
 	assign reg_matrix_size = MATRIX_SIZE;
 
-	always@(*)  //REVISAR SENTENCIAS DENTRO DEL IF
+	always@(*) 
 	begin
-    	for(k=0;k<C_S_AXIS_TDATA_WIDTH/2;k=k+1)
+    	for(k=0;k<C_S_AXIS_TDATA_WIDTH;k=k+2)
 		begin
-			wire_bufferA [k] = S_AXIS_TDATA [(2k+1)*NB_DATA*SIZE - 1 -: NB_DATA*SIZE];
-			wire_bufferB [k] = S_AXIS_TDATA [(k+1)*NB_DATA*SIZE*2 - 1 -: NB_DATA*SIZE];
+			wire_bufferA [k/2] = S_AXIS_TDATA [(k+1)*NB_DATA - 1 -: NB_DATA];
+			wire_bufferB [k/2] = S_AXIS_TDATA [(k+2)*NB_DATA - 1 -: NB_DATA];
+		end
+	end
+	
+	
+	//Logica de manejo de punteros de escritura
+	always @(posedge clock) 
+	begin
+		if(S_AXIS_ARESETN)
+		begin
+			rdy_to_write_0 <= 0;
+			rdy_to_write_1 <= 0;
+		end
+
+		else
+		begin
+			if( reg_read_pointer < C_S_AXIS_TDATA_WIDTH/2 && read_pointer >= C_S_AXIS_TDATA_WIDTH/2) //Esto manejaria el valid
+			begin
+				rdy_to_write_0 <= 0;
+			end
+
+			else
+			begin
+				if(S_AXIS_TVALID == 1)
+					rdy_to_write_0 <= 1;
+			end
+				
+
+			if( reg_read_pointer > C_S_AXIS_TDATA_WIDTH/2 && read_pointer <= C_S_AXIS_TDATA_WIDTH/2) 
+			begin
+				rdy_to_write_1 <= 0;
+			end
+
+			else
+			begin
+				if (S_AXIS_TVALID == 1)
+					rdy_to_write_1 <=1;
+			end
+				
+		end
+	end
+	
+	//Logica de escritura
+	always @(posedge S_AXIS_ACLK)
+	begin
+		if(!rdy_to_write_0)
+		begin
+
+			for(k=0;k<C_S_AXIS_TDATA_WIDTH/2;k=k+1)
+			begin
+				bufferA[k] <= wire_bufferA[k];
+				bufferB[k] <= wire_bufferB[k];
+			end
+		end
+
+		else if(!rdy_to_write_1)
+		begin
+
+			for(k=0;k<C_S_AXIS_TDATA_WIDTH/2;k=k+1)
+			begin
+			bufferA[k+C_S_AXIS_TDATA_WIDTH/2] <= wire_bufferA[k];
+			bufferB[k+C_S_AXIS_TDATA_WIDTH/2] <= wire_bufferB[k];
+			end
 		end
 	end
 
-	if(posedge S_AXIS_ACLK)
+
+	//Logica de puntero de lectura  FALTARIA REVISAR SI TENGO LOS DATOS SUFICIENTES
+	always@(posedge S_AXIS_ACLK)
 	begin
 		if(S_AXIS_ARESETN)
 		begin
 			read_pointer <= 0;
-			write_pointer <= 0;
-			rdy_to_write_0 <= 0;
-			rdy_to_write_1 <= 0;
 		end
+
 		else
-		begin//REVISAR
-			read_pointer <= (read_pointer + reg_matrix_size) % BUFFER_SIZE;
+		begin
+			read_pointer <= read_pointer + reg_matrix_size;
 		end
 	end
 
-	if(posedge S_AXIS_ACLK)
+	//Logica de lectura
+	always@(posedge S_AXIS_ACLK)
 	begin
-		if(rdy_to_write_0 && rdy_to_write_1)
-		begin
-			S_AXIS_TREADY <= 1;
-		end
-		else
-		begin
-			S_AXIS_TREADY <= 0;
-		end
+		
 	end
 
+
+	/*EJEMPLO DETECTOR DE FLANCO
+
+	always@(posedge clk)
+            reg_enable  <= enable;
 	
+	always@(posedge S_AXIS_ACLK) 
+    begin
+        if(enable != reg_enable && enable == 1'b1)  
+	end*/
 
 
+
+	//Detectores de flanco para determinar cuando escribir en cada mitad del buffer
+	always@(posedge S_AXIS_ACLK)
+        reg_read_pointer  <= read_pointer;
+
+
+
+	/*Pseudo codigo para la salida
+
+	reg salida
+	always @(posedge  S_AXIS_ACLK)
+	begin
+		Para un reg_matrixsize de 16
+		salidaA <= bufferA[15:0] && (FF00)
+	end
+
+	*/
+
+	//{reg_matrix_size{1'b1},(32-reg_matrix_size){1'b0}}
 	
-	
+	//rdy_to_write_0 hace referencia al primer buffer, mientras que rdy_to_write_1 hace referencia al segundo.
+	//Si alguno de estos dos esta en 0 significa que puede escribirse, mientras que si esta en 1 sus datos todavia no han sido utilizados.
+	//A partir de ambos flags determino si puedo escribir o no en el buffer, poniendo la salida S_AXIS_TREADY en 1 si es posible
+	//Se utiliza solo 2 flags en vez de 4 ya que el funcionamiento de bufferA y bufferB es simetrico.
 
-	//S_AXIS_TDATA      bus de datos
-	//S_AXIS_TREADY		ready para recibir mas info
-
-	/*
-	input wire  S_AXIS_ACLK,
-		// AXI4Stream sink: Reset
-		input wire  S_AXIS_ARESETN,
-
-	// User logic ends*/
+	assign S_AXIS_TREADY = ((!rdy_to_write_0) || (!rdy_to_write_1));
 
 	endmodule
