@@ -16,6 +16,7 @@ module buffer_v1_0_M00_AXIS #
 (
 	// Users to add ports here
 	input [SIZE * O_BITS - 1 : 0] i_c_diag_to_buffer ,
+	input i_custom_port_valid,
 	// User ports ends
 	// Do not modify the ports beyond this line
 
@@ -223,12 +224,21 @@ assign tx_en = M_AXIS_TREADY && axis_tvalid;
 
 // Add user logic here
 
-reg [O_BITS - 1 : 0] present_matrix_pre_buffer [SIZE * SIZE - 1 : 0];
-reg [O_BITS - 1 : 0] past_matrix_pre_buffer    [SIZE * SIZE - 1 : 0];
+// agregar bloqueo con i_custom_port_valid
+
+reg [O_BITS - 1 : 0] present_matrix_pre_buffer [32 * 17 - 1 : 0];
+reg [O_BITS - 1 : 0] past_matrix_pre_buffer    [32 * 17 - 1 : 0];
+
+/*
+reg [O_BITS - 1 : 0] reduced_present_matrix_pre_buffer [SIZE * SIZE - 1 : 0];
+reg [O_BITS - 1 : 0] reduced_past_matrix_pre_buffer    [SIZE * SIZE - 1 : 0];
+*/ 
+
+// wire [O_BITS - 1 : 0] past_matrix_net    [SIZE * SIZE - 1 : 0];
 
 /*
 reg [O_BITS - 1 : 0] present_matrix_net [SIZE * SIZE - 1 : 0];
-reg [O_BITS - 1 : 0] past_matrix_net    [SIZE * SIZE - 1 : 0];
+
 
 assign past_matrix_net = (flank_detect_sel_pre_buffer != sel_pre_buffer) ? present_matrix_pre_buffer : past_matrix_pre_buffer ;
 assign present_matrix_net = () ? : ;
@@ -239,29 +249,45 @@ assign present_matrix_net = () ? : ;
 localparam  DIAG_COUNTER_BITS = $clog2(SIZE);
 
 integer row;
+//genvar index;
 
 reg sel_pre_buffer;
 // reg flank_detect_sel_pre_buffer;
 reg [DIAG_COUNTER_BITS-1 : 0] diag_counter;
+
+/*
+reg [O_BITS-1:0] principal_diagonal_present_matrix [SIZE - 1 : 0] ;
+
+for(index=0;index<(SIZE-1);index=index+1)
+	begin : generate_loop
+	reg [O_BITS-1:0] reduced_present_matrix [SIZE - index - 2 : 0] ;
+	reg [O_BITS-1:0] reduced_past_matrix [SIZE - index - 2 : 0] ;
+	end 
+*/
 
 always@(posedge M_AXIS_ACLK)
 begin
 	if(M_AXIS_ARESETN)
 	begin
 		diag_counter <= {DIAG_COUNTER_BITS{1'b0}}; 
-		sel_pre_buffer <= 1'b0;
+//		sel_pre_buffer <= 1'b0;
 	end
 	else
 	begin
-		if(diag_counter < SIZE-1)
+		if(diag_counter < SIZE-2)
 		begin
 			diag_counter <= diag_counter + 1;
-			sel_pre_buffer <= sel_pre_buffer ;
+//			sel_pre_buffer <= sel_pre_buffer ;
+		end
+		else if(diag_counter == SIZE - 2)
+		begin
+			diag_counter <= diag_counter + 1;
+//			sel_pre_buffer <= (!sel_pre_buffer) ;
 		end
 		else
 		begin
 			diag_counter <= 0;
-			sel_pre_buffer <= (!sel_pre_buffer) ;
+//			sel_pre_buffer <= sel_pre_buffer ;
 		end
 	end
 end            
@@ -270,16 +296,32 @@ always@(posedge M_AXIS_ACLK)  // Logica de logueo de resultados en prebuffers
 begin
 	for(row=0;row<SIZE;row=row+1)
 	begin
-		if(row <= diag_counter)
-		begin
-			present_matrix_pre_buffer[row * (SIZE) + diag_counter] <= i_c_diag_to_buffer[row * O_BITS + O_BITS - 1 -: O_BITS];
-		end
-		else
-		begin
-			past_matrix_pre_buffer [row * (SIZE) + diag_counter] <= i_c_diag_to_buffer[row * O_BITS + O_BITS - 1 -: O_BITS];
-		end
+			if(row <= diag_counter)
+			begin
+				present_matrix_pre_buffer[row * (SIZE) + diag_counter] <= i_c_diag_to_buffer[row * O_BITS + O_BITS - 1 -: O_BITS];
+			end
+			else
+			begin
+				past_matrix_pre_buffer [row * (SIZE) + diag_counter] <= i_c_diag_to_buffer[row * O_BITS + O_BITS - 1 -: O_BITS];
+			end
 	end
 end
+
+/*
+always@(posedge M_AXIS_ACLK)   // Logica de conmutacion de prebuffers, sobreescritura de past_matrix_pre_buffer con registros de present_matrix_pre_buffer
+begin
+	if(diag_counter == 2'b00)
+	begin
+		for(row=0;row<SIZE;row=row+1)
+		begin
+			past_matrix_pre_buffer[(SIZE * row) + SIZE - 1 -: (SIZE - row)] <= present_matrix_pre_buffer[(SIZE * row) + SIZE - 1 : (SIZE * row) + row] ;  
+		end //   Equivale a [expresion_1              : expresion_1             - (expresion_2 - 1)]
+			//	 Equivale a [(SIZE * row) + SIZE - 1 -: (SIZE * row) + SIZE - 1 - ((SIZE - row) - 1) ]
+			//   Si row = 1    => [SIZE + SIZE - 1 : SIZE + SIZE-1 - (SIZE - 2)]
+			//   Si SIZE = 4x4 => [7:7-2]  = [7:5]  Toma 3 bits, si row = 2 toma 2 bits y si row = 3 toma 1 bit 
+	end
+end  */         
+
 /*
 always@(posedge M_AXIS_ACLK)   // Detector de flanco de seleccion de prebuffer
 begin
@@ -291,20 +333,8 @@ begin
 	begin
 		flank_detect_sel_pre_buffer <= sel_pre_buffer ;
 	end
-end */
-
-/*
-always@(posedge M_AXIS_ACLK)   // Logica de conmutacion de prebuffers, sobreescritura de past_matrix_pre_buffer con registros de present_matrix_pre_buffer
-begin
-	if(flank_detect_sel_pre_buffer == !sel_pre_buffer)
-	begin
-		past_matrix_pre_buffer <= present_matrix_pre_buffer;
-	end
-	else
-	begin
-		past_matrix_pre_buffer <= past_matrix_pre_buffer ;
-	end
 end  */
+
 
 /*
 always@(*) 
@@ -312,8 +342,6 @@ begin
 	case(SIZE)
 
 		2:
-		
-
 		3:
 		4:
 		5:

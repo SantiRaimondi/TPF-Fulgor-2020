@@ -111,6 +111,7 @@ module top_AXI_Interface #
 		.M_AXIS_TREADY(m00_axis_tready),
 
 		// Users to add ports here
+		.i_custom_port_valid(w_i_valid),
 		.i_c_diag_to_buffer(w_o_c_diag_to_buffer)
 		// User ports ends
 	);
