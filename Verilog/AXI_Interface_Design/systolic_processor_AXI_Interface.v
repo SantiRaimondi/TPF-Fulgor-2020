@@ -1,6 +1,6 @@
 module systolic_processor_AXI_Interface
 #(
-    parameter SIZE   = 4,
+    parameter SIZE   = 32,
     parameter I_BITS = 8,
     parameter O_BITS = 16
 )
@@ -14,7 +14,7 @@ module systolic_processor_AXI_Interface
 
 //    output [SIZE*SIZE*O_BITS-1:0] o_c_full,
 //    output [SIZE*SIZE-1:0] o_finish,
-
+    output o_first_finish,
     output [SIZE*O_BITS - 1 : 0] o_c_diag_to_buffer
 
 );
@@ -87,7 +87,7 @@ end
 
 
 // assign o_c_full = o_c;
-// assign o_finish = o_finish_reg;
+assign o_first_finish = con_finish[0];
 
 generate
     

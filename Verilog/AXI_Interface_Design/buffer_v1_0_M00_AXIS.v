@@ -1,7 +1,7 @@
 module buffer_v1_0_M00_AXIS #
 (
 	// Users to add parameters here
-	parameter  SIZE = 4,
+	parameter  SIZE = 32,
 	parameter I_BITS = 8,
 	parameter O_BITS = 16,
 
@@ -15,8 +15,10 @@ module buffer_v1_0_M00_AXIS #
 )
 (
 	// Users to add ports here
-	input [SIZE * O_BITS - 1 : 0] i_c_diag_to_buffer ,
 	input i_custom_port_valid,
+	input i_first_finish,
+	input [SIZE * O_BITS - 1 : 0] i_c_diag_to_buffer ,
+
 	// User ports ends
 	// Do not modify the ports beyond this line
 
@@ -247,13 +249,13 @@ assign present_matrix_net = () ? : ;
 // CONTADOR
 
 localparam  DIAG_COUNTER_BITS = $clog2(SIZE);
+localparam PILE_COUNTER_BITS = 10;
 
 integer row;
-//genvar index;
 
-reg sel_pre_buffer;
-// reg flank_detect_sel_pre_buffer;
 reg [DIAG_COUNTER_BITS-1 : 0] diag_counter;
+reg [PILE_COUNTER_BITS-1 : 0] present_pile_counter [SIZE - 1 : 0];
+reg [PILE_COUNTER_BITS-1 : 0] past_pile_counter [SIZE - 1 : 0];
 
 /*
 reg [O_BITS-1:0] principal_diagonal_present_matrix [SIZE - 1 : 0] ;
@@ -270,40 +272,60 @@ begin
 	if(M_AXIS_ARESETN)
 	begin
 		diag_counter <= {DIAG_COUNTER_BITS{1'b0}}; 
-//		sel_pre_buffer <= 1'b0;
 	end
 	else
 	begin
-		if(diag_counter < SIZE-2)
+		if(diag_counter < SIZE-1)
 		begin
 			diag_counter <= diag_counter + 1;
-//			sel_pre_buffer <= sel_pre_buffer ;
-		end
-		else if(diag_counter == SIZE - 2)
-		begin
-			diag_counter <= diag_counter + 1;
-//			sel_pre_buffer <= (!sel_pre_buffer) ;
 		end
 		else
 		begin
 			diag_counter <= 0;
-//			sel_pre_buffer <= sel_pre_buffer ;
 		end
 	end
 end            
+
+always @(posedge M_AXIS_ACLK)
+begin
+	for(row=0;row<SIZE;row=row+1)
+	begin
+		if(M_AXIS_ARESETN)
+		begin
+			present_pile_counter[row] <= {PILE_COUNTER_BITS{1'b0}}; 
+			past_pile_counter[row]    <= {PILE_COUNTER_BITS{1'b0}}; 
+		end	
+		else
+		begin
+			if(row != 0 && row == diag_counter)
+			begin
+				present_pile_counter[row] <= present_pile_counter[row - 1] + row;
+				past_pile_counter[row] <= past_pile_counter[row - 1] + (SIZE-(row)+1);// past_pile_counter[row - 1] + (SIZE - row);
+			end
+			else
+			begin
+				present_pile_counter[row] <= present_pile_counter[row];
+				past_pile_counter[row] <= past_pile_counter[row]; 
+			end
+		end	
+	end
+end
 
 always@(posedge M_AXIS_ACLK)  // Logica de logueo de resultados en prebuffers
 begin
 	for(row=0;row<SIZE;row=row+1)
 	begin
-			if(row <= diag_counter)
-			begin
-				present_matrix_pre_buffer[row * (SIZE) + diag_counter] <= i_c_diag_to_buffer[row * O_BITS + O_BITS - 1 -: O_BITS];
-			end
-			else
-			begin
-				past_matrix_pre_buffer [row * (SIZE) + diag_counter] <= i_c_diag_to_buffer[row * O_BITS + O_BITS - 1 -: O_BITS];
-			end
+
+		if(row <= diag_counter)
+		begin
+			present_matrix_pre_buffer[row * (SIZE) + diag_counter - present_pile_counter[row]] <= i_c_diag_to_buffer[row * O_BITS + O_BITS - 1 -: O_BITS];
+		end
+		else
+		begin
+			past_matrix_pre_buffer [row  * (SIZE) + diag_counter - past_pile_counter[row]] <= i_c_diag_to_buffer[row * O_BITS + O_BITS - 1 -: O_BITS];
+		end
+
+
 	end
 end
 
@@ -321,20 +343,6 @@ begin
 			//   Si SIZE = 4x4 => [7:7-2]  = [7:5]  Toma 3 bits, si row = 2 toma 2 bits y si row = 3 toma 1 bit 
 	end
 end  */         
-
-/*
-always@(posedge M_AXIS_ACLK)   // Detector de flanco de seleccion de prebuffer
-begin
-	if(M_AXIS_ARESETN)
-	begin
-		flank_detect_sel_pre_buffer <= 1'b0;
-	end
-	else
-	begin
-		flank_detect_sel_pre_buffer <= sel_pre_buffer ;
-	end
-end  */
-
 
 /*
 always@(*) 

@@ -1,4 +1,4 @@
-`define DIMENSION 4                                                   // CONSULTAR SI SE PUEDE REEMLAZAR ESTE PARAMETRO POR 2^rf_matrix_size
+`define DIMENSION 32                                                   // CONSULTAR SI SE PUEDE REEMLAZAR ESTE PARAMETRO POR 2^rf_matrix_size
 `define I_BITS 8
 `define O_BITS 16   // ------------------------------------>  LIMITACION DE BITS
 //`define O_BITS = (I_BITS*2) + $clog2(DIMENSION)  -------->  CASO FULL RESOLUTION
@@ -39,7 +39,7 @@ module tb_top_VCounter();
 
    initial begin
       #10 
-      reg_rf_matrix_size = 3'b001;                                              // HARDCODEADO PARA 4x4, CONSULTAR COMO GENERALIZAR.
+      reg_rf_matrix_size = 3'b100;          // HARDCODEADO PARA 4x4, CONSULTAR COMO GENERALIZAR.
 
       i_valid = 1'b1;
       
@@ -93,7 +93,6 @@ module tb_top_VCounter();
       .i_a_full(i_a),
       .i_b_full(i_b),
       .rf_matrix_size(reg_rf_matrix_size),
-      .o_c_diag_to_buffer(o_c_diag_to_buffer),
 
 		// User ports ends
 

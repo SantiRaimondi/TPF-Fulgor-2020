@@ -1,7 +1,7 @@
 module PE_VCounter_FP
 #(
     parameter COUNTER_LIMIT = 0, // Limite de contador para  bloquear ejecucion una vez finalizada la operacion. El limite real es COUNTER_LIMIT + DIMENSION
-    parameter DIMENSION = 4,
+    parameter DIMENSION = 32,
     parameter I_BITS = 8,
     parameter O_BITS = (I_BITS*2) + $clog2(DIMENSION)
 )
