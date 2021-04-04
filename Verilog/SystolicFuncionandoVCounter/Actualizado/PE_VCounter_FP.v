@@ -27,7 +27,7 @@ module PE_VCounter_FP
     output o_b_reset,
     output [I_BITS-1:0] o_a,
     output [I_BITS-1:0] o_b,
-    output [REG_C_BITS-1:0] o_c,
+    output [O_BITS-1:0] o_c,
     //output [O_BITS-1:0] o_c,
     output o_finish
 );
@@ -36,18 +36,20 @@ module PE_VCounter_FP
 localparam COUNTER_BITS = $clog2(DIMENSION + 1);
 //Variables
 
+integer k;
+
 reg [I_BITS-1:0] reg_a;                                                       
 reg [I_BITS-1:0] reg_b;
-reg signed [REG_C_BITS-1:0] reg_c;
+reg signed [REG_C_BITS-1:0] reg_c; 
 reg reg_finish;
 reg [COUNTER_BITS-1 : 0] counter; //El tamano del contador depende del indice pasado como parametro, es decir la diagonal inversa en la cual esta ubicado el PE
 wire signed [(I_BITS*2)-1:0] prod;
 wire signed [(I_BITS-1)*2:0] final_prod;
 wire internal_reset;
 reg reg_reset;
-reg signed [REG_C_BITS-1:0] wire_o_c;
+reg signed  [O_BITS - 1 : 0] wire_o_c;
 wire signed [1:0] wire_reg_c [4:0]; // 
-wire signed [REG_C_BITS - 1:0] wire_reg_cc [4:0]; //
+reg signed [O_BITS - 1 : 0] wire_reg_cc [4:0]; //
 
 //Funcionamiento
 assign internal_reset = i_a_reset | i_b_reset;
@@ -114,11 +116,20 @@ assign wire_reg_c[2] = {1'b0,reg_c[2]};
 assign wire_reg_c[3] = {1'b0,reg_c[3]}; 
 assign wire_reg_c[4] = {1'b0,reg_c[4]}; 
 
+always@(*)
+begin
+    for(k=0;k<5;k=k+1)
+    begin
+        wire_reg_cc[k] = reg_c[ I_BITS*2 + k -: I_BITS*2 ];  // [I_BITS*2 +1 : I_BITS*2 + 1 - (I_BITS*2 - 1)]
+    end
+end
+/*
 assign wire_reg_cc[0] = reg_c[16:1];
 assign wire_reg_cc[1] = reg_c[17:2];
 assign wire_reg_cc[2] = reg_c[18:3];
 assign wire_reg_cc[3] = reg_c[19:4];
 assign wire_reg_cc[4] = reg_c[20:5];
+*/
 
 always@(*) //Los bits del acumulador se recortan para matchear el tamano de la salida y se redondea el LSB utilizado
 begin
