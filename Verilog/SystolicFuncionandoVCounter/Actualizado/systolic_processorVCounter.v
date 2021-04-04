@@ -2,7 +2,8 @@ module systolic_processorVCounter
 #(
     parameter  SIZE = 4,
     parameter I_BITS = 8,
-    parameter O_BITS = (I_BITS*2) + $clog2(SIZE)
+    parameter O_BITS = (I_BITS*2) + $clog2(SIZE),
+    parameter REG_C_BITS = 21
 )
 (
     //input [O_BITS-1:0] i_testsalidas [(SIZE*SIZE)-1:0],
@@ -12,7 +13,7 @@ module systolic_processorVCounter
     input [SIZE*I_BITS-1:0] i_a_full,
     input [SIZE*I_BITS-1:0] i_b_full,
     input [2:0]       XYZ, //rf_matrix_size,
-    output [SIZE*SIZE*O_BITS-1:0] o_c_full,
+    output [SIZE*SIZE*REG_C_BITS-1:0] o_c_full,
     output [SIZE*SIZE-1:0] o_finish 
     
 );
@@ -26,11 +27,11 @@ integer l;
 
 reg [I_BITS-1:0] i_a [SIZE-1:0];
 reg [I_BITS-1:0] i_b [SIZE-1:0];
-reg [SIZE*SIZE*O_BITS-1:0] o_c;
+reg [SIZE*SIZE*REG_C_BITS-1:0] o_c;
 reg [SIZE*SIZE-1:0] o_finish_reg;
 wire [I_BITS-1:0] con_vert [(SIZE*SIZE)-1:0];
 wire [I_BITS-1:0] con_hor  [(SIZE*SIZE)-1:0];
-wire [O_BITS-1:0] con_out_c [(SIZE*SIZE)-1:0];
+wire [REG_C_BITS-1:0] con_out_c [(SIZE*SIZE)-1:0];
 wire con_finish [SIZE*SIZE-1:0];
 wire con_a_reset [(SIZE*SIZE)-1:0];
 wire con_b_reset [(SIZE*SIZE)-1:0];
@@ -47,7 +48,7 @@ begin
         
         for(l=0;l<SIZE;l=l+1)
         begin
-            o_c[(k * SIZE + l) * O_BITS + O_BITS - 1 -: O_BITS] = con_out_c[k * SIZE + l];
+            o_c[(k * SIZE + l) * REG_C_BITS + REG_C_BITS - 1 -: REG_C_BITS] = con_out_c[k * SIZE + l];
             o_finish_reg [(k * SIZE + l)] = con_finish [(k * SIZE + l)];
         end
     end
@@ -62,11 +63,11 @@ generate
     begin
         if(i==0)
         begin
-            PE_VCounter_FP
-            #(
+            PE_VCounter_FP#(
                 .COUNTER_LIMIT(i),
                 .DIMENSION(SIZE),
-                .I_BITS(I_BITS)
+                .I_BITS(I_BITS),
+                .REG_C_BITS(REG_C_BITS)
             )
             u_PE0
             (
@@ -87,11 +88,11 @@ generate
 
             for(j=0; j<SIZE-1; j=j+1)
             begin
-                PE_VCounter_FP
-                #(
+                PE_VCounter_FP#(
                     .COUNTER_LIMIT(i+j+1),
                     .DIMENSION(SIZE),
-                    .I_BITS(I_BITS)
+                    .I_BITS(I_BITS),
+                    .REG_C_BITS(REG_C_BITS)
                 )
                 u_PE00
                 (
@@ -114,11 +115,11 @@ generate
 
         else
         begin
-            PE_VCounter_FP
-            #(
+            PE_VCounter_FP#(
                 .COUNTER_LIMIT(i),
                 .DIMENSION(SIZE),
-                .I_BITS(I_BITS)
+                .I_BITS(I_BITS),
+                .REG_C_BITS(REG_C_BITS)
             )
             u_PE1
             (
@@ -139,11 +140,11 @@ generate
 
             for(j=0; j<SIZE-1; j=j+1)
             begin
-                PE_VCounter_FP
-                #(
+                PE_VCounter_FP#(
                     .COUNTER_LIMIT(i+j+1),
                     .DIMENSION(SIZE),
-                    .I_BITS(I_BITS)
+                    .I_BITS(I_BITS),
+                    .REG_C_BITS(REG_C_BITS)
                 )
                 u_PE2
                 (

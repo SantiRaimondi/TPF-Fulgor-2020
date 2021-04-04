@@ -3,7 +3,8 @@ module PE_VCounter_FP
     parameter COUNTER_LIMIT = 0, // Limite de contador para  bloquear ejecucion una vez finalizada la operacion. El limite real es COUNTER_LIMIT + DIMENSION
     parameter DIMENSION = 4,
     parameter I_BITS = 8,
-    parameter O_BITS = (I_BITS*2) + $clog2(DIMENSION)
+    parameter O_BITS = (I_BITS*2) + $clog2(DIMENSION),
+    parameter REG_C_BITS = 21
 )
 
 //Bits de entrada se los considera que llegan normalizados. Para cuantificacion se considera bit de signo y un bit para 1 o 0, el resto decimales. 
@@ -26,7 +27,7 @@ module PE_VCounter_FP
     output o_b_reset,
     output [I_BITS-1:0] o_a,
     output [I_BITS-1:0] o_b,
-    output [15:0] o_c,
+    output [REG_C_BITS-1:0] o_c,
     //output [O_BITS-1:0] o_c,
     output o_finish
 );
@@ -37,16 +38,16 @@ localparam COUNTER_BITS = $clog2(DIMENSION + 1);
 
 reg [I_BITS-1:0] reg_a;                                                       
 reg [I_BITS-1:0] reg_b;
-reg signed [O_BITS-1:0] reg_c;
+reg signed [REG_C_BITS-1:0] reg_c;
 reg reg_finish;
 reg [COUNTER_BITS-1 : 0] counter; //El tamano del contador depende del indice pasado como parametro, es decir la diagonal inversa en la cual esta ubicado el PE
 wire signed [(I_BITS*2)-1:0] prod;
 wire signed [(I_BITS-1)*2:0] final_prod;
 wire internal_reset;
 reg reg_reset;
-reg signed [15:0] wire_o_c;
+reg signed [REG_C_BITS-1:0] wire_o_c;
 wire signed [1:0] wire_reg_c [4:0]; // 
-wire signed [15:0] wire_reg_cc [4:0]; //
+wire signed [REG_C_BITS - 1:0] wire_reg_cc [4:0]; //
 
 //Funcionamiento
 assign internal_reset = i_a_reset | i_b_reset;
@@ -132,7 +133,8 @@ begin
         wire_o_c = wire_reg_cc[3] + wire_reg_c[3];
         4:
         wire_o_c = wire_reg_cc[4] + wire_reg_c[4];
-        //default:
+        default:
+        wire_o_c = wire_reg_cc[0] + wire_reg_c[0];
     endcase
 end
 

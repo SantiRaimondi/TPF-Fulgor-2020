@@ -1,7 +1,8 @@
 //`define COUNTER_LIMIT 0
-`define DIMENSION 4
+`define DIMENSION 32
 `define I_BITS 8
-//`define O_BITS = (I_BITS*2) + $clog2(DIMENSION)
+`define O_BITS 16 // (I_BITS*2) + $clog2(DIMENSION)
+`define REG_C_BITS 21
 `timescale 1ns/100ps
 
 module tb_top_VCounter();
@@ -9,7 +10,8 @@ module tb_top_VCounter();
    //parameter COUNTER_LIMIT   = `COUNTER_LIMIT   ;
     parameter DIMENSION   = `DIMENSION   ;
     parameter I_BITS = `I_BITS ;
-    parameter O_BITS    = 16;//(I_BITS*2) + $clog2(DIMENSION);
+    parameter O_BITS    = `O_BITS ; //(I_BITS*2) + $clog2(DIMENSION);
+    parameter REG_C_BITS = `REG_C_BITS;
     
 
     //wire [16*18-1:0] o_c  ;
@@ -24,7 +26,7 @@ module tb_top_VCounter();
     reg [I_BITS-1:0]                  a_tmp [DIMENSION-1:0] ;
     reg [I_BITS-1:0]                  b_tmp [DIMENSION-1:0] ;
 
-    wire [DIMENSION*DIMENSION*O_BITS-1:0] o_c;
+    wire [DIMENSION*DIMENSION*REG_C_BITS-1:0] o_c;
     integer               fid_reset  ;
     integer               fid_a ;
     integer               fid_b ;
@@ -36,7 +38,7 @@ module tb_top_VCounter();
     integer               ptr_b ;
     integer  k;
     integer  q;
-    reg [O_BITS-1:0] con_out_c [(DIMENSION*DIMENSION)-1:0];
+    reg [REG_C_BITS-1:0] con_out_c [(DIMENSION*DIMENSION)-1:0];
     // Vector Matching: (descomentar cuando este listo)
     integer               code_error3;
     integer               ptr_c ;
@@ -46,7 +48,7 @@ module tb_top_VCounter();
     //DESCOMENTAR CUANDO SE VEA UN *VM*
 
    initial begin
-      #10 res = $clog2(DIMENSION) //3'b100;//rf_matrix_size
+      #10 res = 3'b100 ; //3'b100;//rf_matrix_size
       i_valid = 1'b1;
       //C:/Users/Usuario/Desktop/Nuevaeta/TestSystolic_FP/reset4.out
       
