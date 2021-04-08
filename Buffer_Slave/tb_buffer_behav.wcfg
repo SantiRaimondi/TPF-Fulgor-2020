@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_buffer_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_buffer" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1342fs"></ZoomStartTime>
+      <ZoomEndTime time="14293fs"></ZoomEndTime>
+      <Cursor1Time time="5500fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="141"></NameColumnWidth>
+      <ValueColumnWidth column_width="100"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject fp_name="/tb_buffer/MATRIX_SIZE" type="array">
+      <obj_property name="ElementShortName">MATRIX_SIZE[4:0]</obj_property>
+      <obj_property name="ObjectShortName">MATRIX_SIZE[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/rdy_to_read" type="logic">
+      <obj_property name="ElementShortName">rdy_to_read</obj_property>
+      <obj_property name="ObjectShortName">rdy_to_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/S_AXIS_ACLK" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_ACLK</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/S_AXIS_TREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/data_tmp" type="array">
+      <obj_property name="ElementShortName">data_tmp[63:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_tmp[63:0][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/S_AXIS_TDATA" type="array">
+      <obj_property name="ElementShortName">S_AXIS_TDATA[511:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TDATA[511:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/S_AXIS_TDATA" type="array">
+      <obj_property name="ElementShortName">S_AXIS_TDATA[511:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TDATA[511:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/wire_bufferA" type="array">
+      <obj_property name="ElementShortName">wire_bufferA[31:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">wire_bufferA[31:0][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/wire_bufferB" type="array">
+      <obj_property name="ElementShortName">wire_bufferB[31:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">wire_bufferB[31:0][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/bufferA" type="array">
+      <obj_property name="ElementShortName">bufferA[63:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">bufferA[63:0][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/bufferB" type="array">
+      <obj_property name="ElementShortName">bufferB[63:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">bufferB[63:0][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/write_valid" type="logic">
+      <obj_property name="ElementShortName">write_valid</obj_property>
+      <obj_property name="ObjectShortName">write_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/read_valid" type="logic">
+      <obj_property name="ElementShortName">read_valid</obj_property>
+      <obj_property name="ObjectShortName">read_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/write_step" type="array">
+      <obj_property name="ElementShortName">write_step[8:0]</obj_property>
+      <obj_property name="ObjectShortName">write_step[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/read_step" type="array">
+      <obj_property name="ElementShortName">read_step[8:0]</obj_property>
+      <obj_property name="ObjectShortName">read_step[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/buffer_fill" type="array">
+      <obj_property name="ElementShortName">buffer_fill[8:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_fill[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/write_pointer" type="logic">
+      <obj_property name="ElementShortName">write_pointer</obj_property>
+      <obj_property name="ObjectShortName">write_pointer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/read_pointer" type="array">
+      <obj_property name="ElementShortName">read_pointer[5:0]</obj_property>
+      <obj_property name="ObjectShortName">read_pointer[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a" type="array">
+      <obj_property name="ElementShortName">o_wire_a[31:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_wire_a[31:0][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[31]" type="array">
+         <obj_property name="ElementShortName">[31][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[31][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[30]" type="array">
+         <obj_property name="ElementShortName">[30][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[30][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[29]" type="array">
+         <obj_property name="ElementShortName">[29][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[29][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[28]" type="array">
+         <obj_property name="ElementShortName">[28][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[28][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[27]" type="array">
+         <obj_property name="ElementShortName">[27][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[27][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[26]" type="array">
+         <obj_property name="ElementShortName">[26][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[26][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[25]" type="array">
+         <obj_property name="ElementShortName">[25][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[25][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[24]" type="array">
+         <obj_property name="ElementShortName">[24][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[24][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[23]" type="array">
+         <obj_property name="ElementShortName">[23][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[23][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[22]" type="array">
+         <obj_property name="ElementShortName">[22][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[22][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[21]" type="array">
+         <obj_property name="ElementShortName">[21][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[21][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[20]" type="array">
+         <obj_property name="ElementShortName">[20][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[20][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[19]" type="array">
+         <obj_property name="ElementShortName">[19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[18]" type="array">
+         <obj_property name="ElementShortName">[18][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[17]" type="array">
+         <obj_property name="ElementShortName">[17][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[16]" type="array">
+         <obj_property name="ElementShortName">[16][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[15]" type="array">
+         <obj_property name="ElementShortName">[15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[14]" type="array">
+         <obj_property name="ElementShortName">[14][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[13]" type="array">
+         <obj_property name="ElementShortName">[13][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[12]" type="array">
+         <obj_property name="ElementShortName">[12][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[11]" type="array">
+         <obj_property name="ElementShortName">[11][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[10]" type="array">
+         <obj_property name="ElementShortName">[10][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[9]" type="array">
+         <obj_property name="ElementShortName">[9][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[8]" type="array">
+         <obj_property name="ElementShortName">[8][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[7]" type="array">
+         <obj_property name="ElementShortName">[7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[6]" type="array">
+         <obj_property name="ElementShortName">[6][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[5]" type="array">
+         <obj_property name="ElementShortName">[5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[4]" type="array">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[3]" type="array">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[2]" type="array">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[1]" type="array">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[0]" type="array">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[31]" type="array">
+         <obj_property name="ElementShortName">[31][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[31][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[30]" type="array">
+         <obj_property name="ElementShortName">[30][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[30][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[29]" type="array">
+         <obj_property name="ElementShortName">[29][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[29][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[28]" type="array">
+         <obj_property name="ElementShortName">[28][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[28][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[27]" type="array">
+         <obj_property name="ElementShortName">[27][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[27][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[26]" type="array">
+         <obj_property name="ElementShortName">[26][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[26][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[25]" type="array">
+         <obj_property name="ElementShortName">[25][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[25][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[24]" type="array">
+         <obj_property name="ElementShortName">[24][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[24][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[23]" type="array">
+         <obj_property name="ElementShortName">[23][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[23][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[22]" type="array">
+         <obj_property name="ElementShortName">[22][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[22][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[21]" type="array">
+         <obj_property name="ElementShortName">[21][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[21][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[20]" type="array">
+         <obj_property name="ElementShortName">[20][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[20][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[19]" type="array">
+         <obj_property name="ElementShortName">[19][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[18]" type="array">
+         <obj_property name="ElementShortName">[18][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[17]" type="array">
+         <obj_property name="ElementShortName">[17][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[16]" type="array">
+         <obj_property name="ElementShortName">[16][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[15]" type="array">
+         <obj_property name="ElementShortName">[15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[14]" type="array">
+         <obj_property name="ElementShortName">[14][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[13]" type="array">
+         <obj_property name="ElementShortName">[13][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[12]" type="array">
+         <obj_property name="ElementShortName">[12][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[11]" type="array">
+         <obj_property name="ElementShortName">[11][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[10]" type="array">
+         <obj_property name="ElementShortName">[10][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[9]" type="array">
+         <obj_property name="ElementShortName">[9][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[8]" type="array">
+         <obj_property name="ElementShortName">[8][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[7]" type="array">
+         <obj_property name="ElementShortName">[7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[6]" type="array">
+         <obj_property name="ElementShortName">[6][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[5]" type="array">
+         <obj_property name="ElementShortName">[5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[4]" type="array">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[3]" type="array">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[2]" type="array">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[1]" type="array">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_a[0]" type="array">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/o_wire_b" type="array">
+      <obj_property name="ElementShortName">o_wire_b[31:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_wire_b[31:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/wire_o_a_full" type="array">
+      <obj_property name="ElementShortName">wire_o_a_full[255:0]</obj_property>
+      <obj_property name="ObjectShortName">wire_o_a_full[255:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/wire_o_b_full" type="array">
+      <obj_property name="ElementShortName">wire_o_b_full[255:0]</obj_property>
+      <obj_property name="ObjectShortName">wire_o_b_full[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_buffer/u_buffer_v1_0_S00_AXIS/mascara" type="array">
+      <obj_property name="ElementShortName">mascara[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mascara[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>
