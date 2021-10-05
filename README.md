@@ -1,18 +1,23 @@
 # TPF-Fulgor-2020
 ## Trabajo final de la fundación Fulgor grupo Procom1 2020.
 
-### Bienvenidos!!
+Índice/Index
 
-En este repositorio estará subida toda la información referente a los avances del trabajo final de la fundación Fulgor de los estudiantes del curso Procom1.
+1. [Español](#español).
+2. [English](#english).
 
-Se podrán encontrar código Verilog, C y Python que mostrarán los avances actuales de las distintas etapas del trabajo.
+### Español
 
-### Organización del repositorio
+Se implementó un acelerador de cálculos matriciales por hardware en una FPGA modelo Kintex-7 KC705. 
+Se desarrolló una interfaz mediante comunicación Ethernet y un microcontrolador MicroBlaze que mediante DMA gestione el ingreso de las matrices al hardware custom. 
+La interfaz con el usuario se realizó mediante Python.
 
-Hay cinco ramas:
+Para ver el proceso, resultados y conclusiones a las que se llegaron ver la presentación PowerPoint que se hizo (archivo [**Trabajo Final Procom 2020.pptx**](https://docs.google.com/presentation/d/1CZL4hcAdB1HRZiJvjiltzSebyHpYNqk_K8mJBbgLxnM/edit?usp=sharing)).
 
-  1) La principal (main).
-  2) La de archivos Verilog (Verilog).
-  3) La de archivos referentes al código del protocolo de comunicación Gigabit Ethernet (Ethernet).
-  4) La de archivos C referente a la instanciación del microprocesador MicroBlaze en la placa Kintex (microProcesador).
-  5) La de archivos de simulación que se hagan en alto nivel (simulacion Python).
+### English
+
+A hardware matrix calculator accelerator was implemented on a Kintex-7 KC705 FPGA.
+The communication interface between the FPGA an the computer was via Ethernet using a MicroBlaze microcontroller. The MCU used DMA transfers to deal with the input matrixes 
+to the custom hardware.
+
+To see the full process, results and conclusions you can see the PowerPoint presentation attached ([**Trabajo Final Procom 2020.pptx**](https://docs.google.com/presentation/d/1CZL4hcAdB1HRZiJvjiltzSebyHpYNqk_K8mJBbgLxnM/edit?usp=sharing) file).
